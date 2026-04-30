@@ -1,0 +1,1209 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Especialidade de Felinos — Desbravadores</title>
+
+  <!-- SEO básico -->
+  <meta name="description"
+    content="Guia completo da Especialidade de Felinos do Clube de Desbravadores: respostas, curiosidades, raças e espécies.">
+  <meta name="author" content="MDA Wiki">
+
+  <!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Especialidade de Felinos — Desbravadores">
+  <meta property="og:description"
+    content="Um guia ilustrado e completo sobre felinos: anatomia, espécies, curiosidades e recordes do reino animal.">
+  <meta property="og:image" content="https://articles.mda.wiki.br/especialidade-de-felinos/imgs/leao-hero.jpg">
+  <meta property="og:image:alt" content="Leão majestoso em destaque">
+  <meta property="og:url" content="https://articles.mda.wiki.br/especialidade-de-felinos/felinos">
+  <meta property="og:site_name" content="MDA Wiki">
+  <meta property="og:locale" content="pt_BR">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Especialidade de Felinos — Desbravadores">
+  <meta name="twitter:description" content="Anatomia, espécies selvagens, curiosidades e histórias sobre os felinos.">
+  <meta name="twitter:image" content="https://articles.mda.wiki.br/especialidade-de-felinos/imgs/leao-hero.jpg">
+
+  <!-- Tema do navegador (mobile) -->
+  <meta name="theme-color" content="#1a120b">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;0,900;1,700&family=Inter:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --bg: #1a120b;
+      --bg-2: #241710;
+      --paper: #f5ecd9;
+      --paper-2: #ede0c4;
+      --ink: #1d130a;
+      --accent: #c98a2b;
+      --accent-2: #e8b25a;
+      --muted: #7a6b54;
+      --danger: #a23b1a;
+    }
+
+    * {
+      box-sizing: border-box
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--paper);
+      font-family: 'Inter', sans-serif;
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased
+    }
+
+    img {
+      max-width: 100%;
+      display: block
+    }
+
+    a {
+      color: var(--accent-2)
+    }
+
+    .container {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 28px
+    }
+
+    /* HERO */
+    .hero {
+      position: relative;
+      min-height: 92vh;
+      overflow: hidden;
+      background:
+        radial-gradient(ellipse at 70% 30%, rgba(233, 178, 90, .25), transparent 55%),
+        linear-gradient(180deg, #0d0805 0%, #1a120b 100%);
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: url('imgs/leao-hero.jpg');
+      background-size: cover;
+      background-position: center;
+      opacity: .55;
+      mix-blend-mode: luminosity;
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(13, 8, 5, .3) 0%, rgba(13, 8, 5, .85) 80%, #1a120b 100%);
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+      padding: 80px 0 60px;
+      width: 100%
+    }
+
+    .kicker {
+      font-family: 'Inter', sans-serif;
+      letter-spacing: .4em;
+      text-transform: uppercase;
+      font-size: 12px;
+      color: var(--accent-2);
+      border: 1px solid rgba(232, 178, 90, .4);
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 2px;
+      background: rgba(0, 0, 0, .35);
+      backdrop-filter: blur(4px);
+    }
+
+    h1.title {
+      font-family: 'Playfair Display', serif;
+      font-weight: 900;
+      font-size: clamp(48px, 9vw, 132px);
+      line-height: .92;
+      margin: 18px 0 10px;
+      letter-spacing: -.02em;
+    }
+
+    h1.title em {
+      font-style: italic;
+      color: var(--accent-2);
+      font-weight: 500
+    }
+
+    .hero-sub {
+      max-width: 620px;
+      font-size: 18px;
+      color: #e6d8b8;
+      opacity: .92
+    }
+
+    .hero-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 26px;
+      margin-top: 30px;
+      font-size: 13px;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+      color: #caa86a
+    }
+
+    .hero-meta span b {
+      color: var(--paper);
+      font-weight: 700;
+      margin-left: 6px;
+      letter-spacing: .05em;
+      text-transform: none;
+      font-size: 14px
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 90px 0;
+      position: relative
+    }
+
+    .section-label {
+      font-size: 11px;
+      letter-spacing: .45em;
+      text-transform: uppercase;
+      color: var(--accent-2);
+      margin-bottom: 14px
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: clamp(32px, 4.5vw, 56px);
+      line-height: 1.05;
+      margin: 0 0 18px;
+      letter-spacing: -.01em
+    }
+
+    h2 em {
+      font-style: italic;
+      color: var(--accent-2);
+      font-weight: 500
+    }
+
+    h3 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 24px;
+      margin: 0 0 10px
+    }
+
+    p {
+      margin: 0 0 14px;
+      color: #e0d2b3
+    }
+
+    .lede {
+      font-size: 20px;
+      line-height: 1.55;
+      color: #f0e2c2;
+      font-family: 'Playfair Display', serif;
+      font-style: italic
+    }
+
+    .divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(232, 178, 90, .45), transparent);
+      margin: 0
+    }
+
+    /* PAPER block (revista) */
+    .paper {
+      background: var(--paper);
+      color: var(--ink);
+      border-radius: 4px;
+      padding: 48px;
+      box-shadow: 0 30px 60px rgba(0, 0, 0, .45)
+    }
+
+    .paper p {
+      color: #3a2e1c
+    }
+
+    .paper h2,
+    .paper h3 {
+      color: #1d130a
+    }
+
+    .paper .section-label {
+      color: var(--danger)
+    }
+
+    /* anatomy grid */
+    .anatomy {
+      display: grid;
+      grid-template-columns: 1.2fr 1fr;
+      gap: 60px;
+      align-items: center
+    }
+
+    .anatomy .text-col h2 {
+      margin-bottom: 24px
+    }
+
+    .feat-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+      margin-top: 30px
+    }
+
+    .feat {
+      border: 1px solid rgba(232, 178, 90, .18);
+      padding: 22px;
+      border-radius: 6px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, .02), rgba(255, 255, 255, 0));
+    }
+
+    .feat .num {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      color: var(--accent-2);
+      font-size: 36px;
+      line-height: 1
+    }
+
+    .feat h4 {
+      margin: 6px 0 8px;
+      font-size: 17px;
+      color: var(--paper)
+    }
+
+    .feat p {
+      font-size: 14px;
+      margin: 0;
+      color: #bfae8c
+    }
+
+    .anatomy .img-col {
+      position: relative
+    }
+
+    .anatomy .img-col img {
+      border-radius: 6px;
+      height: 560px;
+      object-fit: cover;
+      width: 100%
+    }
+
+    .img-caption {
+      position: absolute;
+      bottom: 14px;
+      left: 14px;
+      background: rgba(0, 0, 0, .65);
+      color: #f5ecd9;
+      font-size: 11px;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      padding: 6px 10px;
+      border-radius: 2px
+    }
+
+    /* BREEDS */
+    .breeds-head {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: end;
+      margin-bottom: 50px
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 22px
+    }
+
+    .card {
+      background: #241710;
+      border: 1px solid rgba(232, 178, 90, .12);
+      border-radius: 6px;
+      overflow: hidden;
+      transition: transform .35s ease, box-shadow .35s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, .5)
+    }
+
+    .card .ph {
+      height: 230px;
+      background-size: cover;
+      background-position: center
+    }
+
+    .card .body {
+      padding: 18px 20px 22px
+    }
+
+    .card .tag {
+      font-size: 10px;
+      letter-spacing: .3em;
+      color: var(--accent-2);
+      text-transform: uppercase
+    }
+
+    .card h4 {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      margin: 6px 0 8px
+    }
+
+    .card p {
+      font-size: 13.5px;
+      color: #bfae8c;
+      margin: 0
+    }
+
+    /* WILD */
+    .wild section-label {}
+
+    .wild-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px
+    }
+
+    .wild-card {
+      position: relative;
+      height: 340px;
+      border-radius: 6px;
+      overflow: hidden;
+      background: #000
+    }
+
+    .wild-card .ph {
+      position: absolute;
+      inset: 0;
+      background-size: cover;
+      background-position: center;
+      transition: transform .8s ease;
+      filter: saturate(1.05)
+    }
+
+    .wild-card:hover .ph {
+      transform: scale(1.06)
+    }
+
+    .wild-card .overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+    }
+
+    .wild-card .info {
+      position: absolute;
+      left: 20px;
+      right: 20px;
+      bottom: 18px;
+      color: #f5ecd9
+    }
+
+    .wild-card .info .where {
+      font-size: 10px;
+      letter-spacing: .3em;
+      text-transform: uppercase;
+      color: var(--accent-2)
+    }
+
+    .wild-card .info h4 {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      margin: 4px 0 6px;
+      color: #fff
+    }
+
+    .wild-card .info p {
+      font-size: 13px;
+      color: #d8c8a8;
+      margin: 0
+    }
+
+    /* SUPERLATIVES */
+    .records {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      margin-top: 30px
+    }
+
+    .record {
+      padding: 28px 22px;
+      border: 1px solid rgba(232, 178, 90, .2);
+      border-radius: 6px;
+      background: rgba(0, 0, 0, .25)
+    }
+
+    .record .big {
+      font-family: 'Playfair Display', serif;
+      font-size: 42px;
+      color: var(--accent-2);
+      line-height: 1;
+      font-weight: 700
+    }
+
+    .record .label {
+      font-size: 11px;
+      letter-spacing: .25em;
+      text-transform: uppercase;
+      color: #bfae8c;
+      margin-top: 8px
+    }
+
+    .record h4 {
+      margin: 10px 0 6px;
+      font-size: 20px
+    }
+
+    .record p {
+      font-size: 13px;
+      margin: 0;
+      color: #bfae8c
+    }
+
+    /* STORY */
+    .story-wrap {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 50px;
+      align-items: stretch
+    }
+
+    .story-img {
+      background-image: url('imgs/leao-majestoso.jpg');
+      background-size: cover;
+      background-position: center;
+      border-radius: 6px;
+      min-height: 520px;
+      position: relative;
+    }
+
+    .story-img::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, transparent 30%, rgba(0, 0, 0, .55));
+      border-radius: 6px
+    }
+
+    .story-text {
+      padding: 10px 0
+    }
+
+    .dropcap::first-letter {
+      font-family: 'Playfair Display', serif;
+      font-weight: 900;
+      float: left;
+      font-size: 78px;
+      line-height: .85;
+      padding: 8px 14px 0 0;
+      color: var(--accent-2);
+    }
+
+    /* BIBLE */
+    .bible-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 22px;
+      margin-top: 30px
+    }
+
+    .verse {
+      padding: 26px;
+      border-left: 3px solid var(--accent);
+      background: rgba(0, 0, 0, .25);
+      border-radius: 0 6px 6px 0
+    }
+
+    .verse .ref {
+      font-size: 11px;
+      letter-spacing: .3em;
+      text-transform: uppercase;
+      color: var(--accent-2)
+    }
+
+    .verse h4 {
+      margin: 6px 0 10px;
+      font-size: 20px
+    }
+
+    .verse p {
+      font-size: 14.5px;
+      color: #d8c8a8;
+      margin: 0;
+      font-style: italic
+    }
+
+    /* BENEFITS */
+    .benefits {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center
+    }
+
+    .benefits .img {
+      border-radius: 6px;
+      height: 520px;
+      background-size: cover;
+      background-position: center;
+      background-image: url('imgs/gato-2.jpg')
+    }
+
+    .benefit-list {
+      list-style: none;
+      padding: 0;
+      margin: 24px 0 0
+    }
+
+    .benefit-list li {
+      padding: 18px 0;
+      border-bottom: 1px dashed rgba(232, 178, 90, .2);
+      display: grid;
+      grid-template-columns: 50px 1fr;
+      gap: 16px;
+      align-items: start
+    }
+
+    .benefit-list li:last-child {
+      border-bottom: none
+    }
+
+    .benefit-list .n {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      color: var(--accent-2);
+      font-size: 30px;
+      line-height: 1
+    }
+
+    .benefit-list h4 {
+      margin: 0 0 4px;
+      font-size: 17px
+    }
+
+    .benefit-list p {
+      margin: 0;
+      font-size: 14px;
+      color: #bfae8c
+    }
+
+    /* CURIOSIDADES */
+    .curio {
+      background: linear-gradient(180deg, #241710, #1a120b)
+    }
+
+    .curio-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      margin-top: 30px
+    }
+
+    .curio-card {
+      padding: 26px;
+      border: 1px solid rgba(232, 178, 90, .18);
+      border-radius: 6px;
+      background: rgba(0, 0, 0, .3)
+    }
+
+    .curio-card .icon {
+      font-size: 28px
+    }
+
+    .curio-card h4 {
+      margin: 8px 0;
+      font-size: 18px
+    }
+
+    .curio-card p {
+      font-size: 14px;
+      color: #bfae8c;
+      margin: 0
+    }
+
+    /* FOOTER */
+    footer {
+      padding: 60px 0 50px;
+      text-align: center;
+      border-top: 1px solid rgba(232, 178, 90, .15);
+      color: #8e7c5c;
+      font-size: 13px
+    }
+
+    footer .em {
+      color: var(--accent-2);
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 18px;
+      margin-bottom: 10px;
+      display: block
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 960px) {
+
+      .anatomy,
+      .breeds-head,
+      .benefits,
+      .story-wrap {
+        grid-template-columns: 1fr;
+        gap: 30px
+      }
+
+      .anatomy .img-col img {
+        height: 380px
+      }
+
+      .cards {
+        grid-template-columns: repeat(2, 1fr)
+      }
+
+      .wild-grid {
+        grid-template-columns: repeat(2, 1fr)
+      }
+
+      .records {
+        grid-template-columns: repeat(2, 1fr)
+      }
+
+      .bible-grid,
+      .curio-grid {
+        grid-template-columns: 1fr
+      }
+
+      .paper {
+        padding: 30px
+      }
+
+      section {
+        padding: 60px 0
+      }
+
+      .story-img {
+        min-height: 320px
+      }
+
+      .benefits .img {
+        height: 340px
+      }
+    }
+
+    @media (max-width: 560px) {
+
+      .cards,
+      .wild-grid {
+        grid-template-columns: 1fr
+      }
+
+      .records {
+        grid-template-columns: 1fr
+      }
+
+      .feat-grid {
+        grid-template-columns: 1fr
+      }
+
+      .container {
+        padding: 0 20px
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- ===================== HERO ===================== -->
+  <header class="hero">
+    <div class="container hero-inner">
+      <span class="kicker">Estudos da Natureza</span>
+      <h1 class="title">Felinos<br><em>silenciosos caçadores</em></h1>
+      <p class="hero-sub">Um guia ilustrado e completo para a Especialidade de Felinos: anatomia, raças, espécies
+        selvagens, recordes do reino animal, curiosidades e histórias.</p>
+
+    </div>
+  </header>
+
+  <!-- ===================== INTRO / FAMÍLIA ===================== -->
+  <section>
+    <div class="container">
+      <div class="paper">
+        <div class="section-label">A Família</div>
+        <h2>Felidae <em>— a linhagem dos caçadores perfeitos</em></h2>
+        <p class="lede">O nome científico da família do gato é <strong>Felidae</strong>. Pertence à ordem
+          <em>Carnivora</em> e reúne, hoje, cerca de 40 espécies espalhadas por quase todos os continentes — do gato
+          doméstico ao tigre-de-bengala.
+        </p>
+        <p>Apesar das diferenças de tamanho, todos os felinos compartilham um mesmo plano corporal e um conjunto notável
+          de características que os tornam predadores excepcionais. São animais ágeis, silenciosos, de visão aguçada,
+          garras retráteis e dentes especializados para uma dieta estritamente carnívora.</p>
+
+        <div class="feat-grid">
+          <div class="feat">
+            <div class="num">01</div>
+            <h4 style="color:#1d130a">Carnívoros estritos</h4>
+            <p style="color:#5a4a32">Dependem quase totalmente de carne para obter os nutrientes essenciais.</p>
+          </div>
+          <div class="feat">
+            <div class="num">02</div>
+            <h4 style="color:#1d130a">Garras retráteis</h4>
+            <p style="color:#5a4a32">Recolhem as unhas dentro das patas, mantendo-as afiadas (exceto o guepardo).</p>
+          </div>
+          <div class="feat">
+            <div class="num">03</div>
+            <h4 style="color:#1d130a">Visão noturna apurada</h4>
+            <p style="color:#5a4a32">Pupilas que dilatam fortemente e tapetum lucidum, que reflete a luz na retina.</p>
+          </div>
+          <div class="feat">
+            <div class="num">04</div>
+            <h4 style="color:#1d130a">Audição e olfato finos</h4>
+            <p style="color:#5a4a32">Detectam ruídos e cheiros imperceptíveis para o ser humano.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ANATOMIA ===================== -->
+  <section>
+    <div class="container">
+      <div class="anatomy">
+        <div class="text-col">
+          <div class="section-label">Anatomia</div>
+          <h2>Patas, olhos, dentes <em>e bigodes</em></h2>
+          <p>Em todos os felinos, a estrutura da pata segue o mesmo princípio: são <strong>digitígrados</strong> —
+            caminham sobre os dedos, e não sobre toda a sola. Possuem coxins macios que abafam os passos e
+            <strong>garras retráteis</strong> que se mantêm afiadas porque ficam recolhidas dentro de bainhas. Em geral,
+            têm cinco dedos nas patas dianteiras e quatro nas traseiras.
+          </p>
+          <p>Os <strong>olhos</strong> são posicionados na frente do rosto, oferecendo visão binocular e excelente noção
+            de profundidade. A pupila se dilata muito no escuro e, atrás da retina, uma camada chamada <em>tapetum
+              lucidum</em> reflete a luz, dando aos felinos uma visão noturna até seis vezes superior à humana — e o
+            brilho característico no escuro.</p>
+          <p>Sua alimentação principal é <strong>carne</strong>. Para isso, a dentição é especializada: <em>caninos</em>
+            longos e curvos para perfurar e segurar a presa, <em>incisivos</em> pequenos para raspar e arrancar, e os
+            <em>dentes carniceiros</em> (molares modificados) que funcionam como tesouras, cortando a carne em pedaços
+            que podem ser engolidos sem mastigar muito.
+          </p>
+          <p>Os <strong>bigodes</strong> (vibrissas) são órgãos sensoriais altamente sensíveis. Avisam o animal sobre
+            obstáculos no escuro, indicam se ele consegue passar por uma fresta (têm aproximadamente a largura do corpo)
+            e captam a vibração do ar, ajudando a localizar a presa mesmo a curta distância dos olhos.</p>
+          <p>Os <strong>ouvidos</strong> têm forma cônica, giram de forma independente para captar sons em várias
+            direções e são protegidos por uma dobra de pele na base, além de pelos finos no canal auditivo, que impedem
+            a entrada de sujeira, água e insetos.</p>
+        </div>
+        <div class="img-col">
+          <img src="imgs/gato.jpg" alt="Detalhe do rosto de um gato">
+          <div class="img-caption">Sentidos · Visão · Tato</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="divider"></div>
+  </div>
+
+  <!-- ===================== RAÇAS DOMÉSTICAS ===================== -->
+  <section>
+    <div class="container">
+      <div class="breeds-head">
+        <div>
+          <div class="section-label">Raças Domésticas</div>
+          <h2>Quatro retratos do <em>gato de casa</em></h2>
+        </div>
+        <p style="margin:0">O gato doméstico (<em>Felis catus</em>) acompanha o ser humano há vários séculos.
+          Existem dezenas de raças, cada uma com personalidade, pelagem e formato próprios.</p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <div class="ph" style="background-image:url('imgs/gato-persa.jpg')">
+          </div>
+          <div class="body">
+            <div class="tag">Persa</div>
+            <h4>Calmo &amp; aristocrático</h4>
+            <p>Pelagem longa e densa, focinho achatado. Temperamento dócil, tranquilo e caseiro — adora colo e ambientes
+              silenciosos.</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="ph" style="background-image:url('imgs/gato-siames.jpg')">
+          </div>
+          <div class="body">
+            <div class="tag">Siamês</div>
+            <h4>Falante &amp; apegado</h4>
+            <p>Corpo esguio, olhos azuis vibrantes e pelos curtos. Muito vocal, inteligente e extremamente apegado ao
+              dono.</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="ph" style="background-image:url('imgs/gato-maine-coon.jpg')">
+          </div>
+          <div class="body">
+            <div class="tag">Maine Coon</div>
+            <h4>Gigante gentil</h4>
+            <p>Uma das maiores raças do mundo. Apesar do porte, é dócil, brincalhão e sociável — chamado de “cão entre
+              os gatos”.</p>
+          </div>
+        </article>
+        <article class="card">
+          <div class="ph" style="background-image:url('imgs/gato-angora.jpg')">
+          </div>
+          <div class="body">
+            <div class="tag">Angorá</div>
+            <h4>Elegante &amp; ágil</h4>
+            <p>Pelagem sedosa, geralmente branca. Ativo, curioso e brincalhão; mantém forte vínculo com a família
+              humana.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BENEFÍCIOS ===================== -->
+  <section>
+    <div class="container">
+      <div class="benefits">
+        <div class="img" role="img" aria-label="Gato com dono"></div>
+        <div>
+          <div class="section-label">Convivência</div>
+          <h2>Por que o homem <em>convive com gatos</em></h2>
+          <p>Desde os celeiros do antigo Egito, gatos prestam serviços valiosos e oferecem companhia. Hoje, vivem em
+            milhões de lares ao redor do mundo.</p>
+          <ul class="benefit-list">
+            <li><span class="n">i</span>
+              <div>
+                <h4>Controle de pragas</h4>
+                <p>Caçam ratos, baratas e insetos, protegendo alimentos e a saúde da família.</p>
+              </div>
+            </li>
+            <li><span class="n">ii</span>
+              <div>
+                <h4>Companhia &amp; afeto</h4>
+                <p>Reduzem a solidão, especialmente para idosos e crianças.</p>
+              </div>
+            </li>
+            <li><span class="n">iii</span>
+              <div>
+                <h4>Bem-estar e saúde</h4>
+                <p>Estudos mostram que conviver com gatos reduz estresse, ansiedade e até a pressão arterial.</p>
+              </div>
+            </li>
+            <li><span class="n">iv</span>
+              <div>
+                <h4>Educação</h4>
+                <p>Ensinam crianças a cuidar, respeitar e conviver com seres vivos.</p>
+              </div>
+            </li>
+            <li><span class="n">v</span>
+              <div>
+                <h4>Terapia assistida</h4>
+                <p>São usados em terapias com pacientes em hospitais, asilos e escolas especiais.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ESPÉCIES SELVAGENS ===================== -->
+  <section class="wild">
+    <div class="container">
+      <div class="section-label">Gatos Selvagens</div>
+      <h2>Felinos do <em>mundo todo</em></h2>
+      <p style="max-width:720px">Dos picos do Himalaia às savanas africanas, sete espécies que mostram a diversidade da
+        família Felidae — e os lugares do planeta onde podem ser encontradas.</p>
+
+      <div class="wild-grid" style="margin-top:30px">
+        <div class="wild-card">
+          <div class="ph" style="background-image:url('imgs/tigre.jpg')">
+          </div>
+          <div class="overlay"></div>
+          <div class="info">
+            <div class="where">Ásia</div>
+            <h4>Tigre <em>(Panthera tigris)</em></h4>
+            <p>O maior felino do mundo. Vive em florestas da Ásia, especialmente Índia, Bangladesh e Rússia.</p>
+          </div>
+        </div>
+        <div class="wild-card">
+          <div class="ph" style="background-image:url('imgs/leao.jpg')">
+          </div>
+          <div class="overlay"></div>
+          <div class="info">
+            <div class="where">África</div>
+            <h4>Leão <em>(Panthera leo)</em></h4>
+            <p>Vive em savanas da África subsaariana e em uma pequena reserva na Índia (Floresta de Gir).</p>
+          </div>
+        </div>
+        <div class="wild-card">
+          <div class="ph" style="background-image:url('imgs/onca-pintada.jpg')">
+          </div>
+          <div class="overlay"></div>
+          <div class="info">
+            <div class="where">Américas</div>
+            <h4>Onça-pintada <em>(Panthera onca)</em></h4>
+            <p>O maior felino das Américas. Encontrada na Amazônia, Pantanal e florestas tropicais.</p>
+          </div>
+        </div>
+        <div class="wild-card">
+          <div class="ph" style="background-image:url('imgs/leopardo.jpg')">
+          </div>
+          <div class="overlay"></div>
+          <div class="info">
+            <div class="where">África · Ásia</div>
+            <h4>Leopardo <em>(Panthera pardus)</em></h4>
+            <p>Vive em savanas, florestas e até áreas montanhosas. Excelente escalador de árvores.</p>
+          </div>
+        </div>
+        <div class="wild-card">
+          <div class="ph" style="background-image:url('imgs/guepardo.jpg')">
+          </div>
+          <div class="overlay"></div>
+          <div class="info">
+            <div class="where">África</div>
+            <h4>Guepardo <em>(Acinonyx jubatus)</em></h4>
+            <p>O felino mais veloz do mundo. Vive em savanas e estepes da África e em pequena população no Irã.</p>
+          </div>
+        </div>
+        <div class="wild-card">
+          <div class="ph" style="background-image:url('imgs/puma.jpg')">
+          </div>
+          <div class="overlay"></div>
+          <div class="info">
+            <div class="where">Américas</div>
+            <h4>Puma <em>(Puma concolor)</em></h4>
+            <p>Também chamado de suçuarana ou leão-da-montanha. Maior área de distribuição entre os felinos das
+              Américas.</p>
+          </div>
+        </div>
+        <div class="wild-card">
+          <div class="ph" style="background-image:url('imgs/leopadro-das-neves.jpg')">
+          </div>
+          <div class="overlay"></div>
+          <div class="info">
+            <div class="where">Ásia Central</div>
+            <h4>Leopardo-das-neves <em>(Panthera uncia)</em></h4>
+            <p>Habita as montanhas mais altas da Ásia Central, em altitudes acima de 3.000 metros.</p>
+          </div>
+        </div>
+        <div class="wild-card">
+          <div class="ph" style="background-image:url('imgs/jaguatirica.jpg')">
+          </div>
+          <div class="overlay"></div>
+          <div class="info">
+            <div class="where">Américas</div>
+            <h4>Jaguatirica <em>(Leopardus pardalis)</em></h4>
+            <p>Felino de médio porte, com pelagem manchada. Vive em florestas tropicais da América Central e do Sul.</p>
+          </div>
+        </div>
+        <div class="wild-card">
+          <div class="ph" style="background-image:url('imgs/lince.jpg')">
+          </div>
+          <div class="overlay"></div>
+          <div class="info">
+            <div class="where">Europa · Ásia · América do Norte</div>
+            <h4>Lince <em>(Lynx)</em></h4>
+            <p>Felino de médio porte com orelhas pontudas. Vive em florestas frias e
+              regiões montanhosas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== RECORDES ===================== -->
+  <section>
+    <div class="container">
+      <div class="paper">
+        <div class="section-label">Recordes</div>
+        <h2>Os superlativos <em>da família Felidae</em></h2>
+        <p style="color:#5a4a32">Quatro perguntas clássicas sobre os felinos — e suas respostas.</p>
+        <div class="records" style="color:#1d130a">
+          <div class="record" style="background:rgba(0,0,0,.04);border-color:rgba(201,138,43,.3)">
+            <div class="big">#1</div>
+            <div class="label" style="color:#7a6b54">Maior do mundo</div>
+            <h4 style="color:#1d130a">Tigre Siberiano</h4>
+            <p style="color:#5a4a32">Pode ultrapassar 300 kg e 3,3 m de comprimento. Vive nas florestas da Sibéria.</p>
+          </div>
+          <div class="record" style="background:rgba(0,0,0,.04);border-color:rgba(201,138,43,.3)">
+            <div class="big">#1</div>
+            <div class="label" style="color:#7a6b54">Maior da América do Sul</div>
+            <h4 style="color:#1d130a">Onça-pintada</h4>
+            <p style="color:#5a4a32">Símbolo do Pantanal e da Amazônia, pode pesar mais de 130 kg.</p>
+          </div>
+          <div class="record" style="background:rgba(0,0,0,.04);border-color:rgba(201,138,43,.3)">
+            <div class="big">110</div>
+            <div class="label" style="color:#7a6b54">km/h · mais veloz</div>
+            <h4 style="color:#1d130a">Guepardo</h4>
+            <p style="color:#5a4a32">Atinge até 110 km/h em arrancadas curtas — o animal terrestre mais rápido.</p>
+          </div>
+          <div class="record" style="background:rgba(0,0,0,.04);border-color:rgba(201,138,43,.3)">
+            <div class="big">♔</div>
+            <div class="label" style="color:#7a6b54">Rei dos animais</div>
+            <h4 style="color:#1d130a">Leão</h4>
+            <p style="color:#5a4a32">Símbolo de força, mas na natureza é social, vive em alcateias e dorme até 20 horas
+              por dia. Quem caça, na maioria das vezes, são as fêmeas.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ANDROCLES ===================== -->
+  <section>
+    <div class="container">
+      <div class="story-wrap">
+        <div class="story-img" role="img" aria-label="Leão majestoso"></div>
+        <div class="story-text">
+          <div class="section-label">Lenda Antiga</div>
+          <h2>Androcles <em>e o Leão</em></h2>
+          <p class="dropcap">Conta a tradição que Androcles era um escravo romano que, fugindo de seu senhor,
+            escondeu-se numa caverna no norte da África. Lá dentro, encontrou um enorme leão que rugia de dor: um
+            espinho cravado em sua pata o atormentava.</p>
+          <p>Em vez de fugir, Androcles aproximou-se com cuidado, retirou o espinho e cuidou do ferimento. O leão,
+            agradecido, tornou-se seu companheiro. Por anos, dividiram a mesma caverna e o mesmo alimento.</p>
+          <p>Algum tempo depois, Androcles foi capturado e condenado a morrer no Coliseu, devorado por feras. Soltaram
+            contra ele um leão faminto. Mas, ao chegar perto, o animal parou — era o mesmo leão a quem ele havia
+            ajudado. Em vez de atacar, deitou-se aos seus pés.</p>
+          <p>Espantado, o imperador perdoou Androcles e libertou o leão. A história, contada pelos romanos e recontada
+            por séculos, lembra que <em>a bondade é reconhecida até pelas feras mais ferozes</em> — e que um gesto de
+            compaixão pode mudar um destino.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BÍBLIA ===================== -->
+  <section class="curio">
+    <div class="container">
+      <div class="section-label">Nas Escrituras</div>
+      <h2>Felinos <em>na Bíblia</em></h2>
+      <p style="max-width:720px">Embora o gato doméstico não seja diretamente citado nas Escrituras, leões e leopardos
+        aparecem dezenas de vezes — em narrativas, profecias e símbolos.</p>
+
+      <div class="bible-grid">
+        <div class="verse">
+          <div class="ref">Juízes 14</div>
+          <h4>Sansão e o leão</h4>
+          <p>Sansão, indo a Timna, foi atacado por um leão jovem. Pelo Espírito do Senhor, despedaçou-o com as mãos.
+            Tempos depois, encontrou no corpo do animal um enxame de abelhas e mel, do qual surgiu seu famoso enigma.
+          </p>
+        </div>
+        <div class="verse">
+          <div class="ref">1 Samuel 17</div>
+          <h4>Davi defende o rebanho</h4>
+          <p>Antes de enfrentar Golias, o jovem Davi conta a Saul que, como pastor, havia matado um leão e um urso que
+            vieram atacar suas ovelhas — sinal da proteção de Deus em sua vida.</p>
+        </div>
+        <div class="verse">
+          <div class="ref">Daniel 6</div>
+          <h4>Daniel na cova dos leões</h4>
+          <p>Por causa de sua fidelidade a Deus, Daniel foi lançado numa cova cheia de leões. O Senhor enviou um anjo
+            que fechou a boca dos animais, e Daniel saiu ileso na manhã seguinte.</p>
+        </div>
+        <div class="verse">
+          <div class="ref">1 Reis 13</div>
+          <h4>O profeta desobediente</h4>
+          <p>Um profeta de Judá, depois de desobedecer à ordem do Senhor, foi morto por um leão no caminho — um animal
+            que, milagrosamente, não devorou o corpo nem atacou o jumento, sinal do juízo divino.</p>
+        </div>
+        <div class="verse">
+          <div class="ref">Apocalipse 5:5</div>
+          <h4>O Leão da Tribo de Judá</h4>
+          <p>Cristo é apresentado como “o Leão da tribo de Judá, a Raiz de Davi”, que venceu para abrir o livro selado —
+            símbolo de força, realeza e vitória.</p>
+        </div>
+        <div class="verse">
+          <div class="ref">Jeremias 13:23</div>
+          <h4>O leopardo e suas manchas</h4>
+          <p>“Pode, porventura, o etíope mudar a sua pele, ou o leopardo as suas manchas?” — usado por Jeremias como
+            imagem da dificuldade de mudar um coração endurecido pelo pecado.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CURIOSIDADES ===================== -->
+  <section>
+    <div class="container">
+      <div class="section-label">Curiosidades</div>
+      <h2>Pequenos detalhes <em>que encantam</em></h2>
+      <div class="curio-grid">
+        <div class="curio-card">
+          <div class="icon">🐾</div>
+          <h4>Pulam até 6× a altura do corpo</h4>
+          <p>Os músculos das patas traseiras são extremamente fortes, permitindo saltos impressionantes a partir do
+            repouso.</p>
+        </div>
+        <div class="curio-card">
+          <div class="icon">😴</div>
+          <h4>Dormem entre 12 e 16 horas por dia</h4>
+          <p>Como predadores, conservam energia para os momentos de caça — instinto preservado mesmo no gato doméstico.
+          </p>
+        </div>
+        <div class="curio-card">
+          <div class="icon">👅</div>
+          <h4>Língua áspera</h4>
+          <p>Coberta por pequenos ganchos (papilas) que servem para se higienizar e raspar a carne dos ossos.</p>
+        </div>
+        <div class="curio-card">
+          <div class="icon">🌗</div>
+          <h4>Visão noturna 6× melhor</h4>
+          <p>Enxergam em níveis de luz muito baixos, mas precisam de um mínimo de luminosidade — não veem no escuro
+            absoluto.</p>
+        </div>
+        <div class="curio-card">
+          <div class="icon">🦁</div>
+          <h4>Só o leão vive em grupo</h4>
+          <p>Os demais felinos são, em geral, solitários. As alcateias de leões são chamadas de “orgulho” (em inglês,
+            <em>pride</em>).
+          </p>
+        </div>
+        <div class="curio-card">
+          <div class="icon">⚡</div>
+          <h4>Garras = ferramentas</h4>
+          <p>Servem para caçar, escalar, marcar território e se defender. No guepardo, são pouco retráteis e funcionam
+            como travas de corrida.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <div class="container">
+      <span class="em">“O leão e o cordeiro pastarão juntos.” — Isaías 65:25</span>
+      <p>Especialidade de Felinos · Estudos da Natureza · EN 024</p>
+      <p style="margin-top:8px;font-size:12px">Acesse nossa wiki:
+        <a href="https://mda.wiki.br/" target="_blank" rel="noopener">mda.wiki.br</a>
+      </p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
