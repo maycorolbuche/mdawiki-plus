@@ -1,0 +1,1553 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Especialidade de Cães — Desbravadores</title>
+  <meta name="description"
+    content="Guia completo e ilustrado da Especialidade de Cães do Clube de Desbravadores. Raças, curiosidades, cuidados e todas as respostas.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f6efe4;
+      --fg: #2a2520;
+      --card: #fbf6ec;
+      --muted: #ece4d4;
+      --muted-fg: #7a6f5e;
+      --primary: #7a3e1d;
+      --primary-fg: #fbf6ec;
+      --accent: #c9621e;
+      --gold: #d9a441;
+      --border: #e3d8c2;
+      --ink: #2a2520;
+      --paper: #f6efe4;
+      --shadow-mag: 0 20px 60px -20px rgba(42, 37, 32, .25);
+      --shadow-soft: 0 8px 24px -8px rgba(42, 37, 32, .18);
+      --grad: linear-gradient(135deg, #7a3e1d, #c9621e);
+    }
+
+    * {
+      box-sizing: border-box;
+      border-color: var(--border)
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      line-height: 1.6;
+      background-image: radial-gradient(circle at 20% 10%, rgba(201, 98, 30, .05) 0, transparent 40%), radial-gradient(circle at 80% 60%, rgba(122, 62, 29, .04) 0, transparent 40%);
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    .display {
+      font-family: 'Playfair Display', Georgia, serif;
+      letter-spacing: -.02em;
+      margin: 0
+    }
+
+    em {
+      font-style: italic
+    }
+
+    a {
+      color: inherit
+    }
+
+    .container {
+      max-width: 1152px;
+      margin: 0 auto;
+      padding: 0 24px
+    }
+
+    .narrow {
+      max-width: 768px;
+      margin: 0 auto;
+      padding: 0 24px
+    }
+
+    /* Hero */
+    .hero {
+      position: relative;
+      height: 100vh;
+      min-height: 600px;
+      overflow: hidden;
+      color: #fff
+    }
+
+    .hero img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .4), rgba(0, 0, 0, .8))
+    }
+
+    .hero-content {
+      position: relative;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 24px;
+      max-width: 1280px;
+      margin: 0 auto
+    }
+
+    .hero-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 12px;
+      letter-spacing: .3em;
+      text-transform: uppercase
+    }
+
+    .hero-title {
+      font-weight: 900;
+      font-size: clamp(48px, 10vw, 144px);
+      line-height: .9;
+      margin: 24px 0
+    }
+
+    .hero-title em {
+      font-weight: 300;
+      font-style: italic
+    }
+
+    .hero-eyebrow {
+      font-size: 14px;
+      letter-spacing: .4em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 16px
+    }
+
+    .hero-sub {
+      font-size: clamp(16px, 2vw, 22px);
+      font-weight: 300;
+      max-width: 600px;
+      line-height: 1.6
+    }
+
+    .hero-foot {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      font-size: 11px;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      opacity: .8
+    }
+
+    @media(min-width:768px) {
+      .hero-content {
+        padding: 48px
+      }
+
+      .hero-header {
+        font-size: 14px
+      }
+    }
+
+    /* Editorial intro */
+    .intro {
+      padding: 80px 24px;
+      max-width: 768px;
+      margin: 0 auto
+    }
+
+    .eyebrow {
+      font-size: 12px;
+      letter-spacing: .3em;
+      text-transform: uppercase;
+      color: var(--accent);
+      text-align: center;
+      margin-bottom: 24px
+    }
+
+    .quote {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: clamp(22px, 3vw, 30px);
+      line-height: 1.5;
+      text-align: center
+    }
+
+    .cite {
+      text-align: center;
+      color: var(--muted-fg);
+      margin-top: 12px
+    }
+
+    .cols {
+      margin-top: 48px;
+      column-count: 1;
+      column-gap: 40px;
+      font-size: 17px;
+      line-height: 1.7
+    }
+
+    @media(min-width:768px) {
+      .cols {
+        column-count: 2
+      }
+
+      ;
+
+      .intro {
+        padding: 112px 24px
+      }
+    }
+
+    .drop-cap::first-letter {
+      font-family: 'Playfair Display', serif;
+      font-size: 4.5rem;
+      font-weight: 700;
+      float: left;
+      line-height: .85;
+      padding: .4rem .6rem 0 0;
+      color: var(--accent)
+    }
+
+    /* Sections */
+    .content {
+      padding: 0 24px 96px
+    }
+
+    .section {
+      margin-bottom: 96px
+    }
+
+    .sec-title {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      margin-bottom: 32px
+    }
+
+    .badge {
+      display: inline-flex;
+      width: 48px;
+      height: 48px;
+      border-radius: 9999px;
+      background: var(--accent);
+      color: #fff;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 20px;
+      flex-shrink: 0;
+      box-shadow: var(--shadow-soft)
+    }
+
+    .sec-title h2 {
+      font-size: clamp(26px, 4vw, 38px);
+      font-weight: 700;
+      line-height: 1.1
+    }
+
+    .sec-title .sub {
+      color: var(--muted-fg);
+      margin-top: 4px;
+      font-style: italic
+    }
+
+    /* Grids */
+    .grid {
+      display: grid;
+      gap: 24px
+    }
+
+    .g2 {
+      grid-template-columns: 1fr
+    }
+
+    .g3 {
+      grid-template-columns: repeat(2, 1fr)
+    }
+
+    .g4 {
+      grid-template-columns: repeat(2, 1fr)
+    }
+
+    .g5 {
+      grid-template-columns: repeat(2, 1fr)
+    }
+
+    @media(min-width:640px) {
+      .g3 {
+        grid-template-columns: repeat(2, 1fr)
+      }
+
+      ;
+
+      .g5 {
+        grid-template-columns: repeat(3, 1fr)
+      }
+
+      ;
+
+      .g4 {
+        grid-template-columns: repeat(2, 1fr)
+      }
+    }
+
+    @media(min-width:768px) {
+      .g2 {
+        grid-template-columns: 1fr 1fr
+      }
+
+      ;
+
+      .g3 {
+        grid-template-columns: repeat(3, 1fr)
+      }
+
+      ;
+
+      .g5 {
+        grid-template-columns: repeat(5, 1fr)
+      }
+
+      ;
+
+      .g4 {
+        grid-template-columns: repeat(4, 1fr)
+      }
+    }
+
+    .card {
+      background: var(--card);
+      padding: 24px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-soft);
+      transition: transform .2s
+    }
+
+    .card:hover {
+      transform: translateY(-4px)
+    }
+
+    .card .num {
+      font-size: 13px;
+      letter-spacing: .2em;
+      color: var(--accent);
+      font-weight: 600
+    }
+
+    .card h3 {
+      font-size: 20px;
+      font-weight: 700;
+      margin: 8px 0 8px;
+      color: var(--fg)
+    }
+
+    .card p {
+      color: var(--muted-fg);
+      margin: 0
+    }
+
+    .mag-shadow {
+      box-shadow: var(--shadow-mag)
+    }
+
+    .rounded {
+      border-radius: 8px;
+      overflow: hidden
+    }
+
+    .text-grad {
+      background: var(--grad);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent
+    }
+
+    /* 01 sci */
+    .sci-card {
+      background: var(--card);
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: var(--shadow-mag);
+      border: 1px solid var(--border)
+    }
+
+    .sci-card .lbl {
+      font-size: 12px;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--muted-fg)
+    }
+
+    .sci-card .name {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: clamp(36px, 6vw, 60px);
+      margin-top: 16px;
+      line-height: 1.1
+    }
+
+    .tax p {
+      margin: 8px 0;
+      font-size: 17px
+    }
+
+    /* 03 wild */
+    .wild-grid {
+      display: grid;
+      gap: 24px;
+      grid-template-columns: 1fr;
+      margin-bottom: 24px
+    }
+
+    @media(min-width:768px) {
+      .wild-grid {
+        grid-template-columns: 1fr 1fr
+      }
+    }
+
+    .wild-sub {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px
+    }
+
+    .wild-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: var(--shadow-soft)
+    }
+
+    .wild-card .img-wrap {
+      aspect-ratio: 1/1;
+      background: var(--muted);
+      overflow: hidden
+    }
+
+    .wild-card .img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover
+    }
+
+    .wild-card .info {
+      padding: 12px
+    }
+
+    .wild-card .info p {
+      margin: 0
+    }
+
+    .wild-card .info .nm {
+      font-weight: 700;
+      font-size: 14px
+    }
+
+    .wild-card .info .sci {
+      font-style: italic;
+      font-size: 12px;
+      color: var(--muted-fg)
+    }
+
+    .wild-feature {
+      background: var(--card);
+      padding: 24px;
+      border-radius: 8px;
+      border-left: 4px solid var(--accent)
+    }
+
+    /* 04 breeds */
+    .breeds {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px
+    }
+
+    @media(min-width:640px) {
+      .breeds {
+        grid-template-columns: repeat(3, 1fr)
+      }
+    }
+
+    @media(min-width:768px) {
+      .breeds {
+        grid-template-columns: repeat(5, 1fr)
+      }
+    }
+
+    .breed {
+      position: relative;
+      aspect-ratio: 1/1;
+      overflow: hidden;
+      border-radius: 8px;
+      box-shadow: var(--shadow-soft);
+      margin: 0;
+    }
+
+    .breed img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .5s
+    }
+
+    .breed:hover img {
+      transform: scale(1.1)
+    }
+
+    .breed figcaption {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(to top, rgba(0, 0, 0, .9), transparent);
+      padding: 12px;
+      color: #fff;
+      font-size: 13px;
+      font-weight: 600
+    }
+
+    .breed-num {
+      position: absolute;
+      top: 8px;
+      left: 8px;
+      background: rgba(255, 255, 255, .92);
+      color: var(--ink);
+      font-size: 11px;
+      padding: 2px 8px;
+      border-radius: 9999px;
+      font-weight: 700
+    }
+
+    /* 05 contrib */
+    .contrib {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: repeat(2, 1fr)
+    }
+
+    @media(min-width:768px) {
+      .contrib {
+        grid-template-columns: repeat(5, 1fr)
+      }
+    }
+
+    .contrib .card {
+      text-align: center;
+      padding: 24px
+    }
+
+    .icon {
+      font-size: 48px;
+      margin-bottom: 12px
+    }
+
+    /* 06 groups */
+    .groups {
+      display: grid;
+      gap: 24px;
+      grid-template-columns: 1fr
+    }
+
+    @media(min-width:768px) {
+      .groups {
+        grid-template-columns: 1fr 1fr
+      }
+    }
+
+    .groups img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: var(--shadow-mag);
+      min-height: 300px
+    }
+
+    @media(min-width:768px) {
+      .groups .first {
+        grid-row: span 4
+      }
+    }
+
+    .groups article h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      margin-bottom: 8px
+    }
+
+    /* 08 size */
+    .size-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: var(--shadow-mag)
+    }
+
+    @media(min-width:768px) {
+      .size-grid {
+        grid-template-columns: 1fr 1fr
+      }
+    }
+
+    .size-grid .left,
+    .size-grid .right {
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center
+    }
+
+    .size-grid .left {
+      background: var(--card)
+    }
+
+    .size-grid .right {
+      background: var(--primary);
+      color: var(--primary-fg)
+    }
+
+    .size-grid h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 48px;
+      font-weight: 900;
+      margin-top: 8px
+    }
+
+    .size-grid .full {
+      grid-column: 1/-1
+    }
+
+    @media(min-width:768px) {
+      .size-grid .full {
+        grid-column: 1/-1
+      }
+    }
+
+    .size-grid .lbl {
+      font-size: 11px;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--accent)
+    }
+
+    .size-grid .right .lbl {
+      color: rgba(255, 255, 255, .7)
+    }
+
+    .size-grid .full img {
+      width: 100%;
+      display: block
+    }
+
+    /* 09 toy */
+    .toy {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: 1fr
+    }
+
+    @media(min-width:640px) {
+      .toy {
+        grid-template-columns: repeat(2, 1fr)
+      }
+    }
+
+    @media(min-width:768px) {
+      .toy {
+        grid-template-columns: repeat(5, 1fr)
+      }
+    }
+
+    .toy li {
+      list-style: none;
+      background: var(--card);
+      padding: 20px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      box-shadow: var(--shadow-soft)
+    }
+
+    .toy .nn {
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
+      color: var(--accent);
+      font-weight: 700;
+      display: block
+    }
+
+    .toy h3 {
+      font-size: 16px;
+      margin: 8px 0 4px
+    }
+
+    .toy p {
+      font-size: 13px;
+      color: var(--muted-fg);
+      margin: 0
+    }
+
+    /* 10 chow */
+    .chow {
+      display: grid;
+      gap: 32px;
+      grid-template-columns: 1fr;
+      align-items: center
+    }
+
+    @media(min-width:768px) {
+      .chow {
+        grid-template-columns: 1fr 1fr
+      }
+    }
+
+    .chow img {
+      border-radius: 8px;
+      box-shadow: var(--shadow-mag);
+      width: 100%
+    }
+
+    .chow .quote-box {
+      margin-top: 24px;
+      padding: 16px;
+      background: var(--muted);
+      border-radius: 8px;
+      border-left: 4px solid var(--accent);
+      font-size: 14px
+    }
+
+    /* 11 greyhound */
+    .gh {
+      position: relative;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: var(--shadow-mag)
+    }
+
+    .gh img {
+      width: 100%;
+      height: 400px;
+      object-fit: cover
+    }
+
+    @media(min-width:768px) {
+      .gh img {
+        height: 500px
+      }
+    }
+
+    .gh-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to right, rgba(0, 0, 0, .8), rgba(0, 0, 0, .4), transparent);
+      display: flex;
+      align-items: center
+    }
+
+    .gh-overlay .inner {
+      padding: 32px;
+      color: #fff;
+      max-width: 560px
+    }
+
+    @media(min-width:768px) {
+      .gh-overlay .inner {
+        padding: 64px
+      }
+    }
+
+    .gh h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(40px, 7vw, 80px);
+      font-weight: 900;
+      margin-top: 8px;
+      line-height: 1
+    }
+
+    /* 12 hachi */
+    .hachi {
+      background: var(--card);
+      padding: 32px;
+      border-radius: 8px;
+      box-shadow: var(--shadow-mag);
+      border: 1px solid var(--border)
+    }
+
+    @media(min-width:768px) {
+      .hachi {
+        padding: 56px
+      }
+    }
+
+    .hachi p {
+      font-size: 18px;
+      line-height: 1.7;
+      margin: 0 0 16px
+    }
+
+    /* 13 care */
+    .care {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: repeat(2, 1fr)
+    }
+
+    @media(min-width:768px) {
+      .care {
+        grid-template-columns: repeat(4, 1fr)
+      }
+    }
+
+    /* 14 cta */
+    .cta {
+      text-align: center;
+      padding: 80px 32px;
+      background: var(--grad);
+      color: #fff;
+      border-radius: 8px;
+      box-shadow: var(--shadow-mag)
+    }
+
+    .cta h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(32px, 5vw, 60px);
+      font-weight: 900;
+      margin: 24px 0
+    }
+
+    .cta p.eyebrow {
+      color: rgba(255, 255, 255, .85)
+    }
+
+    .cta .text {
+      max-width: 640px;
+      margin: 0 auto;
+      font-size: 17px;
+      opacity: .95
+    }
+
+    /* curios */
+    .stats {
+      display: grid;
+      gap: 24px;
+      grid-template-columns: 1fr
+    }
+
+    @media(min-width:640px) {
+      .stats {
+        grid-template-columns: repeat(2, 1fr)
+      }
+    }
+
+    @media(min-width:768px) {
+      .stats {
+        grid-template-columns: repeat(3, 1fr)
+      }
+    }
+
+    .stat {
+      background: var(--card);
+      padding: 32px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      text-align: center;
+      box-shadow: var(--shadow-soft)
+    }
+
+    .stat .big {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(40px, 6vw, 60px);
+      font-weight: 900;
+      line-height: 1
+    }
+
+    /* footer */
+    footer {
+      background: var(--ink);
+      color: var(--paper);
+      padding: 64px 24px
+    }
+
+    footer .inner {
+      max-width: 768px;
+      margin: 0 auto;
+      text-align: center
+    }
+
+    footer .q {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      font-size: 30px;
+      margin: 0
+    }
+
+    footer .div {
+      height: 1px;
+      width: 96px;
+      background: var(--gold);
+      margin: 24px auto
+    }
+
+    footer .small {
+      font-size: 13px;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      opacity: .7;
+      margin: 8px 0
+    }
+
+    footer .tiny {
+      font-size: 11px;
+      opacity: .4;
+      margin-top: 32px
+    }
+  </style>
+</head>
+
+<body>
+  <section class="hero">
+    <img src="imgs/dois-caes.jpg" alt="Dois cães em luz dourada">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div>
+        <p class="hero-eyebrow">Estudos da Natureza</p>
+        <h1 class="hero-title">Especialidade<br><em>de</em> Cães</h1>
+        <p class="hero-sub">Um guia visual completo sobre o melhor amigo do homem — com todas as respostas, raças,
+          curiosidades e cuidados.</p>
+      </div>
+      <div class="hero-foot">
+        <span></span>
+        <span>↓ role para começar</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="intro">
+    <p class="eyebrow">Sobre a Especialidade</p>
+    <p class="quote">“Um cão é a única coisa na terra que o ama mais do que ama a sí mesmo.”</p>
+    <p class="cite">— Josh Billings</p>
+    <div class="cols" style="text-align: justify;">
+      <p class="drop-cap">
+        Desde o princípio, os animais fazem parte da criação de Deus e foram confiados ao ser humano para cuidado e
+        companheirismo. Entre eles, o cão se destaca como um dos amigos mais leais e dedicados, acompanhando famílias,
+        auxiliando no trabalho e demonstrando um vínculo especial com as pessoas.
+      </p>
+      <p>
+        Hoje, existem centenas de raças de cães espalhadas pelo mundo, cada uma com suas características, habilidades e
+        funções — desde companhia no lar até apoio em atividades como resgate, segurança e assistência.
+      </p>
+      <p>
+        Esta especialidade convida você a conhecer melhor esse companheiro extraordinário: sua família zoológica, suas
+        principais raças, seu papel na sociedade — e, principalmente, como cuidar dele com amor, respeito e
+        responsabilidade, reconhecendo o valor que Deus deu a todas as Suas criaturas.
+      </p>
+    </div>
+  </section>
+
+  <div class="container content">
+
+    <section class="section">
+      <div class="sec-title"><span class="badge">01</span>
+        <div>
+          <h2>Nome científico do cão doméstico</h2>
+        </div>
+      </div>
+      <div class="grid g2" style="align-items:center">
+        <div class="sci-card">
+          <p class="lbl">Família Canidae</p>
+          <p class="name text-grad"><em>Canis lupus<br>familiaris</em></p>
+          <p style="margin-top:24px;color:var(--muted-fg)">Considerado uma <strong>subespécie do lobo-cinzento</strong>
+            (<em>Canis lupus</em>). Antigamente era chamado <em>Canis familiaris</em>.</p>
+        </div>
+        <div class="tax">
+          <p><strong>Reino:</strong> Animalia</p>
+          <p><strong>Filo:</strong> Chordata</p>
+          <p><strong>Classe:</strong> Mammalia</p>
+          <p><strong>Ordem:</strong> Carnivora</p>
+          <p><strong>Família:</strong> Canidae</p>
+          <p><strong>Gênero:</strong> <em>Canis</em></p>
+          <p><strong>Espécie:</strong> <em>Canis lupus</em></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="sec-title"><span class="badge">02</span>
+        <div>
+          <h2>Características da família Canidae</h2>
+          <p class="sub">O que torna um cão... um cão</p>
+        </div>
+      </div>
+      <div class="grid g3">
+        <div class="card"><span class="num">01</span>
+          <h3>Olfato apurado</h3>
+          <p>Possuem cerca de 220 milhões de células olfativas — quase 40× mais que o ser humano.</p>
+        </div>
+        <div class="card"><span class="num">02</span>
+          <h3>Dentição carnívora</h3>
+          <p>42 dentes, com caninos longos e molares carniceiros adaptados para cortar carne.</p>
+        </div>
+        <div class="card"><span class="num">03</span>
+          <h3>Andam em digitígrados</h3>
+          <p>Apoiam-se nos dedos (4 nas patas traseiras, 5 nas dianteiras), o que os torna velozes.</p>
+        </div>
+        <div class="card"><span class="num">04</span>
+          <h3>Vivem em alcateias</h3>
+          <p>São animais sociais, com hierarquia clara e comunicação por uivos, latidos e linguagem corporal.</p>
+        </div>
+        <div class="card"><span class="num">05</span>
+          <h3>Pelagem dupla</h3>
+          <p>A maioria possui subpelo (térmico) e pelagem externa (proteção), com troca sazonal.</p>
+        </div>
+        <div class="card"><span class="num">06</span>
+          <h3>Visão noturna</h3>
+          <p>Possuem o tapetum lucidum, que reflete a luz e melhora a visão à noite.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="sec-title"><span class="badge">03</span>
+        <div>
+          <h2>Membros selvagens da família dos cães</h2>
+          <p class="sub">Primos não-domesticados</p>
+        </div>
+      </div>
+      <div class="wild-grid">
+        <div class="wild-card" style="width:100%;height:100%;object-fit:cover;">
+          <div class="img-wrap">
+            <img src="imgs/lobo-cinzento.jpg" alt="Lobo-cinzento na floresta" loading="lazy">
+          </div>
+          <div class="info">
+            <p style="font-weight:700;font-size:24px;font-family:'Playfair Display',serif;margin:0">
+              Lobo-cinzento
+              <span style="font-style:italic;color:var(--muted-fg);font-weight:400;font-size:18px">
+                — Canis lupus
+              </span>
+            </p>
+            <p style="margin-top:8px;color:var(--muted-fg)">Ancestral direto do cão doméstico.</p>
+          </div>
+        </div>
+        <div class="wild-sub">
+          <div class="wild-card">
+            <div class="img-wrap"><img src="imgs/raposa-vermelha.jpg" alt="Raposa-vermelha" loading="lazy"></div>
+            <div class="info">
+              <p class="nm">Raposa-vermelha</p>
+              <p class="sci">Vulpes vulpes</p>
+            </div>
+          </div>
+          <div class="wild-card">
+            <div class="img-wrap"><img src="imgs/coiote.jpg" alt="Coiote" loading="lazy"></div>
+            <div class="info">
+              <p class="nm">Coiote</p>
+              <p class="sci">Canis latrans</p>
+            </div>
+          </div>
+          <div class="wild-card">
+            <div class="img-wrap"><img src="imgs/chacal-dourado.jpg" alt="Chacal-dourado" loading="lazy"></div>
+            <div class="info">
+              <p class="nm">Chacal-dourado</p>
+              <p class="sci">Canis aureus</p>
+            </div>
+          </div>
+          <div class="wild-card">
+            <div class="img-wrap"><img src="imgs/lobo-guara.webp" alt="Lobo-guará" loading="lazy"></div>
+            <div class="info">
+              <p class="nm">Lobo-guará</p>
+              <p class="sci">Chrysocyon brachyurus</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="section">
+      <div class="sec-title"><span class="badge">04</span>
+        <div>
+          <h2>Algumas raças de cães</h2>
+          <p class="sub">Galeria fotográfica</p>
+        </div>
+      </div>
+      <div class="breeds">
+        <figure class="breed">
+          <img src="imgs/labrador-retriever.jpg" alt="Labrador Retriever" loading="lazy">
+          <span class="breed-num">01</span>
+          <figcaption>Labrador Retriever</figcaption>
+        </figure>
+        <figure class="breed">
+          <img src="imgs/pastor-alemao.jpg" alt="Pastor-alemão" loading="lazy">
+          <span class="breed-num">02</span>
+          <figcaption>Pastor-alemão</figcaption>
+        </figure>
+        <figure class="breed">
+          <img src="imgs/golden-retriever.jpg" alt="Golden Retriever" loading="lazy">
+          <span class="breed-num">03</span>
+          <figcaption>Golden Retriever</figcaption>
+        </figure>
+        <figure class="breed">
+          <img src="imgs/bulldog-ingles.jpg" alt="Bulldog Inglês" loading="lazy">
+          <span class="breed-num">04</span>
+          <figcaption>Bulldog Inglês</figcaption>
+        </figure>
+        <figure class="breed">
+          <img src="imgs/poodle.jpg" alt="Poodle" loading="lazy">
+          <span class="breed-num">05</span>
+          <figcaption>Poodle</figcaption>
+        </figure>
+        <figure class="breed">
+          <img src="imgs/beagle.jpg" alt="Beagle" loading="lazy">
+          <span class="breed-num">06</span>
+          <figcaption>Beagle</figcaption>
+        </figure>
+        <figure class="breed">
+          <img src="imgs/husky-siberiano.jpg" alt="Husky Siberiano" loading="lazy">
+          <span class="breed-num">07</span>
+          <figcaption>Husky Siberiano</figcaption>
+        </figure>
+        <figure class="breed">
+          <img src="imgs/rottweiler.jpg" alt="Rottweiler" loading="lazy">
+          <span class="breed-num">08</span>
+          <figcaption>Rottweiler</figcaption>
+        </figure>
+        <figure class="breed">
+          <img src="imgs/dalmata.jpg" alt="Dálmata" loading="lazy">
+          <span class="breed-num">09</span>
+          <figcaption>Dálmata</figcaption>
+        </figure>
+        <figure class="breed">
+          <img src="imgs/border-collie.jpg" alt="Border Collie" loading="lazy">
+          <span class="breed-num">10</span>
+          <figcaption>Border Collie</figcaption>
+        </figure>
+        <figure class="breed">
+          <img src="imgs/shih-tzu.jpg" alt="Shih Tzu" loading="lazy">
+          <span class="breed-num">11</span>
+          <figcaption>Shih Tzu</figcaption>
+        </figure>
+        <figure class="breed">
+          <img src="imgs/boxer.jpg" alt="Boxer" loading="lazy">
+          <span class="breed-num">12</span>
+          <figcaption>Boxer</figcaption>
+        </figure>
+        <figure class="breed">
+          <img src="imgs/dachshund.jpg" alt="Dachshund" loading="lazy">
+          <span class="breed-num">13</span>
+          <figcaption>Dachshund</figcaption>
+        </figure>
+        <figure class="breed">
+          <img src="imgs/pug.jpg" alt="Pug" loading="lazy">
+          <span class="breed-num">14</span>
+          <figcaption>Pug</figcaption>
+        </figure>
+        <figure class="breed">
+          <img src="imgs/yorkshire-terrier.jpg" alt="Yorkshire Terrier" loading="lazy">
+          <span class="breed-num">15</span>
+          <figcaption>Yorkshire Terrier</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="sec-title"><span class="badge">05</span>
+        <div>
+          <h2>Contribuições dos cães ao homem</h2>
+        </div>
+      </div>
+      <div class="contrib">
+        <div class="card">
+          <div class="icon">🦮</div>
+          <h3>Companhia</h3>
+          <p>Amizade leal e afeto incondicional.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🛡️</div>
+          <h3>Proteção</h3>
+          <p>Guarda de casas, propriedades e rebanhos.</p>
+        </div>
+        <div class="card">
+          <div class="icon">👃</div>
+          <h3>Trabalho com olfato</h3>
+          <p>Detecção de drogas, explosivos e pessoas.</p>
+        </div>
+        <div class="card">
+          <div class="icon">❤️‍🩹</div>
+          <h3>Terapia e saúde</h3>
+          <p>Cães-guia, terapêuticos e auxiliares.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🚒</div>
+          <h3>Resgates</h3>
+          <p>Salvamentos em desastres, neve e água.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="sec-title"><span class="badge">06</span>
+        <div>
+          <h2>Grupos de cães e sua importância</h2>
+        </div>
+      </div>
+      <div class="groups">
+        <img src="imgs/cao-guia.jpg" alt="Cão-guia em ação" class="first">
+        <article class="card">
+          <h3>Cães-guia</h3>
+          <p style="margin-bottom:12px">
+            Acompanham pessoas com deficiência visual, oferecendo independência e segurança
+            no dia a dia.
+          </p>
+          <p style="font-size:14px;color:var(--fg)">
+            <strong>Raças:</strong>
+            <em>
+              Labrador, Golden Retriever, Pastor-alemão.
+            </em>
+          </p>
+        </article>
+        <article class="card">
+          <h3>Cães farejadores</h3>
+          <p style="margin-bottom:12px">
+            Detectam drogas, explosivos, pessoas perdidas e até doenças graças ao olfato
+            apuradíssimo.
+          </p>
+          <p style="font-size:14px;color:var(--fg)">
+            <strong>Raças:</strong>
+            <em>
+              Beagle, Bloodhound, Pastor-belga Malinois.
+            </em>
+          </p>
+        </article>
+        <article class="card">
+          <h3>Cães pastores</h3>
+          <p style="margin-bottom:12px">
+            Conduzem e protegem rebanhos, ajudando o homem no campo há milhares de anos.
+          </p>
+          <p style="font-size:14px;color:var(--fg)">
+            <strong>Raças:</strong>
+            <em>
+              Border Collie, Pastor-australiano, Pastor-alemão.
+            </em>
+          </p>
+        </article>
+        <article class="card">
+          <h3>Companheiros para crianças</h3>
+          <p style="margin-bottom:12px">
+            Dóceis, pacientes e brincalhões — ótimos amigos para a família.
+          </p>
+          <p style="font-size:14px;color:var(--fg)">
+            <strong>Raças:</strong>
+            <em>
+              Golden Retriever, Labrador, Beagle, Cavalier King Charles.
+            </em>
+          </p>
+        </article>
+        <article class="card">
+          <h3>Cães guardas</h3>
+          <p style="margin-bottom:12px">Protegem propriedades e pessoas; corajosos, fortes e leais.</p>
+          <p style="font-size:14px;color:var(--fg)">
+            <strong>Raças:</strong>
+            <em>
+              Rottweiler, Dobermann, Fila Brasileiro.
+            </em>
+          </p>
+        </article>
+        <article class="card">
+          <h3>Polícia e bombeiros</h3>
+          <p style="margin-bottom:12px">
+            Auxiliam em resgates, patrulhas, busca de pessoas e detecção de entorpecentes.
+          </p>
+          <p style="font-size:14px;color:var(--fg)">
+            <strong>Raças:</strong>
+            <em>
+              Pastor-alemão, Malinois, Labrador.
+            </em>
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="sec-title"><span class="badge">07</span>
+        <div>
+          <h2>Por que cães latem, uivam e abanam o rabo?</h2>
+          <p class="sub">A linguagem canina</p>
+        </div>
+      </div>
+      <div class="grid g3">
+        <div class="card">
+          <h3>🗣️ Latido</h3>
+          <p>Forma principal de comunicação dos cães domésticos — alerta, brincadeira ou pedido de atenção.</p>
+        </div>
+        <div class="card">
+          <h3>🌙 Uivo</h3>
+          <p>Herança do lobo: serve para chamar a alcateia à distância. Ainda comum em huskies e malamutes.</p>
+        </div>
+        <div class="card">
+          <h3>🐕 Rabo abanando</h3>
+          <p>Indica emoção — mas nem sempre alegria! Posição alta = excitação; baixa e rápida = submissão.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="sec-title"><span class="badge">08</span>
+        <div>
+          <h2>A menor e a maior raça</h2>
+          <p class="sub">Os extremos do reino canino</p>
+        </div>
+      </div>
+      <div class="size-grid">
+        <div class="left">
+          <p class="lbl">Menor raça</p>
+          <h3>Chihuahua</h3>
+          <p style="margin-top:12px;font-size:18px;color:var(--muted-fg)">Cerca de <strong>15 a 23 cm</strong> e
+            <strong>1,5 a 3 kg</strong>. Originário do México.
+          </p>
+        </div>
+        <div class="right">
+          <p class="lbl">Maior raça</p>
+          <h3>Dogue Alemão</h3>
+          <p style="margin-top:12px;font-size:18px;opacity:.9">Pode passar de <strong>80 cm</strong> de altura e
+            <strong>90 kg</strong>. O recordista mundial mediu 1,12 m.
+          </p>
+        </div>
+        <div class="full">
+          <img src="imgs/maior-e-menor-cao.jpg" alt="Comparação Chihuahua e Dogue Alemão">
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="sec-title"><span class="badge">09</span>
+        <div>
+          <h2>5 cães da categoria Toy (anões)</h2>
+        </div>
+      </div>
+      <ol class="toy" style="padding:0;margin:0">
+        <li><span class="nn">1</span>
+          <h3>Chihuahua</h3>
+          <p>A menor raça do mundo.</p>
+        </li>
+        <li><span class="nn">2</span>
+          <h3>Yorkshire Terrier</h3>
+          <p>Pequeno, valente e elegante.</p>
+        </li>
+        <li><span class="nn">3</span>
+          <h3>Maltês</h3>
+          <p>Pelagem branca sedosa.</p>
+        </li>
+        <li><span class="nn">4</span>
+          <h3>Pomerânia (Spitz Alemão Anão)</h3>
+          <p>Parece um pequeno leão.</p>
+        </li>
+        <li><span class="nn">5</span>
+          <h3>Pinscher Miniatura</h3>
+          <p>Conhecido como “Rei dos Toys”.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="section chow">
+      <img src="imgs/chow-chow.jpg" alt="Chow Chow mostrando a língua azul">
+      <div>
+        <div class="sec-title"><span class="badge">10</span>
+          <div>
+            <h2>O cão da língua azul</h2>
+          </div>
+        </div>
+        <p style="font-size:24px;font-family:'Playfair Display',serif;font-style:italic">É o <span class="text-grad"
+            style="font-style:normal;font-weight:700">Chow Chow</span>.</p>
+        <p style="margin-top:16px;font-size:17px;color:var(--muted-fg);line-height:1.7">Originário da China, é a única
+          raça reconhecida com a língua inteiramente azul-arroxeada ou preta. Os filhotes nascem com a língua rosa, que
+          escurece nas primeiras semanas de vida. O <strong>Shar-Pei</strong> também pode apresentar essa
+          característica.</p>
+        <div class="quote-box"><strong>Curiosidade:</strong> uma lenda chinesa diz que, durante a criação do mundo, o
+          Chow Chow lambeu pedaços do céu que caíram — daí a cor!</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="sec-title"><span class="badge">11</span>
+        <div>
+          <h2>O cão mais rápido</h2>
+        </div>
+      </div>
+      <div class="gh">
+        <img src="imgs/greyhound.jpg" alt="Greyhound correndo">
+        <div class="gh-overlay">
+          <div class="inner">
+            <p style="font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:var(--gold);margin:0">Recordista
+            </p>
+            <h3>Greyhound</h3>
+            <p style="font-size:22px;margin-top:16px;font-weight:300">Pode atingir <strong style="color:var(--gold)">72
+                km/h</strong>.</p>
+            <p style="margin-top:16px;opacity:.9">Também conhecido como <em>Galgo Inglês</em>, é o cão mais rápido do
+              mundo — usado em corridas e antigamente na caça.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section hachi">
+      <div class="sec-title"><span class="badge">12</span>
+        <div>
+          <h2>Uma história sobre um cão</h2>
+          <p class="sub">Hachiko, o cão mais fiel do mundo</p>
+        </div>
+      </div>
+
+      <div class="chow">
+        <img src="imgs/hachiko.webp" alt="Estátua de Hachiko em Shibuya">
+
+        <div>
+          <p class="drop-cap">Em 1924, no Japão, um professor universitário chamado Hidesaburo Ueno adotou um pequeno
+            filhote da raça <em>Akita Inu</em> e o batizou de <strong>Hachiko</strong>. Todas as manhãs, Hachiko
+            acompanhava
+            seu dono até a estação de Shibuya, em Tóquio, e voltava no fim da tarde para esperá-lo retornar do trabalho.
+          </p>
+
+          <p>Em maio de 1925, o professor sofreu um derrame durante uma aula e não voltou para casa. Hachiko, porém,
+            continuou indo todos os dias à mesma estação, no mesmo horário, esperando o amigo que nunca mais chegaria.
+          </p>
+
+          <p>Por <strong>nove anos, nove meses e quinze dias</strong>, Hachiko permaneceu fiel à sua espera. Comoveu uma
+            cidade inteira, virou símbolo nacional de lealdade e ganhou uma estátua de bronze em Shibuya, que existe até
+            hoje — visitada por milhões de pessoas que continuam aprendendo, pelo exemplo de um cão, o que significa ser
+            fiel.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="sec-title"><span class="badge">13</span>
+        <div>
+          <h2>Cuidados para uma vida saudável</h2>
+        </div>
+      </div>
+      <div class="care">
+        <div class="card">
+          <div class="icon">🍖</div>
+          <h3>Alimentação</h3>
+          <p>Ração de qualidade adequada à idade e porte. Evite alimentos como chocolate, cebola, uva e ossos cozidos.
+          </p>
+        </div>
+        <div class="card">
+          <div class="icon">💧</div>
+          <h3>Água fresca</h3>
+          <p>Sempre disponível, trocada diariamente em vasilha limpa.</p>
+        </div>
+        <div class="card">
+          <div class="icon">💉</div>
+          <h3>Vacinas e vermífugos</h3>
+          <p>Calendário em dia: V8/V10, antirrábica, giárdia. Vermífugo a cada 3–6 meses.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🛁</div>
+          <h3>Higiene</h3>
+          <p>Banho regular, escovação, corte de unhas, limpeza de ouvidos e escovação dos dentes.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🏃</div>
+          <h3>Exercícios</h3>
+          <p>Passeios diários e brincadeiras. Cães entediados ficam ansiosos e destrutivos.</p>
+        </div>
+        <div class="card">
+          <div class="icon">❤️</div>
+          <h3>Carinho e socialização</h3>
+          <p>Conviva com ele. O cão é um animal social — precisa de atenção e bons modos.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🩺</div>
+          <h3>Veterinário</h3>
+          <p>Check-up anual. Castração ajuda na saúde e controla a população.</p>
+        </div>
+        <div class="card">
+          <div class="icon">🏠</div>
+          <h3>Abrigo seguro</h3>
+          <p>Local limpo, ventilado, protegido do sol forte, chuva e frio.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta">
+      <p class="eyebrow">Agora, é com você</p>
+      <h2>Cuide de um cão por, ao menos, 1 mês 🐾</h2>
+      <p class="text">A teoria conquista a mente — mas só a prática conquista o coração. Adote, alimente, banhe,
+        passeie, brinque e ame. Registre essa experiência num diário com fotos: este é o requisito mais importante da
+        especialidade!</p>
+    </section>
+
+    <section class="section">
+      <p class="eyebrow">Bônus</p>
+      <h2 style="text-align:center;font-size:clamp(28px,4.5vw,46px);font-weight:700;margin-bottom:40px">Curiosidades
+        caninas</h2>
+      <div class="stats">
+        <div class="stat">
+          <p class="big text-grad">1.000+</p>
+          <p style="margin-top:12px;color:var(--muted-fg)">raças e variedades de cães já catalogadas no mundo.</p>
+        </div>
+        <div class="stat">
+          <p class="big text-grad">220 mi</p>
+          <p style="margin-top:12px;color:var(--muted-fg)">células olfativas — contra apenas 5 milhões nos humanos.</p>
+        </div>
+        <div class="stat">
+          <p class="big text-grad">15 mil</p>
+          <p style="margin-top:12px;color:var(--muted-fg)">anos atrás começou a domesticação a partir do lobo.</p>
+        </div>
+        <div class="stat">
+          <p class="big text-grad">100</p>
+          <p style="margin-top:12px;color:var(--muted-fg)">palavras humanas um cão treinado pode aprender.</p>
+        </div>
+        <div class="stat">
+          <p class="big text-grad">42</p>
+          <p style="margin-top:12px;color:var(--muted-fg)">dentes na arcada de um cão adulto.</p>
+        </div>
+        <div class="stat">
+          <p class="big text-grad">12 a 15</p>
+          <p style="margin-top:12px;color:var(--muted-fg)">anos é a expectativa média de vida de um cão saudável.</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <div class="inner">
+      <p class="q">“Quem ama os animais, ama as pessoas.”</p>
+      <div class="div"></div>
+    </div>
+  </footer>
+</body>
+
+</html>
