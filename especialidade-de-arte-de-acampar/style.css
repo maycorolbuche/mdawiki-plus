@@ -1,0 +1,499 @@
+:root {
+    --bg: #f3ede1;
+    --bg-2: #e9dfcb;
+    --ink: #1d2a1f;
+    --ink-soft: #3a4a3a;
+    --moss: #4a6b3a;
+    --moss-deep: #2f4a26;
+    --ember: #c0532b;
+    --ember-deep: #7a2e16;
+    --cream: #fbf6ea;
+    --line: #3a4a3a33;
+}
+
+* {
+    box-sizing: border-box
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0
+}
+
+body {
+    font-family: "Inter", system-ui, sans-serif;
+    color: var(--ink);
+    background: var(--bg);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    max-width: 100%;
+    display: block
+}
+
+a {
+    color: var(--ember-deep)
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+    letter-spacing: -.01em;
+    line-height: 1.05;
+    color: var(--ink)
+}
+
+h2 {
+    font-size: clamp(2rem, 4.5vw, 3.4rem);
+    margin: 0 0 .25em
+}
+
+h3 {
+    font-size: clamp(1.4rem, 2.4vw, 1.9rem);
+    margin: 0 0 .5em
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px
+}
+
+.eyebrow {
+    font-family: "Special Elite", monospace;
+    text-transform: uppercase;
+    letter-spacing: .25em;
+    font-size: .78rem;
+    color: var(--ember-deep)
+}
+
+.rule {
+    height: 1px;
+    background: var(--line);
+    margin: 1.25rem 0 2rem;
+    width: 100%
+}
+
+/* ---------- NAV ---------- */
+nav.top {
+    position: sticky;
+    top: 0;
+    z-index: 30;
+    background: rgba(243, 237, 225, .92);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid var(--line);
+}
+
+nav.top .wrap {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 14px 24px;
+    max-width: 1200px;
+    margin: 0 auto
+}
+
+nav.top .brand {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+    font-size: 1.15rem
+}
+
+nav.top ul {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: .85rem
+}
+
+nav.top a {
+    color: var(--ink);
+    text-decoration: none;
+    border-bottom: 1px solid transparent
+}
+
+nav.top a:hover {
+    border-color: var(--ember)
+}
+
+/* ---------- HERO ---------- */
+.hero {
+    position: relative;
+    min-height: 88vh;
+    display: flex;
+    align-items: flex-end;
+    background: linear-gradient(180deg, rgba(0, 0, 0, .05) 0%, rgba(0, 0, 0, .55) 70%, rgba(0, 0, 0, .8) 100%), url("imgs/barraca-fogueira.jpg") center/cover no-repeat;
+    color: #fbf6ea;
+    border-bottom: 6px double #fbf6ea33;
+}
+
+.hero .container {
+    padding-bottom: 60px;
+    padding-top: 60px;
+    width: 100%
+}
+
+.hero .meta {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    font-family: "Special Elite", monospace;
+    font-size: .8rem;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: #f7e3c9
+}
+
+.hero h1 {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+    font-size: clamp(3rem, 9vw, 7.5rem);
+    line-height: .9;
+    margin: .3em 0 .2em;
+    color: #fbf6ea;
+    text-shadow: 0 2px 30px rgba(0, 0, 0, .4)
+}
+
+.hero h1 em {
+    font-style: italic;
+    color: #f1c98a
+}
+
+.hero p.lead {
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    font-size: clamp(1.2rem, 2vw, 1.6rem);
+    max-width: 720px;
+    color: #efe6d4
+}
+
+.hero .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 14px;
+    border: 1px solid #fbf6ea66;
+    border-radius: 999px;
+    font-family: "Special Elite", monospace;
+    font-size: .72rem;
+    letter-spacing: .25em
+}
+
+/* ---------- SECTION ---------- */
+section {
+    padding: 90px 0;
+    border-bottom: 1px solid var(--line)
+}
+
+section.dark {
+    background: #1a221a;
+    color: #efe6d4
+}
+
+section.dark h2,
+section.dark h3 {
+    color: #fbf6ea
+}
+
+section.dark .eyebrow {
+    color: #f1c98a
+}
+
+section.dark .rule {
+    background: #fbf6ea22
+}
+
+section.cream {
+    background: var(--cream)
+}
+
+.grid {
+    display: grid;
+    gap: 36px
+}
+
+.g-2 {
+    grid-template-columns: repeat(2, 1fr)
+}
+
+.g-3 {
+    grid-template-columns: repeat(3, 1fr)
+}
+
+.g-4 {
+    grid-template-columns: repeat(4, 1fr)
+}
+
+@media(max-width:880px) {
+
+    .g-2,
+    .g-3,
+    .g-4 {
+        grid-template-columns: 1fr
+    }
+}
+
+.lede {
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    font-size: 1.4rem;
+    color: var(--ink-soft);
+    max-width: 780px
+}
+
+.dropcap::first-letter {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700;
+    float: left;
+    font-size: 5.2rem;
+    line-height: .85;
+    padding: 6px 14px 0 0;
+    color: var(--ember-deep)
+}
+
+/* cards */
+.card {
+    background: var(--cream);
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    padding: 24px;
+    position: relative;
+}
+
+section.dark .card {
+    background: #222b22;
+    border-color: #fbf6ea1a
+}
+
+.card .num {
+    position: absolute;
+    top: -18px;
+    left: 18px;
+    background: var(--ember);
+    color: #fbf6ea;
+    font-family: "Special Elite", monospace;
+    font-size: .75rem;
+    letter-spacing: .2em;
+    padding: 6px 10px;
+    border-radius: 3px
+}
+
+/* feature image */
+figure {
+    margin: 0
+}
+
+figure img {
+    border-radius: 4px;
+    box-shadow: 0 20px 50px -20px rgba(0, 0, 0, .35)
+}
+
+figcaption {
+    font-family: "Special Elite", monospace;
+    font-size: .72rem;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-top: 10px
+}
+
+/* checklist */
+ul.checklist {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+ul.checklist li {
+    position: relative;
+    padding: 8px 0 8px 32px;
+    border-bottom: 1px dashed var(--line)
+}
+
+ul.checklist li:last-child {
+    border: none
+}
+
+ul.checklist li::before {
+    content: "";
+    position: absolute;
+    left: 4px;
+    top: 14px;
+    width: 14px;
+    height: 14px;
+    border: 1.5px solid var(--moss-deep);
+    border-radius: 3px;
+    background: var(--cream)
+}
+
+ul.checklist li::after {
+    content: "✓";
+    position: absolute;
+    left: 6px;
+    top: 6px;
+    color: var(--ember-deep);
+    font-weight: 700;
+    font-size: 1rem
+}
+
+/* pull quote */
+blockquote.pull {
+    font-family: "Cormorant Garamond", serif;
+    font-style: italic;
+    font-size: clamp(1.6rem, 3vw, 2.4rem);
+    line-height: 1.25;
+    border-left: 4px solid var(--ember);
+    padding: 6px 0 6px 28px;
+    margin: 36px 0;
+    color: var(--ink)
+}
+
+/* numbers strip */
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-top: 24px
+}
+
+@media(max-width:760px) {
+    .stats {
+        grid-template-columns: repeat(2, 1fr)
+    }
+}
+
+.stat .n {
+    font-family: "Cormorant Garamond", serif;
+    font-size: 3rem;
+    line-height: 1;
+    color: var(--ember)
+}
+
+.stat .l {
+    font-family: "Special Elite", monospace;
+    font-size: .7rem;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+    color: var(--ink-soft)
+}
+
+/* mini icons */
+.ico {
+    width: 34px;
+    height: 34px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--moss-deep);
+    color: var(--cream);
+    border-radius: 50%;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 700
+}
+
+section.dark .ico {
+    background: var(--ember)
+}
+
+/* split hero */
+.split {
+    display: grid;
+    grid-template-columns: 1.1fr .9fr;
+    gap: 50px;
+    align-items: center
+}
+
+@media(max-width:880px) {
+    .split {
+        grid-template-columns: 1fr
+    }
+}
+
+/* table */
+table.menu {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: var(--cream)
+}
+
+table.menu th,
+table.menu td {
+    padding: 14px 16px;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top;
+    text-align: left
+}
+
+table.menu th {
+    font-family: "Special Elite", monospace;
+    font-size: .75rem;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    background: var(--bg-2)
+}
+
+/* knife rules */
+.danger-card {
+    background: #2a1612;
+    color: #f7e3c9;
+    border-radius: 6px;
+    padding: 28px;
+    border: 1px solid #c0532b66
+}
+
+.danger-card h3 {
+    color: #f1c98a
+}
+
+/* footer */
+footer {
+    padding: 50px 0;
+    background: #1a221a;
+    color: #cdbfa3;
+    text-align: center;
+    font-size: .85rem
+}
+
+footer a {
+    color: #f1c98a
+}
+
+/* tags */
+.tag {
+    display: inline-block;
+    font-family: "Special Elite", monospace;
+    font-size: .7rem;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    background: var(--bg-2);
+    padding: 4px 10px;
+    border-radius: 3px;
+    margin-right: 6px
+}
+
+section.dark .tag {
+    background: #2a3329;
+    color: #f1c98a
+}
+
+.img-tall {
+    aspect-ratio: 4/5;
+    object-fit: cover;
+    width: 100%
+}
+
+.img-wide {
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    width: 100%
+}
