@@ -56,7 +56,61 @@ if (file_exists($view_file)) {
         1
     );
 
+    $footer = "";
+    $footer .= "<style>";
+    $footer .= "/* RESET COMPLETO para o footer e seus filhos */";
+    $footer .= ".main-footer,.main-footer *{";
+    $footer .= "    all: initial !important;"; /* Reseta todas as propriedades CSS */
+    $footer .= "    display: block !important;";
+    $footer .= "    margin: 0 !important;";
+    $footer .= "    padding: 0 !important;";
+    $footer .= "    box-sizing: border-box !important;";
+    $footer .= "    color: #999 !important;";
+    $footer .= "    font-family: inter, sans-serif !important;";
+    $footer .= "    font-size: 12px !important;";
+    $footer .= "    line-height: 1.5 !important;";
+    $footer .= "}";
+    $footer .= ".main-footer {";
+    $footer .= "    background: #000 !important;";
+    $footer .= "    text-align: center !important;";
+    $footer .= "    padding: 20px !important;";
+    $footer .= "    font-size: 0.9em !important;";
+    $footer .= "    color: #999 !important;";
+    $footer .= "    font-family: Arial, sans-serif !important;";
+    $footer .= "    width: 100% !important;";
+    $footer .= "    position: relative !important;";
+    $footer .= "    z-index: 9999 !important;";
+    $footer .= "}";
+    $footer .= ".main-footer div {";
+    $footer .= "    display: flex !important;";
+    $footer .= "    text-align: center !important;";
+    $footer .= "    justify-content: center !important;";
+    $footer .= "}";
+    $footer .= ".main-footer a {";
+    $footer .= "    text-decoration: underline !important;";
+    $footer .= "    background: transparent !important;";
+    $footer .= "    border: none !important;";
+    $footer .= "    cursor: pointer !important;";
+    $footer .= "}";
+    $footer .= "";
+    $footer .= ".main-footer a:hover {";
+    $footer .= "    text-decoration: none !important;";
+    $footer .= "    opacity: 0.8 !important;";
+    $footer .= "}";
+    $footer .= "</style>";
+    $footer .= "<footer class='main-footer'>";
+    $footer .= "<div>" . $meta["code"] . " · " . $meta["title"] . "</div>";
+    $footer .= "<div><span>Conteúdo baseado na &nbsp;</span><a href='" . $meta["reference-link"] . "' target='_blank'>" . $meta["reference-link"] . "</a></div>";
+    $footer .= "<div><span>Descubra mais em  &nbsp;</span><a href='https://mda.wiki.br' target='_blank'>MDA Wiki</a></div>";
+    $footer .= "</footer>";
+    $html = preg_replace(
+        '/<\/body>/i',
+        $footer . PHP_EOL . '</body>',
+        $html,
+        1
+    );
+
     echo $html;
 } else {
-    echo "File not found.";
+    include("not-found.php");
 }
