@@ -1,0 +1,59 @@
+RewriteEngine On
+
+# Redirecionar para HTTPS se não estiver usando
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R,L]
+
+# Bloquear acesso ao diretório .git
+RewriteRule ^\.git - [F,L]
+
+# Bloquear arquivos sensíveis
+<FilesMatch "^(\.env|\.htpasswd|\.user\.ini|wp-config\.php|config\.php|info\.php|phpinfo\.php)">
+    Require all denied
+</FilesMatch>
+
+# Se o arquivo ou diretório existir, não redireciona
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Redireciona tudo para index.php
+RewriteRule ^ index.php [QSA,L]
+
+# Bloqueia acesso direto a qualquer arquivo PHP, exceto os necessários
+RewriteCond %{THE_REQUEST} \.php [NC]
+RewriteCond %{REQUEST_URI} !/(index)\.php$ [NC]
+RewriteRule ^ - [F,L]
+
+# Desabilitar listagem
+Options -Indexes
+
+# Cabeçalhos Simples
+<IfModule mod_headers.c>
+    # Previne o navegador de adivinhar o tipo de conteúdo (MIME-sniffing)
+    Header always set X-Content-Type-Options "nosniff"
+
+    # Protege contra Clickjacking (impede o site de ser colocado em frames de outros sites)
+    Header always set X-Frame-Options "SAMEORIGIN"
+
+    # Ativa o filtro de XSS em navegadores mais antigos
+    Header always set X-XSS-Protection "1; mode=block"
+
+    # Controla quais informações de origem são enviadas ao clicar em links
+    Header always set Referrer-Policy "no-referrer-when-downgrade"
+
+    # Força o uso de https
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+
+    # Bloqueia o uso de recursos como câmera e microfone por padrão
+    Header always set Permissions-Policy "camera=(), microphone=(), geolocation=()"
+</IfModule>
+
+# Proteção SVG
+<FilesMatch "\.svg$">
+    Header set X-Content-Type-Options "nosniff"
+</FilesMatch>
+
+# Páginas de erro personalizadas
+ErrorDocument 403 /403.shtml
+ErrorDocument 404 /404.shtml
+ErrorDocument 500 /500.shtml
