@@ -140,7 +140,7 @@ nav.top {
     position: relative;
     min-height: 100vh;
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     background: url('imgs/hero.jpg') center/cover no-repeat;
     color: var(--bone);
     padding: 80px 32px 60px;
@@ -160,7 +160,7 @@ nav.top {
     margin: 0 auto;
     width: 100%;
     display: grid;
-    gap: 24px
+    gap: 24px;
 }
 
 .badge {
@@ -187,7 +187,7 @@ nav.top {
 
 h1.hero-title {
     font-family: 'Bebas Neue';
-    font-size: clamp(54px, 11vw, 170px);
+    font-size: clamp(54px, 18vw, 170px);
     line-height: .88;
     letter-spacing: .01em;
     text-shadow: 0 4px 30px rgba(0, 0, 0, .5);
