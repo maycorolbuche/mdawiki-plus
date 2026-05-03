@@ -99,7 +99,7 @@ if (file_exists($view_file)) {
     $footer .= "}";
     $footer .= "</style>";
     $footer .= "<footer class='main-footer'>";
-    $footer .= "<div><span>" . $meta["code"] . " · &nbsp;</span><a href='" . $meta["reference-link"] . "' target='_blank'>" . $meta["title"] . "</a></div>";
+    $footer .= "<div><span>" . @$meta["code"] . " · &nbsp;</span><a href='" . @$meta["reference-link"] . "' target='_blank'>" . @$meta["title"] . "</a></div>";
     $footer .= "<div><span>Descubra mais em  &nbsp;</span><a href='https://mda.wiki.br' target='_blank'>MDA Wiki</a></div>";
     $footer .= "</footer>";
     $html = preg_replace(
