@@ -20,8 +20,27 @@ define('VIEW', $parts[0] ?? "");
 define('ACTION', $parts[1] ?? "");
 
 if (VIEW === "") {
+    $h = explode(':', $host);
 
-    header('Location: https://mda.wiki.br' . ($_SERVER['REQUEST_URI'] ?? '/'));
+    if ($h[0] !== 'localhost' && $h[0] !== '127.0.0.1') {
+        header('Location: https://mda.wiki.br' . ($_SERVER['REQUEST_URI'] ?? '/'));
+        exit;
+    }
+
+    $views = [];
+    foreach (array_filter(glob(DIR_VIEW . DIRECTORY_SEPARATOR . '*'), 'is_dir') as $file) {
+        $views[] = basename($file, '.php');
+    }
+    sort($views);
+
+    echo '<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Views</title></head><body>';
+    echo '<h1>Views</h1><ul>';
+    foreach ($views as $view) {
+        $link = htmlspecialchars(URL . $view, ENT_QUOTES, 'UTF-8');
+        $label = htmlspecialchars($view, ENT_QUOTES, 'UTF-8');
+        echo '<li><a href="' . $link . '">' . $label . '</a></li>';
+    }
+    echo '</ul></body></html>';
     exit;
 }
 
