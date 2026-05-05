@@ -73,7 +73,7 @@ a {
 /* ===== HERO ===== */
 .hero {
     position: relative;
-    min-height: 92vh;
+    min-height: 100vh;
     background:
         linear-gradient(180deg, rgba(15, 45, 36, .45) 0%, rgba(15, 45, 36, .85) 100%),
         url('imgs/hero.jpg') center/cover;
