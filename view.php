@@ -8,7 +8,6 @@ define('URL_ASSETS', URL . 'views/' . VIEW . '/');
 
 if (file_exists($view_file)) {
     $html = file_get_contents($view_file);
-    $head = "";
     $meta = [];
 
     if (file_exists($meta_file)) {
@@ -21,6 +20,7 @@ if (file_exists($view_file)) {
         exit;
     }
 
+    $head = "";
     $head .= '<meta name="viewport" content="width=device-width, initial-scale=1.0">' . PHP_EOL;
 
     $head .= isset($meta['title']) ? "<title>" . htmlspecialchars($meta['title']) . "</title>" . PHP_EOL : "";
@@ -105,6 +105,26 @@ if (file_exists($view_file)) {
     $html = preg_replace(
         '/<\/body>/i',
         $footer . PHP_EOL . '</body>',
+        $html,
+        1
+    );
+
+
+
+    $meta_info = "";
+    $meta_info .= "<span><b>Cód:</b> " . @$meta["code"] . "</span> ·  ";
+    $meta_info .= "<span><b>Área:</b> " . @$meta["area"] . "</span>";
+
+    $html = preg_replace(
+        '/<([^>]*data-id="meta"[^>]*)>/i',
+        '<$1>' . PHP_EOL . $meta_info,
+        $html,
+        1
+    );
+
+    $html = preg_replace(
+        '/<([^>]*data-id="meta-area"[^>]*)>/i',
+        '<$1>' . PHP_EOL . @$meta["area"],
         $html,
         1
     );

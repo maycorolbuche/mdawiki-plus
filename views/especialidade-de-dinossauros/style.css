@@ -104,6 +104,25 @@ h1.title em {
     margin-right: auto;
 }
 
+.meta-row {
+    margin-top: 36px;
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.meta-row span {
+    border: 1px solid rgba(200, 164, 74, .5);
+    padding: 8px 16px;
+    border-radius: 999px;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: .2em;
+    font-size: 12px;
+    color: var(--gold-2);
+    background: rgba(0, 0, 0, .35);
+}
+
 .badge-row {
     margin-top: 36px;
     display: flex;
@@ -111,6 +130,7 @@ h1.title em {
     justify-content: center;
     flex-wrap: wrap;
 }
+
 
 .badge {
     border: 1px solid rgba(200, 164, 74, .5);

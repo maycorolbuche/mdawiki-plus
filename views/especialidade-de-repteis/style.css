@@ -221,7 +221,7 @@ h1.hero-title {
     padding-top: 24px
 }
 
-.hero-meta div span {
+.hero-meta span b {
     display: block;
     color: var(--sand-200);
     font-size: 10px;
