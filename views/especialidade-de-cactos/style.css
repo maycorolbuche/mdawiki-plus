@@ -1,0 +1,539 @@
+:root {
+    --areia: #f4e8cf;
+    --areia-clara: #fbf3df;
+    --terra: #8b3a1a;
+    --terra-escura: #5a2410;
+    --ocre: #c97b30;
+    --verde-cacto: #3f6b3a;
+    --verde-escuro: #22341e;
+    --rosa-flor: #d6326b;
+    --tinta: #2a1808;
+    --pergaminho: #efdcb5;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 19px;
+    line-height: 1.7;
+    color: var(--tinta);
+    background: var(--areia);
+    background-image:
+        radial-gradient(circle at 20% 10%, rgba(201, 123, 48, .18), transparent 60%),
+        radial-gradient(circle at 80% 80%, rgba(139, 58, 26, .15), transparent 60%);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Rye', serif;
+    color: var(--terra-escura);
+    letter-spacing: .5px;
+    line-height: 1.15
+}
+
+h2 {
+    font-size: 2.4rem;
+    margin: 0 0 .5rem;
+    text-shadow: 2px 2px 0 rgba(201, 123, 48, .3)
+}
+
+h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    color: var(--terra);
+    margin: 0 0 .6rem
+}
+
+p {
+    margin-bottom: 1rem
+}
+
+em {
+    color: var(--terra)
+}
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 1.5rem
+}
+
+/* HERO */
+.hero {
+    position: relative;
+    min-height: 100vh;
+    background: linear-gradient(rgba(20, 8, 2, .35), rgba(20, 8, 2, .7)), url('imgs/hero.jpg') center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #f7e9c8;
+    padding: 3rem 1.5rem;
+    border-bottom: 8px double var(--terra-escura);
+}
+
+.hero .badge {
+    font-family: 'Special Elite', monospace;
+    background: rgba(0, 0, 0, .45);
+    border: 1px solid #d6b878;
+    padding: .4rem 1rem;
+    border-radius: 2px;
+    margin-bottom: 1.5rem;
+    letter-spacing: 3px;
+    font-size: .85rem;
+    text-transform: uppercase;
+}
+
+.hero h1 {
+    font-size: clamp(2.5rem, 8vw, 6rem);
+    color: #f8d98c;
+    text-shadow: 4px 4px 0 #5a2410, 0 0 30px rgba(0, 0, 0, .5);
+    margin-bottom: 1rem;
+    line-height: 1;
+}
+
+.hero .subtitle {
+    font-style: italic;
+    font-size: 1.4rem;
+    max-width: 700px;
+    color: #f4e8cf
+}
+
+.hero .meta {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: 'Special Elite', monospace;
+    font-size: .85rem;
+    letter-spacing: 1px;
+}
+
+.hero .meta span {
+    padding: .4rem .8rem;
+    border: 1px solid #d6b87880;
+    border-radius: 2px
+}
+
+.hero .meta b {
+    display: none;
+}
+
+/* CARTAZ TIPO WANTED */
+.wanted {
+    background: var(--pergaminho);
+    border: 3px solid var(--terra-escura);
+    box-shadow: inset 0 0 60px rgba(139, 58, 26, .35), 0 8px 24px rgba(0, 0, 0, .25);
+    padding: 2.5rem;
+    margin: 3rem auto;
+    max-width: 900px;
+    text-align: center;
+    position: relative;
+}
+
+.wanted::before,
+.wanted::after {
+    content: "★";
+    position: absolute;
+    top: .6rem;
+    font-size: 1.6rem;
+    color: var(--terra);
+}
+
+.wanted::before {
+    left: 1rem
+}
+
+.wanted::after {
+    right: 1rem
+}
+
+.wanted h2 {
+    font-size: 3rem;
+    margin-bottom: .5rem
+}
+
+.wanted p {
+    font-family: 'Special Elite', monospace;
+    font-size: 1rem
+}
+
+/* SEÇÕES */
+section {
+    padding: 4rem 0;
+    position: relative
+}
+
+section+section {
+    border-top: 2px dashed rgba(139, 58, 26, .35)
+}
+
+.lead {
+    font-size: 1.25rem;
+    font-style: italic;
+    color: var(--terra-escura);
+    max-width: 780px;
+    margin: 0 auto 2rem
+}
+
+/* GRID 2-col com imagem */
+.split {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 2.5rem;
+    align-items: center
+}
+
+.split.reverse {
+    grid-template-columns: 1fr 1.2fr
+}
+
+.split img {
+    width: 100%;
+    height: 100%;
+    max-height: 520px;
+    object-fit: cover;
+    border: 6px solid var(--areia-clara);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .3), 0 0 0 2px var(--terra-escura)
+}
+
+@media (max-width:780px) {
+
+    .split,
+    .split.reverse {
+        grid-template-columns: 1fr
+    }
+}
+
+/* CARDS DE CARACTERÍSTICAS */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 1.2rem;
+    margin-top: 1.5rem
+}
+
+.feature {
+    background: var(--areia-clara);
+    border-left: 5px solid var(--ocre);
+    padding: 1.2rem;
+    border-radius: 4px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .1);
+}
+
+.feature h4 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+    color: var(--terra-escura);
+    margin-bottom: .4rem
+}
+
+.feature p {
+    font-size: .95rem;
+    line-height: 1.5;
+    margin: 0
+}
+
+/* DIAGRAMA */
+.diagram-box {
+    background: var(--pergaminho);
+    padding: 2rem;
+    border: 2px dashed var(--terra);
+    text-align: center;
+}
+
+.diagram-box img {
+    max-width: 100%;
+    height: auto;
+    max-height: 600px
+}
+
+.parts-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: .8rem;
+    margin-top: 1.5rem;
+    text-align: left
+}
+
+.parts-list div {
+    background: rgba(255, 255, 255, .5);
+    padding: .7rem 1rem;
+    border-radius: 3px;
+    font-size: .95rem
+}
+
+.parts-list strong {
+    color: var(--terra-escura);
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1px;
+    display: block;
+    font-size: 1.05rem
+}
+
+/* ESPÉCIES */
+.species-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem
+}
+
+.specie {
+    background: var(--areia-clara);
+    padding: 1rem;
+    border: 1px solid #d6b87880;
+    border-radius: 4px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, .08);
+    transition: transform .2s;
+}
+
+.specie:hover {
+    transform: translateY(-3px)
+}
+
+.specie h4 {
+    font-family: 'Rye', serif;
+    font-size: 1rem;
+    color: var(--verde-escuro);
+    margin-bottom: .3rem
+}
+
+.specie img {
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 3px;
+    margin-bottom: .5rem
+}
+
+.specie .sci {
+    font-style: italic;
+    color: var(--terra);
+    font-size: .85rem;
+    display: block;
+    margin-bottom: .4rem
+}
+
+.specie p {
+    font-size: .88rem;
+    line-height: 1.45;
+    margin: 0;
+    color: #3a2410
+}
+
+/* CITAÇÃO BIBLICA */
+.scripture {
+    background: linear-gradient(135deg, var(--verde-escuro), var(--verde-cacto));
+    color: #f4e8cf;
+    padding: 3rem 2rem;
+    text-align: center;
+    margin: 3rem 0;
+    border-top: 6px double #f4e8cf;
+    border-bottom: 6px double #f4e8cf;
+}
+
+.scripture blockquote {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 1.6rem;
+    max-width: 760px;
+    margin: 0 auto 1rem
+}
+
+.scripture cite {
+    font-family: 'Special Elite', monospace;
+    letter-spacing: 2px;
+    font-size: .9rem;
+    color: #f8d98c
+}
+
+/* TABELA UTILIDADES */
+.uses {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.2rem;
+    margin-top: 1.5rem
+}
+
+.use-card {
+    background: var(--pergaminho);
+    padding: 1.5rem;
+    border-radius: 6px;
+    border-bottom: 5px solid var(--ocre);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .12);
+}
+
+.use-card .icon {
+    font-size: 2rem;
+    display: block;
+    margin-bottom: .5rem
+}
+
+/* CULTIVO – LISTA */
+.grow {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem
+}
+
+.grow div {
+    background: var(--areia-clara);
+    padding: 1rem;
+    border-top: 4px solid var(--verde-cacto);
+    border-radius: 3px
+}
+
+.grow strong {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1.5px;
+    color: var(--verde-escuro);
+    display: block;
+    margin-bottom: .3rem;
+    font-size: 1.1rem
+}
+
+/* RECEITA */
+.recipe {
+    background: var(--pergaminho);
+    padding: 2rem;
+    margin-top: 1.5rem;
+    border: 2px solid var(--terra);
+    border-radius: 4px;
+}
+
+.recipe h4 {
+    font-family: 'Rye', serif;
+    font-size: 1.4rem;
+    color: var(--terra-escura);
+    margin-bottom: 1rem
+}
+
+.recipe-cols {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 2rem
+}
+
+@media(max-width:700px) {
+    .recipe-cols {
+        grid-template-columns: 1fr
+    }
+}
+
+.recipe ul,
+.recipe ol {
+    padding-left: 1.3rem;
+    margin-bottom: 1rem
+}
+
+.recipe li {
+    margin-bottom: .4rem
+}
+
+/* CURIOSIDADES */
+.trivia {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem
+}
+
+.trivia-card {
+    background: var(--verde-escuro);
+    color: var(--areia-clara);
+    padding: 1.3rem;
+    border-radius: 4px;
+    border-left: 5px solid var(--rosa-flor);
+}
+
+.trivia-card strong {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 2px;
+    color: #f8d98c;
+    display: block;
+    margin-bottom: .4rem;
+    font-size: 1.1rem
+}
+
+/* CACTO vs SUCULENTA */
+.compare {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1.5rem
+}
+
+.compare>div {
+    padding: 1.5rem;
+    border-radius: 5px
+}
+
+.compare .a {
+    background: var(--verde-cacto);
+    color: #f4e8cf
+}
+
+.compare .b {
+    background: var(--ocre);
+    color: var(--tinta)
+}
+
+.compare h4 {
+    font-family: 'Rye', serif;
+    font-size: 1.3rem;
+    margin-bottom: .5rem;
+    color: inherit
+}
+
+@media(max-width:600px) {
+    .compare {
+        grid-template-columns: 1fr
+    }
+}
+
+/* FOOTER */
+footer {
+    background: var(--terra-escura);
+    color: var(--areia-clara);
+    padding: 3rem 1.5rem;
+    text-align: center;
+    font-family: 'Special Elite', monospace;
+    border-top: 8px double var(--ocre);
+}
+
+footer .stars {
+    color: #f8d98c;
+    letter-spacing: 8px;
+    margin-bottom: 1rem;
+    font-size: 1.2rem
+}
+
+footer p {
+    margin-bottom: .5rem;
+    font-size: .95rem
+}
+
+/* DECORATIVE */
+.ornament {
+    text-align: center;
+    color: var(--terra);
+    letter-spacing: 8px;
+    margin: 2rem 0;
+    font-size: 1.3rem
+}
