@@ -410,14 +410,26 @@ section+section {
 .herb {
     background: var(--paper);
     border: 1px solid var(--rule);
-    padding: 40px
+    padding: 40px;
+}
+
+/* RESPONSIVIDADE */
+.table-responsive {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.table-responsive table {
+    min-width: 400px;
+    /* força scroll em telas pequenas */
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 18px;
-    font-size: .95rem
+    font-size: .95rem;
 }
 
 th,
@@ -425,7 +437,7 @@ td {
     text-align: left;
     padding: 14px 12px;
     border-bottom: 1px dashed var(--rule);
-    vertical-align: top
+    vertical-align: top;
 }
 
 th {
@@ -433,16 +445,16 @@ th {
     font-weight: 600;
     color: var(--moss-deep);
     font-size: 1.05rem;
-    border-bottom: 2px solid var(--moss)
+    border-bottom: 2px solid var(--moss);
 }
 
 td b {
     color: var(--moss-deep);
-    font-weight: 600
+    font-weight: 600;
 }
 
 td i {
-    color: var(--gold)
+    color: var(--gold);
 }
 
 /* CHECKLIST */
@@ -500,6 +512,10 @@ td i {
     .curio div {
         border-right: 0;
         border-bottom: 1px solid var(--rule)
+    }
+
+    .herb {
+        display: grid;
     }
 }
 
