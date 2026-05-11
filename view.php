@@ -112,7 +112,7 @@ if (file_exists($view_file)) {
 
 
     $meta_info = "";
-    $meta_info .= "<span><b>Cód:</b> " . @$meta["code"] . "</span> ·  ";
+    $meta_info .= "<span><b>Cód:</b> " . @$meta["code"] . "</span>";
     $meta_info .= "<span><b>Área:</b> " . @$meta["area"] . "</span>";
 
     $html = preg_replace(
