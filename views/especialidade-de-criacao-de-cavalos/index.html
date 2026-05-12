@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.min.css">
+</head>
+
+<body>
+
+  <header class="hero">
+    <div class="container">
+      <div class="small-caps" style="color:#e9b86a;margin-bottom:18px" data-id="meta-area"></div>
+      <h1>Criação<br><em>de</em> Cavalos</h1>
+      <p class="lede">Um manual ilustrado sobre a arte ancestral de criar, cuidar e conviver com o mais nobre dos
+        companheiros do campo.</p>
+      <div class="hero-meta" data-id="meta"></div>
+    </div>
+  </header>
+
+  <!-- INTRO -->
+  <section class="intro">
+    <div class="container intro-grid">
+      <img src="imgs/cavalo-pulando.jpg" alt="Cavalo pulando em campo aberto">
+      <div>
+        <div class="small-caps">Prefácio</div>
+        <h2 class="section-title">O nobre amigo do homem do campo</h2>
+        <div class="double-rule"></div>
+        <p class="dropcap">Há mais de seis mil anos, o cavalo acompanha a humanidade em jornadas, batalhas, lavouras e
+          travessias. Criá-lo é mais do que produzir um animal — é cultivar uma relação de confiança, paciência e
+          respeito que se constrói diariamente, no estábulo, no pasto e na estrada.</p>
+        <p>Esta especialidade convida o desbravador a mergulhar no universo da equinocultura: aprender a reconhecer
+          raças, alimentar adequadamente cada fase da vida do animal, montar arreios, cuidar de cascos e identificar
+          problemas de saúde. Um percurso que une ciência, ofício e afeto.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RAÇAS -->
+  <section class="racas">
+    <div class="container">
+      <div class="section-label"><span class="num">I</span><span class="small-caps" style="color:#e9b86a">
+          Identificação · Raças
+        </span></div>
+      <h2 class="section-title">Raças & aptidões</h2>
+      <p class="kicker">Cada raça carrega séculos de seleção. Conhecer suas origens e vocações é o primeiro passo de
+        quem deseja criar cavalos.</p>
+
+      <div class="raca-grid">
+        <article class="raca">
+          <img src="imgs/cavalo-arabe.webp" alt="Cavalo Árabe">
+          <div class="raca-body">
+            <div class="origin">Península Arábica</div>
+            <h3>Árabe</h3>
+            <p>Reconhecido pela cabeça pequena, perfil côncavo, pescoço arqueado e cauda erguida. Possui ossatura fina,
+              grande resistência e temperamento dócil. É considerado o mais antigo dos cavalos puros.</p>
+            <div class="apt">Aptidão · Sela, enduro e melhoramento de outras raças</div>
+          </div>
+        </article>
+
+        <article class="raca">
+          <img src="imgs/puro-sangue-cavalo-ingles.jpg" alt="Cavalo Puro Sangue Inglês">
+          <div class="raca-body">
+            <div class="origin">Inglaterra · séc. XVII</div>
+            <h3>Puro Sangue Inglês</h3>
+            <p>Atlético, alto e veloz. Resultado do cruzamento de éguas inglesas com garanhões árabes. É o cavalo de
+              corrida por excelência, com pernas longas, peito profundo e musculatura desenvolvida.</p>
+            <div class="apt">Aptidão · Corrida, hipismo e salto</div>
+          </div>
+        </article>
+
+        <article class="raca">
+          <img src="imgs/cavalo-quarto-de-milha.jpg" alt="Cavalo Quarto de Milha">
+          <div class="raca-body">
+            <div class="origin">Estados Unidos</div>
+            <h3>Quarto de Milha</h3>
+            <p>Compacto, musculoso e extremamente ágil em curtas distâncias — daí o nome (corre 1/4 de milha mais rápido
+              que qualquer outra raça). Inteligente e versátil, é o queridinho do trabalho com gado.</p>
+            <div class="apt">Aptidão · Trabalho de campo, vaquejada e provas funcionais</div>
+          </div>
+        </article>
+
+        <article class="raca">
+          <img src="imgs/cavalo-mangalarga-marchador.webp" alt="Cavalo Mangalarga Marchador">
+          <div class="raca-body">
+            <div class="origin">Brasil · Minas Gerais</div>
+            <h3>Mangalarga Marchador</h3>
+            <p>Raça brasileira famosa pela marcha — andamento suave em quatro tempos, ideal para longas cavalgadas sem
+              cansar o cavaleiro. Porte médio, dócil, rústico e resistente ao clima tropical.</p>
+            <div class="apt">Aptidão · Sela, lida com gado e cavalgadas</div>
+          </div>
+        </article>
+      </div>
+
+      <div class="raca-grid" style="margin-top:26px">
+        <article class="raca">
+          <img src="imgs/cavalo-crioulo.webp" alt="Cavalo Crioulo">
+          <div class="raca-body">
+            <div class="origin">América do Sul</div>
+            <h3>Crioulo</h3>
+            <p>Descende dos cavalos trazidos pelos colonizadores espanhóis. Forte, rústico, de baixa estatura, suporta
+              longas distâncias com pouco alimento. Símbolo do gaúcho e do trabalho pampeano.</p>
+            <div class="apt">Aptidão · Lida com gado, freio de ouro e marcha</div>
+          </div>
+        </article>
+
+        <article class="raca">
+          <img src="imgs/cavalo-percheron.jpg" alt="Cavalo Percheron">
+          <div class="raca-body">
+            <div class="origin">França · Le Perche</div>
+            <h3>Percheron</h3>
+            <p>Cavalo de tração — robusto, alto, podendo ultrapassar 1.000 kg. Cor cinza ou preta, musculatura
+              impressionante e temperamento calmo. Foi essencial na agricultura antes da mecanização.</p>
+            <div class="apt">Aptidão · Tração e trabalhos pesados</div>
+          </div>
+        </article>
+
+        <article class="raca">
+          <img src="imgs/ponei-shetland.jpg" alt="Pônei Shetland">
+          <div class="raca-body">
+            <div class="origin">Ilhas Shetland · Escócia</div>
+            <h3>Pônei Shetland</h3>
+            <p>Pequeno, rústico e dócil. Mede menos de 1,07 m de altura. Apesar do tamanho, é forte e resistente. Muito
+              utilizado para iniciar crianças na equitação.</p>
+            <div class="apt">Aptidão · Equitação infantil e companhia</div>
+          </div>
+        </article>
+
+        <article class="raca">
+          <img src="imgs/cavalo-appaloosa.webp" alt="Cavalo Appaloosa">
+          <div class="raca-body">
+            <div class="origin">EUA · tribo Nez Percé</div>
+            <h3>Appaloosa</h3>
+            <p>Inconfundível pela pelagem manchada, com pintas escuras sobre fundo claro. Ágil, inteligente, ótimo para
+              trabalho com gado e provas de habilidade.</p>
+            <div class="apt">Aptidão · Sela, rodeio e exibição</div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSTALAÇÕES -->
+  <section>
+    <div class="container">
+      <div class="section-label"><span class="num">II</span><span class="small-caps">A Estrutura · Instalações</span>
+      </div>
+      <h2 class="section-title">O lar do cavalo</h2>
+      <p class="kicker">Boas instalações garantem saúde, segurança e bem-estar. Devem ser arejadas, secas, bem
+        iluminadas e fáceis de higienizar.</p>
+
+      <div class="instal-grid">
+        <div class="instal-img">
+          <img src="imgs/estabulo.jpg" alt="Estábulo">
+          <div class="caption">Estábulo bem ventilado · referência arquitetônica</div>
+        </div>
+        <div class="instal-list">
+          <div class="item">
+            <div>
+              <h4>Baia ou cocheira</h4>
+              <p>Mínimo de 3 × 3 m por animal, com piso antiderrapante (concreto rugoso ou borracha) e cama de maravalha
+                ou palha. Pé-direito alto e janelas amplas para ventilação.</p>
+            </div>
+          </div>
+          <div class="item">
+            <div>
+              <h4>Pasto e piquetes</h4>
+              <p>Áreas cercadas com gramíneas adequadas. Permitem exercício, alimentação natural e socialização.
+                Recomenda-se rodízio dos piquetes.</p>
+            </div>
+          </div>
+          <div class="item">
+            <div>
+              <h4>Bebedouros e cochos</h4>
+              <p>Água limpa e fresca à vontade; cochos para sal mineral e ração protegidos da chuva.</p>
+            </div>
+          </div>
+          <div class="item">
+            <div>
+              <h4>Paiol e depósito</h4>
+              <p>Local seco e ventilado para armazenar feno, ração e sal, longe de roedores e umidade.</p>
+            </div>
+          </div>
+          <div class="item">
+            <div>
+              <h4>Selaria</h4>
+              <p>Sala para guardar arreios, selas, cabrestos e equipamentos de manejo, mantidos limpos e organizados.
+              </p>
+            </div>
+          </div>
+          <div class="item">
+            <div>
+              <h4>Mangueira ou tronco</h4>
+              <p>Estrutura para conter o cavalo durante exames veterinários, ferrageamento e cuidados com cascos.</p>
+            </div>
+          </div>
+          <div class="item">
+            <div>
+              <h4>Picadeiro</h4>
+              <p>Área cercada de areia para treinamento, doma e exercícios diários.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ALIMENTAÇÃO -->
+  <section class="alim">
+    <div class="container">
+      <div class="section-label"><span class="num">III</span><span class="small-caps">Manejo Alimentar</span></div>
+      <h2 class="section-title">A alimentação em cada fase</h2>
+      <p class="kicker">Cavalos têm estômago pequeno e intestino longo: precisam de alimentação fracionada e abundância
+        de fibras. Cada fase exige cuidado próprio.</p>
+
+      <div class="alim-grid">
+        <div class="fase"><span class="icon">i</span><span class="stage">Fase 01</span>
+          <h3>Primeiro mês</h3>
+          <p>Exclusivamente o leite materno. O colostro nas primeiras horas é vital — fornece anticorpos e energia para
+            o potro recém-nascido.</p>
+        </div>
+        <div class="fase"><span class="icon">ii</span><span class="stage">Fase 02</span>
+          <h3>Primeiro ano</h3>
+          <p>Aleitamento até o desmame, complementado por feno, capim verde e ração concentrada própria para potros
+            (rica em proteínas, cálcio e fósforo).</p>
+        </div>
+        <div class="fase"><span class="icon">iii</span><span class="stage">Fase 03</span>
+          <h3>Gestação</h3>
+          <p>Feno de boa qualidade, capim verde e ração balanceada com aumento gradual nos últimos três meses. Sal
+            mineral e água sempre disponíveis.</p>
+        </div>
+        <div class="fase"><span class="icon">iv</span><span class="stage">Fase 04</span>
+          <h3>Fêmea com filhote</h3>
+          <p>Maior aporte nutricional para garantir produção de leite: capim, feno, ração concentrada, sal mineral e
+            água em abundância (até 60 l/dia).</p>
+        </div>
+        <div class="fase"><span class="icon">v</span><span class="stage">Fase 05</span>
+          <h3>Animal adulto</h3>
+          <p>Pastagem de qualidade, feno, sal mineral e ração ajustada à atividade (sela, tração, esporte). Fornecer em
+            2–3 refeições diárias.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PULL QUOTE -->
+  <section class="pull">
+    <div class="container">
+      <blockquote>"Quem cuida bem do seu cavalo, jamais andará a pé."</blockquote>
+      <cite>— Provérbio do campo</cite>
+    </div>
+  </section>
+
+  <!-- DESMAME -->
+  <section>
+    <div class="container two-col">
+      <img src="imgs/egua-potro.jpg" alt="Égua e potro">
+      <div class="body">
+        <div class="badge">Desmame · Apartação</div>
+        <h2 class="section-title">Quando separar mãe e filhote</h2>
+        <div class="double-rule"></div>
+        <p>A melhor idade para o desmame dos potros é entre <b>4 e 6 meses de idade</b>. Nessa fase, o filhote já
+          consome alimentos sólidos e o leite materno deixa de ser sua principal fonte de nutrientes.</p>
+        <p>Os potros devem ser apartados de suas mães por três razões principais: para que a égua possa se recuperar
+          fisicamente e preparar-se para uma nova gestação; para que o potro desenvolva independência alimentar e
+          comportamental; e para evitar gastos energéticos excessivos da égua durante a próxima prenhez.</p>
+        <p>O processo deve ser gradual e cuidadoso — separações abruptas causam estresse, podem provocar emagrecimento e
+          até problemas de socialização no potro.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LUCRO -->
+  <section class="lucro">
+    <div class="container">
+      <div class="section-label"><span class="num">IV</span><span class="small-caps" style="color:#e9b86a">Economia
+          Rural</span></div>
+      <h2 class="section-title">Duas linhas de lucro</h2>
+      <p class="kicker">Éguas selecionadas, com pedigree e características desejáveis, transformam o haras em um negócio
+        rentável e sustentável.</p>
+
+      <div class="lucro-grid">
+        <div class="lucro-card">
+          <div class="num">01</div>
+          <h3>Venda de potros</h3>
+          <p>Filhotes oriundos de éguas selecionadas e cobertas por garanhões de qualidade alcançam alto valor de
+            mercado, especialmente quando possuem registro genealógico.</p>
+        </div>
+        <div class="lucro-card">
+          <div class="num">02</div>
+          <h3>Cobertura e reprodução</h3>
+          <p>Éguas de alta linhagem geram renda através de inseminação artificial, embriões e taxas de cobertura, além
+            de valorizarem o plantel ao longo das gerações.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PURO SANGUE -->
+  <section>
+    <div class="container ps-grid">
+      <img src="imgs/cavalo.avif" alt="Cavalo puro sangue">
+      <div>
+        <div class="small-caps">Por que puro sangue?</div>
+        <h2 class="section-title">A vantagem da linhagem</h2>
+        <div class="double-rule"></div>
+        <p style="font-size:19px">Criar potros de puro sangue é preferível porque garante <b>previsibilidade
+            genética</b>: características como porte, temperamento, velocidade, resistência e saúde são transmitidas com
+          mais segurança.</p>
+        <p style="font-size:19px;margin-top:12px">Além disso, animais com registro têm <b>maior valor comercial</b>, são
+          aceitos em provas oficiais, e contribuem para a melhoria do plantel. Espécies comuns, embora rústicas, não
+          oferecem essa garantia de aptidão e qualidade — tornando o investimento menos rentável a longo prazo.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARACTERÍSTICAS -->
+  <section class="caract">
+    <div class="container">
+      <div class="section-label"><span class="num">V</span><span class="small-caps">Critérios de Escolha</span></div>
+      <h2 class="section-title">O que olhar ao escolher um cavalo</h2>
+      <p class="kicker">Antes de adquirir, observe atentamente. Um bom cavalo se revela no conjunto — corpo, mente e
+        procedência.</p>
+
+      <div class="caract-grid">
+        <div class="caract-item">
+          <div class="n">i</div>
+          <h4>Conformação física</h4>
+          <p>Pernas alinhadas, peito largo, dorso reto, ossatura proporcional ao corpo.</p>
+        </div>
+        <div class="caract-item">
+          <div class="n">ii</div>
+          <h4>Saúde geral</h4>
+          <p>Pelo brilhante, olhos vivos, narinas limpas, mucosas rosadas e respiração tranquila.</p>
+        </div>
+        <div class="caract-item">
+          <div class="n">iii</div>
+          <h4>Temperamento</h4>
+          <p>Animal calmo, dócil e receptivo ao manejo — fundamental para a segurança do criador.</p>
+        </div>
+        <div class="caract-item">
+          <div class="n">iv</div>
+          <h4>Idade & aptidão</h4>
+          <p>Compatível com a finalidade pretendida (sela, tração, reprodução, esporte).</p>
+        </div>
+        <div class="caract-item">
+          <div class="n">v</div>
+          <h4>Cascos & aprumos</h4>
+          <p>Cascos firmes, sem rachaduras; pernas retas, sem desvios ou claudicações.</p>
+        </div>
+        <div class="caract-item">
+          <div class="n">vi</div>
+          <h4>Pelagem & marcas</h4>
+          <p>Identificação importante para registro e identificação individual.</p>
+        </div>
+        <div class="caract-item">
+          <div class="n">vii</div>
+          <h4>Procedência</h4>
+          <p>Pedigree, histórico de saúde e vacinação documentados.</p>
+        </div>
+        <div class="caract-item">
+          <div class="n">viii</div>
+          <h4>Andamento</h4>
+          <p>Marcha confortável, simétrica, sem mancar e em diferentes terrenos.</p>
+        </div>
+        <div class="caract-item">
+          <div class="n">ix</div>
+          <h4>Dentição</h4>
+          <p>Indica a idade real e a saúde digestiva do animal.</p>
+        </div>
+        <div class="caract-item">
+          <div class="n">x</div>
+          <h4>Comportamento social</h4>
+          <p>Como interage com outros cavalos e com o ser humano.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ADESTRAMENTO -->
+  <section>
+    <div class="container two-col">
+      <div class="body">
+        <div class="badge">Doma Racional</div>
+        <h2 class="section-title">Educar com paciência</h2>
+        <div class="double-rule"></div>
+        <p>O adestramento que torna potros mansos e dóceis é a <b>doma racional</b> (também conhecida como doma natural
+          ou etológica) — método baseado na linguagem do próprio cavalo, no respeito e na construção gradual de
+          confiança.</p>
+        <p>O processo começa cedo, com a <b>imprinting training</b> nos primeiros dias de vida (toques suaves,
+          aproximação humana), seguido de manejo diário, cabresto, condução à mão, exercícios de obediência e, mais
+          tarde, a iniciação à sela.</p>
+        <p>Nada de força bruta: castigos físicos geram cavalos arredios e perigosos. A regra é <i>repetição, recompensa
+            e firmeza serena</i>.</p>
+      </div>
+      <img src="imgs/doma-cavalo.jpg" alt="Doma de cavalo">
+    </div>
+  </section>
+
+  <!-- ARREIOS -->
+  <section class="arreios">
+    <div class="container">
+      <div class="section-label"><span class="num">VI</span><span class="small-caps" style="color:#e9b86a">O Equipamento
+          do Cavaleiro</span></div>
+      <h2 class="section-title">Cabresto, rédeas, arreios & cela</h2>
+      <p class="kicker">Cada peça tem nome, função e modo correto de uso. O cuidado com o equipamento é parte da arte de
+        cavalgar.</p>
+
+      <div class="arreios-layout">
+        <div>
+          <div class="equip">
+            <h3>Cabresto</h3>
+            <ul>
+              <li><b>Focinheira</b> — passa pelo focinho</li>
+              <li><b>Cabeçada</b> — atrás das orelhas</li>
+              <li><b>Testeira</b> — sobre a testa</li>
+              <li><b>Queixeira</b> — sob o queixo</li>
+              <li><b>Argola de condução</b> — fixa a corda</li>
+              <li><b>Corda ou cabo</b> — para guiar</li>
+            </ul>
+          </div>
+          <div class="equip">
+            <h3>Rédeas e bridão</h3>
+            <ul>
+              <li><b>Embocadura (freio)</b></li>
+              <li><b>Cabeçada</b></li>
+              <li><b>Testeira</b></li>
+              <li><b>Focinheira</b></li>
+              <li><b>Suadouro</b></li>
+              <li><b>Rédeas</b></li>
+            </ul>
+          </div>
+          <div class="equip">
+            <h3>Cela / Arreios</h3>
+            <ul>
+              <li><b>Pelego</b> ou manta</li>
+              <li><b>Baixeiro / suadouro</b></li>
+              <li><b>Arção</b> (estrutura)</li>
+              <li><b>Assento</b></li>
+              <li><b>Cabeça do arção</b></li>
+              <li><b>Estribos & loros</b></li>
+              <li><b>Cilha & sobrecilha</b></li>
+              <li><b>Peitoral</b></li>
+              <li><b>Rabicho</b></li>
+            </ul>
+          </div>
+        </div>
+        <div class="arreios-img">
+          <img src="imgs/cavalo-selado.avif" alt="Cavalo selado">
+        </div>
+      </div>
+    </div>
+
+    <div class="container passos">
+      <h3 style="color:#f0c97a;font-size:32px;margin-top:60px;margin-bottom:6px">Como selar corretamente</h3>
+      <div class="rule" style="background:#4a3520"></div>
+      <div class="passos-grid">
+        <div class="passo">
+          <div class="step">Passo um</div>
+          <h4>Coloque o cabresto</h4>
+          <p>Aproxime-se pelo lado esquerdo, fale com o cavalo, passe a focinheira e ajuste a cabeçada atrás das
+            orelhas. Verifique a folga (dois dedos).</p>
+        </div>
+        <div class="passo">
+          <div class="step">Passo dois</div>
+          <h4>Limpe o dorso</h4>
+          <p>Antes de selar, escove e remova qualquer sujeira que possa machucar. Examine a pele.</p>
+        </div>
+        <div class="passo">
+          <div class="step">Passo três</div>
+          <h4>Posicione o pelego e a cela</h4>
+          <p>Coloque o pelego/manta um pouco à frente da cernelha e deslize para trás, no sentido do pelo. A cela vai
+            por cima, centralizada.</p>
+        </div>
+        <div class="passo">
+          <div class="step">Passo quatro</div>
+          <h4>Ajuste a cilha</h4>
+          <p>Aperte gradualmente, sem machucar. Cabe a mão entre a cilha e o ventre. Refaça o aperto antes de montar.
+          </p>
+        </div>
+        <div class="passo">
+          <div class="step">Passo cinco</div>
+          <h4>Coloque o bridão</h4>
+          <p>Retire o cabresto, segure o bridão pela cabeçada com a mão direita, ofereça a embocadura com a esquerda;
+            com o cavalo aceitando, ajuste atrás das orelhas.</p>
+        </div>
+        <div class="passo">
+          <div class="step">Passo seis</div>
+          <h4>Confira tudo</h4>
+          <p>Estribos no comprimento certo, rédeas livres, sobrecilha bem ajustada. Só então monte — sempre pelo lado
+            esquerdo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CASCOS -->
+  <section>
+    <div class="container cascos-grid">
+      <div>
+        <div class="badge">Cascos · Saúde dos pés</div>
+        <h2 class="section-title">"Sem casco, não há cavalo"</h2>
+        <div class="double-rule"></div>
+        <p style="font-size:19px">O casco é a base de sustentação. Negligenciá-lo é comprometer toda a saúde e função do
+          animal. O cuidado é diário, simples e indispensável.</p>
+        <ul class="check">
+          <li><b>Limpeza diária</b> — use o limpa-cascos para remover pedras, terra e estrume da ranilha e da sola.</li>
+          <li><b>Inspeção</b> — verifique cortes, rachaduras, odor forte (sinal de podridão de ranilha) e calor
+            excessivo.</li>
+          <li><b>Casqueamento</b> — a cada 30 a 45 dias, com profissional (casqueador ou ferrador) para aparar o
+            crescimento.</li>
+          <li><b>Ferrageamento</b> — quando necessário, troca das ferraduras a cada 45–60 dias para evitar desgaste
+            irregular.</li>
+          <li><b>Hidratação</b> — em climas secos, aplicar óleos específicos para evitar rachaduras.</li>
+          <li><b>Pisos adequados</b> — evitar excesso de umidade, lama e piso muito duro por longos períodos.</li>
+        </ul>
+      </div>
+      <img src="imgs/casco-cavalo.avif" alt="Cuidado com o casco">
+    </div>
+  </section>
+
+  <!-- SAUDE -->
+  <section class="saude">
+    <div class="container">
+      <div class="section-label"><span class="num">VII</span><span class="small-caps">Saúde Equina</span></div>
+      <h2 class="section-title">Principais doenças e cuidados</h2>
+      <p class="kicker">Conhecer sinais e sintomas é o que separa um pequeno susto de uma grande perda. Prevenir custa
+        menos do que tratar.</p>
+
+      <div class="doencas">
+        <div class="doenca">
+          <h4>Cólica equina</h4>
+          <p>Distúrbio digestivo grave — principal causa de morte em cavalos.</p>
+          <span class="label">Sinais</span>
+          <p>Inquietação, suor frio, olhar para o flanco, deitar e levantar repetidas vezes.</p>
+          <span class="label">Prevenção</span>
+          <p>Alimentação fracionada, água limpa, vermifugação regular, evitar mudanças bruscas na dieta.</p>
+        </div>
+
+        <div class="doenca">
+          <h4>Mormo</h4>
+          <p>Doença bacteriana grave, contagiosa para humanos. De notificação obrigatória.</p>
+          <span class="label">Sinais</span>
+          <p>Secreção nasal espessa, nódulos na pele, perda de peso, febre.</p>
+          <span class="label">Prevenção</span>
+          <p>Exames periódicos, isolamento de animais novos, higiene rigorosa.</p>
+        </div>
+
+        <div class="doenca">
+          <h4>Anemia Infecciosa Equina (AIE)</h4>
+          <p>Viral, transmitida por moscas e materiais contaminados. Sem cura.</p>
+          <span class="label">Sinais</span>
+          <p>Febre intermitente, anemia, emagrecimento, edemas.</p>
+          <span class="label">Prevenção</span>
+          <p>Teste de Coggins anual, controle de insetos, agulhas individuais.</p>
+        </div>
+
+        <div class="doenca">
+          <h4>Tétano</h4>
+          <p>Causado por bactéria que entra por feridas, especialmente nos cascos.</p>
+          <span class="label">Sinais</span>
+          <p>Rigidez muscular, dificuldade de mastigar, postura rígida.</p>
+          <span class="label">Prevenção</span>
+          <p>Vacinação anual e cuidado imediato com ferimentos.</p>
+        </div>
+
+        <div class="doenca">
+          <h4>Verminoses</h4>
+          <p>Parasitos intestinais que comprometem ganho de peso e saúde.</p>
+          <span class="label">Sinais</span>
+          <p>Pelagem opaca, perda de peso, cólicas leves, anemia.</p>
+          <span class="label">Prevenção</span>
+          <p>Vermifugação a cada 3–6 meses, manejo das pastagens.</p>
+        </div>
+
+        <div class="doenca">
+          <h4>Influenza & Encefalomielite</h4>
+          <p>Viroses respiratórias e neurológicas. Afetam principalmente animais aglomerados.</p>
+          <span class="label">Sinais</span>
+          <p>Febre, tosse, secreção nasal, falta de coordenação (encefalomielite).</p>
+          <span class="label">Prevenção</span>
+          <p>Calendário de vacinação atualizado, ventilação dos abrigos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EQUINOCULTURA -->
+  <section class="equino">
+    <div class="container equino-grid">
+      <div>
+        <div class="small-caps">Equinocultura</div>
+        <h2 class="section-title">A importância da equinocultura</h2>
+        <div class="double-rule"></div>
+        <p>A equinocultura é o ramo da zootecnia dedicado à criação, manejo, reprodução e melhoramento dos equinos. No
+          Brasil, é uma atividade economicamente significativa: o país possui um dos maiores rebanhos do mundo, gerando
+          bilhões de reais em receita e milhões de empregos diretos e indiretos.</p>
+        <p>Para além dos números, o cavalo continua sendo essencial no <b>trabalho rural</b> — lida com gado em terrenos
+          onde máquinas não chegam, transporte em regiões remotas, e tração agrícola. No <b>esporte</b>, sustenta o
+          turfe, o hipismo, a vaquejada, o polo e a equoterapia. Na <b>terapia</b>, transformou-se em ferramenta
+          poderosa de reabilitação física e emocional para crianças e adultos.</p>
+        <p>Suas principais características como atividade são a integração entre tradição e tecnologia, a longa relação
+          com a cultura rural brasileira (do peão ao gaúcho, do vaqueiro ao tropeiro), e a contribuição direta para a
+          preservação do meio ambiente quando praticada de forma sustentável — pastagens bem manejadas, rotação de áreas
+          e bem-estar animal.</p>
+        <p>Criar cavalos é, portanto, mais que uma atividade econômica: é manter viva uma herança cultural milenar, ao
+          mesmo tempo em que se contribui para a saúde, o lazer e a economia do país.</p>
+      </div>
+      <aside class="equino-side">
+        <img src="imgs/cavalos.avif" alt="Equinocultura">
+        <div class="stats">
+          <div class="stat">
+            <div class="v">5,8mi</div>
+            <div class="l">Rebanho equino brasileiro</div>
+          </div>
+          <div class="stat">
+            <div class="v">3º</div>
+            <div class="l">Maior do mundo</div>
+          </div>
+          <div class="stat">
+            <div class="v">+R$16bi</div>
+            <div class="l">Movimentação anual</div>
+          </div>
+          <div class="stat">
+            <div class="v">3mi</div>
+            <div class="l">Empregos gerados</div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <!-- VISITA -->
+  <section>
+    <div class="container two-col">
+      <img src="imgs/haras.jpg" alt="Fazenda">
+      <div class="body">
+        <div class="badge">Visita à Propriedade</div>
+        <h2 class="section-title">A experiência no haras</h2>
+        <div class="double-rule"></div>
+        <p>A visita a uma propriedade rural é o momento em que toda a teoria ganha vida. Ao chegar a um haras, o
+          desbravador observa o ciclo completo da equinocultura: as instalações pela manhã sendo limpas, os cavalos
+          saindo para o pasto, as éguas com seus potros, a sala de reprodução, o cuidado individual com cada animal.</p>
+        <p>Acompanha-se também o trabalho dos profissionais — o tratador, o casqueador, o veterinário, o domador — cada
+          um com sua função na engrenagem que mantém o haras funcionando. Aprende-se sobre a rotina alimentar, os
+          horários de manejo, os critérios de seleção das matrizes e dos garanhões.</p>
+        <p>É na vivência prática que se compreende o valor do silêncio dentro do estábulo, da paciência ao se aproximar
+          de um animal novo, da firmeza ao conduzir uma rédea. O relatório final dessa experiência transforma a
+          especialidade em algo concreto: um aprendizado que ultrapassa o caderno e se imprime na memória do desbravador
+          para o resto da vida.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CURIOSIDADES -->
+  <section class="curio">
+    <div class="container">
+      <div class="section-label"><span class="num">★</span><span class="small-caps" style="color:#e9b86a">Para Saber
+          Mais</span></div>
+      <h2 class="section-title">Curiosidades equinas</h2>
+
+      <div class="curio-grid">
+        <div class="curio-card">
+          <div class="ic">a</div>
+          <h4>Os olhos maiores do mundo terrestre</h4>
+          <p>Cavalos têm os maiores olhos entre os mamíferos terrestres e enxergam quase 360°, exceto em dois pontos
+            cegos: à frente do focinho e diretamente atrás.</p>
+        </div>
+        <div class="curio-card">
+          <div class="ic">b</div>
+          <h4>Eles não vomitam</h4>
+          <p>A anatomia do esôfago impede o refluxo. Por isso a cólica é tão perigosa — o que entra precisa seguir
+            adiante.</p>
+        </div>
+        <div class="curio-card">
+          <div class="ic">c</div>
+          <h4>Dormem em pé</h4>
+          <p>Graças ao "aparelho de retenção" nas pernas, conseguem cochilar de pé. Mas precisam deitar algumas horas
+            por dia para sono profundo.</p>
+        </div>
+        <div class="curio-card">
+          <div class="ic">d</div>
+          <h4>Memória excepcional</h4>
+          <p>Reconhecem pessoas, lugares e situações por anos. Lembram tanto de afetos quanto de maus tratos.</p>
+        </div>
+        <div class="curio-card">
+          <div class="ic">e</div>
+          <h4>Comunicação silenciosa</h4>
+          <p>Falam com orelhas, olhos, postura e respiração. Aprender essa linguagem é a base da doma racional.</p>
+        </div>
+        <div class="curio-card">
+          <div class="ic">f</div>
+          <h4>Idade pelos dentes</h4>
+          <p>O ditado "a cavalo dado não se olha os dentes" vem da prática real: a dentição revela a idade do animal.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="brand">Criação de Cavalos</div>
+      <p style="margin-top:18px;color:#5a4a30">"Há algo no exterior do cavalo que faz bem ao interior do homem." —
+        Winston Churchill</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
