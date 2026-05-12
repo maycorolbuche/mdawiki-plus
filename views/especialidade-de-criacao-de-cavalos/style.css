@@ -418,7 +418,7 @@ section {
 .pull {
     padding: 90px 0;
     text-align: center;
-    background: url('https://images.unsplash.com/photo-1450052590821-8bf91254a353?auto=format&fit=crop&w=2000&q=80') center/cover fixed;
+    background: url('imgs/cavalo-note.jpg') center/cover fixed;
     color: #fdf3dc;
     position: relative
 }
