@@ -154,6 +154,18 @@ a {
     opacity: .8
 }
 
+.hero-foot span.meta-tag {
+    padding: 0 10px;
+}
+
+.hero-foot span.meta-key {
+    font-weight: bold;
+}
+
+.hero-foot span.meta-key::after {
+    content: ":";
+}
+
 @media(min-width:768px) {
     .hero-content {
         padding: 48px

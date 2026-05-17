@@ -97,12 +97,12 @@ body {
     margin-top: 22px
 }
 
-.badges b {
+.badges .meta-key {
     display: none;
 }
 
 .badge,
-.badges span {
+.badges span.meta-tag {
     background: var(--ink);
     color: var(--paper);
     font-family: 'Bebas Neue';
@@ -112,15 +112,15 @@ body {
     font-size: 13px;
 }
 
-.badges span:nth-child(2) {
+.badges span.meta-tag:nth-child(2) {
     background: var(--red)
 }
 
-.badges span:nth-child(3) {
+.badges span.meta-tag:nth-child(3) {
     background: var(--teal)
 }
 
-.badges span:nth-child(4) {
+.badges span.meta-tag:nth-child(4) {
     background: var(--navy)
 }
 

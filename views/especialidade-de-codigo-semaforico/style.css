@@ -107,7 +107,7 @@ h4 {
 }
 
 .badge,
-.badges span {
+.badges span.meta-tag {
     background: rgba(255, 255, 255, .1);
     backdrop-filter: blur(6px);
     border: 1px solid rgba(244, 196, 48, .5);
@@ -115,6 +115,14 @@ h4 {
     font-size: .85rem;
     letter-spacing: .1em;
     text-transform: uppercase;
+}
+
+.badges span.meta-key {
+    font-weight: bold;
+}
+
+.badges span.meta-key::after {
+    content: ":";
 }
 
 /* SECTIONS */

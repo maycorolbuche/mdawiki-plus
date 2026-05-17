@@ -132,7 +132,7 @@ a {
     color: rgba(250, 246, 236, .7);
 }
 
-.hero .meta span b {
+.hero .meta span.meta-key {
     display: block;
     color: var(--paper);
     font-size: 1rem;
@@ -141,6 +141,11 @@ a {
     text-transform: none;
     font-family: 'Fraunces', serif;
     margin-top: .3rem
+}
+
+.hero .meta span.meta-key::after {
+    content: ":";
+
 }
 
 /* ===== LAYOUT ===== */

@@ -196,7 +196,7 @@ a {
     color: #d8cdb1
 }
 
-.hero .meta b {
+.hero .meta .meta-key {
     display: block;
     color: #fff;
     font-weight: 600;

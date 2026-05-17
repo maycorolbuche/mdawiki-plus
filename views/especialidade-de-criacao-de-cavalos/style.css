@@ -139,7 +139,7 @@ h4 {
     color: #e9d8b3
 }
 
-.hero-meta b {
+.hero-meta .meta-key {
     display: block;
     font-family: 'Inter', sans-serif;
     font-size: 11px;

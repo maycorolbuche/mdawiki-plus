@@ -144,7 +144,7 @@ em {
     color: rgba(244, 236, 216, .7);
 }
 
-.hero-meta b {
+.hero-meta .meta-key {
     display: block;
     color: var(--cream);
     font-size: 1.4rem;

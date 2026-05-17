@@ -201,9 +201,13 @@ section {
     text-transform: uppercase
 }
 
-.hero .meta b {
+.hero .meta .meta-key {
     color: var(--gold);
     font-weight: 600
+}
+
+.hero .meta .meta-key::after {
+    content: ":"
 }
 
 .planet-orbit {

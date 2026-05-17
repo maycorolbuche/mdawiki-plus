@@ -108,6 +108,14 @@ h3 {
     color: #f7e3c9
 }
 
+.hero .meta .meta-key {
+    font-weight: bold;
+}
+
+.hero .meta .meta-key::after {
+    content: ":";
+}
+
 .hero h1 {
     font-family: "Cormorant Garamond", serif;
     font-weight: 700;

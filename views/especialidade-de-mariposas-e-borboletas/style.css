@@ -113,7 +113,7 @@ h1.titulo {
     justify-content: center
 }
 
-.meta span {
+.meta span.meta-tag {
     background: #fff;
     border: 2px solid var(--tinta);
     border-radius: 999px;
@@ -121,6 +121,10 @@ h1.titulo {
     font-size: .82rem;
     font-weight: 600;
     box-shadow: 4px 4px 0 var(--tinta);
+}
+
+.meta span.meta-key::after {
+    content: ":"
 }
 
 /* Layout revista */

@@ -155,16 +155,17 @@ p {
     gap: .2rem;
 }
 
-.hero-meta span b {
+.hero-meta span .meta-key {
     font-family: 'Inter', system-ui, sans-serif;
     font-size: .7rem;
     font-weight: 600;
     letter-spacing: .18em;
     text-transform: uppercase;
     color: rgba(255, 255, 255, .7);
+    font-weight: bold;
 }
 
-.hero-meta *:not(b) {
+.hero-meta .meta-value {
     font-family: 'DM Serif Display';
     font-size: 1.2rem;
     letter-spacing: 0;

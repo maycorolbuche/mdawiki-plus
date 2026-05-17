@@ -121,7 +121,7 @@ p {
 }
 
 .badge,
-.badge-strip span {
+.badge-strip span.meta-tag {
     background: rgba(244, 237, 224, 0.15);
     backdrop-filter: blur(8px);
     border: 1px solid rgba(244, 237, 224, 0.3);
@@ -129,6 +129,14 @@ p {
     border-radius: 50px;
     font-size: 0.85rem;
     color: #f4ede0;
+}
+
+.badge-strip span.meta-key {
+    font-weight: bold;
+}
+
+.badge-strip span.meta-key::after {
+    content: ":"
 }
 
 /* CONTAINER */

@@ -125,13 +125,17 @@ h1.title em {
     color: #caa86a
 }
 
-.hero-meta span b {
+.hero-meta span .meta-key {
     color: var(--paper);
     font-weight: 700;
     margin-left: 6px;
     letter-spacing: .05em;
     text-transform: none;
     font-size: 14px
+}
+
+.hero-meta span .meta-key::after {
+    content: ":"
 }
 
 /* SECTIONS */

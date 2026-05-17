@@ -169,11 +169,11 @@ a {
     max-width: 780px
 }
 
-.hero-meta span {
+.hero-meta span.meta-tag {
     font-weight: initial;
 }
 
-.hero-meta span b {
+.hero-meta span.meta-key {
     display: block;
     font-size: .7rem;
     letter-spacing: .28em;
@@ -181,6 +181,10 @@ a {
     color: #d6b15c;
     margin-bottom: 4px;
     font-weight: 600;
+}
+
+.hero-meta span.meta-key::after {
+    content: ":";
 }
 
 /* SECTIONS */

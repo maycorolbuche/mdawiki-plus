@@ -112,8 +112,8 @@ if (file_exists($view_file)) {
 
 
     $meta_info = "";
-    $meta_info .= "<span><b>Cód:</b> " . @$meta["code"] . "</span>";
-    $meta_info .= "<span><b>Área:</b> " . @$meta["area"] . "</span>";
+    $meta_info .= "<span class='meta-tag'><span class='meta-key'>Cód</span> <span class='meta-value'>" . @$meta["code"] . "</span></span>";
+    $meta_info .= "<span class='meta-tag'><span class='meta-key'>Área</span> <span class='meta-value'>" . @$meta["area"] . "</span></span>";
 
     $html = preg_replace(
         '/<([^>]*data-id="meta"[^>]*)>/i',

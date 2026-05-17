@@ -144,22 +144,23 @@ h1.hero__title em::after {
     z-index: 1;
 }
 
-.hero__meta span {
+.hero__meta span.meta-tag {
     font-family: 'Bebas Neue', sans-serif;
     letter-spacing: .15em
 }
 
-.hero__meta span b {
+.hero__meta span.meta-key {
     display: block;
     font-family: 'Inter', sans-serif;
     letter-spacing: 0;
     font-size: .75rem;
     color: #6b6258;
     text-transform: uppercase;
-    margin-bottom: .2rem
+    margin-bottom: .2rem;
+    font-weight: bold;
 }
 
-.hero__meta *:not(b) {
+.hero__meta span.meta-value {
     font-size: 1.6rem;
     font-weight: 400;
     color: var(--ink)

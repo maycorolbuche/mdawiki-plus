@@ -114,7 +114,7 @@ h4 {
     color: #eadfc6
 }
 
-.hero .meta b {
+.hero .meta .meta-key {
     display: block;
     color: #fff;
     font-family: 'Playfair Display', serif;

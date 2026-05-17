@@ -122,8 +122,13 @@ h1 em {
     letter-spacing: .15em
 }
 
-.meta span b {
-    color: var(--accent2)
+.meta span.meta-key {
+    color: var(--accent2);
+    font-weight: bold;
+}
+
+.meta span.meta-key::after {
+    content: ":";
 }
 
 section {
