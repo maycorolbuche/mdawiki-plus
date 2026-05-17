@@ -35,10 +35,10 @@ if (VIEW === "") {
 
     echo '<!DOCTYPE html><html><head><meta charset="UTF-8"><title>Views</title></head><body>';
     echo '<h1>Views</h1><ul>';
-    foreach ($views as $view) {
+    foreach ($views as $indx => $view) {
         $link = htmlspecialchars(URL . $view, ENT_QUOTES, 'UTF-8');
         $label = htmlspecialchars($view, ENT_QUOTES, 'UTF-8');
-        echo '<li><a href="' . $link . '">' . $label . '</a></li>';
+        echo '<li><b>' . ($indx + 1) . '.</b> <a href="' . $link . '">' . $label . '</a></li>';
     }
     echo '</ul></body></html>';
     exit;
