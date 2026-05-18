@@ -882,7 +882,7 @@ footer .ref {
     }
 
     .ep-item {
-        grid-template-columns: 30px 1fr;
+        grid-template-columns: auto 1fr;
     }
 
     .ep-item .dot {
@@ -890,11 +890,15 @@ footer .ref {
     }
 
     .episodios .timeline::before {
-        left: 15px;
+        left: calc(100% - 13px);
     }
 
     .ep-item:nth-child(even) {
         direction: ltr;
+    }
+
+    .ep-item div:last-child {
+        display: none;
     }
 
     .attr-list li {
