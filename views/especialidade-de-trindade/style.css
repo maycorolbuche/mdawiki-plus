@@ -52,7 +52,7 @@ h4 {
 .hero {
     position: relative;
     min-height: 100vh;
-    background: linear-gradient(180deg, rgba(13, 20, 36, 0.55) 0%, rgba(13, 20, 36, 0.85) 100%), url('imgs/hero.jpg') center / cover no-repeat;
+    background: linear-gradient(180deg, rgba(13, 20, 36, 0.55) 0%, rgba(13, 20, 36, 0.85) 100%), url('imgs/hero.png') center / cover no-repeat;
     color: var(--paper);
     display: flex;
     flex-direction: column;

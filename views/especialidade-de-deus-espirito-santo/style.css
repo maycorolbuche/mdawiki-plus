@@ -1,0 +1,677 @@
+:root {
+    --ink: #1a1410;
+    --paper: #f6efe1;
+    --paper-2: #ece2cc;
+    --gold: #b8893a;
+    --gold-soft: #d6b16a;
+    --wine: #5a1a1a;
+    --deep: #0f1722;
+    --rule: rgba(26, 20, 16, .18);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.65;
+    font-size: 19px;
+    background-image:
+        radial-gradient(rgba(184, 137, 58, .06) 1px, transparent 1px),
+        radial-gradient(rgba(90, 26, 26, .04) 1px, transparent 1px);
+    background-size: 24px 24px, 48px 48px;
+    background-position: 0 0, 12px 12px;
+}
+
+.label {
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    letter-spacing: .32em;
+    text-transform: uppercase;
+    color: var(--gold);
+    font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--ink)
+}
+
+h2 {
+    font-size: clamp(2rem, 4vw, 3.4rem);
+    margin-bottom: .4em;
+    letter-spacing: .01em
+}
+
+h3 {
+    font-size: 1.6rem;
+    margin-bottom: .4em;
+    color: var(--wine);
+    letter-spacing: .02em
+}
+
+h4 {
+    font-family: 'Inter', sans-serif;
+    font-size: .75rem;
+    letter-spacing: .3em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: .8em;
+    font-weight: 600
+}
+
+p {
+    margin-bottom: 1em
+}
+
+p+p {
+    text-indent: 1.6em
+}
+
+a {
+    color: var(--wine)
+}
+
+blockquote {
+    font-style: italic;
+    font-size: 1.35rem;
+    line-height: 1.5;
+    color: var(--wine);
+    border-left: 3px solid var(--gold);
+    padding: .6em 0 .6em 1.2em;
+    margin: 1.4em 0;
+}
+
+blockquote cite {
+    display: block;
+    font-style: normal;
+    font-family: 'Inter', sans-serif;
+    font-size: .72rem;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-top: .6em;
+    font-weight: 500;
+}
+
+/* ---------- HERO ---------- */
+.hero {
+    position: relative;
+    min-height: 100vh;
+    color: #f6efe1;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url('imgs/hero.jpg') center/cover no-repeat;
+    z-index: -2;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(180deg, rgba(15, 23, 34, .45) 0%, rgba(15, 23, 34, .2) 35%, rgba(15, 23, 34, .85) 100%);
+    z-index: -1;
+}
+
+.hero-inner {
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 8vh 6vw 6vh;
+}
+
+.hero .label {
+    color: var(--gold-soft)
+}
+
+.hero h1 {
+    font-family: 'Cinzel', serif;
+    font-size: clamp(2.6rem, 7vw, 6.2rem);
+    line-height: 1;
+    color: #fdf6e6;
+    margin: .4em 0 .5em;
+    text-shadow: 0 4px 30px rgba(0, 0, 0, .4);
+}
+
+.hero .lede {
+    font-size: clamp(1.1rem, 1.6vw, 1.5rem);
+    max-width: 640px;
+    color: #f0e6d1;
+    font-style: italic;
+}
+
+.hero-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem 2.5rem;
+    margin-top: 2.4rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid rgba(214, 177, 106, .4);
+    font-family: 'Inter', sans-serif;
+    font-size: .78rem;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: #e9d9b3;
+}
+
+.hero-meta span .meta-key {
+    display: block;
+    color: var(--gold-soft);
+    font-weight: 600;
+    font-size: .7rem;
+    margin-bottom: .3em;
+    letter-spacing: .25em
+}
+
+/* ---------- LAYOUT ---------- */
+main {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 6vw
+}
+
+section {
+    padding: 7rem 0;
+    border-bottom: 1px solid var(--rule)
+}
+
+section:last-child {
+    border-bottom: none
+}
+
+.sec-head {
+    margin-bottom: 3rem;
+    max-width: 780px
+}
+
+.sec-head .label {
+    display: block;
+    margin-bottom: 1rem
+}
+
+.two-col {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    gap: 4rem;
+    align-items: start
+}
+
+.two-col.reverse {
+    grid-template-columns: 1fr 1.1fr
+}
+
+.two-col img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 2px;
+    box-shadow: 0 30px 60px -25px rgba(0, 0, 0, .4)
+}
+
+figure {
+    margin: 0
+}
+
+figure img {
+    width: 100%;
+}
+
+figcaption {
+    font-family: 'Inter', sans-serif;
+    font-size: .7rem;
+    letter-spacing: .22em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-top: .9em;
+    text-align: center;
+}
+
+.drop::first-letter {
+    font-family: 'Cinzel', serif;
+    font-size: 4.4em;
+    float: left;
+    line-height: .85;
+    padding: .08em .12em 0 0;
+    color: var(--wine);
+    font-weight: 700;
+}
+
+/* ---------- TRINDADE GRID ---------- */
+.trinity {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+    margin-top: 2.4rem;
+}
+
+.trinity .card {
+    background: var(--paper-2);
+    padding: 2.2rem 1.8rem;
+    border-top: 3px solid var(--gold);
+    text-align: center;
+}
+
+.trinity .card h3 {
+    font-size: 1.3rem;
+    color: var(--wine);
+    margin-bottom: .6em;
+}
+
+.trinity .symbol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: .7rem;
+    line-height: 1;
+}
+
+.trinity .symbol svg {
+    width: 52px;
+    height: 52px;
+    fill: var(--gold);
+    opacity: .95;
+}
+
+/* ---------- VERSE CARD ---------- */
+.verse {
+    background: var(--deep);
+    color: #f4e9cf;
+    padding: 4rem 3rem;
+    text-align: center;
+    margin: 3rem 0;
+    position: relative;
+    border: 1px solid rgba(214, 177, 106, .25);
+}
+
+.verse::before,
+.verse::after {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--gold);
+}
+
+.verse::before {
+    top: 14px;
+    left: 14px;
+    border-right: none;
+    border-bottom: none
+}
+
+.verse::after {
+    bottom: 14px;
+    right: 14px;
+    border-left: none;
+    border-top: none
+}
+
+.verse .label {
+    color: var(--gold-soft);
+    display: block;
+    margin-bottom: 1.4rem
+}
+
+.verse p {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: clamp(1.3rem, 2.2vw, 1.9rem);
+    line-height: 1.5;
+    max-width: 780px;
+    margin: 0 auto 1.2em;
+}
+
+.verse cite {
+    font-family: 'Cinzel', serif;
+    font-style: normal;
+    color: var(--gold-soft);
+    letter-spacing: .2em;
+    font-size: .9rem;
+}
+
+/* ---------- FRUITS ---------- */
+.fruits {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.2rem;
+    margin-top: 2.5rem;
+}
+
+.fruit {
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    padding: 1.6rem 1.4rem;
+    position: relative;
+}
+
+.fruit .num {
+    font-family: 'Cinzel', serif;
+    font-size: .75rem;
+    color: var(--gold);
+    letter-spacing: .25em;
+    margin-bottom: .4em;
+}
+
+.fruit h4 {
+    font-family: 'Cinzel', serif;
+    text-transform: none;
+    letter-spacing: .02em;
+    color: var(--wine);
+    font-size: 1.3rem;
+    margin-bottom: .4em;
+    font-weight: 700;
+}
+
+.fruit p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 0;
+    color: #3c2f25
+}
+
+/* ---------- IDENTITY (early christians) ---------- */
+.identity {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.6rem;
+    margin-top: 2rem;
+}
+
+.identity .ref {
+    border-left: 3px solid var(--wine);
+    padding: .6rem 1.2rem;
+}
+
+.identity .ref b {
+    font-family: 'Cinzel', serif;
+    color: var(--wine);
+    display: block;
+    font-size: .9rem;
+    letter-spacing: .15em;
+    margin-bottom: .4em;
+}
+
+.identity .ref p {
+    font-size: 1.05rem;
+    line-height: 1.5;
+    margin: 0
+}
+
+/* ---------- MISSION list ---------- */
+.mission-list {
+    list-style: none;
+    margin-top: 2rem
+}
+
+.mission-list li {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1.6rem;
+    padding: 1.6rem 0;
+    border-bottom: 1px dashed var(--rule);
+}
+
+.mission-list li:last-child {
+    border-bottom: none
+}
+
+.mission-list .roman {
+    font-family: 'Cinzel', serif;
+    color: var(--gold);
+    font-size: 1.4rem;
+    letter-spacing: .1em;
+    line-height: 1;
+    padding-top: .1em;
+    min-width: 3.2rem;
+}
+
+.mission-list h3 {
+    font-size: 1.3rem;
+    margin-bottom: .3em
+}
+
+.mission-list p {
+    margin: 0;
+    font-size: 1.05rem;
+    line-height: 1.55
+}
+
+/* ---------- HOW TO RECEIVE ---------- */
+.steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.4rem;
+    margin-top: 2.5rem;
+}
+
+.step {
+    text-align: center;
+    padding: 1.8rem 1.2rem;
+    background: var(--paper-2);
+    position: relative;
+}
+
+.step .num {
+    font-family: 'Cinzel', serif;
+    font-size: 2.2rem;
+    color: var(--gold);
+    display: block;
+    margin-bottom: .2em;
+    line-height: 1;
+}
+
+.step h4 {
+    font-family: 'Cinzel', serif;
+    text-transform: none;
+    letter-spacing: .02em;
+    color: var(--wine);
+    font-size: 1.05rem;
+    margin-bottom: .5em;
+    font-weight: 700;
+}
+
+.step p {
+    font-size: .95rem;
+    line-height: 1.5;
+    margin: 0
+}
+
+/* ---------- CURIOSITIES ---------- */
+.curiosities {
+    background: var(--paper-2);
+    padding: 3.5rem;
+    margin-top: 3rem;
+    border: 1px solid var(--rule);
+}
+
+.cur-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem 3rem;
+    margin-top: 2rem;
+}
+
+.cur b {
+    font-family: 'Cinzel', serif;
+    color: var(--wine);
+    display: block;
+    margin-bottom: .3em;
+    font-size: 1.05rem;
+    letter-spacing: .04em;
+}
+
+.cur p {
+    font-size: 1.02rem;
+    line-height: 1.55;
+    margin: 0
+}
+
+/* ---------- SYMBOLS ---------- */
+.symbols {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.4rem;
+    margin-top: 2.4rem;
+    text-align: center;
+}
+
+.symbol-card {
+    padding: 1.4rem .8rem;
+    border: 1px solid var(--rule)
+}
+
+.symbol-card .icon {
+    font-size: 2.4rem;
+    height: 52px;
+    color: var(--gold);
+    display: block;
+    margin-bottom: .2em;
+    line-height: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.symbol-card svg {
+    width: 52px;
+    height: 52px;
+    fill: var(--gold);
+    opacity: .95;
+}
+
+.symbol-card b {
+    font-family: 'Cinzel', serif;
+    color: var(--wine);
+    font-size: 1rem;
+    letter-spacing: .06em
+}
+
+.symbol-card p {
+    font-size: .92rem;
+    margin-top: .4em;
+    line-height: 1.5;
+    color: #3c2f25
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+    background: var(--deep);
+    color: #d9c89c;
+    text-align: center;
+    padding: 4rem 2rem;
+    font-family: 'Inter', sans-serif;
+    font-size: .8rem;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+}
+
+footer .ornament {
+    font-family: 'Cinzel', serif;
+    font-size: 1.6rem;
+    color: var(--gold);
+    margin-bottom: 1.4rem;
+    letter-spacing: .4em;
+}
+
+footer p {
+    margin-bottom: .6em;
+    line-height: 1.7
+}
+
+footer .ref {
+    color: #9b885b;
+    font-size: .7rem;
+    margin-top: 1.4rem;
+    letter-spacing: .18em
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 900px) {
+    body {
+        font-size: 17px
+    }
+
+    .two-col,
+    .two-col.reverse {
+        grid-template-columns: 1fr;
+        gap: 2.2rem
+    }
+
+    .trinity,
+    .fruits,
+    .identity,
+    .cur-grid,
+    .symbols {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem
+    }
+
+    .steps {
+        grid-template-columns: 1fr 1fr
+    }
+
+    section {
+        padding: 4.5rem 0
+    }
+
+    .curiosities {
+        padding: 2rem 1.4rem
+    }
+
+    .verse {
+        padding: 2.8rem 1.4rem
+    }
+
+    .hero-inner {
+        padding: 6vh 6vw 5vh
+    }
+}
+
+@media (max-width: 540px) {
+
+    .trinity,
+    .fruits,
+    .identity,
+    .cur-grid,
+    .symbols,
+    .steps {
+        grid-template-columns: 1fr
+    }
+
+    blockquote {
+        font-size: 1.15rem
+    }
+
+    .hero-meta {
+        gap: 1rem 1.4rem;
+        font-size: .7rem
+    }
+
+    .mission-list li {
+        grid-template-columns: 1fr;
+        gap: .4rem
+    }
+}
