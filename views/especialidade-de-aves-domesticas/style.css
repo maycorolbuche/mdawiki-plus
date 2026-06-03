@@ -596,3 +596,9 @@ footer {
         padding: 60px 0 40px
     }
 }
+
+@media(max-width:500px) {
+    .curiogrid {
+        grid-template-columns: repeat(1, 1fr)
+    }
+}
