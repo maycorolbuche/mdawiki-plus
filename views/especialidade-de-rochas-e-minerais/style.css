@@ -121,6 +121,11 @@ img {
     background: #ffffff0a;
 }
 
+.meta-key::after {
+    content: ":"
+}
+
+
 /* ---------- SECTIONS ---------- */
 section {
     padding: 90px 0;

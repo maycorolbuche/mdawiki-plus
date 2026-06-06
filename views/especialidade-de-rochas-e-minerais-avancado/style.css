@@ -140,6 +140,10 @@ p {
     border-radius: 2px
 }
 
+.meta-key::after {
+    content: ":"
+}
+
 /* layout */
 main {
     max-width: 1180px;
