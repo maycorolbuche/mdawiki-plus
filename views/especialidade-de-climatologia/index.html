@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;0,800;1,400&family=Inter:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.min.css">
+
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="sun"></div>
+    <div class="cloud c1"></div>
+    <div class="cloud c2"></div>
+    <div class="cloud c3"></div>
+    <div class="wrap">
+      <span class="badge"><span class="dot"></span><span data-id="meta-area"></span></span>
+      <h1>Climatologia<br><em>a ciência do céu</em></h1>
+      <p class="lead">Um mergulho ilustrado em nuvens, ventos, raios e estações — tudo o que você precisa
+        saber sobre o tempo e o clima.</p>
+      <div class="meta-grid" data-id="meta"></div>
+    </div>
+  </header>
+
+  <!-- PHENOMENA -->
+  <section class="phen-section">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="small">Capítulo I</span>
+          <h2>Fenômenos do <em>céu e da terra</em></h2>
+        </div>
+        <span class="small">06 formas da água</span>
+      </div>
+
+      <div class="phen">
+        <div class="item">
+          <div class="img" style="background-image:url('imgs/neblina.jpg')">
+          </div>
+          <div class="body">
+            <h4><span class="icon">🌫️</span>Neblina</h4>
+            <p>Formada quando o ar úmido próximo ao solo esfria até o ponto de orvalho, condensando o vapor d'água em
+              minúsculas gotículas suspensas. É essencialmente uma nuvem ao nível do chão.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img" style="background-image:url('imgs/chuva.jpg')">
+          </div>
+          <div class="body">
+            <h4><span class="icon">🌧️</span>Chuva</h4>
+            <p>Dentro das nuvens, gotículas de água se unem (coalescência) até ficarem pesadas demais para serem
+              sustentadas pelas correntes de ar ascendentes — e caem.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img" style="background-image:url('imgs/orvalho.jpg')">
+          </div>
+          <div class="body">
+            <h4><span class="icon">💧</span>Orvalho</h4>
+            <p>À noite, superfícies como folhas e grama perdem calor rapidamente. O vapor d'água do ar em contato com
+              elas se condensa em gotinhas — o orvalho da madrugada.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img" style="background-image:url('imgs/neve.jpg')">
+          </div>
+          <div class="body">
+            <h4><span class="icon">❄️</span>Neve</h4>
+            <p>Em nuvens muito frias (abaixo de 0 °C), o vapor d'água passa direto ao estado sólido, formando cristais
+              de gelo simétricos que se agrupam em flocos.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img" style="background-image:url('imgs/granizo.jpg')"></div>
+          <div class="body">
+            <h4><span class="icon">🧊</span>Granizo</h4>
+            <p>Em tempestades com fortes correntes ascendentes, gotas de chuva sobem até regiões geladas, congelam,
+              recebem mais camadas de gelo e caem como pedras.</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="img" style="background-image:url('imgs/geada.jpg')">
+          </div>
+          <div class="body">
+            <h4><span class="icon">🌨️</span>Geada</h4>
+            <p>Quando o vapor d'água da atmosfera se solidifica diretamente sobre superfícies cuja temperatura está
+              abaixo de 0 °C, formando uma fina camada cristalina branca.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CLOUDS -->
+  <section class="clouds-section">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="small">Capítulo II</span>
+          <h2>Atlas das nuvens</h2>
+        </div>
+        <span class="small">04 tipos fundamentais</span>
+      </div>
+
+      <div class="cloud-grid">
+        <div class="cloud-card">
+          <div class="img" style="background-image:url('imgs/cirros.jpg')">
+          </div>
+          <div class="body">
+            <h4>Cirros</h4>
+            <div class="alt">altas, finas, em fios</div>
+            <p>Formadas acima de 6 km, são compostas por cristais de gelo e parecem pinceladas brancas no céu.</p>
+            <span class="weather">☀️ Bom tempo</span>
+          </div>
+        </div>
+        <div class="cloud-card">
+          <div class="img" style="background-image:url('imgs/cumulos.jpg')">
+          </div>
+          <div class="body">
+            <h4>Cúmulos</h4>
+            <div class="alt">algodão fofo</div>
+            <p>Brancas, baixas, com base plana e topo arredondado. Surgem por convecção em dias ensolarados.</p>
+            <span class="weather">☀️ Tempo estável</span>
+          </div>
+        </div>
+        <div class="cloud-card">
+          <div class="img" style="background-image:url('imgs/nimbos.jpg')">
+          </div>
+          <div class="body">
+            <h4>Nimbos</h4>
+            <div class="alt">carregadas de chuva</div>
+            <p>Escuras e densas (nimbostratus, cumulonimbus). Trazem chuvas contínuas, tempestades, raios e granizo.</p>
+            <span class="weather">⛈️ Chuva e trovoadas</span>
+          </div>
+        </div>
+        <div class="cloud-card">
+          <div class="img" style="background-image:url('imgs/estratos.jpg')">
+          </div>
+          <div class="body">
+            <h4>Estratos</h4>
+            <div class="alt">camada cinzenta uniforme</div>
+            <p>Forram o céu como um lençol baixo e cinza. Podem trazer chuvisco ou neblina densa.</p>
+            <span class="weather">🌫️ Tempo encoberto</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- INSTRUMENTS -->
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="small">Capítulo III</span>
+          <h2>Instrumentos do <em>meteorologista</em></h2>
+        </div>
+        <span class="small">como medir o tempo</span>
+      </div>
+
+      <div class="inst-grid">
+        <div class="inst">
+          <img src="imgs/termometro-mercurio.webp">
+          <div>
+            <h4>Termômetro de mercúrio</h4>
+            <p>O mercúrio dentro do bulbo se dilata com o calor e se contrai com o frio. Essa variação faz a coluna
+              subir ou descer por um tubo capilar graduado, indicando a temperatura.</p>
+          </div>
+        </div>
+        <div class="inst">
+          <img src="imgs/barometro-de-mercurio.webp">
+          <div>
+            <h4>Barômetro de mercúrio</h4>
+            <p>Um tubo de vidro invertido em uma cuba de mercúrio. Quanto maior a pressão atmosférica, mais alto o
+              mercúrio sobe no tubo. A altura da coluna mede a pressão.</p>
+          </div>
+        </div>
+        <div class="inst">
+          <img src="imgs/barometro-aneroide.jpg">
+          <div>
+            <h4>Barômetro aneróide</h4>
+            <p>Uma cápsula metálica fechada e parcialmente vazia se comprime ou expande conforme a pressão do ar muda.
+              Esse movimento é transmitido por alavancas a um ponteiro.</p>
+          </div>
+        </div>
+        <div class="inst">
+          <img src="imgs/pluviometro.webp">
+          <div>
+            <h4>Pluviômetro</h4>
+            <p>Um recipiente cilíndrico graduado que coleta a água da chuva. A leitura em milímetros indica quantos
+              litros caíram por metro quadrado em determinado período.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MOUNTAINS -->
+  <section style="background:linear-gradient(180deg,#fbf7ef,#e8f1f8)">
+    <div class="wrap">
+      <div class="feature">
+        <div class="img" style="background-image:url('imgs/montanha.jpg')"></div>
+        <div class="text">
+          <span class="small">Capítulo IV</span>
+          <h2>Chuva orográfica: <em>quando a montanha decide o clima</em></h2>
+          <p>Quando o vento empurra ar úmido contra uma montanha, esse ar é forçado a subir. Ao subir, ele esfria,
+            condensa e <b>chove no lado de barlavento</b> (que recebe o vento).</p>
+          <p>Já o lado oposto, <b>sotavento</b>, recebe um ar seco que desce e se aquece — formando o que se chama
+            <i>sombra de chuva</i>. Por isso uma encosta pode ser exuberante e a outra, semiárida.
+          </p>
+          <p><b>No Brasil:</b> a Serra do Mar deixa o litoral paulista úmido e o planalto interior mais seco. No
+            Nordeste, a Chapada Diamantina e os planaltos criam o sertão semiárido em seu sotavento.</p>
+
+          <div class="pull">"O vento sobe a serra carregado de mar — e desce do outro lado como brisa seca."</div>
+
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:20px">
+            <div>
+              <h4 style="font-size:1.05rem;color:var(--accent);margin-bottom:6px">Por que é mais fresco nas montanhas?
+              </h4>
+              <p style="font-size:.92rem">A cada 100 m de altitude, a temperatura cai cerca de 0,6 °C. O ar é mais
+                rarefeito e retém menos calor, por isso as montanhas são mais frias e úmidas que os vales.</p>
+            </div>
+            <div>
+              <h4 style="font-size:1.05rem;color:var(--accent);margin-bottom:6px">De onde vem nosso tempo?</h4>
+              <p style="font-size:.92rem">No Sudeste e Sul do Brasil, frentes frias e chuvas chegam principalmente de
+                <b>sudoeste/sul</b>. O tempo bom costuma vir do quadrante <b>norte/nordeste</b>, com massas tropicais.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEASONS -->
+  <section class="seasons-section">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="small">Capítulo V</span>
+          <h2>A Terra, o Sol e <em>as estações</em></h2>
+        </div>
+        <span class="small">23,5° de inclinação</span>
+      </div>
+
+      <div class="feature">
+        <div>
+          <p>A Terra gira em torno do Sol em um ano, mas seu eixo é inclinado em <b>23,5°</b>. Por causa dessa
+            inclinação, ao longo da órbita cada hemisfério recebe os raios solares com diferentes intensidades e
+            ângulos.</p>
+          <p>Quando o Hemisfério Sul está inclinado em direção ao Sol, recebemos raios mais diretos e dias mais longos —
+            é o nosso <b>verão</b>. Ao mesmo tempo, no Hemisfério Norte é <b>inverno</b>. Seis meses depois, a situação
+            se inverte.</p>
+          <p>Os <b>equinócios</b> (outono e primavera) acontecem quando o Sol incide perpendicularmente ao Equador, com
+            dia e noite quase iguais. Os <b>solstícios</b> marcam o auge do verão e do inverno.</p>
+
+          <div class="seasons-grid">
+            <div class="season">
+              <div class="emoji">🌸</div>
+              <h4>Primavera</h4>
+              <p>Dias se alongam, temperatura sobe gradualmente.</p>
+            </div>
+            <div class="season">
+              <div class="emoji">☀️</div>
+              <h4>Verão</h4>
+              <p>Raios mais diretos, dias longos e quentes.</p>
+            </div>
+            <div class="season">
+              <div class="emoji">🍂</div>
+              <h4>Outono</h4>
+              <p>Dias diminuem, temperaturas caem aos poucos.</p>
+            </div>
+            <div class="season">
+              <div class="emoji">❄️</div>
+              <h4>Inverno</h4>
+              <p>Raios oblíquos, dias curtos e noites frias.</p>
+            </div>
+          </div>
+        </div>
+        <div class="img" style="background-image:url('imgs/terra.jpg');aspect-ratio:1/1">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STORM / LIGHTNING -->
+  <section class="storm-section">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="small">Capítulo VI</span>
+          <h2>Raios e trovões: <em>a fúria elétrica do céu</em></h2>
+        </div>
+        <span class="small">⚡ até 30.000 °C</span>
+      </div>
+
+      <div class="lightning-grid">
+        <div class="lightning-img" style="background-image:url('imgs/raios.jpg')">
+        </div>
+        <div>
+          <p style="opacity:.88">Dentro das nuvens cumulonimbus, gotículas de água e cristais de gelo se chocam
+            violentamente. Esses choques separam cargas elétricas: <b>positivas no topo</b> e <b>negativas na base</b>.
+            Quando a diferença é grande demais, ocorre a descarga — o <b>raio</b>.</p>
+          <p style="opacity:.88;margin-top:10px">O raio aquece o ar à sua volta a até <b>30.000 °C</b> em milissegundos.
+            Esse ar superaquecido se expande explosivamente, gerando uma onda de choque que ouvimos como <b>trovão</b>.
+          </p>
+
+          <div class="lightning-types">
+            <div class="lt"><b>Nuvem-solo (descendente)</b><span>O mais conhecido: parte da base da nuvem em direção ao
+                chão.</span></div>
+            <div class="lt"><b>Nuvem-nuvem</b><span>Ocorre entre duas nuvens com cargas opostas, iluminando o
+                céu.</span></div>
+            <div class="lt"><b>Intranuvem</b><span>Acontece dentro da mesma nuvem; é o tipo mais frequente.</span></div>
+            <div class="lt"><b>Solo-nuvem (ascendente)</b><span>Raro, parte de estruturas altas (torres, montanhas) em
+                direção à nuvem.</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONVECTION -->
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="small">Capítulo VII</span>
+          <h2>Convecção: <em>o motor do vento</em></h2>
+        </div>
+        <span class="small">ar quente sobe, ar frio desce</span>
+      </div>
+
+      <div class="feature">
+        <div>
+          <p>Quando o Sol aquece a superfície da Terra, o ar próximo ao chão se aquece, fica menos denso e <b>sobe</b>.
+            No alto, ele esfria e se torna mais denso, <b>descendo</b> novamente em outro ponto. Esse movimento circular
+            é a <b>convecção</b>.</p>
+          <p>O ar que desce ocupa o espaço deixado pelo ar que sobe, formando uma corrente horizontal — que sentimos
+            como <b>vento</b>. Em escala global, esse mesmo princípio cria as grandes correntes atmosféricas, brisas
+            marítimas e terrestres.</p>
+          <p><b>Brisa marítima:</b> durante o dia, a terra esquenta mais rápido que o mar. O ar sobe na praia e o ar
+            fresco vem do oceano. À noite, o processo se inverte — é a <b>brisa terrestre</b>.</p>
+        </div>
+        <div>
+          <div class="conv-box">
+            <img src="imgs/diagrama.png">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECH FORECAST -->
+  <section style="background:linear-gradient(180deg,#e8f1f8,#fbf7ef)">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="small">Capítulo VIII</span>
+          <h2>Como se prevê <em>o tempo de amanhã</em></h2>
+        </div>
+        <span class="small">tecnologia &amp; ciência</span>
+      </div>
+
+      <div class="tech-grid">
+        <div class="tech">
+          <div class="img" style="background-image:url('imgs/radar-meteorologico.jpg')">
+          </div>
+          <div class="body">
+            <h4>📡 Radares</h4>
+            <p>Emitem ondas de rádio que rebatem em gotas de chuva, granizo e neve. Pelo eco recebido, o radar mapeia em
+              tempo real a intensidade e o deslocamento das chuvas.</p>
+          </div>
+        </div>
+        <div class="tech">
+          <div class="img" style="background-image:url('imgs/satelite.webp')">
+          </div>
+          <div class="body">
+            <h4>🛰️ Satélites</h4>
+            <p>Orbitando a Terra, fotografam continuamente as nuvens, mapeiam frentes frias, medem temperatura dos
+              oceanos e acompanham furacões em formação.</p>
+          </div>
+        </div>
+        <div class="tech">
+          <div class="img" style="background-image:url('imgs/previsao-tempo.webp')">
+          </div>
+          <div class="body">
+            <h4>💻 Computadores</h4>
+            <p>Supercomputadores processam bilhões de dados de estações, radares e satélites em modelos matemáticos que
+              simulam a atmosfera e geram a previsão.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EFFECTS -->
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="small">Capítulo IX</span>
+          <h2>Forças que <em>mudam o tempo</em></h2>
+        </div>
+        <span class="small">de cima e de baixo</span>
+      </div>
+
+      <div class="effects">
+        <div class="effect">
+          <div class="img" style="background-image:url('imgs/corrente-jato.jpg')">
+          </div>
+          <div class="body">
+            <h4>💨 Correntes de jato</h4>
+            <p>São ventos extremamente rápidos (300–400 km/h) que sopram entre 8 e 15 km de altitude, ao redor do
+              planeta. Funcionam como "rios de ar" que guiam frentes frias e tempestades. Quando se curvam para o sul,
+              trazem massas de ar polar; quando se elevam, deixam o tempo quente e seco. Aviões usam o jato a favor para
+              economizar combustível.</p>
+          </div>
+        </div>
+        <div class="effect">
+          <div class="img" style="background-image:url('imgs/erupcao-vulcanica.jpg')">
+          </div>
+          <div class="body">
+            <h4>🌋 Erupções vulcânicas</h4>
+            <p>Lançam cinzas, gases (especialmente dióxido de enxofre) e partículas até a estratosfera. Esses aerossóis
+              refletem a luz solar e podem <b>esfriar o planeta</b> por meses ou anos. A erupção do Pinatubo (1991)
+              baixou a temperatura global em cerca de 0,5 °C por dois anos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WATER CYCLE -->
+  <section style="background:linear-gradient(180deg,#fbf7ef,#dff1ff)">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="small">Capítulo X</span>
+          <h2>O ciclo da <em>água</em></h2>
+        </div>
+        <span class="small">o motor da meteorologia</span>
+      </div>
+
+      <p style="max-width:800px;font-size:1.05rem">A água nunca para. Ela viaja constantemente entre oceanos, atmosfera,
+        terra e seres vivos, num movimento eterno que sustenta toda a vida no planeta.</p>
+
+      <div class="cycle">
+        <div class="cycle-grid">
+          <div class="cycle-step">
+            <div class="num">1</div>
+            <h5>Evaporação</h5>
+            <p>O calor do Sol transforma a água dos oceanos, rios e lagos em vapor que sobe para a atmosfera.</p>
+          </div>
+          <div class="cycle-step">
+            <div class="num">2</div>
+            <h5>Condensação</h5>
+            <p>No alto, o vapor esfria e se condensa em gotinhas microscópicas, formando as nuvens.</p>
+          </div>
+          <div class="cycle-step">
+            <div class="num">3</div>
+            <h5>Precipitação</h5>
+            <p>Quando as gotas ficam pesadas, caem como chuva, neve ou granizo de volta à superfície.</p>
+          </div>
+          <div class="cycle-step">
+            <div class="num">4</div>
+            <h5>Escoamento</h5>
+            <p>A água escorre pelos rios, infiltra no solo (lençol freático) e retorna aos oceanos. O ciclo recomeça.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img class="cycle-img" src="imgs/ciclo.png">
+      <p style="margin-top:18px;font-size:.9rem;color:#555;font-style:italic">A <b>transpiração</b> das plantas e a
+        <b>sublimação</b> do gelo também participam do ciclo, devolvendo vapor à atmosfera.
+      </p>
+    </div>
+  </section>
+
+  <!-- DIY PROJECTS -->
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="small">Capítulo XI</span>
+          <h2>Mãos à obra: <em>construa seu instrumento</em></h2>
+        </div>
+        <span class="small">projetos de campo</span>
+      </div>
+
+      <div class="diy">
+        <div class="diy-card">
+          <div class="img" style="background-image:url('imgs/catavento.png')"></div>
+          <div class="body">
+            <h4>🌬️ Cata-vento simples</h4>
+            <ol>
+              <li>Recorte uma seta de papel-cartão (com cauda larga e ponta fina).</li>
+              <li>Espete um alfinete pelo centro da seta, atravessando uma borracha na ponta de um lápis.</li>
+              <li>Fixe o lápis verticalmente em uma base de madeira ou rolha.</li>
+              <li>Marque os pontos cardeais (N, S, L, O) com uma bússola.</li>
+              <li>A ponta da seta indica de onde o vento <b>vem</b>.</li>
+            </ol>
+          </div>
+        </div>
+        <div class="diy-card">
+          <div class="img" style="background-image:url('imgs/pluviometro-caseiro.png')">
+          </div>
+          <div class="body">
+            <h4>🪣 Pluviômetro caseiro</h4>
+            <ol>
+              <li>Pegue uma garrafa PET de 2 L e corte ao meio.</li>
+              <li>Inverta a parte superior (sem tampa) sobre a inferior, formando um funil.</li>
+              <li>Cole uma régua na lateral, com o zero na linha onde a água começa.</li>
+              <li>Coloque em local aberto, longe de árvores e muros.</li>
+              <li>Após a chuva, leia a altura da água em mm — é a quantidade exata caída.</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WEATHER LOG -->
+  <section style="background:linear-gradient(180deg,#fbf7ef,#e8f1f8)">
+    <div class="wrap">
+      <div class="section-head">
+        <div>
+          <span class="small">Capítulo XII</span>
+          <h2>Quadro meteorológico <em>semanal</em></h2>
+        </div>
+        <span class="small">leituras de 12 em 12 horas</span>
+      </div>
+      <p style="max-width:760px;margin-bottom:20px">Durante uma semana, registre o tempo duas vezes ao dia (manhã e
+        noite). Anote: temperatura, umidade, formação de nuvens e direção do vento. Abaixo, um exemplo:</p>
+
+      <div class="log-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Dia</th>
+              <th>Hora</th>
+              <th>Temp.</th>
+              <th>Umidade</th>
+              <th>Nuvens</th>
+              <th>Vento</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Seg</td>
+              <td>08h</td>
+              <td>21 °C</td>
+              <td><span class="pill">Orvalho</span></td>
+              <td>Cirros</td>
+              <td>NE</td>
+            </tr>
+            <tr>
+              <td>Seg</td>
+              <td>20h</td>
+              <td>18 °C</td>
+              <td><span class="pill">Seco</span></td>
+              <td>Limpo</td>
+              <td>N</td>
+            </tr>
+            <tr>
+              <td>Ter</td>
+              <td>08h</td>
+              <td>23 °C</td>
+              <td><span class="pill">Neblina</span></td>
+              <td>Estratos</td>
+              <td>L</td>
+            </tr>
+            <tr>
+              <td>Ter</td>
+              <td>20h</td>
+              <td>20 °C</td>
+              <td><span class="pill">Chuva leve</span></td>
+              <td>Nimbos</td>
+              <td>SE</td>
+            </tr>
+            <tr>
+              <td>Qua</td>
+              <td>08h</td>
+              <td>19 °C</td>
+              <td><span class="pill">Chuva</span></td>
+              <td>Nimbos</td>
+              <td>S</td>
+            </tr>
+            <tr>
+              <td>Qua</td>
+              <td>20h</td>
+              <td>17 °C</td>
+              <td><span class="pill">Úmido</span></td>
+              <td>Estratos</td>
+              <td>SO</td>
+            </tr>
+            <tr>
+              <td>Qui</td>
+              <td>08h</td>
+              <td>22 °C</td>
+              <td><span class="pill">Seco</span></td>
+              <td>Cúmulos</td>
+              <td>O</td>
+            </tr>
+            <tr>
+              <td>Qui</td>
+              <td>20h</td>
+              <td>20 °C</td>
+              <td><span class="pill">Seco</span></td>
+              <td>Cirros</td>
+              <td>NO</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAITH -->
+  <section class="faith-section">
+    <div class="wrap">
+      <span class="small" style="color:rgba(255,255,255,.6)">Capítulo XIII</span>
+      <h2>O clima e <em>a vontade de Deus</em></h2>
+      <p style="max-width:720px;margin:0 auto;opacity:.85">As Escrituras nos lembram que o Criador é também o Senhor dos
+        ventos, das águas e das estações. O clima, criado por Deus, sustenta a vida — e por vezes serve de instrumento
+        para nos ensinar, corrigir e salvar.</p>
+
+      <div class="verses">
+        <div class="verse">
+          <div class="ref">Gênesis 1</div>
+          <p>"E disse Deus: Haja uma expansão no meio das águas..." Deus separa as águas e cria a atmosfera,
+            estabelecendo o sistema climático que torna possível a vida.</p>
+        </div>
+        <div class="verse">
+          <div class="ref">Jonas 1 e 2</div>
+          <p>Deus envia um grande vento sobre o mar para alcançar o coração de um profeta em fuga. A tempestade, longe
+            de ser castigo cego, foi o caminho da misericórdia.</p>
+        </div>
+        <div class="verse">
+          <div class="ref">Mateus 8:23–27</div>
+          <p>Jesus, no barco com seus discípulos, repreende o vento e o mar — e há grande bonança. O mesmo Deus que
+            criou o clima é Aquele que o domina com uma palavra.</p>
+        </div>
+      </div>
+
+      <br>
+
+      <p style="max-width:720px;margin:0 auto;opacity:.85">A Bíblia ensina que o clima faz parte da criação de Deus e
+        está sob Seu controle. Em Gênesis 1, vemos que Deus criou os elementos da natureza para sustentar a vida na
+        Terra. Em Jonas 1 e 2, uma tempestade foi usada para chamar a atenção do profeta e conduzi-lo de volta à missão
+        que havia recebido. Já em Mateus 8:23-27, Jesus acalma uma tempestade, demonstrando Seu poder sobre a natureza e
+        fortalecendo a fé dos discípulos. Esses relatos mostram que Deus pode usar o clima para cumprir Seus propósitos,
+        ensinar lições importantes e conduzir pessoas à salvação e à confiança nEle.
+      </p>
+
+
+      <div class="pull" style="color:var(--sun-glow);border-color:var(--sun);margin:40px auto 0;text-align:left">"Ainda
+        os ventos e o mar lhe obedecem!" — Mt 8:27</div>
+    </div>
+  </section>
+
+  <footer>
+  </footer>
+
+</body>
+
+</html>
