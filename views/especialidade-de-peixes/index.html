@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,900&family=Inter:wght@300;400;500;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.min.css">
+
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <header class="hero">
+    <img class="bg" src="imgs/hero.jpg" alt="Cardume de peixes prateados sob raios de sol em mar profundo">
+    <div class="hero-inner wrap">
+      <p class="kicker" data-id="meta-area"></p>
+      <h1>Peixes<br><em>o mundo submerso</em></h1>
+      <p class="lead">Guia visual completo da Especialidade de Peixes — dos tubarões-baleia aos pequenos cardumes de
+        recife, tudo o que vive respirando na água.</p>
+      <div class="badges" data-id="meta"></div>
+    </div>
+  </header>
+
+  <!-- QUANTAS ESPÉCIES / PECILOTÉRMICOS -->
+  <section>
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker">Abertura</p>
+        <div class="rule"></div>
+        <h2>Metade de todos os vertebrados do planeta vive dentro d'água</h2>
+        <p>Os peixes formam o maior e mais diverso grupo de vertebrados que existe. Nenhum outro grupo chega perto em
+          número de formas, cores e estratégias de vida.</p>
+      </div>
+
+      <div class="grid g4" style="margin-bottom:2.4rem">
+        <div class="stat">
+          <div class="num">~35.000</div>
+          <div class="lbl">espécies de peixes já descritas no mundo (mais de 36 mil segundo o FishBase), com dezenas de
+            novas descobertas todos os anos</div>
+        </div>
+        <div class="stat">
+          <div class="num">50%</div>
+          <div class="lbl">de todas as espécies de vertebrados do planeta são peixes</div>
+        </div>
+        <div class="stat">
+          <div class="num">~4.500</div>
+          <div class="lbl">espécies só nas águas doces e marinhas do Brasil — um dos países mais ricos em peixes do
+            mundo</div>
+        </div>
+        <div class="stat">
+          <div class="num">8.300 m</div>
+          <div class="lbl">a maior profundidade em que já se filmou um peixe vivo (fossa dos Izu-Ogasawara, Japão)</div>
+        </div>
+      </div>
+
+      <div class="split">
+        <div>
+          <p class="kicker">Sangue frio? Nem tanto</p>
+          <h3 style="font-size:clamp(1.6rem,4vw,2.4rem);margin:.6rem 0 1rem">Por que os peixes são pecilotérmicos</h3>
+          <p style="color:#b9d2dc">Pecilotérmico (do grego <em>poikilos</em> = variável + <em>thermos</em> = calor) é o
+            animal cuja temperatura corporal <strong>varia conforme a temperatura do ambiente</strong>. Os peixes não
+            possuem um mecanismo interno eficiente para produzir e conservar calor: o sangue passa constantemente pelas
+            guelras, em contato direto com a água, e ali perde qualquer calor extra. Resultado: a temperatura do corpo
+            fica praticamente igual à da água ao redor.</p>
+          <p style="color:#b9d2dc">Por isso o metabolismo deles depende do clima. Em água fria ficam lentos e comem
+            pouco; em água morna ficam ativos, crescem e digerem mais rápido. É também por isso que uma mudança brusca
+            de temperatura pode matar um peixe de aquário.</p>
+          <p style="color:#b9d2dc"><strong>Exceções curiosas:</strong> atuns, alguns tubarões (branco, mako) e o
+            peixe-lua-do-oceano <em>Lampris</em> conseguem manter partes do corpo mais quentes que a água — são chamados
+            de endotérmicos regionais. O <em>Lampris guttatus</em> é considerado o único peixe realmente "de sangue
+            quente".</p>
+        </div>
+        <figure class="figure">
+          <img src="imgs/peixes-recife.jpg" alt="Peixes coloridos de recife em água turquesa" loading="lazy">
+          <figcaption>Recifes rasos e quentes concentram a maior diversidade de peixes do planeta.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONDRICTES x OSTEÍCTES -->
+  <section class="paper">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker">Classificação</p>
+        <div class="rule"></div>
+        <h2>Cartilagem ou osso: as duas grandes linhagens</h2>
+        <p>Além dos raros peixes sem mandíbula (agnatos, como a lampreia e a feiticeira), os peixes se dividem em dois
+          grandes grupos: os condrictes, de esqueleto de cartilagem, e os osteíctes, de esqueleto ósseo.</p>
+      </div>
+
+      <div class="split" style="margin-bottom:2.4rem">
+        <figure class="figure">
+          <img src="imgs/tubarao-raia.jpg" alt="Tubarão e raia nadando sobre fundo de areia" loading="lazy">
+          <figcaption>Tubarão e raia: dois condrictes clássicos, com esqueleto inteiramente cartilaginoso.</figcaption>
+        </figure>
+        <figure class="figure">
+          <img src="imgs/pirarucu-tambaquis.jpg" alt="Pirarucu e tambaquis em rio amazônico" loading="lazy">
+          <figcaption>Pirarucu e tambaquis: osteíctes de água doce, com esqueleto ósseo e opérculo.</figcaption>
+        </figure>
+      </div>
+
+      <div class="tbl-scroll">
+        <table class="cmp">
+          <thead>
+            <tr>
+              <th>Característica</th>
+              <th>Condrictes (Chondrichthyes)</th>
+              <th>Osteíctes (Osteichthyes)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Esqueleto</th>
+              <td>Cartilaginoso, leve e flexível</td>
+              <td>Ósseo, rígido e calcificado</td>
+            </tr>
+            <tr>
+              <th>Escamas</th>
+              <td>Placoides (dentículos dérmicos) — pele áspera como lixa</td>
+              <td>Ciclóides, ctenoides ou ganoides — lisas e sobrepostas</td>
+            </tr>
+            <tr>
+              <th>Guelras</th>
+              <td>5 a 7 fendas branquiais expostas, sem opérculo</td>
+              <td>Protegidas por um opérculo móvel</td>
+            </tr>
+            <tr>
+              <th>Bexiga natatória</th>
+              <td>Ausente — flutuam graças ao fígado enorme, rico em óleo, e ao nado contínuo</td>
+              <td>Presente na maioria — controle fino da flutuação</td>
+            </tr>
+            <tr>
+              <th>Boca</th>
+              <td>Geralmente ventral (embaixo da cabeça)</td>
+              <td>Geralmente terminal (na ponta do focinho)</td>
+            </tr>
+            <tr>
+              <th>Nadadeira caudal</th>
+              <td>Heterocerca (lobo superior maior)</td>
+              <td>Normalmente homocerca (lobos iguais)</td>
+            </tr>
+            <tr>
+              <th>Fecundação e reprodução</th>
+              <td>Interna (machos têm clásperes); ovíparos, ovovivíparos ou vivíparos; poucos filhotes grandes</td>
+              <td>Em geral externa (desova); a maioria ovípara, com milhares de ovos pequenos</td>
+            </tr>
+            <tr>
+              <th>Excreção / osmose</th>
+              <td>Retêm ureia no sangue para equilibrar a salinidade</td>
+              <td>Rim e guelras regulam sais; eliminam amônia</td>
+            </tr>
+            <tr>
+              <th>Nº aproximado de espécies</th>
+              <td>Cerca de 1.200</td>
+              <td>Mais de 30.000 (95% dos peixes)</td>
+            </tr>
+            <tr>
+              <th>5 exemplos</th>
+              <td>Tubarão-branco, tubarão-martelo, arraia/raia-manta, cação-anjo, quimera (peixe-rato)</td>
+              <td>Sardinha, tilápia, dourado, pirarucu, salmão</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p style="font-size:.9rem;color:#68828e;margin-top:1rem">Os osteíctes ainda se dividem em
+        <strong>Actinopterygii</strong> (nadadeiras raiadas — quase todos os peixes conhecidos) e
+        <strong>Sarcopterygii</strong> (nadadeiras lobadas — celacanto e peixes pulmonados, parentes distantes dos
+        primeiros vertebrados terrestres).
+      </p>
+    </div>
+  </section>
+
+  <!-- FAMÍLIAS -->
+  <section class="paper" style="padding-top:0">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker">Taxonomia prática</p>
+        <div class="rule"></div>
+        <h2>Dez famílias de peixes para conhecer</h2>
+        <p>Toda família termina em <em>-idae</em>. Reconhecer famílias é o atalho para identificar um peixe desconhecido
+          em campo.</p>
+      </div>
+      <div class="fam">
+        <span><b>Characidae</b> — lambaris, piabas, piranhas, dourado</span>
+        <span><b>Cichlidae</b> — tilápia, tucunaré, acará, kinguio-do-Malawi</span>
+        <span><b>Pimelodidae</b> — pintado, jaú, mandi (bagres de couro)</span>
+        <span><b>Serrasalmidae</b> — pacu, tambaqui, piranha-vermelha</span>
+        <span><b>Loricariidae</b> — cascudos e acaris</span>
+        <span><b>Salmonidae</b> — salmão e truta</span>
+        <span><b>Clupeidae</b> — sardinhas e arenques</span>
+        <span><b>Scombridae</b> — atum, bonito, cavala</span>
+        <span><b>Carangidae</b> — xaréu, olho-de-boi, palombeta</span>
+        <span><b>Sciaenidae</b> — corvina, pescada, curvina</span>
+        <span><b>Cyprinidae</b> — carpa e peixinho-dourado</span>
+        <span><b>Lutjanidae</b> — vermelhos e ciobas</span>
+        <span><b>Carcharhinidae</b> — tubarões-cação e tubarão-tigre</span>
+        <span><b>Arapaimidae</b> — pirarucu e aruanã</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- BANNER TUBARÃO BALEIA -->
+  <section class="banner" style="padding:0">
+    <img src="imgs/tubarao-baleia.jpg" alt="Tubarão-baleia nadando perto da superfície acompanhado de peixes menores"
+      loading="lazy">
+    <div class="quote">
+      <div class="wrap">
+        <p>O maior peixe do mundo se alimenta das menores criaturas do mar.</p>
+        <span>Tubarão-baleia · Rhincodon typus</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap split">
+      <div>
+        <p class="kicker">O gigante gentil</p>
+        <h2 style="font-size:clamp(1.9rem,5vw,3rem);margin:.6rem 0 1rem">Tubarão-baleia</h2>
+        <p style="color:#b9d2dc" class="drop">O maior peixe vivo do planeta é o tubarão-baleia (<em>Rhincodon
+            typus</em>) — e apesar do nome, não é uma baleia: é um peixe cartilaginoso, um condricte, que respira por
+          guelras.</p>
+        <div class="parts" style="margin-top:1.4rem">
+          <div class="part">
+            <h4>Tamanho</h4>
+            <p>Em média 9 a 12 m. O maior indivíduo medido com segurança tinha cerca de <strong>18,8 m</strong> e mais
+              de 20 toneladas. Vive até 70–100 anos.</p>
+          </div>
+          <div class="part">
+            <h4>Onde vive</h4>
+            <p>Águas tropicais e subtropicais quentes de todos os oceanos, geralmente entre 30°N e 35°S. No Brasil
+              aparece no litoral do Nordeste, em Fernando de Noronha e no Arquipélago de São Pedro e São Paulo.</p>
+          </div>
+          <div class="part">
+            <h4>Do que se alimenta</h4>
+            <p>É <strong>filtrador</strong>: nada de boca aberta engolindo enormes volumes de água e retendo plâncton,
+              krill, larvas, pequenos crustáceos, lulas e cardumes de peixinhos. Chega a filtrar milhares de litros por
+              hora. Seus dentes são minúsculos e praticamente inúteis.</p>
+          </div>
+          <div class="part">
+            <h4>Relação com o homem</h4>
+            <p>É <strong>totalmente inofensivo</strong> — dócil e curioso, permite que mergulhadores nadem ao lado.
+              Sustenta um turismo de mergulho valioso e é uma espécie-símbolo de conservação. Está classificado como
+              <strong>Em Perigo (EN)</strong> pela IUCN, ameaçado pela pesca (barbatanas e carne), colisões com
+              embarcações, emalhe acidental em redes e poluição. No Brasil sua pesca é proibida.
+            </p>
+          </div>
+        </div>
+      </div>
+      <figure class="figure" style="min-height:320px">
+        <img src="imgs/tubarao-baleia.jpg" alt="Detalhe do padrão de manchas brancas do tubarão-baleia" loading="lazy"
+          style="height:100%">
+        <figcaption>O padrão de manchas é único em cada indivíduo — funciona como uma impressão digital usada por
+          pesquisadores.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- 15 PEIXES DO BRASIL -->
+  <section class="paper">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker">Fauna nacional</p>
+        <div class="rule"></div>
+        <h2>Quinze peixes típicos do Brasil</h2>
+        <p>Habitat, alimentação e tipo de procriação de peixes que qualquer desbravador brasileiro pode encontrar em
+          rios, lagos, mangues e no mar.</p>
+      </div>
+
+      <div class="fish-grid">
+
+        <article class="fish">
+          <div class="top"><span class="tagline">Água doce</span>
+            <h4>Pirarucu</h4>
+            <p class="sci">Arapaima gigas</p>
+          </div>
+          <img src="imgs/pirarucu.jpg">
+          <dl>
+            <dt>Habitat</dt>
+            <dd>Lagos, igapós e rios de água calma da bacia Amazônica.</dd>
+            <dt>Alimentação</dt>
+            <dd>Carnívoro: peixes menores, crustáceos e até pequenas aves.</dd>
+            <dt>Procriação</dt>
+            <dd>Ovíparo. Constrói ninho no fundo lodoso; o macho guarda os filhotes na boca e na cabeça por meses.</dd>
+          </dl>
+        </article>
+
+        <article class="fish">
+          <div class="top"><span class="tagline">Água doce</span>
+            <h4>Tambaqui</h4>
+            <p class="sci">Colossoma macropomum</p>
+          </div>
+          <img src="imgs/tambaqui.jpg">
+          <dl>
+            <dt>Habitat</dt>
+            <dd>Rios e florestas alagadas da Amazônia e do Orinoco.</dd>
+            <dt>Alimentação</dt>
+            <dd>Onívoro frugívoro: frutos e sementes que caem na água, além de zooplâncton.</dd>
+            <dt>Procriação</dt>
+            <dd>Ovíparo, com desova total durante a piracema (migração reprodutiva rio acima).</dd>
+          </dl>
+        </article>
+
+        <article class="fish">
+          <div class="top"><span class="tagline">Água doce</span>
+            <h4>Dourado</h4>
+            <p class="sci">Salminus brasiliensis</p>
+          </div>
+          <img src="imgs/dourado.jpg">
+          <dl>
+            <dt>Habitat</dt>
+            <dd>Rios de corredeiras das bacias do Paraná, Paraguai e Uruguai.</dd>
+            <dt>Alimentação</dt>
+            <dd>Carnívoro/piscívoro, caça lambaris e curimbatás em águas rápidas.</dd>
+            <dt>Procriação</dt>
+            <dd>Ovíparo, migrador de piracema; desova em água aberta, sem cuidado parental.</dd>
+          </dl>
+        </article>
+
+        <article class="fish">
+          <div class="top"><span class="tagline">Água doce</span>
+            <h4>Pintado / Surubim</h4>
+            <p class="sci">Pseudoplatystoma corruscans</p>
+          </div>
+          <img src="imgs/pintado.jpg">
+          <dl>
+            <dt>Habitat</dt>
+            <dd>Poços fundos e remansos dos rios São Francisco, Paraná e Paraguai.</dd>
+            <dt>Alimentação</dt>
+            <dd>Carnívoro de hábito noturno; usa os barbilhos para localizar peixes no escuro.</dd>
+            <dt>Procriação</dt>
+            <dd>Ovíparo migrador; desova durante a piracema, no período das cheias.</dd>
+          </dl>
+        </article>
+
+        <article class="fish">
+          <div class="top"><span class="tagline">Água doce</span>
+            <h4>Tucunaré</h4>
+            <p class="sci">Cichla ocellaris</p>
+          </div>
+          <img src="imgs/tucunare.jpg">
+          <dl>
+            <dt>Habitat</dt>
+            <dd>Lagos, remansos e represas da Amazônia; introduzido em açudes do país todo.</dd>
+            <dt>Alimentação</dt>
+            <dd>Predador voraz de peixes e camarões, caça de dia à espreita.</dd>
+            <dt>Procriação</dt>
+            <dd>Ovíparo com cuidado parental: casal limpa uma laje, desova e defende a prole.</dd>
+          </dl>
+        </article>
+
+        <article class="fish">
+          <div class="top"><span class="tagline">Água doce</span>
+            <h4>Piranha-vermelha</h4>
+            <p class="sci">Pygocentrus nattereri</p>
+          </div>
+          <img src="imgs/piranha-vermelha.jpg">
+          <dl>
+            <dt>Habitat</dt>
+            <dd>Rios, lagoas e o Pantanal; vive em cardumes.</dd>
+            <dt>Alimentação</dt>
+            <dd>Carnívora e oportunista: peixes, insetos, carniça, às vezes frutos.</dd>
+            <dt>Procriação</dt>
+            <dd>Ovípara; desova em ninhos rasos entre plantas aquáticas e guarda os ovos.</dd>
+          </dl>
+        </article>
+
+        <article class="fish">
+          <div class="top"><span class="tagline">Água doce</span>
+            <h4>Lambari</h4>
+            <p class="sci">Astyanax spp.</p>
+          </div>
+          <img src="imgs/lambari.png">
+          <dl>
+            <dt>Habitat</dt>
+            <dd>Praticamente todos os riachos, córregos e lagos do Brasil.</dd>
+            <dt>Alimentação</dt>
+            <dd>Onívoro: insetos, algas, restos vegetais e pequenos invertebrados.</dd>
+            <dt>Procriação</dt>
+            <dd>Ovíparo; desova parcelada em vegetação submersa, sem cuidado parental.</dd>
+          </dl>
+        </article>
+
+        <article class="fish">
+          <div class="top"><span class="tagline">Água doce</span>
+            <h4>Cascudo</h4>
+            <p class="sci">Hypostomus spp.</p>
+          </div>
+          <img src="imgs/cascudo.jpg">
+          <dl>
+            <dt>Habitat</dt>
+            <dd>Fundo pedregoso de rios e riachos; fixa-se em pedras e troncos.</dd>
+            <dt>Alimentação</dt>
+            <dd>Detritívoro/herbívoro: raspa algas e biofilme com a boca em ventosa.</dd>
+            <dt>Procriação</dt>
+            <dd>Ovíparo; desova em tocas cavadas em barrancos, o macho protege os ovos.</dd>
+          </dl>
+        </article>
+
+        <article class="fish">
+          <div class="top"><span class="tagline">Água doce</span>
+            <h4>Traíra</h4>
+            <p class="sci">Hoplias malabaricus</p>
+          </div>
+          <img src="imgs/traira.jpg">
+          <dl>
+            <dt>Habitat</dt>
+            <dd>Lagoas paradas, brejos e beiras de rio com vegetação.</dd>
+            <dt>Alimentação</dt>
+            <dd>Carnívora emboscadora: peixes, anfíbios e insetos.</dd>
+            <dt>Procriação</dt>
+            <dd>Ovípara; faz ninho em depressão no fundo e defende ovos e larvas.</dd>
+          </dl>
+        </article>
+
+        <article class="fish">
+          <div class="top"><span class="tagline">Marinho</span>
+            <h4>Sardinha-verdadeira</h4>
+            <p class="sci">Sardinella brasiliensis</p>
+          </div>
+          <img src="imgs/sardinha-verdadeira.jpg">
+          <dl>
+            <dt>Habitat</dt>
+            <dd>Águas costeiras do Sudeste e Sul, em grandes cardumes pelágicos.</dd>
+            <dt>Alimentação</dt>
+            <dd>Planctófaga: filtra fitoplâncton e zooplâncton.</dd>
+            <dt>Procriação</dt>
+            <dd>Ovípara, com fecundação externa; ovos flutuantes na coluna d'água.</dd>
+          </dl>
+        </article>
+
+        <article class="fish">
+          <div class="top"><span class="tagline">Marinho</span>
+            <h4>Garoupa</h4>
+            <p class="sci">Epinephelus marginatus</p>
+          </div>
+          <img src="imgs/garoupa.jpg">
+          <dl>
+            <dt>Habitat</dt>
+            <dd>Costões rochosos, recifes e naufrágios do litoral brasileiro.</dd>
+            <dt>Alimentação</dt>
+            <dd>Carnívora: peixes, polvos e crustáceos, engolidos por sucção.</dd>
+            <dt>Procriação</dt>
+            <dd>Ovípara e <strong>hermafrodita protogínica</strong> — nasce fêmea e pode virar macho com a idade.</dd>
+          </dl>
+        </article>
+
+        <article class="fish">
+          <div class="top"><span class="tagline">Marinho</span>
+            <h4>Robalo-flecha</h4>
+            <p class="sci">Centropomus undecimalis</p>
+          </div>
+          <img src="imgs/robalo-flecha.jpg">
+          <dl>
+            <dt>Habitat</dt>
+            <dd>Estuários, mangues e barras de rio — tolera água doce e salgada.</dd>
+            <dt>Alimentação</dt>
+            <dd>Carnívoro: camarões, siris e peixes pequenos.</dd>
+            <dt>Procriação</dt>
+            <dd>Ovíparo; desova em água salgada nas barras, na virada da maré.</dd>
+          </dl>
+        </article>
+
+        <article class="fish">
+          <div class="top"><span class="tagline">Marinho</span>
+            <h4>Corvina</h4>
+            <p class="sci">Micropogonias furnieri</p>
+          </div>
+          <img src="imgs/corvina.jpg">
+          <dl>
+            <dt>Habitat</dt>
+            <dd>Fundos de areia e lama da plataforma costeira e estuários.</dd>
+            <dt>Alimentação</dt>
+            <dd>Bentófaga: vermes, moluscos e crustáceos do fundo.</dd>
+            <dt>Procriação</dt>
+            <dd>Ovípara; o macho "ronca" vibrando a bexiga natatória para atrair a fêmea.</dd>
+          </dl>
+        </article>
+
+        <article class="fish">
+          <div class="top"><span class="tagline">Marinho</span>
+            <h4>Peixe-papagaio</h4>
+            <p class="sci">Sparisoma spp.</p>
+          </div>
+          <img src="imgs/peixe-papagaio.jpg">
+          <dl>
+            <dt>Habitat</dt>
+            <dd>Recifes de coral e costões do Nordeste e de Abrolhos.</dd>
+            <dt>Alimentação</dt>
+            <dd>Herbívoro: raspa algas do coral com o bico; produz areia ao triturar calcário.</dd>
+            <dt>Procriação</dt>
+            <dd>Ovíparo; muda de sexo e de cor ao longo da vida (protoginia).</dd>
+          </dl>
+        </article>
+
+        <article class="fish">
+          <div class="top"><span class="tagline">Marinho</span>
+            <h4>Cavalo-marinho</h4>
+            <p class="sci">Hippocampus reidi</p>
+          </div>
+          <img src="imgs/cavalo-marinho.jpg">
+          <dl>
+            <dt>Habitat</dt>
+            <dd>Mangues, gramas marinhas e recifes calmos do litoral brasileiro.</dd>
+            <dt>Alimentação</dt>
+            <dd>Suga minúsculos crustáceos com o focinho tubular.</dd>
+            <dt>Procriação</dt>
+            <dd>Ovovivíparo: a fêmea deposita os ovos na bolsa do <strong>macho</strong>, que gesta e "dá à luz".</dd>
+          </dl>
+        </article>
+
+        <article class="fish">
+          <div class="top"><span class="tagline">Marinho</span>
+            <h4>Tainha</h4>
+            <p class="sci">Mugil liza</p>
+          </div>
+          <img src="imgs/tainha.avif">
+          <dl>
+            <dt>Habitat</dt>
+            <dd>Estuários, lagoas costeiras e praias; faz a famosa arribada no Sul.</dd>
+            <dt>Alimentação</dt>
+            <dd>Iliófaga: engole lodo do fundo e filtra algas, detritos e microrganismos.</dd>
+            <dt>Procriação</dt>
+            <dd>Ovípara; migra para o mar aberto (catádroma) para desovar no inverno.</dd>
+          </dl>
+        </article>
+
+        <article class="fish">
+          <div class="top"><span class="tagline">Marinho</span>
+            <h4>Arraia-prego</h4>
+            <p class="sci">Hypanus guttatus</p>
+          </div>
+          <img src="imgs/arraia-prego.jpg">
+          <dl>
+            <dt>Habitat</dt>
+            <dd>Fundos de areia rasos, enterrada em praias e estuários.</dd>
+            <dt>Alimentação</dt>
+            <dd>Carnívora de fundo: caranguejos, camarões, moluscos e vermes.</dd>
+            <dt>Procriação</dt>
+            <dd>Ovovivípara, com fecundação interna; nascem filhotes já formados.</dd>
+          </dl>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DIÁDROMOS -->
+  <section>
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker">Grandes viagens</p>
+        <div class="rule"></div>
+        <h2>Peixes diádromos: os que trocam de mundo</h2>
+        <p>Diádromos são os peixes que migram <strong>entre a água doce e a água salgada</strong> em alguma fase
+          obrigatória do seu ciclo de vida. Enfrentam corredeiras, quedas d'água e uma reengenharia completa do próprio
+          corpo para lidar com a mudança de salinidade.</p>
+      </div>
+
+      <div class="split" style="margin-bottom:2.2rem">
+        <figure class="figure"><img src="imgs/salmao-rio.jpg" alt="Salmão saltando corredeira rio acima" loading="lazy">
+          <figcaption>Salmões podem percorrer mais de 3.000 km rio acima até o exato riacho onde nasceram.</figcaption>
+        </figure>
+        <div class="grid" style="gap:1rem">
+          <div class="card">
+            <h3>Anádromos</h3>
+            <p>Vivem no mar e sobem os rios para reproduzir. Ex.: salmão, esturjão, lampreia-marinha, savelha
+              (<em>Alosa</em>), tainha em parte de seu ciclo.</p>
+          </div>
+          <div class="card">
+            <h3>Catádromos</h3>
+            <p>Vivem em água doce e descem ao mar para desovar. Ex.: enguia-europeia e enguia-americana
+              (<em>Anguilla</em>), robalo em parte do ciclo.</p>
+          </div>
+          <div class="card">
+            <h3>Anfídromos</h3>
+            <p>Migram entre rio e mar por outros motivos (alimentação, crescimento), não só para reproduzir. Ex.: alguns
+              gobiídeos e o camarão-pitu das ilhas.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid g3">
+        <div class="card">
+          <h3>1. Salmão-do-atlântico</h3>
+          <img src="imgs/salmao-do-atlantico.avif">
+          <p><em>Salmo salar</em> — anádromo. Nasce no rio, cresce no mar e volta ao rio natal guiado pelo olfato.</p>
+        </div>
+        <div class="card">
+          <h3>2. Enguia-europeia</h3>
+          <img src="imgs/enguia-europeia.png">
+          <p><em>Anguilla anguilla</em> — catádroma. Cruza o Atlântico até o Mar dos Sargaços para desovar e morrer.</p>
+        </div>
+        <div class="card">
+          <h3>3. Esturjão</h3>
+          <img src="imgs/esturjao.jpg">
+          <p><em>Acipenser sturio</em> — anádromo. Peixe antiquíssimo, origem do caviar, hoje criticamente ameaçado.</p>
+        </div>
+        <div class="card">
+          <h3>4. Lampreia-marinha</h3>
+          <img src="imgs/lampreia-marinha.jpg">
+          <p><em>Petromyzon marinus</em> — anádroma. Agnato parasita que sobe os rios para reproduzir.</p>
+        </div>
+        <div class="card">
+          <h3>5. Tainha</h3>
+          <img src="imgs/tainha.avif">
+          <p><em>Mugil liza</em> — catádroma. Cresce em estuários e lagoas costeiras e desova no mar aberto.</p>
+        </div>
+        <div class="card">
+          <h3>6. Truta-arco-íris (forma <em>steelhead</em>)</h3>
+          <img src="imgs/truta-arco-íiis.jpg">
+          <p><em>Oncorhynchus mykiss</em> — anádroma quando desce ao mar e retorna ao rio para desovar.</p>
+        </div>
+      </div>
+      <p style="color:#93b2c0;font-size:.9rem;margin-top:1.4rem"><strong>Atenção:</strong> a <em>piracema</em>
+        brasileira (dourado, pintado, curimbatá) <strong>não</strong> é migração diádroma — é potamódroma, pois acontece
+        inteiramente dentro da água doce.</p>
+    </div>
+  </section>
+
+  <!-- ANATOMIA -->
+  <section class="paper">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker">Anatomia externa</p>
+        <div class="rule"></div>
+        <h2>As partes de um peixe</h2>
+        <p>Cada nadadeira e cada estrutura resolve um problema específico de viver dentro d'água.</p>
+      </div>
+
+      <figure class="figure" style="margin-bottom:2rem;background:#fff">
+        <img src="imgs/anatomia.jpg"
+          alt="Ilustração científica de um peixe mostrando nadadeiras, linha lateral, opérculo, guelras e barbilhos"
+          loading="lazy">
+        <figcaption>Prancha anatômica: dorsal e caudal no topo e na cauda, peitorais e pélvicas nas laterais, anal
+          atrás, linha lateral cortando o corpo e o opérculo cobrindo as guelras.</figcaption>
+      </figure>
+
+      <div class="parts" style="color:var(--ink)">
+        <div class="part" style="border-color:var(--teal)">
+          <h4 style="color:var(--ink)">Barbatana dorsal</h4>
+          <p style="color:#4d6773">Fica no dorso (as costas). Funciona como a quilha de um barco: dá
+            <strong>estabilidade lateral</strong>, impede o peixe de rolar e ajuda em curvas bruscas. Pode ter espinhos
+            de defesa e, em alguns peixes, é dividida em duas ou três.
+          </p>
+        </div>
+        <div class="part" style="border-color:var(--teal)">
+          <h4 style="color:var(--ink)">Barbatana peitoral</h4>
+          <p style="color:#4d6773">Par de nadadeiras logo atrás das guelras, equivalentes aos nossos braços. Servem para
+            <strong>manobrar, virar, frear e subir/descer</strong>. Nos peixes-voadores viram asas; nas raias, formam o
+            "disco".
+          </p>
+        </div>
+        <div class="part" style="border-color:var(--teal)">
+          <h4 style="color:var(--ink)">Barbatana pélvica (ventral)</h4>
+          <p style="color:#4d6773">Par localizado na parte inferior do corpo, equivalente às pernas. Auxiliam na
+            <strong>estabilidade vertical, na frenagem e em pairar parado</strong> na água. Nos tubarões machos, parte
+            dela forma o clásper reprodutivo.
+          </p>
+        </div>
+        <div class="part" style="border-color:var(--teal)">
+          <h4 style="color:var(--ink)">Barbatana anal</h4>
+          <p style="color:#4d6773">Ímpar, na linha ventral atrás do ânus. Como a dorsal, atua como
+            <strong>estabilizador</strong>, evitando que o corpo balance de um lado para o outro ao nadar.
+          </p>
+        </div>
+        <div class="part" style="border-color:var(--teal)">
+          <h4 style="color:var(--ink)">Barbatana caudal (cauda)</h4>
+          <p style="color:#4d6773">A nadadeira da ponta da cauda: é o <strong>motor</strong> do peixe. Gera o impulso
+            para frente e ajuda a mudar de direção. Caudas em meia-lua indicam nadadores rápidos; caudas arredondadas,
+            arrancadas curtas e potentes.</p>
+        </div>
+        <div class="part" style="border-color:var(--teal)">
+          <h4 style="color:var(--ink)">Linha lateral</h4>
+          <p style="color:#4d6773">Linha visível de poros que corre da cabeça à cauda de cada lado. É um <strong>órgão
+              sensorial</strong> que detecta vibrações, pressão e correntes da água — o "sexto sentido" dos peixes.</p>
+        </div>
+        <div class="part" style="border-color:var(--teal)">
+          <h4 style="color:var(--ink)">Opérculo</h4>
+          <p style="color:#4d6773">Tampa óssea móvel que <strong>cobre e protege as guelras</strong> nos peixes ósseos.
+            Abre e fecha bombeando água sobre as brânquias, permitindo respirar até parado.</p>
+        </div>
+        <div class="part" style="border-color:var(--teal)">
+          <h4 style="color:var(--ink)">Barbilhos (barbatanas táteis / "bigodes")</h4>
+          <p style="color:#4d6773">Filamentos carnudos ao redor da boca, cheios de papilas gustativas e receptores
+            táteis. Servem para <strong>tatear e "provar" o fundo</strong> em busca de comida na água turva ou no
+            escuro. Típicos dos bagres, do pintado e da carpa.</p>
+        </div>
+        <div class="part" style="border-color:var(--teal)">
+          <h4 style="color:var(--ink)">Guelras (brânquias)</h4>
+          <p style="color:#4d6773">Estruturas de filamentos vermelhos, ricos em vasos sanguíneos, situadas nas laterais
+            da cabeça. São o <strong>órgão respiratório</strong>: extraem o oxigênio dissolvido na água e liberam gás
+            carbônico.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SENTIDOS E FISIOLOGIA -->
+  <section>
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker">Fisiologia</p>
+        <div class="rule"></div>
+        <h2>Como um peixe cheira, flutua, sente e respira</h2>
+      </div>
+
+      <div class="split" style="margin-bottom:2.6rem">
+        <div>
+          <h3 style="font-size:1.5rem;margin-bottom:.6rem">Bolsa (fossa) olfatória</h3>
+          <p style="color:#b9d2dc">É a cavidade nasal do peixe: uma pequena bolsa revestida por dobras de epitélio
+            sensorial, ligada ao exterior por narinas (geralmente duas de cada lado). A água entra por uma narina, passa
+            sobre as dobras olfatórias — onde as células nervosas identificam as substâncias dissolvidas — e sai pela
+            outra.</p>
+          <p style="color:#b9d2dc"><strong>Utilidade:</strong> as narinas do peixe <em>não servem para respirar</em>,
+            apenas para cheirar. A bolsa olfatória permite localizar alimento a grande distância, farejar predadores,
+            reconhecer companheiros de cardume e encontrar o caminho de volta. O salmão reconhece o cheiro exato do
+            riacho onde nasceu; o tubarão detecta sangue diluído em partes por bilhão.</p>
+        </div>
+        <div>
+          <h3 style="font-size:1.5rem;margin-bottom:.6rem">Bexiga natatória</h3>
+          <p style="color:#b9d2dc">É um saco cheio de gás (principalmente oxigênio e nitrogênio) situado na cavidade
+            abdominal, abaixo da coluna vertebral, presente na maioria dos peixes ósseos. Funciona como o <strong>colete
+              de flutuação de um mergulhador</strong>.</p>
+          <p style="color:#b9d2dc">Ao encher a bexiga, o peixe fica menos denso e sobe; ao esvaziá-la, fica mais denso e
+            desce. Assim ele consegue <strong>ficar parado a qualquer profundidade sem gastar energia nadando</strong>.
+            O gás entra e sai por uma rede de vasos sanguíneos (glândula de gás e ovale) ou, em peixes fisóstomos como a
+            carpa, por um duto ligado ao esôfago — eles literalmente engolem ar na superfície.</p>
+          <p style="color:#b9d2dc">Funções extras: em muitas espécies amplifica o som (ouvido interno) ou <strong>produz
+              sons</strong>, como o "ronco" da corvina; em alguns peixes chega a auxiliar na respiração.</p>
+        </div>
+      </div>
+
+      <div class="split">
+        <div>
+          <h3 style="font-size:1.5rem;margin-bottom:.6rem">A linha lateral: o sexto sentido</h3>
+          <p style="color:#b9d2dc">A linha lateral é um canal cheio de muco que corre sob a pele, aberto para fora por
+            uma fileira de poros nas escamas. Dentro do canal existem os <strong>neuromastos</strong>: grupos de células
+            ciliadas mergulhadas em uma cúpula gelatinosa. Quando uma onda de pressão ou uma corrente atinge o corpo, o
+            líquido dentro do canal se desloca, dobra os cílios e as células disparam um sinal nervoso para o cérebro.
+          </p>
+          <p style="color:#b9d2dc">Na prática, o peixe "enxerga" o movimento da água ao redor mesmo no escuro total ou
+            na água mais barrenta.</p>
+          <div class="grid g3" style="margin-top:1.2rem">
+            <div class="card">
+              <h3>1. Detectar predadores e presas</h3>
+              <p>Percebe a vibração de algo que se aproxima antes de vê-lo.</p>
+            </div>
+            <div class="card">
+              <h3>2. Nadar em cardume</h3>
+              <p>Sente o deslocamento dos vizinhos e mantém distância exata, permitindo manobras sincronizadas.</p>
+            </div>
+            <div class="card">
+              <h3>3. Orientar-se e desviar de obstáculos</h3>
+              <p>Lê correntes, profundidade e reflexos de pressão em pedras e paredes — navegação sem visão.</p>
+            </div>
+          </div>
+        </div>
+        <figure class="figure"><img src="imgs/branquias.jpg"
+            alt="Detalhe macro dos filamentos branquiais vermelhos sob o opérculo" loading="lazy">
+          <figcaption>Filamentos branquiais: a enorme superfície vermelha onde acontece a troca de gases.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESPIRAÇÃO -->
+  <section class="paper">
+    <div class="wrap narrow" style="width:min(900px,92vw)">
+      <p class="kicker">Respiração branquial</p>
+      <div class="rule"></div>
+      <h2 style="font-size:clamp(1.9rem,5vw,3rem);margin:.4rem 0 1.2rem">Como o peixe respira debaixo d'água</h2>
+      <p style="color:#415b68" class="drop">A água contém oxigênio dissolvido — cerca de 30 vezes menos que o ar. Para
+        aproveitá-lo, o peixe desenvolveu um dos sistemas de troca gasosa mais eficientes da natureza: as guelras
+        (brânquias).</p>
+      <ol style="color:#415b68;padding-left:1.2rem">
+        <li><strong>Entrada:</strong> o peixe abre a boca e abaixa o assoalho bucal, sugando água para dentro.</li>
+        <li><strong>Bombeamento:</strong> fecha a boca e comprime a cavidade bucal; a água é empurrada para a câmara
+          branquial, forçando a passagem pelas brânquias. O opérculo então se abre e a água sai. Boca e opérculo
+          trabalham como duas bombas alternadas — por isso o peixe parece "engolir" sem parar.</li>
+        <li><strong>Troca gasosa:</strong> cada arco branquial sustenta centenas de filamentos, e cada filamento tem
+          milhares de <em>lamelas</em> — dobras microscópicas irrigadas por capilares. Isso cria uma superfície
+          gigantesca em pouquíssimo espaço.</li>
+        <li><strong>Contracorrente:</strong> o sangue nos capilares corre em <strong>sentido oposto</strong> ao da água.
+          Assim, em todo o percurso a água sempre tem mais oxigênio que o sangue ao lado dela, mantendo o gradiente e
+          permitindo extrair até <strong>80–90% do oxigênio</strong> disponível — muito acima dos ~25% do pulmão humano.
+        </li>
+        <li><strong>Saída:</strong> o oxigênio se liga à hemoglobina e é levado ao corpo; o gás carbônico faz o caminho
+          inverso e sai dissolvido na água pelas fendas do opérculo. As guelras também eliminam amônia e regulam sais.
+        </li>
+      </ol>
+      <p style="color:#415b68"><strong>Variações:</strong> tubarões e atuns usam a <em>ventilação por deslocamento</em>
+        — precisam nadar de boca aberta para respirar. Já o pirarucu, o peixe pulmonado e o cascudo desenvolveram
+        respiração aérea acessória (bexiga vascularizada ou intestino), e sobem à superfície para engolir ar.</p>
+    </div>
+  </section>
+
+  <!-- CURIOSIDADES -->
+  <section>
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker">Extras</p>
+        <div class="rule"></div>
+        <h2>Curiosidades do mundo dos peixes</h2>
+      </div>
+      <div class="grid g2">
+        <div>
+          <div class="curio"><span class="dot">01</span>
+            <p>O menor peixe conhecido, <em>Paedocypris progenetica</em>, mede cerca de <strong>7,9 mm</strong> — cabe
+              na unha de um dedo.</p>
+          </div>
+          <div class="curio"><span class="dot">02</span>
+            <p>Peixes <strong>dormem</strong>, mas sem pálpebras: reduzem o metabolismo e ficam imóveis. Alguns
+              peixes-papagaio dormem envoltos em um casulo de muco que despista predadores.</p>
+          </div>
+          <div class="curio"><span class="dot">03</span>
+            <p>O <strong>peixe-arqueiro</strong> cospe jatos d'água precisos para derrubar insetos de folhas acima da
+              superfície.</p>
+          </div>
+          <div class="curio"><span class="dot">04</span>
+            <p>Cerca de <strong>90% das espécies de peixes de águas profundas</strong> produzem luz própria
+              (bioluminescência).</p>
+          </div>
+          <div class="curio"><span class="dot">05</span>
+            <p>O <strong>poraquê</strong> (peixe-elétrico amazônico) descarrega até <strong>860 volts</strong> — o maior
+              choque biológico já registrado.</p>
+          </div>
+          <div class="curio"><span class="dot">06</span>
+            <p>É possível determinar a idade de um peixe contando anéis de crescimento nos <strong>otólitos</strong>
+              (pedrinhas do ouvido interno) ou nas escamas, como nos troncos de árvore.</p>
+          </div>
+        </div>
+        <div>
+          <div class="curio"><span class="dot">07</span>
+            <p>O <strong>celacanto</strong> era considerado extinto até ser pescado vivo na África
+              do Sul, em 1938 — um "fóssil vivo".</p>
+          </div>
+          <div class="curio"><span class="dot">08</span>
+            <p>Os peixes foram criados no <strong>quinto dia</strong> da criação. Foram os
+              primeiros vertebrados da Terra, junto com as aves.</p>
+          </div>
+          <div class="curio"><span class="dot">09</span>
+            <p>Tubarões trocam de dentes a vida inteira — alguns perdem e repõem mais de <strong>30 mil dentes</strong>.
+            </p>
+          </div>
+          <div class="curio"><span class="dot">10</span>
+            <p>O peixe-vela é o mais veloz do mar: passa de <strong>100 km/h</strong> em arrancadas.</p>
+          </div>
+          <div class="curio"><span class="dot">11</span>
+            <p>Nas Escrituras, os peixes aparecem já na Criação (Gênesis 1:20-21) e Jesus chamou seus discípulos para
+              serem <strong>"pescadores de homens"</strong> (Mateus 4:19). No Levítico 11:9, o critério para peixes
+              limpos é ter <strong>barbatanas e escamas</strong>.</p>
+          </div>
+          <div class="curio"><span class="dot">12</span>
+            <p>Um cardume não tem líder: cada peixe segue regras simples de distância e direção, usando visão e linha
+              lateral. É por isso que ele muda de forma como uma nuvem.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONSERVAÇÃO -->
+  <section class="paper">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="kicker">Responsabilidade</p>
+        <div class="rule"></div>
+        <h2>Cuidar das águas é cuidar dos peixes</h2>
+      </div>
+      <div class="grid g3">
+        <div class="card">
+          <h3>Respeite o defeso</h3>
+          <p>Durante a piracema a pesca é proibida por lei: é o período em que os peixes migram e desovam. Sem desova,
+            não há peixe no ano seguinte.</p>
+        </div>
+        <div class="card">
+          <h3>Tamanho mínimo</h3>
+          <p>Devolva à água exemplares abaixo do tamanho permitido — eles ainda não se reproduziram nenhuma vez.</p>
+        </div>
+        <div class="card">
+          <h3>Nada de lixo e óleo</h3>
+          <p>Plástico, esgoto e óleo reduzem o oxigênio dissolvido e sufocam as guelras. Peixes morrem primeiro por
+            falta de oxigênio, não por sede.</p>
+        </div>
+        <div class="card">
+          <h3>Não solte espécies exóticas</h3>
+          <p>Soltar peixes de aquário em rios brasileiros elimina espécies nativas. Nunca "liberte" um peixe ornamental
+            na natureza.</p>
+        </div>
+        <div class="card">
+          <h3>Preserve a mata ciliar</h3>
+          <p>As árvores da margem sombreiam, seguram o barranco e fornecem frutos e insetos — base da alimentação de
+            muitos peixes.</p>
+        </div>
+        <div class="card">
+          <h3>Pesque e solte com cuidado</h3>
+          <p>Mãos molhadas, anzol sem farpa e o mínimo de tempo fora da água aumentam muito a chance de sobrevivência do
+            peixe devolvido.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      <p style="font-family:'Fraunces',serif;font-size:1.4rem;color:#dcecf2;margin:.6rem 0 1rem">Especialidade de Peixes
+        — Clube de Desbravadores</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
