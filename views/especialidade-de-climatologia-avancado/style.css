@@ -1,0 +1,396 @@
+:root {
+    --ink: #0d1b2a;
+    --sky: #0f5c9c;
+    --sky-light: #38a3d1;
+    --cloud: #f4f8fb;
+    --paper: #ffffff;
+    --storm: #16283d;
+    --sun: #f0a202;
+    --rain: #2e86ab;
+    --line: #d9e4ee;
+    --shadow: 0 18px 40px -22px rgba(13, 27, 42, .55);
+}
+
+* {
+    box-sizing: border-box
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    margin: 0;
+    font-family: "Barlow", system-ui, sans-serif;
+    color: var(--ink);
+    background:
+        radial-gradient(900px 500px at 12% -5%, #dff1fb 0%, transparent 60%),
+        radial-gradient(800px 500px at 95% 10%, #fdf1d8 0%, transparent 55%),
+        var(--cloud);
+    line-height: 1.65;
+    font-size: 17px;
+}
+
+h1,
+h2,
+h3,
+.display {
+    font-family: "Bebas Neue", Impact, sans-serif;
+    letter-spacing: .02em;
+    line-height: 1.02;
+    font-weight: 400
+}
+
+a {
+    color: var(--sky)
+}
+
+.wrap {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 20px
+}
+
+/* HERO */
+header.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    background: linear-gradient(180deg, rgba(8, 20, 35, .25) 0%, rgba(8, 20, 35, .55) 55%, rgba(8, 20, 35, .92) 100%),
+        url('imgs/hero-tempestade.jpg') center/cover no-repeat;
+    color: #fff;
+}
+
+.hero .wrap {
+    padding-bottom: 56px;
+    padding-top: 120px;
+    width: 100%
+}
+
+.badge {
+    display: inline-block;
+    background: var(--sun);
+    color: #20160a;
+    font-weight: 700;
+    padding: 5px 14px;
+    border-radius: 999px;
+    font-size: .78rem;
+    letter-spacing: .14em;
+    text-transform: uppercase
+}
+
+.hero h1 {
+    font-size: clamp(3rem, 10vw, 7rem);
+    margin: .25em 0 .1em;
+    text-shadow: 0 6px 30px rgba(0, 0, 0, .5)
+}
+
+.hero p {
+    max-width: 60ch;
+    font-size: 1.12rem;
+    color: #e7f1f8
+}
+
+.metabar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 22px
+}
+
+.metabar>span {
+    background: rgba(255, 255, 255, .14);
+    border: 1px solid rgba(255, 255, 255, .28);
+    backdrop-filter: blur(6px);
+    padding: 6px 12px;
+    border-radius: 8px;
+    font-size: .85rem
+}
+
+.meta-key::after {
+    content: ":";
+}
+
+main {
+    padding: 0 0 80px
+}
+
+section {
+    padding: 56px 0 8px
+}
+
+.kicker {
+    color: var(--rain);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .18em;
+    font-size: .75rem;
+    margin: 0
+}
+
+section h2 {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    margin: .1em 0 .35em;
+    color: var(--storm)
+}
+
+h3 {
+    font-size: 1.5rem;
+    margin: 1.4em 0 .3em;
+    color: var(--sky)
+}
+
+p {
+    margin: 0 0 1em
+}
+
+.grid {
+    display: grid;
+    gap: 26px
+}
+
+.g2 {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr))
+}
+
+.g3 {
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr))
+}
+
+.card {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 24px;
+    box-shadow: var(--shadow)
+}
+
+.card h3 {
+    margin-top: 0
+}
+
+.card.dark {
+    background: var(--storm);
+    color: #e8f1f8;
+    border-color: #22384f
+}
+
+.card.dark h3 {
+    color: #8fd3f4
+}
+
+figure {
+    margin: 0
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 16px;
+    box-shadow: var(--shadow)
+}
+
+figcaption {
+    font-size: .85rem;
+    color: #5b6b7c;
+    margin-top: 8px;
+    font-style: italic
+}
+
+.split {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr;
+    align-items: center
+}
+
+@media(min-width:840px) {
+    .split {
+        grid-template-columns: 1.05fr .95fr
+    }
+
+    .split.rev>figure {
+        order: 2
+    }
+}
+
+.quote {
+    border-left: 5px solid var(--sun);
+    background: #fff8e8;
+    padding: 18px 22px;
+    border-radius: 0 14px 14px 0;
+    font-style: italic
+}
+
+.quote b {
+    font-style: normal;
+    display: block;
+    margin-top: 6px;
+    color: #8a6100;
+    font-size: .9rem
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    font-size: .95rem
+}
+
+th,
+td {
+    padding: 11px 13px;
+    text-align: left;
+    border-bottom: 1px solid var(--line);
+    vertical-align: top
+}
+
+th {
+    background: var(--storm);
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: .03em
+}
+
+tr:last-child td {
+    border-bottom: 0
+}
+
+.scroll {
+    overflow-x: auto
+}
+
+.symbols {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 14px
+}
+
+.sym {
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    padding: 14px;
+    text-align: center
+}
+
+.sym .ico {
+    font-size: 2rem;
+    line-height: 1
+}
+
+.sym b {
+    display: block;
+    font-size: .95rem;
+    margin-top: 6px
+}
+
+.sym small {
+    color: #647688
+}
+
+.curio {
+    background: linear-gradient(135deg, #0f5c9c, #38a3d1);
+    color: #fff;
+    border-radius: 18px;
+    padding: 24px;
+    box-shadow: var(--shadow)
+}
+
+.curio h3 {
+    color: #fff;
+    margin-top: 0
+}
+
+.curio ul {
+    margin: 0;
+    padding-left: 1.1em
+}
+
+.curio li {
+    margin-bottom: .5em
+}
+
+.layers {
+    display: grid;
+    gap: 10px
+}
+
+.layer {
+    border-radius: 14px;
+    padding: 16px 18px;
+    color: #fff
+}
+
+.layer b {
+    font-size: 1.15rem;
+    letter-spacing: .05em;
+    font-family: "Bebas Neue", sans-serif
+}
+
+.l5 {
+    background: #050912
+}
+
+.l4 {
+    background: #101d3a
+}
+
+.l3 {
+    background: #1b3f77
+}
+
+.l2 {
+    background: #2a6ba8
+}
+
+.l1 {
+    background: #4aa3d6
+}
+
+.verse {
+    text-align: center;
+    padding: 44px 24px;
+    background: var(--storm);
+    color: #dfeaf3;
+    border-radius: 22px
+}
+
+.verse p {
+    font-family: "Bebas Neue", sans-serif;
+    font-size: clamp(1.5rem, 4vw, 2.4rem);
+    line-height: 1.15;
+    margin: 0 0 8px;
+    color: #fff
+}
+
+.verse span {
+    color: var(--sun);
+    letter-spacing: .15em;
+    font-size: .85rem;
+    text-transform: uppercase
+}
+
+ul.clean {
+    padding-left: 1.15em
+}
+
+ul.clean li {
+    margin-bottom: .55em
+}
+
+footer {
+    background: var(--storm);
+    color: #a9bed1;
+    padding: 40px 0;
+    font-size: .9rem
+}
+
+footer a {
+    color: #8fd3f4
+}
