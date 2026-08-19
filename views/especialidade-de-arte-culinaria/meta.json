@@ -1,0 +1,9 @@
+{
+    "title": "Especialidade de Arte Culinária",
+    "description": "Guia visual completo da Especialidade de Arte Culinária dos Desbravadores: segurança no fogão, utensílios, técnicas de preparo, pirâmide alimentar, receitas vegetarianas e como pôr a mesa.",
+    "image": "imgs/hero-culinaria.jpg",
+    "type": "especialidade-desbravadores",
+    "code": "HD-001",
+    "area": "Habilidades Domésticas",
+    "reference-link": "https://mda.wiki.br/Especialidade_de_Arte_Culinária/"
+}
