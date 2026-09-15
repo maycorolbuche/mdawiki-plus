@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,800;1,600&family=Karla:wght@400;600;700&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.min.css">
+</head>
+
+<body>
+
+  <header class="capa">
+    <img src="imgs/hero-padaria.jpg" alt="Pães artesanais dourados sobre mesa de madeira enfarinhada em uma padaria" />
+    <div class="capa-conteudo">
+      <div class="wrap">
+        <span class="selo" data-id="meta-area"></span>
+        <h1>Panificação</h1>
+        <p class="linha-fina">Do grão ao forno: farinhas, fermentos, pães, bolos, tortas e biscoitos — o guia completo
+          com respostas, técnicas e receitas.</p>
+        <div class="fichas" data-id="meta"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- FARINHAS -->
+  <section>
+    <div class="wrap">
+      <div class="secao-titulo"><span class="kicker">O coração da massa</span></div>
+      <h2>Farinha integral × farinha branca</h2>
+      <p class="intro">O grão de trigo tem três partes: o <strong>farelo</strong> (casca, rico em fibras e minerais), o
+        <strong>gérmen</strong> (o embrião, com vitaminas do complexo B, vitamina E e boas gorduras) e o
+        <strong>endosperma</strong> (a parte branca, quase só amido e um pouco de proteína).
+      </p>
+
+      <div class="grid g2" style="margin-top:2rem;align-items:start">
+        <figure class="media">
+          <img src="imgs/farinhas.jpg"
+            alt="Duas tigelas: uma com farinha integral e grãos de trigo, outra com farinha branca refinada"
+            loading="lazy" width="1280" height="960" />
+          <figcaption>À esquerda, a farinha integral, com farelo e gérmen. À direita, apenas o endosperma moído.
+          </figcaption>
+        </figure>
+        <div class="card">
+          <h3>A resposta em uma frase</h3>
+          <p>A <strong>farinha integral</strong> é feita com o grão inteiro, por isso guarda fibras, vitaminas, minerais
+            e gorduras boas. A <strong>farinha branca</strong> é refinada: perde o farelo e o gérmen e fica praticamente
+            só com amido, com muito menos nutrientes.</p>
+          <h4>Na prática, isso significa:</h4>
+          <ul class="lista">
+            <li><strong>Fibras:</strong> a integral tem cerca de 3 a 4 vezes mais. Elas melhoram o intestino e dão
+              saciedade.</li>
+            <li><strong>Vitaminas e minerais:</strong> complexo B, vitamina E, ferro, magnésio, zinco e selênio estão
+              concentrados no farelo e no gérmen.</li>
+            <li><strong>Índice glicêmico:</strong> mais baixo na integral — o açúcar do sangue sobe mais devagar.</li>
+            <li><strong>Sabor e cor:</strong> integral é mais escura, com gosto de castanha; branca é neutra e clara.
+            </li>
+            <li><strong>Validade:</strong> a integral estraga mais rápido, porque a gordura do gérmen oxida (guarde na
+              geladeira).</li>
+            <li><strong>Comportamento na massa:</strong> o farelo "corta" a rede de glúten, então o pão integral cresce
+              menos e pede mais água e mais descanso.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tabela-scroll">
+        <table>
+          <caption>Comparação aproximada por 100 g de farinha de trigo</caption>
+          <tr>
+            <th>Item</th>
+            <th>Integral</th>
+            <th>Branca (refinada)</th>
+          </tr>
+          <tr>
+            <td>Fibras</td>
+            <td>≈ 10 g</td>
+            <td>≈ 2,5 g</td>
+          </tr>
+          <tr>
+            <td>Proteínas</td>
+            <td>≈ 13 g</td>
+            <td>≈ 10 g</td>
+          </tr>
+          <tr>
+            <td>Ferro</td>
+            <td>≈ 3,6 mg</td>
+            <td>≈ 1,2 mg</td>
+          </tr>
+          <tr>
+            <td>Magnésio</td>
+            <td>≈ 137 mg</td>
+            <td>≈ 22 mg</td>
+          </tr>
+          <tr>
+            <td>Vitaminas do complexo B e vitamina E</td>
+            <td>Preservadas</td>
+            <td>Muito reduzidas (às vezes repostas por enriquecimento)</td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="curiosidade" style="margin-top:1.5rem">
+        <strong>Dica de padeiro</strong>
+        Começando com integral? Use 50% integral e 50% branca. O pão fica nutritivo e ainda bem leve.
+      </div>
+    </div>
+  </section>
+
+  <!-- FERMENTOS -->
+  <section class="faixa">
+    <div class="wrap">
+      <div class="secao-titulo"><span class="kicker">Química viva</span></div>
+      <h2>Fermento biológico × fermento químico</h2>
+      <p class="intro">Os dois fazem a massa crescer produzindo gás carbônico (CO₂), mas por caminhos completamente
+        diferentes: um é vida, o outro é reação química.</p>
+
+      <div class="grid g2" style="margin-top:2rem;align-items:start">
+        <div class="card escuro">
+          <h3>Fermento biológico</h3>
+          <p><em>Saccharomyces cerevisiae</em> — um fungo vivo (levedura), vendido fresco, seco instantâneo ou como
+            levain/massa madre.</p>
+          <h4>Como age</h4>
+          <p>A levedura come os açúcares da farinha e, na fermentação, libera CO₂, álcool e compostos aromáticos. O gás
+            fica preso na rede elástica de glúten e infla a massa. Precisa de <strong>tempo</strong>, temperatura morna
+            (26–32 °C) e sova para desenvolver o glúten.</p>
+          <h4>Indicado para</h4>
+          <p>Pães em geral, pão sovado, pão italiano, baguete, pizza, rosca, brioche, sonho — tudo que precisa de miolo
+            elástico, alvéolos e sabor fermentado.</p>
+        </div>
+        <div class="card escuro">
+          <h3>Fermento químico (pó royal)</h3>
+          <p>Mistura de bicarbonato de sódio + um ácido (fosfato/pirofosfato) + amido. Não tem nada vivo.</p>
+          <h4>Como age</h4>
+          <p>Ao encontrar líquido e, principalmente, o calor do forno, o ácido reage com o bicarbonato e libera CO₂
+            <strong>na hora</strong>. É ação rápida: massa batida deve ir direto ao forno, e não se sova — sovar
+            desenvolveria glúten e deixaria o bolo borrachudo.
+          </p>
+          <h4>Indicado para</h4>
+          <p>Bolos, muffins, cupcakes, panquecas, waffles, biscoitos amanteigados, pão de queijo, broas e massas rápidas
+            (<em>quick breads</em>).</p>
+        </div>
+      </div>
+
+      <div class="grid g2" style="margin-top:1.5rem;align-items:center">
+        <figure class="media">
+          <img src="imgs/fermentos.jpg"
+            alt="Pote de vidro com fermento natural borbulhando ao lado de uma colher de fermento em pó" loading="lazy"
+            width="1280" height="960" />
+          <figcaption>Levain borbulhando (vida) e uma colher de fermento químico (reação).</figcaption>
+        </figure>
+        <div>
+          <div class="tabela-scroll">
+            <table>
+              <caption>Resumo rápido</caption>
+              <tr>
+                <th></th>
+                <th>Biológico</th>
+                <th>Químico</th>
+              </tr>
+              <tr>
+                <td>Natureza</td>
+                <td>Ser vivo (levedura)</td>
+                <td>Substância química</td>
+              </tr>
+              <tr>
+                <td>Tempo de ação</td>
+                <td>Horas (crescimento)</td>
+                <td>Minutos / no forno</td>
+              </tr>
+              <tr>
+                <td>Precisa sovar?</td>
+                <td>Sim</td>
+                <td>Não</td>
+              </tr>
+              <tr>
+                <td>Sabor</td>
+                <td>Aromático, marcante</td>
+                <td>Neutro</td>
+              </tr>
+              <tr>
+                <td>Resultado</td>
+                <td>Miolo elástico e alveolado</td>
+                <td>Miolo macio e fofo</td>
+              </tr>
+            </table>
+          </div>
+          <p class="destaque">Nunca troque um pelo outro na mesma quantidade: bolo com fermento biológico fica com gosto
+            de pão, e pão com pó royal fica pesado e esfarelento.</p>
+        </div>
+      </div>
+
+      <div class="card escuro" style="margin-top:1.5rem">
+        <h3>Bicarbonato de sódio: o terceiro personagem</h3>
+        <p>Sozinho, o bicarbonato só libera gás se houver um ingrediente ácido na receita (limão, vinagre, iogurte,
+          cacau, melado, maçã). Sem ácido, deixa gosto amargo de sabão. É por isso que receitas de bolo de banana ou de
+          chocolate costumam pedir bicarbonato, e não apenas fermento em pó.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BÍBLIA -->
+  <section>
+    <div class="wrap">
+      <div class="secao-titulo"><span class="kicker">Pão e fé</span></div>
+      <h2>O fermento na Bíblia</h2>
+      <p class="intro">Poucos ingredientes têm tanto significado espiritual quanto o fermento. Ele é imagem do que se
+        espalha silenciosamente — para o bem e para o mal.</p>
+
+      <div class="grid g2" style="margin-top:2rem;align-items:start">
+        <div>
+          <div class="card">
+            <h3>Velho Testamento</h3>
+            <p><strong>Êxodo 12:15,19</strong> — “Sete dias comereis pães asmos... porque quem comer coisa levedada,
+              desde o primeiro até ao sétimo dia, essa alma será cortada de Israel.” Também <strong>Êxodo 13:7</strong>
+              e <strong>Levítico 2:11</strong> (ofertas de cereais não podiam levar fermento).</p>
+            <p>Na saída do Egito, a pressa da libertação não deixou tempo para a massa crescer: o pão foi assado sem
+              fermento.</p>
+          </div>
+          <div class="card" style="margin-top:1.2rem">
+            <h3>Novo Testamento</h3>
+            <p><strong>Mateus 13:33</strong> — “O Reino dos céus é semelhante ao fermento, que uma mulher tomou e
+              misturou em três medidas de farinha, até que tudo ficou levedado.” Aqui o fermento é <em>positivo</em>: o
+              evangelho transforma a pessoa por dentro, aos poucos.</p>
+            <p>Em sentido de alerta: <strong>Mateus 16:6</strong> (“guardai-vos do fermento dos fariseus”) e <strong>1
+                Coríntios 5:6-8</strong> — “um pouco de fermento faz levedar toda a massa... celebremos a festa com os
+              asmos da sinceridade e da verdade.”</p>
+          </div>
+        </div>
+        <figure class="media alta">
+          <img src="imgs/pao-asmo.jpg" alt="Pães asmos empilhados sobre tábua de madeira, com feixe de trigo e azeite"
+            loading="lazy" width="1280" height="960" />
+          <figcaption>Pão asmo: sem fermento, símbolo de pureza e de pressa na libertação.</figcaption>
+        </figure>
+      </div>
+
+      <div class="card" style="margin-top:1.5rem">
+        <h3>O significado do fermento na Páscoa</h3>
+        <p>Na Páscoa, o fermento representa o <strong>pecado, a corrupção e a má influência</strong> — algo pequeno que,
+          sem ser visto, se espalha e altera tudo. Por isso Israel tirava todo o fermento de casa e comia o <em>pão
+            asmo</em> durante sete dias (a Festa dos Pães Asmos), lembrando:</p>
+        <ul class="lista">
+          <li>a <strong>pressa</strong> da saída do Egito, sem tempo de esperar a massa crescer (Êxodo 12:39);</li>
+          <li>a <strong>separação</strong> da vida antiga: sair do Egito era deixar o pecado para trás;</li>
+          <li>a <strong>pureza</strong> do Cordeiro. Cristo, “nossa Páscoa”, foi sem pecado — e a Santa Ceia usa pão sem
+            fermento por isso mesmo.</li>
+        </ul>
+        <p class="destaque">“Purificai-vos, pois, do velho fermento, para que sejais massa nova.” — 1 Coríntios 5:7</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SAÚDE -->
+  <section class="faixa">
+    <div class="wrap">
+      <div class="secao-titulo"><span class="kicker">Saúde na cozinha</span></div>
+      <h2>Por que a mistura de leite, açúcar e ovos é prejudicial?</h2>
+      <p class="intro">Essa recomendação clássica tem razões práticas e digestivas — e leva a
+        escolhas melhores de receita.</p>
+      <div class="grid g3" style="margin-top:2rem">
+        <div class="card escuro">
+          <h3>Fermentação no estômago</h3>
+          <p>Açúcar em grande quantidade junto com leite e ovos retarda a digestão e favorece a fermentação no aparelho
+            digestivo, causando gases, azia, desconforto e má absorção. Cada um desses alimentos exige um processo
+            digestivo diferente; juntos e em excesso, competem entre si.</p>
+        </div>
+        <div class="card escuro">
+          <h3>Excesso de açúcar, gordura e colesterol</h3>
+          <p>A combinação (típica de leite condensado, cremes, brigadeiros e recheios) concentra açúcar simples, gordura
+            saturada e colesterol na mesma colherada. Isso pesa sobre fígado, pâncreas e coração e favorece obesidade,
+            diabetes e cárie.</p>
+        </div>
+        <div class="card escuro">
+          <h3>Risco microbiológico</h3>
+          <p>Leite e ovos são ricos em proteína e água: são o meio perfeito para bactérias como <em>Salmonella</em>.
+            Cremes doces mal cozidos ou mal refrigerados são uma das causas mais comuns de intoxicação alimentar em
+            festas.</p>
+        </div>
+      </div>
+      <div class="curiosidade" style="margin-top:1.5rem">
+        <strong>O que fazer no lugar</strong>
+        Adoce com frutas (banana bem madura, maçã, tâmara, uva-passa, purê de manga), use leites vegetais, troque parte
+        do açúcar por canela e baunilha e prefira recheios de fruta cozida a cremes com leite condensado.
+      </div>
+    </div>
+  </section>
+
+  <!-- BOLOS: TESTE E MURCHAR -->
+  <section>
+    <div class="wrap">
+      <div class="secao-titulo"><span class="kicker">Ciência do forno</span></div>
+      <h2>Bolo no ponto — e que não abaixa</h2>
+      <div class="grid g2" style="margin-top:2rem;align-items:start">
+        <div class="card">
+          <h3>Como testar se o bolo está pronto</h3>
+          <ul class="lista">
+            <li><strong>Teste do palito:</strong> enfie um palito ou faca no centro. Se sair seco ou com farelinhos
+              soltos, está pronto. Massa crua grudada = mais tempo.</li>
+            <li><strong>Toque:</strong> aperte o centro de leve com o dedo; a massa deve voltar ao lugar. Se afundar,
+              ainda não.</li>
+            <li><strong>Aparência:</strong> topo dourado e uniforme, superfície firme.</li>
+            <li><strong>Descolamento:</strong> as laterais começam a soltar da forma.</li>
+            <li><strong>Som e cheiro:</strong> o borbulhar cessa e o aroma fica evidente.</li>
+            <li><strong>Termômetro:</strong> centro entre 96 °C e 99 °C.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Como evitar que o bolo “abaixe”</h3>
+          <ul class="lista">
+            <li><strong>Não abra o forno antes de 2/3 do tempo.</strong> A entrada de ar frio faz a estrutura ainda mole
+              desabar.</li>
+            <li><strong>Preaqueça o forno</strong> por 10–15 min e asse em temperatura média (170–180 °C). Forno muito
+              quente cria crosta antes de o miolo firmar.</li>
+            <li><strong>Meça o fermento certo</strong> (cerca de 1 colher de chá por xícara de farinha). Excesso faz
+              crescer demais e murchar.</li>
+            <li><strong>Não bata demais a massa</strong> depois de acrescentar a farinha: excesso de glúten e de ar
+              colapsa.</li>
+            <li><strong>Massa nem muito líquida</strong>, nem forma cheia acima de 2/3.</li>
+            <li><strong>Assar imediatamente</strong> após misturar o fermento químico.</li>
+            <li><strong>Ingredientes em temperatura ambiente</strong> e forma untada e enfarinhada só no fundo e nas
+              laterais.</li>
+            <li><strong>Esfriar sem choque térmico:</strong> deixe 10 min na forma e depois na grade, longe de vento.
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MEDIDAS -->
+  <section>
+    <div class="wrap">
+      <div class="secao-titulo"><span class="kicker">Precisão</span></div>
+      <h2>Colheres, xícaras e por que a receita manda</h2>
+      <div class="grid g2" style="margin-top:1.6rem;align-items:start">
+        <figure class="media">
+          <img src="imgs/medidas.jpg"
+            alt="Xícara e colheres medidoras com farinha sendo niveladas com uma faca, ao lado de balança digital"
+            loading="lazy" width="1280" height="960" />
+          <figcaption>A técnica correta: encher sem compactar e nivelar com o lado reto de uma faca.</figcaption>
+        </figure>
+        <div class="card">
+          <h3>Como medir corretamente</h3>
+          <ul class="lista">
+            <li><strong>Secos (farinha, açúcar, cacau):</strong> solte o ingrediente com uma colher dentro da medida —
+              nunca aperte nem bata a xícara — e nivele com o dorso de uma faca. Farinha compactada pode pesar 30% mais!
+            </li>
+            <li><strong>Líquidos:</strong> use copo medidor transparente sobre a bancada e leia com os olhos na altura
+              da marca (nível do menisco).</li>
+            <li><strong>Gorduras sólidas:</strong> pressione na medida para não deixar bolhas de ar e nivele.</li>
+            <li><strong>Colheres:</strong> encha e nivele; "colher rasa" ≠ "colher cheia". Use o jogo de medidas, não a
+              colher de mesa da gaveta.</li>
+            <li><strong>Fermento, sal e bicarbonato:</strong> sempre rasos e bem nivelados — pequenas diferenças mudam
+              tudo.</li>
+          </ul>
+          <h4>Por que seguir a receita à risca?</h4>
+          <p>Panificação é química. Farinha (estrutura), líquido (hidratação), fermento (gás), gordura (maciez), açúcar
+            (cor, sabor, alimento da levedura) e sal (controle da fermentação e sabor) trabalham em proporção. Alterar
+            um deles quebra o equilíbrio: sobra fermento e o bolo murcha; falta líquido e o pão fica seco; sobra sal e a
+            levedura morre. Diferente do feijão, aqui não se corrige “a olho” depois de assado.</p>
+        </div>
+      </div>
+      <div class="tabela-scroll">
+        <table>
+          <caption>Tabela de equivalências úteis</caption>
+          <tr>
+            <th>Medida</th>
+            <th>Equivale a</th>
+            <th>Peso aproximado</th>
+          </tr>
+          <tr>
+            <td>1 xícara (chá)</td>
+            <td>240 ml</td>
+            <td>farinha ≈ 120 g · açúcar ≈ 180 g · água ≈ 240 g</td>
+          </tr>
+          <tr>
+            <td>1 colher (sopa)</td>
+            <td>3 colheres de chá · 15 ml</td>
+            <td>farinha ≈ 8 g · açúcar ≈ 12 g · óleo ≈ 14 g</td>
+          </tr>
+          <tr>
+            <td>1 colher (chá)</td>
+            <td>5 ml</td>
+            <td>sal ≈ 6 g · fermento em pó ≈ 4 g</td>
+          </tr>
+          <tr>
+            <td>1/2 xícara</td>
+            <td>120 ml · 8 colheres de sopa</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>1 kg de farinha</td>
+            <td>≈ 8 xícaras</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td>10 g fermento seco</td>
+            <td>≈ 30 g fermento fresco</td>
+            <td>para ≈ 1 kg de farinha</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- PÃES -->
+  <section class="faixa">
+    <div class="wrap">
+      <div class="secao-titulo"><span class="kicker">Mãos na massa</span></div>
+      <h2>Pães: do integral ao italiano</h2>
+      <p class="intro">Receitas de pão de grãos inteiros, biscoitos, pães
+        asmos, baguete, pão italiano e pão sovado. Aqui estão receitas testadas e as técnicas por trás delas.</p>
+
+      <div class="grid g2" style="margin-top:2rem;align-items:start">
+        <figure class="media">
+          <img src="imgs/pao-integral.jpg" alt="Pão de grãos integrais fatiado sobre pano de linho, com aveia e linhaça"
+            loading="lazy" width="1280" height="960" />
+          <figcaption>Pão de grãos inteiros: trigo integral, aveia, centeio e linhaça.</figcaption>
+        </figure>
+        <figure class="media">
+          <img src="imgs/sova.jpg" alt="Mãos de padeiro sovando massa de pão sobre bancada enfarinhada" loading="lazy"
+            width="1280" height="960" />
+          <figcaption>Sovar por 10 a 15 minutos desenvolve o glúten que segura o gás.</figcaption>
+        </figure>
+      </div>
+
+      <div class="grid g2" style="margin-top:1.6rem">
+        <div class="receita">
+          <span class="tag">grãos inteiros</span>
+          <h3>Pão multigrãos de aveia, centeio e linhaça</h3>
+          <p class="ingr"><strong>Ingredientes:</strong> 3 xíc. farinha de trigo integral · 1 xíc. farinha de trigo
+            branca · ½ xíc. farinha de centeio · ½ xíc. aveia em flocos · 3 col. sopa linhaça (2 na massa, 1 para
+            polvilhar) · 2 col. sopa sementes de girassol · 10 g fermento biológico seco · 1½ col. chá sal · 2 col. sopa
+            melado ou mel · 3 col. sopa azeite · 500 ml água morna (≈ 35 °C).</p>
+          <ol>
+            <li>Dissolva o fermento e o melado em 200 ml da água morna; deixe 10 min espumar.</li>
+            <li>Misture as farinhas, a aveia, as sementes e o sal em uma tigela grande.</li>
+            <li>Junte o fermento, o azeite e o restante da água aos poucos até formar massa úmida e homogênea.</li>
+            <li>Sove 12–15 min na bancada levemente enfarinhada, até a massa ficar lisa e elástica (teste da membrana).
+            </li>
+            <li>Cubra e deixe crescer 1h–1h30, até dobrar de volume.</li>
+            <li>Modele em um ou dois pães, coloque em forma untada, pincele água e polvilhe linhaça e aveia.</li>
+            <li>Deixe crescer mais 40–50 min. Asse a 190 °C por 35–40 min. Está pronto quando soa oco ao bater no fundo
+              (miolo a ≈ 96 °C).</li>
+            <li>Esfrie sobre grade antes de fatiar — cortar quente estraga o miolo.</li>
+          </ol>
+        </div>
+        <div class="receita">
+          <span class="tag">pão sovado</span>
+          <h3>Pão sovado caseiro</h3>
+          <p class="ingr"><strong>Ingredientes:</strong> 1 kg farinha de trigo · 10 g fermento seco · 2 col. chá sal · 3
+            col. sopa açúcar mascavo · 4 col. sopa óleo ou margarina vegetal · 450–500 ml água morna.</p>
+          <ol>
+            <li>Ative o fermento no açúcar com um pouco da água morna.</li>
+            <li>Misture tudo e sove com firmeza por 15–20 min — o pão sovado deve ficar com massa bem lisa e apertada, o
+              que gera o miolo fechado e "fiapento".</li>
+            <li>Descanse 1h coberta. Divida em porções, sove cada uma novamente por 2 min e modele bolinhas ou
+              pãezinhos.</li>
+            <li>Disponha na assadeira, faça cortes rasos, deixe crescer 45 min.</li>
+            <li>Asse a 180 °C por 25–30 min, até dourar por igual.</li>
+          </ol>
+        </div>
+        <div class="receita">
+          <span class="tag">pão italiano</span>
+          <h3>Pão italiano de longa fermentação</h3>
+          <p class="ingr"><strong>Ingredientes:</strong> 500 g farinha de trigo (de preferência tipo 1) · 380 ml água
+            (76% hidratação) · 5 g fermento seco · 10 g sal · 1 col. chá açúcar.</p>
+          <ol>
+            <li>Misture farinha, água, fermento e açúcar até virar uma massa grudenta. Descanse 20 min (autólise) e só
+              então adicione o sal.</li>
+            <li>Em vez de sovar, faça <em>dobras</em>: puxe a massa da borda para o centro, 4 vezes, a cada 30 min (2
+              horas no total).</li>
+            <li>Leve à geladeira por 12 a 18 horas — é aí que nasce o sabor.</li>
+            <li>Modele uma bola sem apertar, deixe crescer 1h em cesto enfarinhado.</li>
+            <li>Asse a 230 °C com uma assadeira com água no forno (vapor) por 20 min; retire a água e asse mais 20–25
+              min, até a crosta ficar bem dourada.</li>
+          </ol>
+        </div>
+        <div class="receita">
+          <span class="tag">baguete</span>
+          <h3>Baguete crocante</h3>
+          <p class="ingr"><strong>Ingredientes:</strong> 500 g farinha · 330 ml água · 6 g fermento seco · 10 g sal.</p>
+          <ol>
+            <li>Misture e sove 10 min. Deixe crescer 1h.</li>
+            <li>Divida em 3 partes; achate cada uma em retângulo e enrole apertado no sentido do comprimento, selando a
+              emenda.</li>
+            <li>Deixe crescer 45 min sobre pano enfarinhado, emenda para baixo.</li>
+            <li>Faça 3 a 5 cortes diagonais rasos com lâmina.</li>
+            <li>Asse a 230 °C com vapor por 20–25 min.</li>
+          </ol>
+        </div>
+        <div class="receita">
+          <span class="tag">sem fermento</span>
+          <h3>Pão asmo (pão sem fermento)</h3>
+          <p class="ingr"><strong>Ingredientes:</strong> 2 xíc. farinha de trigo integral · ½ col. chá sal (opcional) ·
+            3 col. sopa azeite · ½ a ¾ xíc. de água.</p>
+          <ol>
+            <li>Misture a farinha com o sal, junte o azeite e a água até dar liga; não sove muito.</li>
+            <li>Descanse 15 min, abra bem fino com rolo (2–3 mm) e fure com garfo.</li>
+            <li>Asse a 220 °C por 8–12 min, virando na metade, até ficar seco e crocante.</li>
+          </ol>
+          <p class="ingr">Perfeito para estudar a Páscoa e a Santa Ceia — e para o requisito bíblico da especialidade.
+          </p>
+        </div>
+        <div class="receita">
+          <span class="tag">biscoitos salgados</span>
+          <h3>Biscoitos salgados de aveia e gergelim</h3>
+          <p class="ingr"><strong>Ingredientes:</strong> 1 xíc. farinha integral · 1 xíc. aveia em flocos finos · 3 col.
+            sopa gergelim · 1 col. chá sal · 1 col. chá orégano · 5 col. sopa azeite · ½ xíc. água.</p>
+          <ol>
+            <li>Misture os secos, junte azeite e água até formar massa firme.</li>
+            <li>Abra fina entre dois papéis-manteiga, corte em quadrados e fure com garfo.</li>
+            <li>Asse a 180 °C por 15–18 min, até dourar as bordas. Esfrie para ficarem crocantes.</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="grid g3" style="margin-top:1.6rem">
+        <div class="card escuro">
+          <h3>Teste da membrana</h3>
+          <p>Estique um pedacinho de massa entre os dedos: se formar um véu translúcido sem rasgar, o glúten está
+            pronto. Se rasgar, sove mais.</p>
+        </div>
+        <div class="card escuro">
+          <h3>Ponto de crescimento</h3>
+          <p>Aperte a massa crescida com o dedo: se a marca volta devagar e parcialmente, está no ponto. Se afunda e não
+            volta, passou.</p>
+        </div>
+        <div class="card escuro">
+          <h3>Vapor no forno</h3>
+          <p>Água no forno nos primeiros minutos mantém a casca úmida, o pão cresce mais e depois forma crosta brilhante
+            e crocante.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOLOS -->
+  <section>
+    <div class="wrap">
+      <div class="secao-titulo"><span class="kicker">Duas fornadas doces</span></div>
+      <h2>Bolos para todos</h2>
+      <p class="intro">Opções de bolo básico, de mistura pronta, de frutas ou castanhas,
+        sem leite ou sem glúten.</p>
+      <figure class="media" style="margin:1.8rem 0">
+        <img src="imgs/bolos.jpg" alt="Bolo de banana com castanhas fatiado sobre boleira de cerâmica" loading="lazy"
+          width="1280" height="960" />
+        <figcaption>Bolo de frutas e castanhas: adoçado principalmente pela banana madura.</figcaption>
+      </figure>
+      <div class="grid g2">
+        <div class="receita">
+          <span class="tag">frutas e castanhas</span>
+          <h3>Bolo de banana, aveia e castanhas</h3>
+          <p class="ingr"><strong>Ingredientes:</strong> 3 bananas bem maduras amassadas · 2 ovos · ½ xíc. óleo · ⅓ xíc.
+            açúcar mascavo (ou 4 tâmaras batidas) · 1½ xíc. farinha integral · 1 xíc. aveia · ½ xíc. castanhas picadas ·
+            1 col. chá canela · 1 col. sopa fermento em pó.</p>
+          <ol>
+            <li>Bata bananas, ovos, óleo e açúcar.</li>
+            <li>Misture os secos (fermento por último) e as castanhas, sem bater muito.</li>
+            <li>Asse a 180 °C por 35–40 min. Faça o teste do palito.</li>
+          </ol>
+        </div>
+        <div class="receita">
+          <span class="tag">sem leite</span>
+          <h3>Bolo de laranja sem leite ou derivados</h3>
+          <p class="ingr"><strong>Ingredientes:</strong> 1 xíc. suco de laranja + raspas · ½ xíc. óleo · ½ xíc. açúcar
+            demerara · 2 ovos (ou 2 col. sopa linhaça hidratada em 6 col. de água) · 2 xíc. farinha de trigo · 1 col.
+            sopa fermento em pó.</p>
+          <ol>
+            <li>Bata os líquidos com o açúcar e as raspas.</li>
+            <li>Incorpore a farinha e, por fim, o fermento.</li>
+            <li>Asse a 180 °C por 35 min em forma untada com óleo e farinha.</li>
+          </ol>
+        </div>
+        <div class="receita">
+          <span class="tag">sem glúten</span>
+          <h3>Bolo de milho sem glúten</h3>
+          <p class="ingr"><strong>Ingredientes:</strong> 1 xíc. flocão de milho · 1 xíc. fubá · ½ xíc. açúcar demerara ·
+            2 ovos · ½ xíc. óleo · 1½ xíc. leite vegetal (ou de coco) · 1 col. sopa fermento em pó · pitada de sal.</p>
+          <ol>
+            <li>Bata tudo no liquidificador, menos o fermento; deixe descansar 10 min para hidratar o flocão.</li>
+            <li>Misture o fermento e asse a 180 °C por 40 min.</li>
+          </ol>
+        </div>
+        <div class="receita">
+          <span class="tag">básico e mistura pronta</span>
+          <h3>Bolo básico de baunilha + como usar mistura pronta</h3>
+          <p class="ingr"><strong>Básico:</strong> 3 ovos · ¾ xíc. açúcar · ½ xíc. óleo · 1 xíc. leite (ou vegetal) · 2
+            xíc. farinha · 1 col. sopa fermento · 1 col. chá baunilha. Bata ovos, açúcar, óleo e leite; junte a farinha
+            e o fermento; asse 180 °C, 35 min.</p>
+          <p class="ingr"><strong>Mistura pronta:</strong> siga exatamente o rótulo (líquidos e ovos indicados), bata só
+            até homogeneizar, asse imediatamente na temperatura sugerida. Para melhorar: troque a água por leite
+            vegetal, acrescente raspas de limão ou 2 col. de aveia — e compare o preço, o sabor e a lista de
+            ingredientes com o bolo feito do zero. É um excelente exercício de rótulo para a reunião do clube.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TORTAS -->
+  <section class="faixa">
+    <div class="wrap">
+      <div class="secao-titulo"><span class="kicker">Tortas</span></div>
+      <h2>Tortas: assada, não assada e salgada</h2>
+      <p class="intro">Sem exagerar no açúcar, no creme de leite ou no leite condensado. A doçura vem das frutas.</p>
+      <figure class="media" style="margin:1.8rem 0">
+        <img src="imgs/tortas.jpg"
+          alt="Três tortas vistas de cima: torta de limão assada, torta de frutas frescas e quiche de legumes"
+          loading="lazy" width="1280" height="960" />
+        <figcaption>Torta assada de limão, torta de frutas frescas sobre massa assada e quiche vegetariana.</figcaption>
+      </figure>
+      <div class="grid g3">
+        <div class="receita">
+          <span class="tag">Assada · fruta</span>
+          <h3>Torta assada de maçã e limão</h3>
+          <p class="ingr"><strong>Massa:</strong> 2 xíc. farinha (metade integral) · 100 g margarina vegetal gelada · 2
+            col. sopa açúcar · 3–4 col. sopa água gelada.<br /><strong>Recheio:</strong> 5 maçãs em fatias finas · suco
+            e raspas de 1 limão · 2 col. sopa açúcar mascavo · 1 col. chá canela · 1 col. sopa amido de milho.</p>
+          <ol>
+            <li>Junte os ingredientes da massa com a ponta dos dedos, forme uma bola, embrulhe e leve 30 min à
+              geladeira.</li>
+            <li>Forre a forma, fure o fundo com garfo e pré-asse 10 min a 180 °C.</li>
+            <li>Misture o recheio, distribua e cubra com tiras de massa em treliça.</li>
+            <li>Asse 40 min a 180 °C, até a fruta borbulhar e a massa dourar.</li>
+          </ol>
+        </div>
+        <div class="receita">
+          <span class="tag">Não assada · massa assada</span>
+          <h3>Torta de frutas frescas com gelatina</h3>
+          <p class="ingr"><strong>Massa (assada):</strong> a mesma acima, assada completamente por 20–25 min e
+            esfriada.<br /><strong>Recheio:</strong> 2 xíc. frutas frescas fatiadas (morango, kiwi, manga, uva) · 1
+            pacote de gelatina de fruta sem açúcar ou 1 xíc. de suco natural + 1 col. sopa gelatina incolor hidratada.
+          </p>
+          <ol>
+            <li>Arrume as frutas sobre a massa assada e fria.</li>
+            <li>Prepare a gelatina com metade da água indicada; deixe amornar e engrossar levemente.</li>
+            <li>Cubra as frutas e leve à geladeira por 3 horas, até firmar. Nada vai ao forno nesta etapa.</li>
+          </ol>
+        </div>
+        <div class="receita">
+          <span class="tag">Salgada · vegetariana</span>
+          <h3>Torta salgada de legumes e milho</h3>
+          <p class="ingr"><strong>Massa liquidificador:</strong> 2 ovos · 1 xíc. leite (ou vegetal) · ½ xíc. óleo · 1½
+            xíc. farinha (metade integral) · 1 col. sopa fermento em pó · 1 col. chá sal.<br /><strong>Recheio:</strong>
+            1 cebola · 2 dentes de alho · 1 cenoura ralada · 1 abobrinha em cubos · 1 xíc. milho · 1 tomate sem sementes
+            · azeite, orégano, salsinha, sal.</p>
+          <ol>
+            <li>Refogue o recheio no azeite até secar; tempere e deixe esfriar.</li>
+            <li>Bata a massa no liquidificador (fermento por último, misturado à mão).</li>
+            <li>Monte em camadas: metade da massa, recheio, resto da massa. Polvilhe orégano e gergelim.</li>
+            <li>Asse a 200 °C por 35–40 min, até firmar e dourar.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BISCOITOS SAUDÁVEIS -->
+  <section>
+    <div class="wrap">
+      <div class="secao-titulo"><span class="kicker">Fornada saudável</span></div>
+      <h2>Biscoitos com frutas, aveia e castanhas</h2>
+      <div class="grid g2" style="margin-top:1.6rem;align-items:start">
+        <figure class="media">
+          <img src="imgs/biscoitos.jpg"
+            alt="Assadeira com biscoitos de aveia com uvas-passas e biscoitos salgados de sementes" loading="lazy"
+            width="1280" height="960" />
+          <figcaption>Biscoitos de aveia com passas e crackers de sementes na mesma fornada.</figcaption>
+        </figure>
+        <div class="receita">
+          <span class="tag">biscoitos saudáveis</span>
+          <h3>Cookies de aveia, banana e castanhas</h3>
+          <p class="ingr"><strong>Ingredientes:</strong> 2 bananas maduras amassadas · 1½ xíc. aveia em flocos · ½ xíc.
+            farinha integral · ⅓ xíc. uvas-passas · ⅓ xíc. castanha-do-pará ou nozes picadas · 3 col. sopa óleo de coco
+            ou azeite suave · 1 col. chá canela · 1 col. chá baunilha · pitada de sal · (opcional) 1 col. sopa mel.</p>
+          <ol>
+            <li>Amasse as bananas e misture com o óleo, a baunilha e o mel.</li>
+            <li>Junte a aveia, a farinha, a canela, o sal, as passas e as castanhas até formar massa moldável. Descanse
+              10 min.</li>
+            <li>Faça bolinhas com uma colher, achate na assadeira forrada, deixando 3 cm entre elas.</li>
+            <li>Asse a 180 °C por 15–18 min, até as bordas dourarem. Esfrie na grade — eles firmam ao esfriar.</li>
+          </ol>
+          <p class="ingr">Rende ≈ 20 unidades. Sem açúcar refinado: a doçura vem da banana e das passas.</p>
+        </div>
+      </div>
+      <div class="grid g3" style="margin-top:1.6rem">
+        <div class="curiosidade"><strong>Variação</strong> Troque a banana por 1 xíc. de purê de maçã e acrescente 2
+          col. de linhaça.</div>
+        <div class="curiosidade"><strong>Sem glúten</strong> Use farinha de arroz + aveia certificada sem glúten.</div>
+        <div class="curiosidade"><strong>Crocância</strong> Asse 3 min extras e deixe esfriar dentro do forno desligado.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARQUIVO DE RECEITAS -->
+  <section class="faixa">
+    <div class="wrap">
+      <div class="secao-titulo"><span class="kicker">Registro</span></div>
+      <h2>O arquivo de receitas</h2>
+      <p class="intro">Tenha um arquivo organizado com todas as receitas feitas — e um levantamento de
+        quantas receitas usam frutas sem grandes quantidades de açúcar.</p>
+
+      <div class="grid g2" style="margin-top:2rem;align-items:start">
+        <div class="card escuro">
+          <h3>Como organizar o fichário</h3>
+          <ul class="lista">
+            <li>Uma ficha (ou folha A5) por receita, em papel firme ou plastificada.</li>
+            <li>Cabeçalho: nome, categoria, rendimento, tempo e temperatura do forno.</li>
+            <li>Colunas separadas para ingredientes e modo de preparo.</li>
+            <li>Espaço para <strong>anotações do padeiro</strong>: o que deu certo, o que ajustar.</li>
+            <li>Divisórias: Pães · Bolos · Tortas · Biscoitos · Massas sem fermento · Extras.</li>
+            <li>Cole uma foto do resultado — vira memória e prova do requisito.</li>
+          </ul>
+        </div>
+        <div class="card escuro">
+          <h3>Receitas adoçadas com frutas (sem muito açúcar)</h3>
+          <ul class="lista">
+            <li>Cookies de aveia, banana e castanhas</li>
+            <li>Bolo de banana, aveia e castanhas</li>
+            <li>Bolo de laranja sem leite</li>
+            <li>Torta assada de maçã e limão</li>
+            <li>Torta de frutas frescas com gelatina</li>
+            <li>Pão doce de maçã e canela (purê de maçã substituindo o açúcar)</li>
+            <li>Muffins de mirtilo ou amora com purê de tâmara</li>
+            <li>Barrinhas de tâmara, aveia e coco (sem assar)</li>
+            <li>Pão de banana integral com nozes</li>
+            <li>Rocambole de fruta com geleia de fruta 100%</li>
+          </ul>
+          <p style="margin-top:.8rem">São <strong>dez</strong> receitas — um bom desafio é chegar a quinze com frutas da
+            estação da sua região.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CURIOSIDADES -->
+  <section>
+    <div class="wrap">
+      <div class="secao-titulo"><span class="kicker">Para ir além</span></div>
+      <h2>Curiosidades da panificação</h2>
+      <div class="grid g3" style="margin-top:1.6rem">
+        <div class="card">
+          <h3>6.000 anos de pão</h3>
+          <p>Pães fermentados já eram feitos no Egito antigo. A descoberta provavelmente foi acidental: uma massa
+            esquecida capturou leveduras do ar e cresceu.</p>
+        </div>
+        <div class="card">
+          <h3>Reação de Maillard</h3>
+          <p>A cor dourada e o aroma da crosta vêm do encontro de açúcares com proteínas acima de 140 °C — a mesma
+            reação que doura o café e o pão na chapa.</p>
+        </div>
+        <div class="card">
+          <h3>Sal não é só sabor</h3>
+          <p>O sal fortalece o glúten e freia a levedura, dando fermentação mais lenta e uniforme. Massa sem sal cresce
+            rápido e desanda.</p>
+        </div>
+        <div class="card">
+          <h3>Levain imortal</h3>
+          <p>Existem fermentos naturais mantidos por famílias há mais de 100 anos, alimentados só com farinha e água.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Por que o pão endurece</h3>
+          <p>Não é só perda de água: o amido se recristaliza (retrogradação). Guardar na geladeira acelera isso;
+            congelar, não.</p>
+        </div>
+        <div class="card">
+          <h3>O vapor faz diferença</h3>
+          <p>
+            O vapor no início do forno mantém a superfície da massa úmida por mais tempo,
+            permitindo que o pão cresça melhor antes de formar a crosta. Ele também ajuda
+            a criar uma casca mais fina, crocante e brilhante.
+          </p>
+        </div>
+      </div>
+      <div class="curiosidade" style="margin-top:1.6rem">
+        <strong>Segurança na cozinha</strong>
+        Sempre use luvas térmicas secas, avise antes de abrir o forno, prenda os cabelos, lave as mãos antes e depois de
+        manusear ovos e nunca deixe o cabo da panela virado para fora do fogão.
+      </div>
+    </div>
+  </section>
+
+  <footer>
+  </footer>
+
+</body>
+
+</html>
