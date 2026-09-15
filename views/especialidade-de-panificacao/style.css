@@ -205,6 +205,11 @@ figcaption {
     font-style: italic;
 }
 
+
+.faixa figcaption {
+    color: #f6e9d4;
+}
+
 .card {
     background: #fffaf1;
     border: 1px solid var(--borda);
