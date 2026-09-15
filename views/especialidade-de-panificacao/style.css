@@ -207,7 +207,7 @@ figcaption {
 
 
 .faixa figcaption {
-    color: #f6e9d4;
+    color: #f6e9d4 !important;
 }
 
 .card {
