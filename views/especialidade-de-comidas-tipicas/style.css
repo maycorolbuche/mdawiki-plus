@@ -566,14 +566,6 @@ p {
         min-height: 520px
     }
 
-    .country:not([open]) .recipe {
-        display: block
-    }
-
-    .country summary:after {
-        display: none
-    }
-
     .chapter,
     .passport,
     .practice {
