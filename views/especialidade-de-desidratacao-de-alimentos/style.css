@@ -1,0 +1,927 @@
+:root {
+    --background: oklch(0.145 0.012 75);
+    --foreground: oklch(0.94 0.025 79);
+    --card: oklch(0.19 0.016 70);
+    --card-foreground: oklch(0.94 0.025 79);
+    --primary: oklch(0.72 0.16 62);
+    --primary-foreground: oklch(0.15 0.012 75);
+    --secondary: oklch(0.29 0.048 151);
+    --secondary-foreground: oklch(0.94 0.025 79);
+    --muted: oklch(0.23 0.014 70);
+    --muted-foreground: oklch(0.72 0.025 78);
+    --accent: oklch(0.62 0.15 38);
+    --accent-foreground: oklch(0.97 0.018 85);
+    --border: oklch(0.36 0.025 70);
+    --input: oklch(0.3 0.02 70);
+    --ring: oklch(0.72 0.16 62);
+    --paper: oklch(0.9 0.045 83);
+    --paper-ink: oklch(0.22 0.025 55);
+    --forest: oklch(0.25 0.052 151);
+    --forest-light: oklch(0.42 0.074 145);
+    --ember: oklch(0.66 0.17 43);
+    --gold: oklch(0.79 0.14 78);
+    --charcoal: oklch(0.12 0.012 65);
+}
+
+* {
+    box-sizing: border-box;
+    border-color: var(--border);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: var(--background);
+    color: var(--foreground);
+    font-family: "Barlow", sans-serif;
+}
+
+a {
+    color: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.magazine-page {
+    overflow: hidden;
+    background: var(--background);
+}
+
+.page-shell {
+    width: min(1180px, calc(100% - 40px));
+    margin-inline: auto;
+}
+
+.hero-cover {
+    min-height: 100vh;
+    position: relative;
+    isolation: isolate;
+}
+
+.hero-cover>img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.hero-shade {
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    background: linear-gradient(90deg, color-mix(in oklab, var(--charcoal) 94%, transparent) 0%, color-mix(in oklab, var(--charcoal) 62%, transparent) 48%, color-mix(in oklab, var(--charcoal) 10%, transparent) 100%), linear-gradient(0deg, color-mix(in oklab, var(--charcoal) 78%, transparent), transparent 45%);
+}
+
+.hero-content {
+    min-height: 92svh;
+    display: flex;
+    flex-direction: column;
+    padding-block: 32px 26px;
+}
+
+.hero-kicker,
+.hero-foot {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    font-size: .72rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .18em;
+    color: color-mix(in oklab, var(--foreground) 78%, transparent);
+}
+
+.hero-title-wrap {
+    margin-block: auto;
+    padding-block: 70px;
+    max-width: 840px;
+}
+
+.issue-mark,
+.section-label {
+    text-transform: uppercase;
+    letter-spacing: .22em;
+    font-size: .72rem;
+    font-weight: 600;
+    color: var(--gold);
+}
+
+.hero-title-wrap h1,
+h2,
+h3 {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+.hero-title-wrap h1 {
+    margin: 16px 0 22px;
+    font-size: clamp(4.2rem, 10vw, 8.8rem);
+    line-height: .78;
+}
+
+.hero-title-wrap h1 em {
+    color: var(--gold);
+    font-weight: 400;
+}
+
+.hero-deck {
+    max-width: 600px;
+    font-size: clamp(1.05rem, 2vw, 1.35rem);
+    line-height: 1.55;
+    color: color-mix(in oklab, var(--foreground) 82%, transparent);
+}
+
+.meta-key::after {
+    content: ":"
+}
+
+.section-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.section-label span {
+    width: 30px;
+    height: 1px;
+    background: currentColor;
+}
+
+.intro-section {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 70px;
+    padding-block: 120px;
+}
+
+.chapter-number {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    color: color-mix(in oklab, var(--foreground) 5%, transparent);
+    font-family: "DM Serif Display", serif;
+    font-size: 18rem;
+    line-height: 1;
+}
+
+.intro-heading,
+.intro-copy,
+.pull-quote {
+    position: relative;
+}
+
+.intro-heading h2,
+.section-head h2,
+.selection-content h2,
+.storage-title h2,
+.rehydration-copy h2,
+.extra-main h2 {
+    font-size: clamp(3rem, 6vw, 5.7rem);
+    line-height: .94;
+    margin: 20px 0 0;
+}
+
+.intro-copy {
+    padding-top: 44px;
+    font-size: 1.06rem;
+    line-height: 1.8;
+    color: var(--muted-foreground);
+}
+
+.intro-copy p {
+    margin: 0 0 24px;
+}
+
+.drop-cap::first-letter {
+    float: left;
+    font-family: "DM Serif Display", serif;
+    font-size: 5.3rem;
+    line-height: .72;
+    padding: 10px 12px 0 0;
+    color: var(--gold);
+}
+
+.pull-quote {
+    grid-column: 1 / -1;
+    border-left: 3px solid var(--ember);
+    padding: 6px 0 6px 28px;
+    margin: 10px 0 0 27%;
+    font-family: "DM Serif Display", serif;
+    font-size: clamp(1.6rem, 3vw, 2.8rem);
+    line-height: 1.25;
+    color: color-mix(in oklab, var(--foreground) 80%, transparent);
+}
+
+.pull-quote b {
+    color: var(--foreground);
+}
+
+.benefits-band {
+    background: var(--gold);
+    color: var(--charcoal);
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.benefits-grid div {
+    padding: 38px 26px;
+    border-right: 1px solid color-mix(in oklab, var(--charcoal) 22%, transparent);
+}
+
+.benefits-grid div:first-child {
+    border-left: 1px solid color-mix(in oklab, var(--charcoal) 22%, transparent);
+}
+
+.benefits-grid strong {
+    font-family: "DM Serif Display", serif;
+    font-size: 1.9rem;
+    display: block;
+}
+
+.benefits-grid span {
+    font-size: .88rem;
+    line-height: 1.45;
+    display: block;
+    margin-top: 8px;
+}
+
+.methods-section,
+.practice-section,
+.extra-section {
+    padding-block: 120px;
+}
+
+.section-head {
+    display: grid;
+    grid-template-columns: 1.4fr .7fr;
+    gap: 80px;
+    align-items: end;
+    margin-bottom: 65px;
+}
+
+.section-head>p {
+    color: var(--muted-foreground);
+    line-height: 1.7;
+    font-size: 1rem;
+    max-width: 470px;
+}
+
+.method-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-top: 1px solid var(--border);
+}
+
+.method-item {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    column-gap: 20px;
+    padding: 42px 28px 42px 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.method-item:nth-child(odd) {
+    border-right: 1px solid var(--border);
+}
+
+.method-item:nth-child(even) {
+    padding-left: 28px;
+}
+
+.method-number {
+    grid-row: 1 / 4;
+    color: var(--ember);
+    font-family: "DM Serif Display", serif;
+    font-size: 2.6rem;
+}
+
+.method-item h3 {
+    font-size: 2.1rem;
+    margin: 0 0 12px;
+}
+
+.method-item p {
+    color: var(--muted-foreground);
+    line-height: 1.65;
+    margin: 0 0 18px;
+}
+
+.method-item small {
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: .11em;
+    font-size: .64rem;
+    font-weight: 600;
+}
+
+.method-photo {
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 26px;
+    align-items: end;
+}
+
+.method-photo img {
+    width: 100%;
+    height: min(58vw, 640px);
+    object-fit: cover;
+}
+
+.method-photo p {
+    color: var(--muted-foreground);
+    font-size: .82rem;
+    line-height: 1.5;
+    border-top: 1px solid var(--ember);
+    padding-top: 13px;
+}
+
+.selection-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: var(--paper);
+    color: var(--paper-ink);
+}
+
+.selection-photo {
+    min-height: 860px;
+}
+
+.selection-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.selection-content {
+    padding: 90px max(40px, calc((100vw - 1180px) / 2)) 80px 70px;
+}
+
+.selection-content .section-label {
+    color: var(--ember);
+}
+
+.selection-content h2 {
+    margin-bottom: 45px;
+}
+
+.steps {
+    border-top: 1px solid color-mix(in oklab, var(--paper-ink) 22%, transparent);
+}
+
+.steps>div {
+    display: grid;
+    grid-template-columns: 42px 1fr;
+    gap: 18px;
+    border-bottom: 1px solid color-mix(in oklab, var(--paper-ink) 22%, transparent);
+    padding: 20px 0;
+}
+
+.steps span {
+    color: var(--ember);
+    font-family: "DM Serif Display", serif;
+    font-size: 1.5rem;
+}
+
+.steps p {
+    margin: 0;
+    line-height: 1.55;
+}
+
+.warning-note {
+    margin-top: 28px;
+    padding: 18px 20px;
+    background: var(--paper-ink);
+    color: var(--paper);
+    font-size: .88rem;
+    line-height: 1.55;
+}
+
+.section-head.compact {
+    margin-bottom: 50px;
+}
+
+.practice-table-wrap {
+    overflow-x: auto;
+    border: 1px solid var(--border);
+}
+
+.practice-table {
+    border-collapse: collapse;
+    width: 100%;
+    min-width: 900px;
+}
+
+.practice-table th {
+    padding: 16px 18px;
+    text-align: left;
+    background: var(--forest);
+    color: var(--foreground);
+    font-size: .7rem;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+}
+
+.practice-table td {
+    padding: 19px 18px;
+    border-top: 1px solid var(--border);
+    color: var(--muted-foreground);
+    font-size: .9rem;
+}
+
+.practice-table td:first-child {
+    font-family: "DM Serif Display", serif;
+    color: var(--gold);
+    font-size: 1.25rem;
+}
+
+.table-note {
+    color: var(--muted-foreground);
+    font-size: .76rem;
+    margin: 12px 0 55px;
+}
+
+.practice-notes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+}
+
+.practice-notes article {
+    background: var(--background);
+    padding: 28px 24px;
+}
+
+.practice-notes span,
+.completion-box>span,
+.recipe-card>span {
+    color: var(--ember);
+    font-size: .66rem;
+    font-weight: 600;
+    letter-spacing: .18em;
+}
+
+.practice-notes h3 {
+    font-size: 1.5rem;
+    margin: 11px 0;
+}
+
+.practice-notes p {
+    color: var(--muted-foreground);
+    font-size: .9rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.storage-section {
+    background: var(--forest);
+    padding-block: 110px;
+}
+
+.storage-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+}
+
+.storage-title .section-label {
+    color: var(--gold);
+}
+
+.storage-list {
+    border-top: 1px solid color-mix(in oklab, var(--foreground) 20%, transparent);
+}
+
+.storage-list div {
+    padding: 22px 0;
+    border-bottom: 1px solid color-mix(in oklab, var(--foreground) 20%, transparent);
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 20px;
+}
+
+.storage-list b {
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    font-size: .76rem;
+}
+
+.storage-list p {
+    margin: 0;
+    line-height: 1.55;
+    color: color-mix(in oklab, var(--foreground) 72%, transparent);
+}
+
+.nuts-note {
+    grid-column: 1 / -1;
+    margin-left: 20%;
+    background: var(--gold);
+    color: var(--charcoal);
+    padding: 32px 38px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 35px;
+}
+
+.nuts-note h3 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+.nuts-note p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+.rehydration-section {
+    padding-block: 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 75px;
+    align-items: center;
+}
+
+.rehydration-image {
+    position: relative;
+}
+
+.rehydration-image img {
+    width: 100%;
+    aspect-ratio: 4/5;
+    object-fit: cover;
+}
+
+.rehydration-image span {
+    position: absolute;
+    bottom: 20px;
+    left: -18px;
+    background: var(--gold);
+    color: var(--charcoal);
+    padding: 12px 18px;
+    font-size: .7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .12em;
+}
+
+.rehydration-copy>p {
+    color: var(--muted-foreground);
+    line-height: 1.7;
+}
+
+.recipe-card {
+    margin: 34px 0 26px;
+    padding: 28px 30px;
+    border: 1px solid var(--border);
+    border-top: 3px solid var(--ember);
+}
+
+.recipe-card h3 {
+    font-size: 2rem;
+    margin: 8px 0 16px;
+}
+
+.recipe-card ol {
+    padding-left: 18px;
+    color: var(--muted-foreground);
+    line-height: 1.6;
+}
+
+.recipe-card li+li {
+    margin-top: 8px;
+}
+
+.safety-line {
+    border-left: 2px solid var(--gold);
+    padding-left: 18px;
+    font-size: .9rem;
+}
+
+.extra-section {
+    display: grid;
+    grid-template-columns: 1.7fr .8fr;
+    gap: 80px;
+}
+
+.facts-grid {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
+    background: var(--border);
+    border: 1px solid var(--border);
+}
+
+.facts-grid article {
+    padding: 28px;
+    background: var(--background);
+}
+
+.facts-grid b {
+    color: var(--gold);
+    font-family: "DM Serif Display", serif;
+    font-size: 1.35rem;
+}
+
+.facts-grid p {
+    color: var(--muted-foreground);
+    line-height: 1.6;
+    font-size: .9rem;
+}
+
+.completion-box {
+    align-self: end;
+    background: var(--paper);
+    color: var(--paper-ink);
+    padding: 38px;
+}
+
+.completion-box h3 {
+    font-size: 2.1rem;
+    margin: 12px 0 24px;
+}
+
+.completion-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.completion-box li {
+    padding: 13px 0 13px 25px;
+    border-top: 1px solid color-mix(in oklab, var(--paper-ink) 18%, transparent);
+    position: relative;
+    line-height: 1.4;
+}
+
+.completion-box li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--forest-light);
+    font-weight: 700;
+}
+
+.site-footer {
+    background: var(--charcoal);
+    border-top: 1px solid var(--border);
+    padding-block: 75px 35px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+}
+
+.footer-mark {
+    color: var(--gold);
+    font-size: .7rem;
+    letter-spacing: .2em;
+}
+
+.footer-grid h2 {
+    font-size: 3rem;
+    line-height: .95;
+    margin: 10px 0;
+}
+
+.sources {
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    font-size: .82rem;
+}
+
+.sources b {
+    color: var(--gold);
+    margin-bottom: 7px;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+
+.sources a {
+    color: var(--muted-foreground);
+    text-underline-offset: 4px;
+}
+
+.sources a:hover {
+    color: var(--foreground);
+}
+
+.footer-note {
+    grid-column: 1 / -1;
+    margin: 20px 0 0;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--muted-foreground);
+    font-size: .74rem;
+}
+
+@media (max-width: 900px) {
+
+    .intro-section,
+    .section-head,
+    .storage-layout,
+    .rehydration-section,
+    .extra-section {
+        grid-template-columns: 1fr;
+        gap: 42px;
+    }
+
+    .intro-section {
+        padding-block: 85px;
+    }
+
+    .intro-copy {
+        padding-top: 0;
+    }
+
+    .pull-quote {
+        margin-left: 0;
+    }
+
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .method-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .method-item:nth-child(odd) {
+        border-right: 0;
+    }
+
+    .method-item:nth-child(even) {
+        padding-left: 0;
+    }
+
+    .selection-section {
+        grid-template-columns: 1fr;
+    }
+
+    .selection-photo {
+        min-height: 520px;
+    }
+
+    .selection-content {
+        padding: 70px 40px;
+    }
+
+    .practice-notes {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nuts-note {
+        margin-left: 0;
+    }
+
+    .rehydration-image img {
+        aspect-ratio: 16/10;
+    }
+
+    .completion-box {
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 600px) {
+    .page-shell {
+        width: min(100% - 28px, 1180px);
+    }
+
+    .hero-cover,
+    .hero-content {
+        min-height: 88svh;
+    }
+
+    .hero-shade {
+        background: linear-gradient(0deg, color-mix(in oklab, var(--charcoal) 92%, transparent), color-mix(in oklab, var(--charcoal) 22%, transparent));
+    }
+
+    .hero-kicker span:nth-child(2) {
+        display: none;
+    }
+
+    .hero-title-wrap {
+        padding-block: 90px 40px;
+    }
+
+    .hero-title-wrap h1 {
+        font-size: clamp(3rem, 15.2vw, 4.4rem);
+    }
+
+    .hero-foot {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .chapter-number {
+        font-size: 10rem;
+    }
+
+    .intro-heading h2,
+    .section-head h2,
+    .selection-content h2,
+    .storage-title h2,
+    .rehydration-copy h2,
+    .extra-main h2 {
+        font-size: 3.15rem;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .benefits-grid div {
+        border-right: 0;
+        border-bottom: 1px solid color-mix(in oklab, var(--charcoal) 22%, transparent);
+        padding: 25px 0;
+    }
+
+    .benefits-grid div:first-child {
+        border-left: 0;
+    }
+
+    .methods-section,
+    .practice-section,
+    .extra-section,
+    .rehydration-section {
+        padding-block: 78px;
+    }
+
+    .method-item {
+        grid-template-columns: 48px 1fr;
+        padding-right: 0;
+    }
+
+    .method-number {
+        font-size: 2rem;
+    }
+
+    .method-photo {
+        grid-template-columns: 1fr;
+    }
+
+    .method-photo img {
+        height: 340px;
+    }
+
+    .selection-photo {
+        min-height: 390px;
+    }
+
+    .selection-content {
+        padding: 65px 22px;
+    }
+
+    .practice-notes,
+    .facts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .storage-section {
+        padding-block: 76px;
+    }
+
+    .storage-list div {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
+
+    .nuts-note {
+        grid-template-columns: 1fr;
+        padding: 28px 24px;
+    }
+
+    .rehydration-section {
+        gap: 50px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
