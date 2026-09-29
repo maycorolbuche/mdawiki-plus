@@ -1,0 +1,625 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Libre+Franklin:wght@600;700;800&family=Newsreader:opsz,wght@6..72,400;6..72,600;6..72,700&display=swap');
+
+:root {
+    --paper: #f5f0e2;
+    --ink: #183226;
+    --leaf: #234e36;
+    --leaf2: #376943;
+    --straw: #d8bd72;
+    --rust: #a74d2b;
+    --clay: #74432f;
+    --mist: #e4ebdd;
+    --cream: #fffaf0;
+    --line: rgba(35, 78, 54, .22);
+    --shadow: 0 18px 48px rgba(24, 50, 38, .14)
+}
+
+* {
+    box-sizing: border-box
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.65
+}
+
+img {
+    display: block;
+    max-width: 100%
+}
+
+a {
+    color: inherit
+}
+
+.hero {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    background: linear-gradient(180deg, rgba(14, 34, 22, .05), rgba(14, 34, 22, .88)), url('imgs/hero.jpg') center / cover no-repeat;
+    color: #fffdf5;
+    padding: clamp(2rem, 6vw, 6rem)
+}
+
+.hero-inner {
+    width: min(1120px, 100%);
+    margin: auto
+}
+
+.kicker,
+.eyebrow {
+    font: 700 .72rem/1 'Libre Franklin', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .18em
+}
+
+.hero h1 {
+    font: 600 clamp(4.2rem, 12vw, 10rem)/.78 'Newsreader', serif;
+    letter-spacing: -.055em;
+    margin: .25rem 0 1.4rem;
+    max-width: 10ch
+}
+
+.hero p {
+    font: 500 clamp(1rem, 2vw, 1.3rem)/1.5 'DM Sans', sans-serif;
+    max-width: 54ch;
+    margin: 0
+}
+
+.issue {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.6rem
+}
+
+.issue>span {
+    border: 1px solid rgba(255, 255, 255, .45);
+    padding: .45rem .7rem;
+    background: rgba(12, 27, 19, .3)
+}
+
+.meta-key::after {
+    content: " · "
+}
+
+main {
+    overflow: hidden
+}
+
+.band {
+    padding: clamp(4rem, 8vw, 8rem) clamp(1.25rem, 5vw, 5rem)
+}
+
+.wrap {
+    width: min(1180px, 100%);
+    margin: auto
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: clamp(2rem, 6vw, 6rem);
+    align-items: center
+}
+
+h2 {
+    font: 600 clamp(2.7rem, 6vw, 5.4rem)/.92 'Newsreader', serif;
+    letter-spacing: -.035em;
+    margin: .4rem 0 1.5rem;
+    max-width: 13ch
+}
+
+h3 {
+    font: 700 clamp(1.15rem, 2vw, 1.45rem)/1.15 'Libre Franklin', sans-serif;
+    margin: 0 0 .65rem
+}
+
+h4 {
+    font: 700 .86rem/1.2 'Libre Franklin', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+    margin: 0 0 .45rem
+}
+
+p {
+    margin: .45rem 0 1rem
+}
+
+.lead {
+    font: 400 clamp(1.25rem, 2vw, 1.65rem)/1.55 'Newsreader', serif
+}
+
+.soil-img {
+    aspect-ratio: 4/5;
+    object-fit: cover;
+    box-shadow: var(--shadow)
+}
+
+.paper {
+    background: var(--cream)
+}
+
+.dark {
+    background: var(--leaf);
+    color: #f8f3e8
+}
+
+.clay {
+    background: var(--clay);
+    color: #fff8ec
+}
+
+.gold {
+    background: var(--straw)
+}
+
+.rule {
+    height: 1px;
+    background: currentColor;
+    opacity: .22;
+    margin: 2rem 0
+}
+
+.number {
+    font: 700 4.5rem/1 'Newsreader', serif;
+    color: var(--rust)
+}
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+    margin-top: 2.5rem
+}
+
+.stat {
+    background: var(--cream);
+    padding: 1.5rem
+}
+
+.stat strong {
+    display: block;
+    font: 700 2rem/1 'Newsreader', serif;
+    color: var(--leaf)
+}
+
+.stat small {
+    display: block;
+    margin-top: .5rem
+}
+
+.nutrients {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.1rem;
+    margin-top: 2.5rem
+}
+
+.nutrient {
+    border-top: 5px solid var(--rust);
+    padding: 1.2rem 0
+}
+
+.nutrient b {
+    font-size: 1.8rem
+}
+
+.chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .55rem;
+    margin-top: 1rem
+}
+
+.chip {
+    border: 1px solid currentColor;
+    border-radius: 999px;
+    padding: .35rem .7rem;
+    font-size: .8rem
+}
+
+.soiltypes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.1rem;
+    margin-top: 2.5rem
+}
+
+.soil-card {
+    min-height: 360px;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: var(--cream);
+    border-top: 8px solid var(--straw)
+}
+
+.soil-card:nth-child(2) {
+    border-color: var(--rust)
+}
+
+.soil-card:nth-child(3) {
+    border-color: var(--leaf)
+}
+
+.soil-card p {
+    font-size: .92rem
+}
+
+.soil-card ul {
+    padding-left: 1.1rem;
+    margin: .5rem 0
+}
+
+.feature-img {
+    width: 100%;
+    max-height: 540px;
+    object-fit: cover
+}
+
+.methods {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 2rem
+}
+
+.method {
+    border-left: 2px solid currentColor;
+    padding-left: 1rem
+}
+
+.quote {
+    font: 600 clamp(2rem, 4vw, 3.7rem)/1.1 'Newsreader', serif;
+    max-width: 24ch;
+    margin: 3rem auto;
+    text-align: center
+}
+
+.toolgrid,
+.operations {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    background: rgba(255, 255, 255, .2)
+}
+
+.operations {
+    color: #FFF;
+}
+
+.tool,
+.operation {
+    padding: 1.4rem;
+    background: var(--leaf)
+}
+
+.tool b,
+.operation b {
+    display: block;
+    font: 700 1.05rem 'Libre Franklin';
+    margin-bottom: .4rem
+}
+
+.machines {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 2rem
+}
+
+.machine {
+    border: 1px solid rgba(255, 255, 255, .25);
+    padding: 1.1rem
+}
+
+.germination {
+    display: grid;
+    grid-template-columns: .9fr 1.1fr;
+    gap: 3rem;
+    align-items: center
+}
+
+.steps {
+    counter-reset: step;
+    list-style: none;
+    padding: 0
+}
+
+.steps li {
+    counter-increment: step;
+    position: relative;
+    padding: 0 0 1.25rem 3.1rem
+}
+
+.steps li:before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background: var(--rust);
+    color: #fff;
+    display: grid;
+    place-items: center;
+    font-weight: 700
+}
+
+table {
+    display: block;
+    overflow-x: auto;
+    max-width: 100%;
+    width: 100%;
+    border-collapse: collapse;
+    font-size: .88rem;
+    background: var(--cream)
+}
+
+th,
+td {
+    padding: .85rem;
+    border: 1px solid var(--line);
+    text-align: left;
+    vertical-align: top
+}
+
+th {
+    background: var(--leaf);
+    color: #fff
+}
+
+.field-note {
+    border: 2px dashed var(--leaf);
+    padding: 1.2rem;
+    margin-top: 1.5rem;
+    background: rgba(255, 255, 255, .35)
+}
+
+.weeds {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0 2rem
+}
+
+.weed {
+    display: grid;
+    grid-template-columns: 2.4rem 1fr;
+    gap: .8rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid var(--line)
+}
+
+.weed .n {
+    font: 700 1.4rem 'Newsreader';
+    color: var(--rust)
+}
+
+.pest-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem
+}
+
+.list-card {
+    background: var(--cream);
+    color: var(--ink);
+    padding: 1.5rem
+}
+
+.list-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 0
+}
+
+.list-card li {
+    padding: .9rem 0;
+    border-bottom: 1px solid var(--line)
+}
+
+.list-card li:last-child {
+    border: 0
+}
+
+.list-card strong {
+    display: block;
+    color: var(--rust)
+}
+
+.mip {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    margin-top: 2rem;
+    background: rgba(255, 255, 255, .22)
+}
+
+.mip div {
+    background: var(--leaf);
+    padding: 1.3rem
+}
+
+.weather {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem
+}
+
+.weather article {
+    border: 1px solid var(--line);
+    padding: 1.5rem
+}
+
+.birds {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .7rem;
+    margin: 2rem 0
+}
+
+.bird {
+    background: var(--leaf);
+    color: #fff;
+    padding: .7rem 1rem;
+    border-radius: 999px
+}
+
+.report {
+    columns: 2;
+    column-gap: 3rem;
+    text-align: justify
+}
+
+.report p:first-child:first-letter {
+    float: left;
+    font: 700 5rem/.75 'Newsreader';
+    padding: .15rem .6rem 0 0;
+    color: var(--rust)
+}
+
+.practice-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem
+}
+
+.checklist {
+    list-style: none;
+    padding: 0
+}
+
+.checklist li {
+    padding: .65rem 0;
+    border-bottom: 1px solid var(--line)
+}
+
+.checklist li:before {
+    content: '□';
+    font-size: 1.3rem;
+    margin-right: .7rem
+}
+
+.sources {
+    font-size: .82rem
+}
+
+.sources li {
+    margin-bottom: .8rem;
+    overflow-wrap: anywhere
+}
+
+footer {
+    background: #14291f;
+    color: #ece5d5;
+    padding: 3rem 1.25rem
+}
+
+footer .wrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem
+}
+
+.caption {
+    font-size: .75rem;
+    opacity: .74;
+    margin-top: .55rem
+}
+
+.avoid-break {
+    break-inside: avoid
+}
+
+@media(max-width:800px) {
+    .hero {
+        min-height: 82vh;
+        padding: 2rem 1.25rem
+    }
+
+    .hero h1 {
+        font-size: clamp(4rem, 22vw, 6.5rem)
+    }
+
+    .grid-2,
+    .germination,
+    .pest-grid,
+    .practice-grid {
+        grid-template-columns: 1fr
+    }
+
+    .stats,
+    .nutrients,
+    .soiltypes,
+    .methods,
+    .machines {
+        grid-template-columns: 1fr
+    }
+
+    .toolgrid,
+    .operations,
+    .mip {
+        grid-template-columns: 1fr 1fr
+    }
+
+    .report {
+        columns: 1
+    }
+
+    footer .wrap {
+        display: block
+    }
+}
+
+@media(max-width:460px) {
+
+    .toolgrid,
+    .operations,
+    .mip,
+    .weeds,
+    .weather {
+        grid-template-columns: 1fr
+    }
+
+    .hero h1 {
+        font-size: 18vw;
+        overflow-wrap: anywhere
+    }
+
+    .band {
+        padding-left: 1rem;
+        padding-right: 1rem
+    }
+}
+
+@media print {
+    .hero {
+        min-height: 80vh;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact
+    }
+
+    .band {
+        padding: 2.5rem 1rem
+    }
+
+    .avoid-break,
+    .soil-card,
+    .list-card,
+    table {
+        break-inside: avoid
+    }
+}
