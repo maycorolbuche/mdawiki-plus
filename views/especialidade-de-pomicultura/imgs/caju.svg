@@ -1,0 +1,84 @@
+<svg viewBox="0 0 64 64" aria-label="Caju" xmlns="http://www.w3.org/2000/svg">
+    <!-- Talo -->
+    <path d="M31 12
+             C31 8 34 5 38 3"
+          fill="none"
+          stroke="#5b4027"
+          stroke-width="3"
+          stroke-linecap="round" />
+
+    <!-- Folha -->
+    <path d="M35 9
+             C40 4 48 5 52 9
+             C47 13 40 13 35 9Z" fill="#55963c" />
+
+    <!-- Corpo do caju -->
+    <path d="M31 11
+             C21 11 15 18 15 27
+             C15 34 18 40 22 45
+             C25 49 27 51 32 51
+             C37 51 40 49 43 45
+             C47 40 50 34 50 27
+             C50 18 42 11 31 11Z" fill="#e94f35" />
+
+    <!-- Região alaranjada -->
+    <path d="M19 20
+             C22 15 27 13 32 13
+             C25 20 23 30 26 39
+             C28 45 31 48 35 50
+             C30 52 25 49 22 45
+             C17 39 15 33 16 27
+             C16 24 17 22 19 20Z" fill="#f47b35" />
+
+    <!-- Região amarelada -->
+    <path d="M20 18
+             C25 12 34 11 41 15
+             C36 15 31 18 28 23
+             C25 27 24 31 24 35
+             C21 30 20 24 20 18Z" fill="#f5b33d" opacity=".9" />
+
+    <!-- Sombra lateral -->
+    <path d="M43 17
+             C49 23 49 31 46 37
+             C43 44 39 48 34 50
+             C39 43 41 36 41 29
+             C41 24 40 20 38 16
+             C40 16 42 16 43 17Z" fill="#c93d32" opacity=".7" />
+
+    <!-- Brilho -->
+    <path d="M21 21
+             C18 26 18 31 20 35"
+          fill="none"
+          stroke="#ffc46b"
+          stroke-width="3"
+          stroke-linecap="round"
+          opacity=".75" />
+
+    <!-- União com a castanha -->
+    <path d="M28 49
+             C30 51 34 51 36 49
+             L36 53
+             C34 55 30 55 28 53Z" fill="#d99836" />
+
+    <!-- Castanha -->
+    <path d="M29 51
+             C25 53 24 58 27 61
+             C30 64 36 63 39 59
+             C41 56 40 52 37 50
+             C35 53 32 54 29 51Z" fill="#8b6036" />
+
+    <!-- Sombra da castanha -->
+    <path d="M37 51
+             C40 53 40 56 38 59
+             C36 62 32 63 29 61
+             C34 61 37 57 37 51Z" fill="#694528" opacity=".8" />
+
+    <!-- Brilho da castanha -->
+    <path d="M28 55
+             C27 57 28 59 30 60"
+          fill="none"
+          stroke="#b98a55"
+          stroke-width="1.5"
+          stroke-linecap="round"
+          opacity=".8" />
+</svg>

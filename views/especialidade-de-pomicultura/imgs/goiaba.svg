@@ -1,0 +1,68 @@
+<svg viewBox="0 0 64 64" aria-label="Goiaba" xmlns="http://www.w3.org/2000/svg">
+    <!-- Talo -->
+    <path d="M32 15
+             C32 10 35 6 39 3"
+          fill="none"
+          stroke="#5b4027"
+          stroke-width="3"
+          stroke-linecap="round" />
+
+    <!-- Folha -->
+    <path d="M36 10
+             C41 4 49 5 53 9
+             C48 14 41 14 36 10Z" fill="#55963c" />
+
+    <!-- Nervura da folha -->
+    <path d="M38 10
+             C43 9 47 8 51 9"
+          fill="none"
+          stroke="#3f7d31"
+          stroke-width="1"
+          stroke-linecap="round"
+          opacity=".8" />
+
+    <!-- Corpo da goiaba -->
+    <path d="M32 14
+             C22 14 15 21 13 32
+             C11 42 15 53 23 58
+             C28 62 36 62 42 59
+             C50 55 54 45 52 34
+             C50 22 43 14 32 14Z" fill="#82b94b" />
+
+    <!-- Região clara -->
+    <path d="M22 20
+             C26 16 31 16 35 17
+             C27 22 23 31 23 40
+             C23 49 27 55 33 59
+             C27 59 22 56 19 51
+             C15 45 15 37 17 30
+             C18 26 19 23 22 20Z" fill="#9dcc62" />
+
+    <!-- Sombra lateral -->
+    <path d="M43 19
+             C49 24 51 31 50 39
+             C49 49 43 56 35 59
+             C41 53 44 46 44 38
+             C44 30 42 24 39 19
+             C40 18 42 18 43 19Z" fill="#689d3e" opacity=".8" />
+
+    <!-- Brilho -->
+    <path d="M21 25
+             C18 30 18 36 19 40"
+          fill="none"
+          stroke="#c1df83"
+          stroke-width="3"
+          stroke-linecap="round"
+          opacity=".8" />
+
+    <!-- Cálice característico na base -->
+    <path d="M27 58
+             L29 54
+             L32 58
+             L35 54
+             L38 58
+             C35 61 30 61 27 58Z" fill="#527f36" />
+
+    <!-- Pequeno detalhe central -->
+    <circle cx="32" cy="58" r="1.4" fill="#456d30" />
+</svg>
