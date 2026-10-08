@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.min.css">
+</head>
+
+<body>
+    <main class="magazine">
+        <section class="hero" aria-labelledby="titulo"><img src="imgs/sheep-meadow.jpg" width="1920" height="1024"
+                alt="Ovelhas e cordeiros em um pasto verde ao amanhecer">
+            <div class="hero-copy wrap"><span class="eyebrow" data-id="meta-area"></span>
+                <h1 id="titulo">Criação<br>de <em>Ovelhas</em></h1>
+                <p>Entre campos, lã e pequenos balidos,<br>um universo de cuidado e descobertas.<br>Conheça a arte de
+                    criar ovinos.</p>
+                <div class="hero-meta" data-id="meta"></div>
+            </div>
+        </section>
+        <div class="facts-band">
+            <div class="facts wrap">
+                <div class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"
+                        aria-hidden="true">
+                        <path d="M4 5h6l2 2 2-2h6v14h-6l-2 2-2-2H4V5Z" />
+                        <path d="M12 7v14" />
+                    </svg>
+                    <div><strong>Aprender no campo</strong><small>Conhecimento que vira cuidado</small></div>
+                </div>
+                <div class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"
+                        aria-hidden="true">
+                        <path d="M5 19c-5-9 7-14 15-15 0 9-3 17-12 16M5 22 16 9" />
+                    </svg>
+                    <div><strong>Natureza &amp; respeito</strong><small>Bem-estar em primeiro lugar</small></div>
+                </div>
+                <div class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"
+                        aria-hidden="true">
+                        <path d="M12 21 3 12C-2 5 7 0 12 6c5-6 14-1 9 6Z" />
+                    </svg>
+                    <div><strong>Da vida à lã</strong><small>Um rebanho, muitas possibilidades</small></div>
+                </div>
+                <div class="fact"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"
+                        aria-hidden="true">
+                        <circle cx="12" cy="9" r="6" />
+                        <path d="m8 14-2 8 6-3 6 3-2-8m-7-13 1 3 3 1-3 1-1 3-1-3-3-1 3-1Z" />
+                    </svg>
+                    <div><strong>Uma conquista real</strong><small>Teoria, experiência e dedicação</small></div>
+                </div>
+            </div>
+        </div>
+        <section class="intro wrap">
+            <div><span class="eyebrow">Muito além de um animal fofinho</span>
+                <h2>Um pequeno rebanho.<br>Um grande aprendizado.</h2>
+            </div>
+            <div>
+                <p class="dropcap">Criar ovelhas é aprender a observar. É perceber a qualidade do pasto, reconhecer um
+                    filhote saudável e entender que cada fase da vida pede um cuidado diferente.</p>
+                <p>A ovinocultura reúne alimento, fibras, trabalho e uma relação antiga entre as pessoas e a terra. Este
+                    caderno percorre os conteúdos da especialidade — e abre a porteira para a experiência no campo.</p>
+            </div>
+        </section>
+        <section class="section wrap" id="racas">
+            <div class="chapter-line">Retratos do rebanho</div>
+            <h2>Nem toda ovelha é igual.</h2>
+            <p class="section-lead">Algumas se destacam pela lã. Outras, pela carne ou pelo leite. Conhecer a raça é o
+                primeiro passo para entender o que ela precisa e o que pode produzir.</p>
+            <div class="breed-grid">
+                <article class="breed">
+                    <figure class="breed-photo"><img src="imgs/merino.webp" loading="lazy" width="768" height="512"
+                            alt="Fotografia de um ovino Merino com lã densa">
+                    </figure><span class="tag">Lã · origem espanhola</span>
+                    <h3>Merino</h3>
+                    <p>Famoso pela lã fina, ondulada e macia. Tem velo denso; machos de muitas linhagens possuem chifres
+                        em espiral. Há linhagens de dupla aptidão, mas a <strong>lã</strong> é seu grande destaque.</p>
+                </article>
+                <article class="breed">
+                    <figure class="breed-photo"><img src="imgs/dorper.jpg" loading="lazy" width="768" height="512"
+                            alt="Dorper de corpo branco e cabeça preta">
+                    </figure><span class="tag">Carne · África do Sul</span>
+                    <h3>Dorper</h3>
+                    <p>Corpo musculoso, cobertura curta de pelos e lã e, na variedade mais conhecida, cabeça preta e
+                        corpo branco. Produz principalmente <strong>carne</strong> e pele de qualidade. O White Dorper
+                        tem cabeça branca.</p>
+                </article>
+                <article class="breed">
+                    <figure class="breed-photo"><img src="imgs/santa-ines.jpg" loading="lazy" width="768" height="512"
+                            alt="Ovinos Santa Inês fotografados pela Embrapa Pecuária Sudeste"></figure><span
+                        class="tag">Carne &amp; pele · Brasil</span>
+                    <h3>Santa Inês</h3>
+                    <p>Raça deslanada, de pelos curtos, orelhas compridas e caídas e cores variadas. Adaptada ao calor,
+                        fornece <strong>carne e pele</strong>. Não é uma raça para produção comercial de lã.</p>
+                </article>
+                <article class="breed">
+                    <figure class="breed-photo"><img src="imgs/lacaune.jpg" loading="lazy" width="768" height="512"
+                            alt="Fotografia de ovelhas leiteiras Lacaune em pastagem"></figure><span class="tag">Leite ·
+                        França</span>
+                    <h3>Lacaune</h3>
+                    <p>Na linhagem leiteira, destaca-se pela produção de <strong>leite</strong>, utilizado em queijos
+                        como o Roquefort. Possui face e pernas sem lã e velo menos abundante. Existem também linhagens
+                        de corte.</p>
+                </article>
+            </div>
+
+            <aside class="note"><strong>Olhe além da cor.</strong> Formato das orelhas, presença de lã, cabeça, chifres
+                e conformação ajudam na identificação. Compare as quatro fotografias e pratique o reconhecimento com seu
+                instrutor.</aside>
+            <div class="two-col">
+                <div>
+                    <h3>A raça certa para o lugar certo</h3>
+                    <p>Escolha conforme clima, resistência e adaptação local, objetivo de produção, fertilidade,
+                        habilidade materna, facilidade de parto, qualidade dos cascos e disponibilidade de animais e
+                        assistência técnica. Considere alimentação, mão de obra, custo e compradores de carne, leite ou
+                        lã. Alta produtividade não compensa falta de adaptação.</p>
+                </div>
+                <div>
+                    <h3>Como escolher um bom cordeiro</h3>
+                    <p>Procure um animal alerta, que acompanhe o grupo, com olhos vivos, mucosas rosadas, respiração
+                        tranquila e crescimento compatível com a idade. Observe pernas firmes, cascos íntegros, boca bem
+                        alinhada, umbigo cicatrizado e ausência de diarreia, tosse e caroços. Verifique origem,
+                        identificação, histórico sanitário e desempenho da mãe; animais para reprodução também precisam
+                        de avaliação reprodutiva.</p>
+                </div>
+            </div>
+        </section>
+        <section class="dark-band">
+            <div class="wrap two-col">
+                <div><span class="eyebrow">Antes de abrir a porteira</span>
+                    <h2>Comece pequeno.<br>Planeje para cuidar bem.</h2>
+                    <p style="margin-top:20px">Não existe um tamanho mínimo universal que garanta sucesso. Como proposta
+                        de aprendizagem, um grupo de <strong>5 a 10 matrizes</strong>, com apoio técnico, é mais
+                        manejável que um grande rebanho. Isso não é uma regra da especialidade nem uma escala de
+                        viabilidade econômica.</p>
+                </div>
+                <div>
+                    <h3>Um animal sozinho não é um rebanho</h3>
+                    <p>Ovinos são gregários: precisam de companhia. Calcule primeiro a capacidade do pasto, a reserva
+                        para a seca, o abrigo, o orçamento e o tempo diário. Um reprodutor próprio nem sempre compensa
+                        para poucas matrizes; planeje a reprodução com um técnico e cuide da biossegurança.</p>
+                    <h3>O melhor começo acompanha o pasto</h3>
+                    <p>No Brasil, costuma ser favorável iniciar quando há boa oferta de forragem — frequentemente no
+                        início das chuvas, depois de preparar as instalações. Não há mês único: no Sul, frio e geadas
+                        pesam; no semiárido, chuva e reserva alimentar são decisivos. Planeje a monta para que parto e
+                        lactação coincidam com boa nutrição.</p>
+                </div>
+            </div>
+        </section>
+        <section class="section wrap">
+            <div class="chapter-line">Uma casa para o rebanho</div>
+            <h2>Conforto não precisa ser complicado.</h2>
+            <p class="section-lead">Ovinos vivem em campos temperados, regiões montanhosas, áreas tropicais e
+                semiáridas. O segredo não é um único clima: é a raça adaptada, alimento suficiente e proteção contra os
+                extremos.</p>
+            <div class="two-col">
+                <div>
+                    <h3>O que a propriedade precisa ter</h3>
+                    <ul class="clean-list">
+                        <li><strong>Abrigo ou aprisco:</strong> seco, ventilado, com sombra e proteção de chuva e vento;
+                            cama limpa e piso drenado, sem correntes sobre recém-nascidos.</li>
+                        <li><strong>Piquetes e cercas:</strong> divisão para manejo do pasto, portões seguros e proteção
+                            contra cães e predadores.</li>
+                        <li><strong>Cocho e bebedouro:</strong> acesso confortável, água limpa permanente e alimento sem
+                            contaminação por fezes.</li>
+                        <li><strong>Curral, brete e balança:</strong> para apartar, identificar, pesar e examinar os
+                            animais com segurança.</li>
+                        <li><strong>Áreas separadas:</strong> maternidade, quarentena, enfermaria e alimentação
+                            exclusiva dos cordeiros.</li>
+                        <li><strong>Depósito:</strong> ração, feno e equipamentos protegidos de umidade, roedores e
+                            acesso dos animais.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Os cuidados que fazem diferença</h3>
+                    <ul class="clean-list">
+                        <li>Observar diariamente apetite, comportamento, fezes, marcha, respiração e condição corporal.
+                        </li>
+                        <li>Limpar água e cochos, manter cama seca, retirar resíduos e manejar o esterco.</li>
+                        <li>Separar categorias por exigência nutricional; pesar e manter registros de nascimento,
+                            reprodução e saúde.</li>
+                        <li>Planejar vacinação e controle de parasitas com veterinário; fazer quarentena dos
+                            recém-chegados.</li>
+                        <li>Inspecionar cascos e tosquiar raças lanadas no período adequado, por pessoa habilitada.</li>
+                        <li>Conduzir sem gritos, golpes ou cães perseguindo; oferecer sombra e evitar lotação excessiva.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <h3 style="margin-top:40px">Espaço para comer, descansar e nascer</h3>
+            <div class="table-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Situação</th>
+                            <th>Referência de planejamento</th>
+                            <th>O que observar</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Ovelhas adultas soltas no estábulo</td>
+                            <td>1,1–1,5 m² por animal</td>
+                            <td>Adultas em manutenção até metade da gestação; ampliar para animais grandes e matrizes
+                                com crias (cerca de 1,4–1,9 m² por conjunto).</td>
+                        </tr>
+                        <tr>
+                            <td>Adultas soltas ao ar livre</td>
+                            <td>2,3–3,7 m² por animal</td>
+                            <td>Área de pátio ou curral externo, não pastagem. Precisa de drenagem, sombra e acesso a
+                                abrigo.</td>
+                        </tr>
+                        <tr>
+                            <td>Filhotes soltos no estábulo</td>
+                            <td>0,75–0,95 m² por cordeiro desmamado</td>
+                            <td>Referência para animais em crescimento; recém-nascidos ficam com a mãe na maternidade.
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Pastagem para gestantes</td>
+                            <td>Depende da capacidade de suporte</td>
+                            <td>Não há área fixa universal. Exemplo de cálculo: se o técnico recomenda 5 matrizes/ha,
+                                cada uma corresponde a 2.000 m²; com 10/ha, a 1.000 m². Inclua descanso dos piquetes e
+                                reserva de seca.</td>
+                        </tr>
+                        <tr>
+                            <td>Cocho para adultas</td>
+                            <td>40–50 cm lineares por cabeça</td>
+                            <td>Quando todas recebem alimento restrito ao mesmo tempo. Conte apenas as bordas
+                                acessíveis.</td>
+                        </tr>
+                        <tr>
+                            <td>Cocho para gestantes</td>
+                            <td>40–50 cm lineares por cabeça</td>
+                            <td>Mesma referência para alimentação simultânea, ampliando conforme porte e competição. Não
+                                confundir com cocho de consumo à vontade.</td>
+                        </tr>
+                        <tr>
+                            <td>Parto e vínculo mãe–cria</td>
+                            <td>1,5–2,3 m² por baia individual</td>
+                            <td>Aproximadamente 1,2 × 1,2 m a 1,5 × 1,5 m; ampliar para matrizes grandes ou múltiplos.
+                                Piso seco, higiene e supervisão.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="caption">Medidas aproximadas convertidas das orientações da <a
+                    href="https://extension.psu.edu/sheep-housing-and-facilities-requirements/" target="_blank"
+                    rel="noopener">Penn State Extension</a> e <a
+                    href="https://www.umass.edu/agriculture-food-environment/crops-dairy-livestock-equine/fact-sheets/housing-working-facilities-for-sheep"
+                    target="_blank" rel="noopener">UMass Extension</a>. Adapte ao peso, ao clima e ao sistema de criação
+                com assistência técnica.</p>
+        </section>
+        <section class="section wrap">
+            <div class="chapter-line">Do leite ao pasto</div>
+            <h2>Cada fase tem seu próprio alimento.</h2>
+            <p class="section-lead">Ovelhas são ruminantes. O rúmen permite aproveitar alimentos fibrosos, mas o
+                cordeiro nasce com esse sistema ainda em desenvolvimento.</p>
+            <div class="feeding">
+                <article><span class="age">1º mês</span>
+                    <h3>Colostro, leite e descoberta</h3>
+                    <p>O colostro é prioridade nas primeiras horas e deve ser recebido o quanto antes. Depois, leite
+                        materno; desde a primeira ou segunda semana, pequenas quantidades de concentrado próprio para
+                        cordeiros, feno de qualidade e água limpa favorecem o desenvolvimento do rúmen. Órfãos precisam
+                        de sucedâneo específico e orientação.</p>
+                </article>
+                <article><span class="age">3º mês</span>
+                    <h3>O rúmen ganha espaço</h3>
+                    <p>Pasto ou feno de boa qualidade, água, mistura mineral para ovinos e concentrado conforme
+                        crescimento e oferta de forragem. O animal deve já consumir sólidos com regularidade. A retirada
+                        do leite é gradual e depende também do peso e da saúde, não só da idade.</p>
+                </article>
+                <article><span class="age">Gestação</span>
+                    <h3>Nutrir também a próxima vida</h3>
+                    <p>No início, dieta equilibrada de manutenção. Nas últimas 4–6 semanas, aumentam as necessidades de
+                        energia e proteína, especialmente com gêmeos; pode ser preciso suplementar. Evite magreza,
+                        obesidade e mudanças bruscas. A gestação dura aproximadamente 147 dias.</p>
+                </article>
+                <article><span class="age">Lactação</span>
+                    <h3>Uma mãe produzindo leite</h3>
+                    <p>A matriz com filhote pequeno tem alta demanda de nutrientes e água. Ofereça volumoso excelente e
+                        suplementação de energia e proteína calculada para peso, produção e número de crias. Acompanhe
+                        úbere, condição corporal e ganho de peso dos cordeiros.</p>
+                </article>
+                <article><span class="age">Vida adulta</span>
+                    <h3>Equilíbrio e manutenção</h3>
+                    <p>Pasto, feno ou silagem de qualidade formam a base. Um adulto em manutenção pode ingerir cerca de
+                        2–3% do peso vivo em matéria seca por dia; isso não equivale ao peso do capim fresco.
+                        Concentrado só quando necessário; água e mineral apropriado sempre disponíveis.</p>
+                </article>
+            </div>
+            <aside class="note"><strong>Atenção ao cobre.</strong> Ovinos são sensíveis ao excesso desse mineral. Não
+                ofereça suplemento de bovinos ou caprinos sem avaliação profissional. Adapte qualquer ração
+                gradualmente; excesso de grãos pode causar acidose. Quantidades exatas exigem avaliação do alimento e
+                dos animais.</aside>
+        </section>
+        <section class="section wrap">
+            <div class="lamb-feature">
+                <figure><img src="imgs/ewe-lamb.jpg" width="1200" height="1024" loading="lazy"
+                        alt="Ovelha e seu pequeno cordeiro em abrigo limpo com cama de palha">
+                    <figcaption class="caption">O começo de uma vida pede abrigo, alimento e observação.</figcaption>
+                </figure>
+                <div><span class="eyebrow">Os primeiros meses</span>
+                    <h2>Crescer com cuidado.<br>Separar com respeito.</h2>
+                    <h3>Quando desmamar?</h3>
+                    <p>Em sistemas a pasto, <strong>90 a 100 dias</strong> é uma referência comum; há manejo entre 60 e
+                        120 dias. Desmames precoces exigem bom consumo de sólidos e acompanhamento. Um cordeiro doente,
+                        muito leve ou sem adaptação ao alimento sólido não deve ser desmamado só porque atingiu uma
+                        data.</p>
+                    <h3>Apartar não é abandonar</h3>
+                    <p>A separação definitiva da mãe costuma acompanhar o desmame: o cordeiro segue com outros jovens,
+                        em ambiente seguro, com boa dieta e monitoramento. Isso reduz a demanda da matriz, permite sua
+                        recuperação e ajusta a alimentação dos dois grupos. Evite reunir novamente até a lactação
+                        cessar.</p>
+                    <p>Machos inteiros devem ser separados das fêmeas <strong>antes da maturidade sexual</strong>, que
+                        pode começar aos 3–5 meses em algumas raças, para evitar coberturas indesejadas e
+                        consanguinidade. O calendário deve considerar raça e crescimento.</p>
+                </div>
+            </div>
+        </section>
+        <div class="wrap">
+            <blockquote class="pull-quote">“Cuidar de um rebanho começa com uma coisa simples:<br>aprender a olhar para
+                cada animal.”</blockquote>
+        </div>
+        <section class="section wrap">
+            <div class="chapter-line">Saúde é observação diária</div>
+            <h2>Um rebanho saudável deixa sinais.</h2>
+            <p class="section-lead">A seguir, uma síntese para o relatório de saúde: problemas comuns, sinais de alerta
+                e medidas de prevenção e atendimento. Diagnóstico e tratamento cabem ao médico-veterinário.</p>
+            <div class="health-grid">
+                <article class="health-item">
+                    <h3>Verminoses gastrointestinais</h3>
+                    <p><strong>Sinais:</strong> emagrecimento, fraqueza, mucosas pálidas e edema sob a mandíbula;
+                        diarreia pode ocorrer, mas não é típica em todos os casos de Haemonchus.</p>
+                    <p><strong>Prevenir e atender:</strong> manejar lotação e pasto, fazer exames de fezes e avaliação
+                        FAMACHA por pessoa treinada. Vermifugar seletivamente com orientação e verificar eficácia: uso
+                        indiscriminado causa resistência.</p>
+                </article>
+                <article class="health-item">
+                    <h3>Pododermatite e podridão dos cascos</h3>
+                    <p><strong>Sinais:</strong> claudicação, dor, mau cheiro, lesões entre os dedos e descolamento do
+                        casco nos casos de podridão.</p>
+                    <p><strong>Prevenir e atender:</strong> piso seco, inspeção, quarentena e isolamento dos afetados. O
+                        veterinário define manejo dos cascos, pedilúvio adequado e medicamentos; cortes excessivos
+                        agravam lesões.</p>
+                </article>
+                <article class="health-item">
+                    <h3>Clostridioses</h3>
+                    <p><strong>Sinais:</strong> enterotoxemia pode causar morte súbita, diarreia e alterações nervosas;
+                        tétano provoca rigidez e espasmos após contaminação de feridas.</p>
+                    <p><strong>Prevenir e atender:</strong> vacinação com esquema e reforços definidos pelo veterinário,
+                        higiene de procedimentos e dieta sem mudanças bruscas. Suspeitas são urgências; o atendimento
+                        precoce nem sempre reverte casos graves.</p>
+                </article>
+                <article class="health-item">
+                    <h3>Linfadenite caseosa</h3>
+                    <p><strong>Sinais:</strong> abscessos em linfonodos, com material espesso, e perda de condição;
+                        também pode haver abscessos internos sem caroços visíveis.</p>
+                    <p><strong>Prevenir e atender:</strong> isolar, desinfetar instrumentos de tosquia e impedir
+                        contaminação do ambiente. Não abrir caroços no pasto. Controle, possível descarte e manejo
+                        clínico são decisões veterinárias.</p>
+                </article>
+                <article class="health-item">
+                    <h3>Toxemia da prenhez</h3>
+                    <p><strong>Sinais:</strong> no fim da gestação, falta de apetite, apatia, dificuldade para andar e
+                        sinais nervosos, sobretudo em matrizes com múltiplos.</p>
+                    <p><strong>Prevenir e atender:</strong> ajustar energia, separar por condição corporal e número de
+                        fetos e evitar jejum. Atendimento imediato é necessário para corrigir o distúrbio e avaliar mãe
+                        e fetos.</p>
+                </article>
+                <article class="health-item">
+                    <h3>Mastite</h3>
+                    <p><strong>Sinais:</strong> úbere quente, dolorido ou endurecido, leite alterado, febre e cordeiros
+                        com fome ou pouco ganho de peso.</p>
+                    <p><strong>Prevenir e atender:</strong> higiene de cama e ordenha, inspeção do úbere e boa nutrição.
+                        Separar e procurar veterinário; garantir alimentação das crias e respeitar carência de
+                        medicamentos no leite e na carne.</p>
+                </article>
+                <article class="health-item">
+                    <h3>Coccidiose e diarreias dos cordeiros</h3>
+                    <p><strong>Sinais:</strong> fezes líquidas, às vezes com sangue, desidratação, atraso de crescimento
+                        e fraqueza. Diferentes agentes produzem quadros parecidos.</p>
+                    <p><strong>Prevenir e atender:</strong> colostro, água e cochos limpos, menor umidade e lotação.
+                        Solicitar diagnóstico; tratamento específico e reposição de líquidos precisam de avaliação,
+                        especialmente em recém-nascidos.</p>
+                </article>
+                <article class="health-item">
+                    <h3>Ectima contagioso</h3>
+                    <p><strong>Sinais:</strong> crostas e feridas em lábios, focinho e às vezes tetos, que dificultam
+                        mamar e comer.</p>
+                    <p><strong>Prevenir e atender:</strong> separar afetados, usar luvas e higienizar materiais: pode
+                        infectar pessoas. O veterinário orienta suporte e controle; vacina viva não deve ser introduzida
+                        sem avaliação do rebanho.</p>
+                </article>
+            </div>
+            <aside class="note warning"><strong>Procure ajuda imediatamente</strong> em caso de dificuldade
+                respiratória, animal caído, incapacidade de mamar, desidratação, sinais nervosos ou parto sem progresso.
+                Não ofereça remédios humanos, “lavagens” ou receitas caseiras. Registre sinais, isole com conforto e
+                chame o veterinário.</aside>
+        </section>
+        <section class="section wrap">
+            <div class="chapter-line">O que vem das ovelhas</div>
+            <h2>Do campo para o nosso cotidiano.</h2>
+            <p class="section-lead">A criação de ovinos fornece muito mais que lã. Estes seis exemplos mostram
+                diferentes formas de aproveitar sua fibra, pele e leite.</p>
+            <div class="product-grid">
+                <figure><img src="imgs/sueter.jpg" width="512" height="512" loading="lazy"
+                        alt="Suéter de lã com pontos trançados">
+                    <figcaption>
+                        <h3>Suéter de lã</h3>
+                        <p>A fibra é lavada, fiada e tricotada. O friso da lã ajuda a reter ar e conservar o calor.</p>
+                    </figcaption>
+                </figure>
+                <figure><img src="imgs/novelos.jpg" width="512" height="512" loading="lazy"
+                        alt="Novelos de lã natural e agulhas de madeira">
+                    <figcaption>
+                        <h3>Novelos e fios</h3>
+                        <p>Da tosquia à fiação, a lã se transforma em matéria-prima para tricô, crochê e tecelagem.</p>
+                    </figcaption>
+                </figure>
+                <figure><img src="imgs/manta.jpg" width="512" height="512" loading="lazy"
+                        alt="Manta de lã cinza com franjas">
+                    <figcaption>
+                        <h3>Mantas e cobertores</h3>
+                        <p>Fibras tecidas ou feltradas produzem peças duráveis que ajudam no isolamento térmico.</p>
+                    </figcaption>
+                </figure>
+                <figure><img src="imgs/luvas.jpg" width="512" height="512" loading="lazy"
+                        alt="Luvas de couro ovino castanho">
+                    <figcaption>
+                        <h3>Luvas de couro</h3>
+                        <p>A pele ovina, após curtimento, pode virar couro macio usado em luvas, roupas e acessórios.
+                        </p>
+                    </figcaption>
+                </figure>
+                <figure><img src="imgs/queijo.jpg" width="512" height="512" loading="lazy"
+                        alt="Queijo de leite de ovelha com uma fatia cortada">
+                    <figcaption>
+                        <h3>Queijo de ovelha</h3>
+                        <p>Leite rico em sólidos fornece queijos como Roquefort, Pecorino e várias especialidades
+                            artesanais.</p>
+                    </figcaption>
+                </figure>
+                <figure><img src="imgs/lanolina.jpg" width="512" height="512" loading="lazy"
+                        alt="Pote de creme de lanolina ao lado de lã crua">
+                    <figcaption>
+                        <h3>Creme com lanolina</h3>
+                        <p>A gordura natural recuperada da lavagem da lã é purificada e usada em produtos cosméticos.
+                        </p>
+                    </figcaption>
+                </figure>
+            </div>
+            <aside class="note"><strong>Você sabia?</strong> Nem toda ovelha precisa ser tosquiada. Raças deslanadas,
+                como Santa Inês, têm pelos, não o velo lanoso usado na indústria têxtil. E tosquia bem feita não é
+                arrancar a lã: é cortar a fibra sem ferir a pele.</aside>
+        </section>
+        <section class="section wrap">
+            <div class="chapter-line">A linguagem da ovinocultura</div>
+            <h2>Um vocabulário de campo.</h2>
+            <dl class="glossary">
+                <div>
+                    <dt>Castração</dt>
+                    <dd>Procedimento para retirar ou inativar a função dos testículos. Exige profissional, controle de
+                        dor e cuidados sanitários.</dd>
+                </div>
+                <div>
+                    <dt>Comercialização</dt>
+                    <dd>Venda de animais ou produtos, com avaliação de qualidade, preço, documentação e exigências
+                        sanitárias.</dd>
+                </div>
+                <div>
+                    <dt>Concentrado</dt>
+                    <dd>Alimento de baixa fibra e maior concentração de energia ou proteína, como grãos e farelos.</dd>
+                </div>
+                <div>
+                    <dt>Cruzar</dt>
+                    <dd>Acasalar animais para reprodução; pode envolver indivíduos da mesma raça ou de raças diferentes.
+                    </dd>
+                </div>
+                <div>
+                    <dt>Ovelha</dt>
+                    <dd>Fêmea adulta da espécie ovina; matriz quando destinada à reprodução.</dd>
+                </div>
+                <div>
+                    <dt>Purgante ou lavagem</dt>
+                    <dd>Expressão tradicional ambígua. Purgante é laxante; “lavagem” pode indicar enema. Em traduções de
+                        manejo, pode aludir a drench, administração oral de um produto. Não são sinônimos universais nem
+                        práticas para fazer sem veterinário.</dd>
+                </div>
+                <div>
+                    <dt>Forragens</dt>
+                    <dd>Plantas ou suas partes utilizadas como alimento, verdes ou conservadas: capins, leguminosas,
+                        feno e silagem.</dd>
+                </div>
+                <div>
+                    <dt>Volumosos</dt>
+                    <dd>Alimentos ricos em fibra e de menor densidade energética, essenciais à função ruminal.</dd>
+                </div>
+                <div>
+                    <dt>Ganhar ou parir</dt>
+                    <dd>Dar à luz. “Ganhar cria” é uma expressão rural para o nascimento dos filhotes.</dd>
+                </div>
+                <div>
+                    <dt>Gestação</dt>
+                    <dd>Período entre fecundação e parto, geralmente próximo de 147 dias nos ovinos.</dd>
+                </div>
+                <div>
+                    <dt>Peso de gordura</dt>
+                    <dd>Termo impreciso da lista. No contexto de lã, grease weight significa peso do velo sujo, antes da
+                        lavagem, incluindo suarda e impurezas — não apenas gordura. Confirmar essa interpretação com o
+                        instrutor; não confundir com acabamento da carcaça.</dd>
+                </div>
+                <div>
+                    <dt>Lactação</dt>
+                    <dd>Fase de produção e secreção de leite pela glândula mamária após o parto.</dd>
+                </div>
+                <div>
+                    <dt>Mocho</dt>
+                    <dd>Animal naturalmente sem chifres. Não é necessariamente um animal descornado.</dd>
+                </div>
+                <div>
+                    <dt>De raça pura</dt>
+                    <dd>Animal de ascendência e características de uma mesma raça, conforme regras do livro genealógico.
+                    </dd>
+                </div>
+                <div>
+                    <dt>Carneiro</dt>
+                    <dd>Macho adulto ovino, especialmente o reprodutor. Não deve ser confundido com cordeiro.</dd>
+                </div>
+                <div>
+                    <dt>Ração</dt>
+                    <dd>Conjunto de alimentos fornecidos em um período, geralmente um dia; no uso comum, também designa
+                        a mistura industrial formulada.</dd>
+                </div>
+                <div>
+                    <dt>Registrado</dt>
+                    <dd>Animal inscrito em registro genealógico oficial, segundo a categoria e as regras da entidade de
+                        registro, como a ARCO no Brasil.</dd>
+                </div>
+                <div>
+                    <dt>Castrado</dt>
+                    <dd>Macho submetido à castração; não é destinado à reprodução.</dd>
+                </div>
+                <div>
+                    <dt>Raça híbrida</dt>
+                    <dd>Na lista, corresponde ao animal mestiço de cruzamento entre raças. O vigor híbrido pode melhorar
+                        certas características; um cruzado não constitui automaticamente uma nova raça.</dd>
+                </div>
+                <div>
+                    <dt>Cio</dt>
+                    <dd>Período em que a fêmea aceita o macho. O ciclo estral ovino costuma durar cerca de 17 dias;
+                        sazonalidade varia entre raças e regiões.</dd>
+                </div>
+                <div>
+                    <dt>Burregos</dt>
+                    <dd>Grafia presente no requisito; o termo usual é “borregos”. São ovinos jovens, normalmente após o
+                        desmame e antes da fase adulta; limites etários variam regionalmente.</dd>
+                </div>
+            </dl>
+        </section>
+        <section class="section practical">
+            <div class="wrap">
+                <div class="chapter-line">O conhecimento ganha vida</div>
+                <h2>Agora, a experiência no campo.</h2>
+                <p class="section-lead">Ler prepara você. A prática completa o aprendizado. Os cuidados com cordeiros e
+                    a visita rural são atividades reais: nenhum texto substitui sua realização e a avaliação do
+                    instrutor.</p>
+                <div class="two-col">
+                    <div>
+                        <h3>Seu diário de um cordeiro</h3>
+                        <p>Acompanhe <strong>um ou mais cordeiros até a comercialização ou até os 6 meses de
+                                idade</strong>, com autorização do responsável, orientação técnica e supervisão de
+                            adulto. Registre o cuidado de verdade, não apenas uma visita ocasional.</p><label
+                            class="native-check"><input type="checkbox">Identificação, origem, nascimento e peso
+                            inicial.</label><label class="native-check"><input type="checkbox">Colostro, leite e
+                            adaptação ao alimento sólido.</label><label class="native-check"><input
+                                type="checkbox">Água, alimento, abrigo e comportamento observados
+                            diariamente.</label><label class="native-check"><input type="checkbox">Pesagens periódicas,
+                            saúde e intervenções do profissional.</label><label class="native-check"><input
+                                type="checkbox">Data, peso e adaptação no desmame.</label><label
+                            class="native-check"><input type="checkbox">Registro final aos 6 meses ou na venda, com
+                            destino e avaliação do responsável.</label>
+                        <p class="caption">Sugestão de registro: data · peso · alimento · sinais de saúde · cuidado
+                            realizado · responsável. Castração, medicamentos e outros procedimentos não devem ser feitos
+                            por crianças.</p>
+                    </div>
+                    <div>
+                        <h3>A visita que vira aprendizado</h3>
+                        <p>Agende uma propriedade com ovinocultura, peça permissão para fotografar e siga as regras de
+                            higiene. Anote data, local, responsável, raças, tamanho do rebanho e finalidade da criação.
+                        </p>
+                        <ul class="clean-list">
+                            <li>Observe alimentação, manejo dos piquetes e reserva de forragem.</li>
+                            <li>Conheça instalações, maternidade e rotina dos cordeiros.</li>
+                            <li>Pergunte sobre prevenção de doenças, reprodução e registros.</li>
+                            <li>Descubra como são vendidos animais, lã, leite e outros produtos.</li>
+                            <li>Descreva sua participação, suas descobertas e suas dúvidas.</li>
+                        </ul>
+                        <p class="caption">Depois da visita, escreva pelo menos 300 palavras sobre as atividades
+                            observadas e sua experiência. Relate somente o que aconteceu.</p>
+                    </div>
+                </div><label class="journal-label" for="anotacoes">Anotações pessoais da visita e do
+                    acompanhamento</label><textarea id="anotacoes" class="journal"
+                    placeholder="Data e propriedade:&#10;O que observei:&#10;Cuidados de que participei:&#10;O que aprendi e o que quero investigar:"></textarea>
+                <p class="caption">As anotações não são salvas automaticamente. Copie seu texto antes de fechar a
+                    página.</p>
+            </div>
+        </section>
+        <section class="section wrap">
+            <div class="chapter-line">Refletir também faz parte</div>
+            <h2>Histórias que merecem ser escritas.</h2>
+            <p class="section-lead">Um texto de estudo sobre a importância da atividade e um roteiro para construir o
+                seu relato de visita.</p>
+            <details open>
+                <summary>A importância da ovinocultura · texto de estudo</summary>
+                <div class="report-text" id="relatorio-importancia">
+                    <p>A ovinocultura é a atividade de criar ovinos para obter carne, leite, lã, pele e outros produtos.
+                        Sua importância não está apenas naquilo que chega ao consumidor. Ela também envolve trabalho no
+                        campo, renda para famílias, conservação de conhecimentos tradicionais e aproveitamento de
+                        recursos alimentares que as pessoas não conseguem consumir diretamente. Por serem ruminantes, as
+                        ovelhas utilizam forragens e transformam parte desses alimentos em produtos úteis, desde que
+                        recebam uma dieta equilibrada e cuidados adequados.</p>
+                    <p>Uma das características da atividade é a diversidade de raças e sistemas de produção. O Merino é
+                        conhecido pela lã fina, enquanto o Dorper se destaca pela carne. No Brasil, o Santa Inês tem
+                        importância na produção de carne e pele, especialmente em ambientes quentes. Linhagens leiteiras
+                        de Lacaune fornecem leite para queijos. Essa variedade mostra por que a escolha de uma raça
+                        precisa considerar clima, alimento disponível, objetivos da propriedade e mercado comprador, em
+                        vez de se basear apenas na aparência do animal.</p>
+                    <p>A criação pode ocorrer em pastagens, em sistemas com suplementação ou em confinamento. Em todos
+                        eles, são necessários água limpa, abrigo adequado, controle da lotação e acompanhamento
+                        sanitário. O manejo deve respeitar a natureza gregária dos ovinos e evitar situações de medo,
+                        isolamento ou dor. A atenção aos cordeiros é especialmente importante: colostro, proteção no
+                        nascimento, alimentação progressiva e desmame bem planejado influenciam a sobrevivência e o
+                        crescimento.</p>
+                    <p>A atividade também apresenta desafios. Verminoses, doenças dos cascos, problemas nutricionais e
+                        mortalidade de crias podem reduzir o bem-estar e os resultados. Por isso, o criador precisa de
+                        assistência veterinária, registros e prevenção. O uso responsável de medicamentos, com respeito
+                        aos períodos de carência, protege tanto os animais quanto as pessoas que consomem seus produtos.
+                        A comercialização precisa observar as exigências sanitárias e legais; o abate destinado à venda
+                        deve ocorrer em estabelecimento sob inspeção.</p>
+                    <p>Do ponto de vista ambiental, o pastejo bem planejado pode integrar diferentes atividades e
+                        aproveitar áreas adequadas à produção de forragem. Entretanto, excesso de animais causa
+                        degradação, erosão e maior exposição a parasitas. Não se deve apresentar qualquer criação como
+                        automaticamente sustentável: o resultado depende das decisões de manejo, da água, do solo e do
+                        destino dos resíduos. Para o desbravador, conhecer a ovinocultura é uma oportunidade de
+                        desenvolver responsabilidade, observação, cooperação e respeito à vida. Aprender sobre o rebanho
+                        significa compreender que produzir e cuidar devem caminhar juntos.</p>
+                </div>
+                <p class="caption">Texto com mais de 300 palavras para estudo. Prepare sua própria apresentação escrita
+                    de pelo menos 300 palavras ou oral de 5 minutos.</p>
+            </details>
+            <details open>
+                <summary>Relatório de visita · roteiro para sua experiência real</summary>
+                <div class="report-text">
+                    <p><strong>Apresentação.</strong> Comece identificando a data, a propriedade, o município e quem
+                        recebeu o grupo, sem publicar informações privadas sem autorização. Explique por que a visita
+                        foi realizada, qual é a finalidade da criação e quais raças você realmente viu. Descreva o
+                        número aproximado de animais somente se essa informação tiver sido fornecida ou conferida. Diga
+                        como o responsável apresentou a propriedade e quais perguntas você levou para a conversa.</p>
+                    <p><strong>Instalações e ambiente.</strong> Conte como eram o abrigo, os piquetes, as cercas, os
+                        cochos e os bebedouros. Observe se havia sombra, drenagem e espaço para descanso. Compare o que
+                        encontrou com os conhecimentos deste caderno, sem afirmar que mediu algo que não mediu. Registre
+                        como os grupos eram separados e se você conheceu maternidade, enfermaria ou área de quarentena.
+                        Se algum setor não foi visitado, deixe isso claro.</p>
+                    <p><strong>Rotina produtiva.</strong> Descreva os alimentos utilizados, o manejo do pasto e a
+                        preparação para épocas de menor oferta de forragem. Explique o que o criador contou sobre
+                        reprodução, partos, amamentação, desmame e crescimento dos cordeiros. Diferencie atividades que
+                        você observou daquelas que apenas foram explicadas. Inclua como os produtos são comercializados,
+                        se esse tema foi abordado, e que registros a propriedade utiliza para acompanhar os animais.</p>
+                    <p><strong>Saúde e bem-estar.</strong> Relate as medidas preventivas apresentadas: vacinação,
+                        exames, manejo de parasitas, inspeção dos cascos, higiene e assistência veterinária. Não
+                        diagnostique animais a partir de uma impressão. Você pode registrar sinais observados e a
+                        explicação do profissional. Conte quais cuidados de segurança foram exigidos dos visitantes e
+                        como a condução dos ovinos evitava medo ou acidentes. Informe também como o grupo respeitou as
+                        regras sanitárias da propriedade.</p>
+                    <p><strong>Experiência pessoal e conclusão.</strong> Finalize dizendo do que participou, o que mais
+                        chamou sua atenção, quais ideias mudaram e quais dúvidas permaneceram. Relacione a experiência à
+                        responsabilidade necessária para cuidar de um ser vivo. Use exemplos concretos do seu dia, e não
+                        uma história imaginada. Revise o texto para garantir pelo menos 300 palavras, acrescente
+                        fotografias autorizadas e peça ao instrutor que confira a realização da atividade. Este roteiro
+                        orienta a escrita, mas não é um relato de visita realizada.</p>
+                </div>
+            </details>
+        </section>
+        <footer class="footer">
+        </footer>
+    </main>
+</body>
+
+</html>
