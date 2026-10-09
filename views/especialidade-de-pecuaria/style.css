@@ -761,7 +761,7 @@ h1 {
     padding: 25px 0
 }
 
-.report summary {
+.report .title {
     font-family: var(--display);
     font-size: 21px;
     cursor: pointer;
@@ -769,9 +769,6 @@ h1 {
     margin-left: 20px
 }
 
-.report summary::marker {
-    color: var(--leaf)
-}
 
 .report-body {
     columns: 2;
@@ -1201,7 +1198,7 @@ h1 {
         columns: 1
     }
 
-    .report summary {
+    .report .title {
         font-size: 18px
     }
 
