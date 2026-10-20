@@ -1,67 +1,487 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Paisagismo — A arte de cultivar espaços | Desbravadores</title>
-<meta name="description" content="Um guia ilustrado da especialidade de Paisagismo: plantas, luz, suculentas, palmeiras, gramados e projetos para colocar a mão na terra.">
-<meta property="og:title" content="Paisagismo — A arte de cultivar espaços">
-<meta property="og:description" content="Botânica e prática em um guia editorial da especialidade de Paisagismo dos Desbravadores.">
-<meta property="og:type" content="website">
-<meta name="twitter:card" content="summary_large_image">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
-<style>
-:root{--paper:oklch(.99 .003 100);--ink:oklch(.29 .045 150);--forest:oklch(.32 .065 151);--leaf:oklch(.47 .075 149);--sage:oklch(.95 .018 140);--muted:oklch(.51 .018 145);--line:oklch(.87 .015 140);--white:oklch(1 0 0);--sun:oklch(.73 .12 80);--clay:oklch(.6 .085 46);--shadow:0 10px 40px oklch(.25 .03 150 / .08);--cover-shade:linear-gradient(90deg,oklch(.16 .03 150 / .68),oklch(.16 .03 150 / .12));--serif:'Lora',Georgia,serif;--sans:'DM Sans',Arial,sans-serif;--content:1120px}
-*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:28px}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:15px;line-height:1.8;letter-spacing:0}h1,h2,h3,p,figure{margin:0}h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.2}h2{font-size:42px}h3{font-size:25px}p+p{margin-top:16px}a{color:inherit;text-underline-offset:4px}a:hover{color:var(--leaf)}img{display:block;width:100%;object-fit:cover}i{font-style:italic}small{font-size:12px}strong{font-weight:650}.wrap{max-width:var(--content);margin:auto;padding:0 36px}.eyebrow{font-size:10px;font-weight:650;text-transform:uppercase;letter-spacing:2px}.cover{height:660px;position:relative;color:var(--white);overflow:hidden}.cover>img{position:absolute;height:100%;object-position:center 58%}.cover:after{content:'';position:absolute;inset:0;background:var(--cover-shade)}.cover-inner{position:relative;z-index:1;height:100%;display:flex;flex-direction:column}.masthead{display:flex;justify-content:space-between;align-items:center;padding-top:32px;font-size:11px}.masthead span:first-child{display:flex;align-items:center;gap:10px}.leaf-mark{width:17px;height:23px;border:1px solid currentColor;border-radius:100% 0 100% 0;transform:rotate(15deg);display:inline-block}.cover-copy{margin-top:auto;margin-bottom:80px;max-width:590px}.cover-copy .eyebrow{opacity:.85}.cover h1{font-size:94px;margin:14px 0 12px}.cover h1 em{display:block;font-size:43px;font-weight:400;margin-top:12px}.cover-copy p{max-width:420px;font-size:15px;line-height:1.7;opacity:.9;margin-top:24px}.cover-link{display:inline-flex;align-items:center;gap:30px;border-bottom:1px solid var(--white);text-decoration:none;margin-top:27px;padding-bottom:7px;font-size:12px}.cover-link:hover{color:var(--white);opacity:.75}.cover-foot{position:absolute;bottom:22px;left:36px;right:36px;display:flex;justify-content:space-between;font-size:9px;letter-spacing:1px;text-transform:uppercase;opacity:.7}.edition{border-bottom:1px solid var(--line)}.edition .wrap{display:flex;justify-content:space-between;gap:20px;align-items:center;padding-top:17px;padding-bottom:17px;font-size:10px;text-transform:uppercase;letter-spacing:1px;color:var(--muted)}.edition b{font-weight:600;color:var(--ink)}.intro{padding:74px 0 60px}.intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:80px}.intro h2{margin-top:15px}.intro-text{padding-top:8px;color:var(--muted)}.intro-text p:first-child{font-size:16px;color:var(--ink)}.topic-links{display:grid;grid-template-columns:repeat(3,1fr);gap:30px;margin-top:44px;border-top:1px solid var(--line);padding-top:25px}.topic-link{display:flex;align-items:center;gap:16px;text-decoration:none}.topic-link .symbol{font-size:29px;color:var(--leaf);width:34px;text-align:center}.topic-link b{font-size:13px;font-weight:600;display:block}.topic-link small{color:var(--muted);display:block;font-size:11px}.band{background:var(--sage);padding:68px 0}.section-head{display:flex;justify-content:space-between;align-items:end;gap:35px;margin-bottom:35px}.section-head h2{margin-top:12px}.section-head>p{font-size:13px;color:var(--muted);max-width:290px}.plant-types{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}.plant-type{border-top:1px solid var(--line);padding-top:24px}.plant-type .type-no{font-size:10px;color:var(--leaf);text-transform:uppercase;letter-spacing:1px;margin-bottom:12px}.plant-type h3{font-size:27px;margin-bottom:14px}.plant-type p{font-size:13px;color:var(--muted)}.examples{border-top:1px solid var(--line);margin-top:22px;padding-top:15px;font-size:12px}.examples b{display:block;font-size:10px;letter-spacing:1px;text-transform:uppercase;margin-bottom:5px}.note{margin-top:30px;border-left:2px solid var(--leaf);padding:2px 0 2px 18px;font-size:12px;color:var(--muted)}.section{padding:74px 0}.light-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}.light-item{padding:23px 0;border-top:1px solid var(--line)}.light-icon{color:var(--sun);font-size:34px;line-height:1;margin-bottom:18px}.light-item:nth-child(2) .light-icon{color:var(--leaf)}.light-item:nth-child(3) .light-icon{color:var(--muted)}.light-item h3{font-size:25px}.light-item .hours{color:var(--leaf);font-size:11px;font-weight:600;margin:9px 0 14px}.light-item p{font-size:13px;color:var(--muted)}.light-item .names{color:var(--ink);margin-top:18px}.feature-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:70px}.feature-image img{aspect-ratio:1;object-fit:cover}.feature-image figcaption{font-size:10px;color:var(--muted);margin-top:10px}.feature-copy h2{margin:14px 0 24px}.feature-copy>p{font-size:14px;color:var(--muted)}.species{margin-top:23px;padding-top:19px;border-top:1px solid var(--line)}.species h3{font-size:20px;margin-bottom:8px}.species p{font-size:12px;color:var(--muted)}.practice{display:flex;gap:15px;margin-top:25px;background:var(--sage);padding:19px 20px;font-size:12px}.practice .symbol{font-size:24px;line-height:1.2;color:var(--leaf)}.practice b{display:block;font-size:10px;letter-spacing:1px;text-transform:uppercase;margin-bottom:6px}.fern{background:var(--forest);color:var(--white);padding:0}.fern .feature-grid{gap:0;max-width:none}.fern .feature-image img{aspect-ratio:1.15}.fern .feature-copy{padding:55px 65px;max-width:620px}.fern .feature-copy>p{color:var(--white);opacity:.8}.fern h2{font-size:40px}.fern .eyebrow{opacity:.65}.fern .note{border-color:var(--white);color:var(--white);opacity:.8;font-size:12px}.fern .species{border-color:oklch(1 0 0 / .22)}.fern .species p{color:var(--white);opacity:.8}.fern .species h3{font-size:22px}.tool-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px}.tool-group{border-top:1px solid var(--line);padding-top:22px}.tool-group h3{font-size:22px;margin-bottom:15px}.tool-group ul{padding-left:17px;margin:0;font-size:13px;color:var(--muted)}li{margin-bottom:6px}.materials{display:grid;grid-template-columns:1fr 1fr;gap:65px;padding-top:45px;margin-top:35px;border-top:1px solid var(--line)}.materials h3{margin-bottom:15px}.materials p{font-size:13px;color:var(--muted)}.diagram{margin-top:25px;display:flex;flex-direction:column;gap:3px}.layer{font-size:11px;padding:8px 14px;text-align:center}.soil{background:var(--clay);color:var(--white)}.fabric{border-top:2px dashed var(--leaf);border-bottom:2px dashed var(--leaf);color:var(--leaf);padding:5px}.drain{background:var(--sage)}.exit{font-size:11px;text-align:center;color:var(--muted);padding-top:6px}.border-demo{margin-top:28px;display:grid;grid-template-columns:1fr 5px 1fr;min-height:83px;align-items:stretch}.border-demo>div{display:flex;justify-content:center;align-items:center;font-size:12px}.border-lawn{background:var(--sage)}.border-divider{background:var(--leaf)}.border-bed{background:var(--paper)}.palms{padding:68px 0;background:var(--sage)}.palm-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:25px 22px}.palm{border-top:1px solid var(--line);padding-top:15px}.palm span{font-size:10px;color:var(--leaf);display:block;margin-bottom:9px}.palm h3{font-family:var(--sans);font-size:14px;font-weight:600;margin-bottom:5px}.palm i{font-size:11px;color:var(--muted);display:block}.palm small{font-size:11px;color:var(--muted);display:block;margin-top:7px}.panorama{position:relative;height:350px;overflow:hidden}.panorama img{height:100%;object-position:50% 80%}.panorama:after{content:'';position:absolute;inset:0;background:oklch(.17 .035 150 / .42)}.panorama blockquote{position:absolute;z-index:1;inset:0;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;color:var(--white);margin:0;padding:30px;font-family:var(--serif);font-size:36px;line-height:1.4}.panorama blockquote small{font-family:var(--sans);font-size:9px;letter-spacing:2px;text-transform:uppercase;margin-top:23px}.grass-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:25px}.grass-item{border-top:1px solid var(--line);padding-top:20px}.grass-item h3{font-size:22px;margin-bottom:12px}.grass-item p{font-size:12px;color:var(--muted)}.grass-item b{font-size:10px;display:block;margin-bottom:10px;color:var(--leaf);text-transform:uppercase;letter-spacing:1px}.garden-project{background:var(--sage);padding:68px 0}.project-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px}.project-intro h2{margin:12px 0 22px}.project-intro>p{font-size:14px;color:var(--muted)}.garden-plan{background:var(--paper);border:1px solid var(--line);padding:22px;margin-top:28px}.plan-caption{font-size:10px;color:var(--muted);margin-bottom:13px}.plan-ground{height:190px;border:1px solid var(--line);position:relative;overflow:hidden;background:var(--sage)}.plan-bed{width:33%;height:100%;border-right:4px solid var(--leaf);background:var(--paper);position:absolute;display:flex;flex-direction:column;align-items:center;justify-content:space-around;padding:8px}.plan-plant{width:43px;height:43px;border-radius:50%;border:1px solid var(--leaf);display:flex;align-items:center;justify-content:center;color:var(--leaf);font-size:24px}.plan-label{position:absolute;left:33%;right:0;top:42%;text-align:center;font-size:12px;color:var(--leaf)}.plan-legend{font-size:10px;margin-top:12px;color:var(--muted);display:flex;justify-content:space-between;gap:10px}.steps{list-style:none;padding:0;margin:0;counter-reset:steps}.steps li{display:grid;grid-template-columns:26px 1fr;gap:15px;border-top:1px solid var(--line);padding:16px 0;margin:0;font-size:12px;color:var(--muted);counter-increment:steps}.steps li:before{content:counter(steps,decimal-leading-zero);font-size:11px;color:var(--leaf);padding-top:2px}.steps b{display:block;font-size:13px;color:var(--ink);margin-bottom:3px}.fieldnote{border-top:1px solid var(--line);margin-top:35px;padding-top:23px;display:flex;gap:18px;font-size:12px;color:var(--muted)}.fieldnote .symbol{font-size:23px;color:var(--leaf)}.extra-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:35px}.extra-grid h3{font-size:23px;margin-bottom:14px}.extra-grid p{font-size:13px;color:var(--muted)}.extra-grid>div{border-top:1px solid var(--line);padding-top:22px}.closing{background:var(--forest);color:var(--white);padding:55px 0}.closing .wrap{display:flex;align-items:center;justify-content:space-between;gap:30px}.closing h2{font-size:35px}.closing p{opacity:.7;font-size:12px;margin-top:12px;max-width:560px}.closing a{font-size:11px;white-space:nowrap}.closing a:hover{color:var(--white)}.sources{padding:40px 0 26px}.source-grid{display:grid;grid-template-columns:220px 1fr;gap:45px}.sources h3{font-family:var(--sans);font-weight:600;font-size:12px}.sources p{font-size:10px;color:var(--muted);margin-top:10px}.source-links{display:grid;grid-template-columns:1fr 1fr;gap:8px 25px}.source-links a{font-size:11px;color:var(--muted)}.colophon{margin-top:30px;padding-top:18px;border-top:1px solid var(--line);display:flex;justify-content:space-between;font-size:9px;color:var(--muted);gap:20px}.practical-label{display:inline-block;font-size:9px;color:var(--leaf);border:1px solid var(--line);padding:4px 8px;margin-top:19px;letter-spacing:1px;text-transform:uppercase}
-@media(min-width:1600px){.cover{height:720px}}@media(max-width:900px){.wrap{padding-left:27px;padding-right:27px}.intro-grid{gap:35px}.feature-grid{gap:35px}.fern .feature-copy{padding:35px}.fern h2{font-size:32px}.palm-grid{grid-template-columns:repeat(3,1fr)}.project-grid{gap:35px}.grass-grid{grid-template-columns:repeat(2,1fr)}.cover-foot{left:27px;right:27px}.source-grid{grid-template-columns:160px 1fr;gap:25px}}
-@media(max-width:600px){body{font-size:14px}.wrap{padding-left:23px;padding-right:23px}.cover{height:610px}.cover>img{object-position:62% center}.masthead{padding-top:22px;font-size:9px}.masthead>span:last-child{font-size:8px}.cover-copy{margin-bottom:80px}.cover h1{font-size:58px;margin-top:18px}.cover h1 em{font-size:31px;max-width:260px;line-height:1.3}.cover-copy p{font-size:13px;max-width:295px}.cover-copy .eyebrow{font-size:8px}.cover-foot{left:23px;right:23px;font-size:7px}.cover-foot>span:last-child{display:none}.edition .wrap{font-size:8px;gap:12px;line-height:1.5;flex-wrap:wrap}.intro,.section{padding:48px 0}.intro-grid,.feature-grid,.project-grid,.materials{grid-template-columns:1fr;gap:27px}h2{font-size:34px}.intro h2{max-width:300px}.intro-text{padding-top:0}.topic-links{gap:15px;margin-top:28px;padding-top:20px}.topic-link{gap:7px;align-items:flex-start}.topic-link .symbol{font-size:21px;width:22px}.topic-link b{font-size:10px}.topic-link small{font-size:9px;line-height:1.5;margin-top:3px}.band,.palms,.garden-project{padding:48px 0}.section-head{display:block;margin-bottom:28px}.section-head>p{margin-top:16px;max-width:none}.plant-types,.light-grid,.tool-grid,.extra-grid{grid-template-columns:1fr;gap:24px}.plant-type h3{font-size:27px}.plant-type{padding-top:19px}.examples{margin-top:15px;padding-top:10px}.light-item{padding-bottom:5px}.light-icon{float:right;font-size:30px}.light-item .names{margin-top:12px}.feature-copy h2{margin-bottom:18px}.feature-image figcaption{font-size:9px}.fern .feature-grid{gap:0}.fern .feature-image img{aspect-ratio:1.35}.fern .feature-copy{padding:35px 23px 42px}.fern h2{font-size:34px}.materials{margin-top:27px;padding-top:30px;gap:35px}.palm-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}.palm h3{font-size:13px}.palm i{font-size:10px;overflow-wrap:anywhere}.panorama{height:270px}.panorama blockquote{font-size:26px;padding:25px}.panorama blockquote small{font-size:8px}.grass-grid{gap:24px 20px}.grass-item h3{font-size:21px}.project-grid{gap:30px}.garden-plan{margin-top:22px}.closing .wrap{display:block}.closing h2{font-size:31px}.closing a{display:inline-block;margin-top:23px}.source-grid{grid-template-columns:1fr;gap:20px}.source-links{grid-template-columns:1fr;gap:12px}.colophon{font-size:8px;display:block}.colophon span{display:block;margin-top:6px}.fieldnote{gap:12px}.note{margin-top:22px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}@media print{.cover{height:420px}.cover-link,.closing a{display:none}.section,.intro,.band,.palms,.garden-project{padding:30px 0}body{font-size:12px}h2{font-size:30px}figure,.species,.plant-type,.palm,.steps li{break-inside:avoid}.fern,.closing{color:var(--ink);background:var(--sage)}.fern .feature-copy>p,.fern .species p,.fern .note{color:var(--ink)}a{overflow-wrap:anywhere}.sources{break-inside:avoid}}
-</style>
+    <meta charset="utf-8">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;550;600;650;700&family=Lora:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.min.css">
 </head>
+
 <body>
-<header class="cover" id="inicio">
-<img src="imgs/jardim.jpg" alt="Jardim tropical com caminho curvo de pedra, gramado e vegetação em diferentes alturas" width="1536" height="1024" fetchpriority="high">
-<div class="wrap cover-inner">
-<div class="masthead"><span><span class="leaf-mark" aria-hidden="true"></span> CADERNO DE NATUREZA</span><span>DESBRAVADORES · ESPECIALIDADES</span></div>
-<div class="cover-copy"><div class="eyebrow">UM ENCONTRO ENTRE NATUREZA E CRIATIVIDADE</div><h1>Paisagismo<em>A arte de cultivar espaços.</em></h1><p>Da escolha de uma folha ao desenho de um jardim: descubra como transformar a terra em beleza, equilíbrio e vida.</p><a class="cover-link" href="#essencia">Explore a especialidade <span aria-hidden="true">↓</span></a></div>
-<div class="cover-foot"><span>OBSERVAR · PLANEJAR · PLANTAR · CUIDAR</span><span>UM GUIA PARA COLOCAR A MÃO NA TERRA</span></div>
-</div></header>
-<div class="edition"><div class="wrap"><span><b>Especialidade de Paisagismo</b> · AA–016</span><span>Atividades agrícolas · Nível 2</span><span>Divisão Sul-Americana · 2025</span></div></div>
-<main>
-<section class="intro" id="essencia"><div class="wrap"><div class="intro-grid"><div><div class="eyebrow">O JARDIM COMEÇA COM UM OLHAR</div><h2>Muito mais que<br>plantar flores.</h2></div><div class="intro-text"><p>Paisagismo é a arte e a técnica de planejar, criar e cuidar de espaços, combinando vegetação, solo, água e elementos construídos.</p><p>Um bom projeto reúne beleza, função e equilíbrio ambiental. Considera quem usa o lugar, o clima, a luz, o relevo e o tamanho que cada planta terá quando crescer. Pode acontecer em um parque inteiro — ou em um pequeno canteiro de casa.</p></div></div><div class="topic-links"><a class="topic-link" href="#plantas"><span class="symbol" aria-hidden="true">❧</span><span><b>Conhecer as plantas</b><small>Formas, ciclos e possibilidades</small></span></a><a class="topic-link" href="#luz"><span class="symbol" aria-hidden="true">☼</span><span><b>Entender a natureza</b><small>Luz, água e solo em equilíbrio</small></span></a><a class="topic-link" href="#projeto"><span class="symbol" aria-hidden="true">♧</span><span><b>Criar seu jardim</b><small>Da ideia à primeira muda</small></span></a></div></div></section>
-<section class="band" id="plantas"><div class="wrap"><div class="section-head"><div><div class="eyebrow">REPERTÓRIO BOTÂNICO</div><h2>Cada planta, uma personalidade.</h2></div><p>Conhecer o ciclo e a origem das espécies é o primeiro passo para escolher bem.</p></div><div class="plant-types">
-<article class="plant-type"><div class="type-no">O clima como origem</div><h3>Tropicais</h3><p>Plantas originárias ou características de regiões tropicais, geralmente adaptadas ao calor. Muitas apreciam umidade e são sensíveis ao frio ou à geada, mas suas necessidades variam: tropical não significa gostar de sol forte ou de solo encharcado.</p><div class="examples"><b>Para reconhecer</b>Helicônia (<i>Heliconia psittacorum</i>), alpínia (<i>Alpinia purpurata</i>) e bastão-do-imperador (<i>Etlingera elatior</i>).</div></article>
-<article class="plant-type"><div class="type-no">O tempo como ciclo</div><h3>Anuais</h3><p>Completam seu ciclo — germinar, crescer, florescer e produzir sementes — em uma estação de crescimento ou em até um ano, e depois morrem. Trazem cores sazonais ao jardim e precisam de novo plantio para o próximo ciclo.</p><div class="examples"><b>Para reconhecer</b>Girassol (<i>Helianthus annuus</i>), zínia (<i>Zinnia elegans</i>) e tagetes (<i>Tagetes patula</i>).</div></article>
-<article class="plant-type"><div class="type-no">A beleza como função</div><h3>Ornamentais</h3><p>São cultivadas por seu valor estético: flores, folhas, frutos, textura, porte ou forma. Não formam um grupo botânico único. Árvores, palmeiras, arbustos, trepadeiras e forrações podem ser ornamentais.</p><div class="examples"><b>Para reconhecer</b>Hibisco (<i>Hibiscus rosa-sinensis</i>), costela-de-adão (<i>Monstera deliciosa</i>) e bromélias.</div></article>
-</div><p class="note"><strong>Um detalhe importante:</strong> as categorias se cruzam. Uma helicônia é tropical e ornamental; uma zínia é anual e ornamental. “Anual” descreve o ciclo de vida, não a frequência de floração.</p></div></section>
-<section class="section" id="luz"><div class="wrap"><div class="section-head"><div><div class="eyebrow">LEIA A LUZ DO SEU ESPAÇO</div><h2>No lugar certo, a vida floresce.</h2></div><p>Observe a luz de manhã e à tarde antes de escolher as mudas.</p></div><div class="light-grid">
-<article class="light-item"><div class="light-icon" aria-hidden="true">☼</div><h3>Sol pleno</h3><div class="hours">Em geral, 6 horas ou mais de sol direto por dia</div><p>Espécies que precisam de alta luminosidade para crescer e florescer bem. Uma planta recém-saída de viveiro sombreado deve ser aclimatada gradualmente.</p><p class="names"><strong>Girassol</strong> · <i>Helianthus annuus</i><br><strong>Ixora</strong> · <i>Ixora coccinea</i></p></article>
-<article class="light-item"><div class="light-icon" aria-hidden="true">◐</div><h3>Meia-sombra</h3><div class="hours">Luz filtrada ou cerca de 3 a 4 horas de sol suave</div><p>Ambientes claros, com proteção nas horas mais quentes. O sol da manhã costuma ser mais gentil; a tolerância exata depende da espécie e do clima.</p><p class="names"><strong>Antúrio</strong> · <i>Anthurium andraeanum</i><br><strong>Samambaia-americana</strong> · <i>Nephrolepis exaltata</i></p></article>
-<article class="light-item"><div class="light-icon" aria-hidden="true">◑</div><h3>Sombra</h3><div class="hours">Luz natural indireta, sem sol direto intenso</div><p>Sombra não é escuridão. Essas plantas precisam de claridade para fazer fotossíntese. Um cômodo sem luz natural suficiente não é um bom local de cultivo.</p><p class="names"><strong>Lírio-da-paz</strong> · <i>Spathiphyllum wallisii</i><br><strong>Zamioculca</strong> · <i>Zamioculcas zamiifolia</i></p></article>
-</div><p class="note"><strong>As horas são referências, não uma regra universal.</strong> Latitude, estação do ano, intensidade do sol e disponibilidade de água mudam o comportamento das plantas. Em sombra muito forte, até espécies tolerantes crescem menos.</p></div></section>
-<section class="section" style="padding-top:0" id="suculentas"><div class="wrap feature-grid"><figure class="feature-image"><img src="imgs/suculentas.jpg" alt="Suculenta em roseta à esquerda e suculenta-zebra à direita, em vasos de terracota" width="1024" height="1024" loading="lazy"><figcaption>Rosetas e folhas listradas: duas formas de armazenar água. Imagem ilustrativa gerada.</figcaption></figure><div class="feature-copy"><div class="eyebrow">PEQUENAS RESERVAS DE VIDA</div><h2>Suculentas.<br>Beleza que guarda água.</h2><p>Suculentas armazenam água em tecidos carnosos das folhas, caules ou raízes. Essa adaptação ajuda a enfrentar períodos secos. Não são uma família botânica: há suculentas em diversos grupos. Cactos são suculentas, mas nem toda suculenta é um cacto.</p><article class="species"><h3>Echevéria · <i>Echeveria elegans</i></h3><p>Forma uma roseta de folhas espessas. Cultive em ambiente muito claro, com sol introduzido aos poucos; em regiões quentes, prefira o sol da manhã. Use vaso com furos e substrato drenante. Regue o solo somente quando estiver seco, sem deixar água acumulada no pratinho.</p></article><article class="species"><h3>Zebra · <i>Haworthiopsis attenuata</i></h3><p>Tem folhas estreitas com faixas brancas. Prefere luz intensa indireta ou sol suave, protegida do sol forte da tarde. Use vaso com furos e substrato para suculentas. Deixe o substrato secar entre regas e descarte a água que escorrer.</p></article><div class="practice"><span class="symbol" aria-hidden="true">♧</span><div><b>Experiência em casa</b>Cultive as duas espécies em vasos separados. Anote a data do plantio, o local, as regas e as mudanças nas folhas; fotografe o desenvolvimento. A leitura não substitui esta atividade prática.</div></div></div></div></section>
-<section class="fern" id="folhagens"><div class="feature-grid"><figure class="feature-image"><img src="imgs/samambaia.jpg" alt="Frondes verdes e delicadas de samambaia em ambiente sombreado" width="1024" height="1024" loading="lazy"></figure><div class="feature-copy"><div class="eyebrow">O ENCANTO TAMBÉM ESTÁ NAS FOLHAS</div><h2>Nem toda beleza<br>precisa de flores.</h2><p>No paisagismo, plantas valorizadas pelas folhas são chamadas de <strong>folhagens ornamentais</strong>. Mas atenção: muitas folhagens, como coleus e costela-de-adão, também produzem flores.</p><div class="species"><h3>E as que realmente não têm flores?</h3><p>Samambaias e avencas são plantas vasculares sem sementes, tradicionalmente chamadas de <strong>pteridófitas</strong>, e se reproduzem por esporos. Pinheiros e araucárias são <strong>gimnospermas</strong>: têm sementes e estruturas reprodutivas, mas não flores verdadeiras nem frutos.</p></div><p class="note"><strong>Samambaias: cuidado com sol e vento.</strong> Nas espécies de sombra comuns em jardins, sol direto intenso pode queimar e amarelar as frondes; vento forte acelera a perda de água, causando pontas secas e murcha. Prefira claridade filtrada, abrigo do vento e solo úmido, sem encharcar. Algumas espécies toleram mais sol quando bem aclimatadas.</p></div></div></section>
-<section class="section" id="materiais"><div class="wrap"><div class="section-head"><div><div class="eyebrow">ANTES DE COLOCAR A MÃO NA TERRA</div><h2>O kit de um bom jardim.</h2></div><p>Não é preciso ter tudo: escolha os materiais de acordo com o tamanho e a necessidade do projeto.</p></div><div class="tool-grid"><article class="tool-group"><h3>Para preparar</h3><ul><li>Pá de bico e pá de transplante</li><li>Enxada, rastelo e garfo de jardinagem</li><li>Carrinho de mão ou baldes</li><li>Trena, barbante e pequenas estacas</li><li>Luvas, calçado fechado e proteção solar</li></ul></article><article class="tool-group"><h3>Para plantar</h3><ul><li>Mudas, sementes e grama</li><li>Terra e substrato adequados às espécies</li><li>Composto orgânico bem curtido</li><li>Adubo e corretivo, quando indicados por análise do solo</li><li>Vasos com furos, manta geotêxtil e separador de grama</li></ul></article><article class="tool-group"><h3>Para cuidar</h3><ul><li>Regador ou mangueira com esguicho suave</li><li>Tesoura de poda limpa e afiada</li><li>Cobertura morta, como folhas secas ou casca</li><li>Pedras ou outros acabamentos, se previstos</li><li>Ferramenta de corte para o gramado</li></ul></article></div><p class="note"><strong>Segurança também faz parte do projeto.</strong> Use ferramentas com orientação de um adulto ou instrutor. Identifique plantas tóxicas e espinhosas antes de colocá-las perto de crianças, animais ou áreas de passagem.</p><div class="materials"><article><div class="eyebrow">O QUE FICA ENTRE AS CAMADAS</div><h3 style="margin-top:12px">Manta de bidim</h3><p>“Bidim” é um nome comercial frequentemente usado para a <strong>manta geotêxtil não tecida</strong>. Ela separa camadas e filtra: permite a passagem de água, mas retém partículas de solo, ajudando a evitar que entupam uma camada drenante ou um dreno.</p><p>Em vasos, pode separar o substrato de uma camada de drenagem, quando essa montagem for adotada. <strong>Não é impermeabilizante</strong>, não substitui os furos do vaso nem torna um solo pesado automaticamente drenante. Camada de pedras no fundo não é obrigatória: furos livres e substrato adequado são essenciais.</p><div class="diagram" role="img" aria-label="Esquema de vaso com substrato, manta geotêxtil, camada drenante opcional e saída de água"><div class="layer soil">Substrato · onde as raízes crescem</div><div class="layer fabric">Manta geotêxtil · filtra e separa</div><div class="layer drain">Camada drenante · quando prevista</div><div class="exit">↓ Água escoa pelos furos do vaso</div></div></article><article><div class="eyebrow">UMA BORDA COM PROPÓSITO</div><h3 style="margin-top:12px">Separador de grama</h3><p>É uma barreira instalada entre o gramado e o canteiro. Ajuda a conter o avanço lateral da grama, define o desenho do jardim e evita a mistura de materiais, como terra e pedriscos.</p><p>Pode ser de plástico próprio para jardim, metal ou outro material adequado. Instale em uma valeta seguindo o contorno planejado, firme as laterais e respeite a profundidade recomendada pelo fabricante. A borda não elimina toda a manutenção: algumas gramas podem ultrapassá-la.</p><div class="border-demo" role="img" aria-label="Separador vertical entre o gramado e o canteiro"><div class="border-lawn">Gramado</div><div class="border-divider"></div><div class="border-bed">Canteiro ornamental</div></div><p style="font-size:10px;margin-top:10px">A linha entre os dois espaços é a barreira de contenção.</p></article></div></div></section>
-<section class="palms" id="palmeiras"><div class="wrap"><div class="section-head"><div><div class="eyebrow">SILHUETAS QUE DESENHAM A PAISAGEM</div><h2>Dez palmeiras para conhecer.</h2></div><p>Todas pertencem à família Arecaceae. Escolha considerando porte adulto, clima e espaço para as raízes e a copa.</p></div><div class="palm-grid">
-<article class="palm"><span>PORTE IMPONENTE</span><h3>Palmeira-imperial</h3><i>Roystonea oleracea</i><small>Para áreas amplas e alinhamentos.</small></article>
-<article class="palm"><span>BRASILEIRA NATIVA</span><h3>Jerivá</h3><i>Syagrus romanzoffiana</i><small>Frutos atraem a fauna.</small></article>
-<article class="palm"><span>EM TOUCEIRAS</span><h3>Areca-bambu</h3><i>Chrysalidocarpus lutescens</i><small>Também conhecida como <i>Dypsis lutescens</i>.</small></article>
-<article class="palm"><span>PORTE MENOR</span><h3>Tamareira-anã</h3><i>Phoenix roebelenii</i><small>Tem espinhos: cuidado nas passagens.</small></article>
-<article class="palm"><span>COPA VOLUMOSA</span><h3>Rabo-de-raposa</h3><i>Wodyetia bifurcata</i><small>Folhas com aspecto plumoso.</small></article>
-<article class="palm"><span>FOLHAS EM LEQUE</span><h3>Palmeira-leque</h3><i>Livistona chinensis</i><small>Folhas largas com pontas pendentes.</small></article>
-<article class="palm"><span>TRONCO ESCULTURAL</span><h3>Palmeira-garrafa</h3><i>Hyophorbe lagenicaulis</i><small>Base dilatada; sensível ao frio.</small></article>
-<article class="palm"><span>JARDINS TROPICAIS</span><h3>Seafórtia</h3><i>Archontophoenix cunninghamiana</i><small>Avalie potencial invasor na região.</small></article>
-<article class="palm"><span>ORIGEM AMAZÔNICA</span><h3>Açaizeiro</h3><i>Euterpe oleracea</i><small>Prefere clima quente e úmido.</small></article>
-<article class="palm"><span>NATIVA DO SUL</span><h3>Butiá-da-serra</h3><i>Butia eriospatha</i><small>Folhas arqueadas; frutos comestíveis.</small></article>
-</div><p class="note"><strong>Parece palmeira, mas não é:</strong> a cica (<i>Cycas revoluta</i>) pertence às cicadófitas, um grupo de gimnospermas. Além disso, é tóxica quando ingerida. Nomes populares variam; o nome científico ajuda a identificar a espécie corretamente.</p></div></section>
-<div class="panorama"><img src="imgs/jardim.jpg" alt="A integração entre gramado, canteiros e caminho de pedra em um jardim" width="1536" height="1024" loading="lazy"><blockquote>“Um jardim se desenha com ideias.<br>E se transforma com cuidado.”<small>CULTIVAR É APRENDER A OBSERVAR</small></blockquote></div>
-<section class="section" id="gramado"><div class="wrap"><div class="section-head"><div><div class="eyebrow">A BASE VERDE DO PROJETO</div><h2>Como nasce um gramado.</h2></div><p>A técnica muda, mas um solo bem preparado é o começo de todas elas.</p></div><div class="grass-grid"><article class="grass-item"><b>Cobertura rápida</b><h3>Placas</h3><p>Peças de grama com raízes e uma fina camada de solo são colocadas lado a lado, com juntas desencontradas e sem sobreposição. Assente sobre solo nivelado, pressione para garantir contato e irrigue até o enraizamento.</p></article><article class="grass-item"><b>Áreas maiores</b><h3>Rolos</h3><p>Faixas de grama prontas são desenroladas sobre o terreno. Funcionam como as placas, com juntas ajustadas e bom contato com o solo. Instale logo após a entrega para evitar ressecamento ou aquecimento do material.</p></article><article class="grass-item"><b>Do início ao verde</b><h3>Sementes</h3><p>Distribua uniformemente sementes de uma espécie ou cultivar que permita esse método. Siga a dose e a cobertura indicadas pelo fornecedor e mantenha umidade durante a germinação. Nem toda grama comercial é propagada por sementes.</p></article><article class="grass-item"><b>Fechamento gradual</b><h3>Mudas e estolões</h3><p>Plante pequenas mudas enraizadas (<i>plugs</i>) ou segmentos vegetativos de espécies apropriadas, em espaçamento recomendado. Elas se espalham até fechar a área. O processo exige controle de ervas espontâneas e mais tempo.</p></article></div><p class="note"><strong>Em qualquer técnica:</strong> retire entulho e plantas indesejadas, descompacte e nivele o terreno, confira a drenagem e corrija o solo com orientação técnica. Após o plantio, mantenha umidade sem encharcar e evite pisoteio até o enraizamento. Ajuste irrigação e corte à espécie, ao clima e à fase de crescimento.</p></div></section>
-<section class="garden-project" id="projeto"><div class="wrap"><div class="project-grid"><div class="project-intro"><div class="eyebrow">DO CADERNO PARA A TERRA</div><h2>Seu primeiro<br>pequeno jardim.</h2><p>Agora é hora de reunir grama, separador e plantas ornamentais em um projeto de verdade. O desenho abaixo é uma sugestão para um espaço de <strong>2 × 1,5 m</strong>, não uma medida obrigatória.</p><span class="practical-label">Atividade prática da especialidade</span><figure class="garden-plan"><figcaption class="plan-caption">VISTA DE CIMA · ESQUEMA ILUSTRATIVO, SEM ESCALA</figcaption><div class="plan-ground" role="img" aria-label="Pequeno jardim: canteiro à esquerda com três plantas ornamentais, separado do gramado à direita"><div class="plan-bed"><span class="plan-plant" aria-hidden="true">✳</span><span class="plan-plant" aria-hidden="true">✳</span><span class="plan-plant" aria-hidden="true">✳</span></div><span class="plan-label">Área de grama</span></div><div class="plan-legend"><span>✳ Plantas ornamentais</span><span>│ Separador de grama</span></div></figure><p class="note"><strong>Um exemplo para local ensolarado:</strong> grama-esmeralda (<i>Zoysia japonica</i>) e um canteiro de zínias. Respeite o espaçamento indicado para as mudas e escolha outras espécies se a luz ou o clima não forem adequados.</p></div><ol class="steps"><li><div><b>Observe e desenhe</b>Confira as horas de sol, o escoamento da água e o espaço disponível. Faça um esboço com a faixa do canteiro e a área do gramado.</div></li><li><div><b>Separe os materiais</b>Reúna mudas ornamentais, grama, separador, ferramentas, regador e proteção. Calcule as quantidades pelas medidas reais do desenho.</div></li><li><div><b>Prepare o terreno</b>Limpe, retire ervas indesejadas, solte o solo e nivele. Use composto bem curtido ou correções somente conforme a necessidade das plantas e do solo.</div></li><li><div><b>Instale a borda</b>Marque a linha com barbante, abra uma valeta, posicione o separador e firme as laterais conforme as instruções do produto.</div></li><li><div><b>Plante e cubra</b>Abra covas para as ornamentais e mantenha o colo na altura correta do solo. Assente as placas de grama na área reservada, ajustando as juntas.</div></li><li><div><b>Regue e acompanhe</b>Faça a rega inicial, sem encharcar. Verifique a umidade nos dias seguintes, retire ervas espontâneas e proteja o gramado novo de pisoteio.</div></li></ol></div><div class="fieldnote"><span class="symbol" aria-hidden="true">✎</span><p><strong>Registre sua experiência.</strong> Guarde o desenho, a lista de espécies e fotos de antes, durante e depois. Anote o que funcionou e o que precisou mudar. Para concluir a especialidade, apresente ao instrutor este jardim e o cultivo das duas suculentas — essas tarefas precisam ser realizadas, não apenas estudadas.</p></div></div></section>
-<section class="section"><div class="wrap"><div class="section-head"><div><div class="eyebrow">UM POUCO ALÉM DO CANTEIRO</div><h2>Beleza que também faz bem.</h2></div></div><div class="extra-grid"><article><h3>Um convite à fauna</h3><p>Plantas nativas adequadas à região oferecem abrigo e alimento para insetos, aves e outros animais. Diversifique as épocas de floração e evite espécies invasoras. Jardim bonito também pode ser habitat.</p></article><article><h3>Água com inteligência</h3><p>Agrupe espécies com necessidades semelhantes. Cobertura morta ajuda a conservar a umidade e proteger o solo. Regue de acordo com a necessidade real, não por um calendário rígido, e repare primeiro a drenagem se houver poças.</p></article><article><h3>Aprender com o tempo</h3><p>Uma folha amarelada pode indicar excesso de água, pouca luz ou outras causas; não é um diagnóstico por si só. Observe solo, raízes e ambiente antes de agir. Cuidar de um jardim é exercitar atenção, paciência e responsabilidade.</p></article></div></div></section>
-</main>
-<section class="closing"><div class="wrap"><div><div class="eyebrow">NATUREZA, CONHECIMENTO E PRÁTICA</div><h2 style="margin-top:13px">O próximo jardim pode ser o seu.</h2><p>O conhecimento é a semente. A experiência de cultivar é o que faz a especialidade ganhar vida.</p></div><a href="#inicio">Voltar ao começo ↑</a></div></section>
-<footer class="sources"><div class="wrap"><div class="source-grid"><div><h3>Fontes &amp; leituras</h3><p>Conteúdo organizado a partir dos requisitos da MDA Wiki e de referências de botânica e jardinagem. Guia de estudo independente, não um material oficial de certificação.</p></div><div class="source-links"><a href="https://mda.wiki.br/Especialidade_de_Paisagismo/" target="_blank" rel="noopener noreferrer">MDA Wiki · Requisitos da especialidade ↗</a><a href="https://www.bibliotecaagptea.org.br/agricultura/paisagismo/livros/APOSTILA%20DE%20PAISAGISMO%20IFRS.pdf" target="_blank" rel="noopener noreferrer">IFRS · Apostila de Paisagismo ↗</a><a href="https://www.infoteca.cnptia.embrapa.br/infoteca/bitstream/doc/884520/1/livro-plantastropicais-2.pdf" target="_blank" rel="noopener noreferrer">Embrapa · Plantas ornamentais tropicais ↗</a><a href="https://www.botanica.org.br/wp-content/uploads/Guia-para-as-Palmeiras-do-Nordeste-do-Brasil_LNoblick_CECarneiro.pdf" target="_blank" rel="noopener noreferrer">Sociedade Botânica · Guia de palmeiras ↗</a><a href="https://revistacasaejardim.globo.com/paisagismo/noticia/2023/12/manta-bidim-o-que-e-para-que-serve-e-como-usa-la-na-montagem-de-vasos.ghtml" target="_blank" rel="noopener noreferrer">Casa e Jardim · Manta geotêxtil ↗</a><a href="https://diariodonaturalista.com.br/plantas/cactos-suculentas/haworthiopsis-attenuata-suculenta-zebra/" target="_blank" rel="noopener noreferrer">Diário do Naturalista · Suculenta-zebra ↗</a></div></div><div class="colophon"><span>CADERNO DE NATUREZA · ESPECIALIDADE DE PAISAGISMO · AA–016</span><span>Imagens geradas por IA, ilustrativas · Os cuidados variam conforme espécie e região.</span></div></div></footer>
+    <header class="cover" id="inicio">
+        <img src="imgs/jardim.jpg"
+            alt="Jardim tropical com caminho curvo de pedra, gramado e vegetação em diferentes alturas" width="1536"
+            height="1024" fetchpriority="high">
+        <div class="wrap cover-inner">
+            <div class="cover-copy">
+                <div class="eyebrow" data-id="meta-area"></div>
+                <h1>Paisagismo<em>A arte de cultivar espaços.</em></h1>
+                <p>Da escolha de uma folha ao desenho de um jardim: descubra como transformar a terra em beleza,
+                    equilíbrio e vida.</p>
+            </div>
+            <div class="cover-foot">
+                <span data-id="meta"></span>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="intro" id="essencia">
+            <div class="wrap">
+                <div class="intro-grid">
+                    <div>
+                        <div class="eyebrow">O JARDIM COMEÇA COM UM OLHAR</div>
+                        <h2>Muito mais que<br>plantar flores.</h2>
+                    </div>
+                    <div class="intro-text">
+                        <p>Paisagismo é a arte e a técnica de planejar, criar e cuidar de espaços, combinando vegetação,
+                            solo, água e elementos construídos.</p>
+                        <p>Um bom projeto reúne beleza, função e equilíbrio ambiental. Considera quem usa o lugar, o
+                            clima, a luz, o relevo e o tamanho que cada planta terá quando crescer. Pode acontecer em um
+                            parque inteiro — ou em um pequeno canteiro de casa.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="band" id="plantas">
+            <div class="wrap">
+                <div class="section-head">
+                    <div>
+                        <div class="eyebrow">REPERTÓRIO BOTÂNICO</div>
+                        <h2>Cada planta, uma personalidade.</h2>
+                    </div>
+                    <p>Conhecer o ciclo e a origem das espécies é o primeiro passo para escolher bem.</p>
+                </div>
+                <div class="plant-types">
+                    <article class="plant-type">
+                        <div class="type-no">O clima como origem</div>
+                        <h3>Tropicais</h3>
+                        <p>Plantas originárias ou características de regiões tropicais, geralmente adaptadas ao calor.
+                            Muitas apreciam umidade e são sensíveis ao frio ou à geada, mas suas necessidades variam:
+                            tropical não significa gostar de sol forte ou de solo encharcado.</p>
+                        <div class="examples"><b>Para reconhecer</b>Helicônia (<i>Heliconia psittacorum</i>), alpínia
+                            (<i>Alpinia purpurata</i>) e bastão-do-imperador (<i>Etlingera elatior</i>).</div>
+                    </article>
+                    <article class="plant-type">
+                        <div class="type-no">O tempo como ciclo</div>
+                        <h3>Anuais</h3>
+                        <p>Completam seu ciclo — germinar, crescer, florescer e produzir sementes — em uma estação de
+                            crescimento ou em até um ano, e depois morrem. Trazem cores sazonais ao jardim e precisam de
+                            novo plantio para o próximo ciclo.</p>
+                        <div class="examples"><b>Para reconhecer</b>Girassol (<i>Helianthus annuus</i>), zínia
+                            (<i>Zinnia elegans</i>) e tagetes (<i>Tagetes patula</i>).</div>
+                    </article>
+                    <article class="plant-type">
+                        <div class="type-no">A beleza como função</div>
+                        <h3>Ornamentais</h3>
+                        <p>São cultivadas por seu valor estético: flores, folhas, frutos, textura, porte ou forma. Não
+                            formam um grupo botânico único. Árvores, palmeiras, arbustos, trepadeiras e forrações podem
+                            ser ornamentais.</p>
+                        <div class="examples"><b>Para reconhecer</b>Hibisco (<i>Hibiscus rosa-sinensis</i>),
+                            costela-de-adão (<i>Monstera deliciosa</i>) e bromélias.</div>
+                    </article>
+                </div>
+                <p class="note"><strong>Um detalhe importante:</strong> as categorias se cruzam. Uma helicônia é
+                    tropical e ornamental; uma zínia é anual e ornamental. “Anual” descreve o ciclo de vida, não a
+                    frequência de floração.</p>
+            </div>
+        </section>
+        <section class="section" id="luz">
+            <div class="wrap">
+                <div class="section-head">
+                    <div>
+                        <div class="eyebrow">LEIA A LUZ DO SEU ESPAÇO</div>
+                        <h2>No lugar certo, a vida floresce.</h2>
+                    </div>
+                    <p>Observe a luz de manhã e à tarde antes de escolher as mudas.</p>
+                </div>
+                <div class="light-grid">
+                    <article class="light-item">
+                        <div class="light-icon" aria-hidden="true">☼</div>
+                        <h3>Sol pleno</h3>
+                        <div class="hours">Em geral, 6 horas ou mais de sol direto por dia</div>
+                        <p>Espécies que precisam de alta luminosidade para crescer e florescer bem. Uma planta
+                            recém-saída de viveiro sombreado deve ser aclimatada gradualmente.</p>
+                        <p class="names"><strong>Girassol</strong> · <i>Helianthus annuus</i><br><strong>Ixora</strong>
+                            · <i>Ixora coccinea</i></p>
+                    </article>
+                    <article class="light-item">
+                        <div class="light-icon" aria-hidden="true">◐</div>
+                        <h3>Meia-sombra</h3>
+                        <div class="hours">Luz filtrada ou cerca de 3 a 4 horas de sol suave</div>
+                        <p>Ambientes claros, com proteção nas horas mais quentes. O sol da manhã costuma ser mais
+                            gentil; a tolerância exata depende da espécie e do clima.</p>
+                        <p class="names"><strong>Antúrio</strong> · <i>Anthurium
+                                andraeanum</i><br><strong>Samambaia-americana</strong> · <i>Nephrolepis exaltata</i></p>
+                    </article>
+                    <article class="light-item">
+                        <div class="light-icon" aria-hidden="true">◑</div>
+                        <h3>Sombra</h3>
+                        <div class="hours">Luz natural indireta, sem sol direto intenso</div>
+                        <p>Sombra não é escuridão. Essas plantas precisam de claridade para fazer fotossíntese. Um
+                            cômodo sem luz natural suficiente não é um bom local de cultivo.</p>
+                        <p class="names"><strong>Lírio-da-paz</strong> · <i>Spathiphyllum
+                                wallisii</i><br><strong>Zamioculca</strong> · <i>Zamioculcas zamiifolia</i></p>
+                    </article>
+                </div>
+                <p class="note"><strong>As horas são referências, não uma regra universal.</strong> Latitude, estação do
+                    ano, intensidade do sol e disponibilidade de água mudam o comportamento das plantas. Em sombra muito
+                    forte, até espécies tolerantes crescem menos.</p>
+            </div>
+        </section>
+        <section class="section" style="padding-top:0" id="suculentas">
+            <div class="wrap feature-grid">
+                <figure class="feature-image"><img src="imgs/suculentas.jpg"
+                        alt="Suculenta em roseta à esquerda e suculenta-zebra à direita, em vasos de terracota"
+                        width="1024" height="1024" loading="lazy">
+                    <figcaption>Rosetas e folhas listradas: duas formas de armazenar água.
+                    </figcaption>
+                </figure>
+                <div class="feature-copy">
+                    <div class="eyebrow">PEQUENAS RESERVAS DE VIDA</div>
+                    <h2>Suculentas.<br>Beleza que guarda água.</h2>
+                    <p>Suculentas armazenam água em tecidos carnosos das folhas, caules ou raízes. Essa adaptação ajuda
+                        a enfrentar períodos secos. Não são uma família botânica: há suculentas em diversos grupos.
+                        Cactos são suculentas, mas nem toda suculenta é um cacto.</p>
+                    <article class="species">
+                        <h3>Echevéria · <i>Echeveria elegans</i></h3>
+                        <p>Forma uma roseta de folhas espessas. Cultive em ambiente muito claro, com sol introduzido aos
+                            poucos; em regiões quentes, prefira o sol da manhã. Use vaso com furos e substrato drenante.
+                            Regue o solo somente quando estiver seco, sem deixar água acumulada no pratinho.</p>
+                    </article>
+                    <article class="species">
+                        <h3>Zebra · <i>Haworthiopsis attenuata</i></h3>
+                        <p>Tem folhas estreitas com faixas brancas. Prefere luz intensa indireta ou sol suave, protegida
+                            do sol forte da tarde. Use vaso com furos e substrato para suculentas. Deixe o substrato
+                            secar entre regas e descarte a água que escorrer.</p>
+                    </article>
+                    <div class="practice"><span class="symbol" aria-hidden="true">♧</span>
+                        <div><b>Experiência em casa</b>Cultive as duas espécies em vasos separados. Anote a data do
+                            plantio, o local, as regas e as mudanças nas folhas; fotografe o desenvolvimento. A leitura
+                            não substitui esta atividade prática.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="fern" id="folhagens">
+            <div class="feature-grid">
+                <figure class="feature-image"><img src="imgs/samambaia.jpg"
+                        alt="Frondes verdes e delicadas de samambaia em ambiente sombreado" width="1024" height="1024"
+                        loading="lazy"></figure>
+                <div class="feature-copy">
+                    <div class="eyebrow">O ENCANTO TAMBÉM ESTÁ NAS FOLHAS</div>
+                    <h2>Nem toda beleza<br>precisa de flores.</h2>
+                    <p>No paisagismo, plantas valorizadas pelas folhas são chamadas de <strong>folhagens
+                            ornamentais</strong>. Mas atenção: muitas folhagens, como coleus e costela-de-adão, também
+                        produzem flores.</p>
+                    <div class="species">
+                        <h3>E as que realmente não têm flores?</h3>
+                        <p>Samambaias e avencas são plantas vasculares sem sementes, tradicionalmente chamadas de
+                            <strong>pteridófitas</strong>, e se reproduzem por esporos. Pinheiros e araucárias são
+                            <strong>gimnospermas</strong>: têm sementes e estruturas reprodutivas, mas não flores
+                            verdadeiras nem frutos.
+                        </p>
+                    </div>
+                    <p class="note"><strong>Samambaias: cuidado com sol e vento.</strong> Nas espécies de sombra comuns
+                        em jardins, sol direto intenso pode queimar e amarelar as frondes; vento forte acelera a perda
+                        de água, causando pontas secas e murcha. Prefira claridade filtrada, abrigo do vento e solo
+                        úmido, sem encharcar. Algumas espécies toleram mais sol quando bem aclimatadas.</p>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="materiais">
+            <div class="wrap">
+                <div class="section-head">
+                    <div>
+                        <div class="eyebrow">ANTES DE COLOCAR A MÃO NA TERRA</div>
+                        <h2>O kit de um bom jardim.</h2>
+                    </div>
+                    <p>Não é preciso ter tudo: escolha os materiais de acordo com o tamanho e a necessidade do projeto.
+                    </p>
+                </div>
+                <div class="tool-grid">
+                    <article class="tool-group">
+                        <h3>Para preparar</h3>
+                        <ul>
+                            <li>Pá de bico e pá de transplante</li>
+                            <li>Enxada, rastelo e garfo de jardinagem</li>
+                            <li>Carrinho de mão ou baldes</li>
+                            <li>Trena, barbante e pequenas estacas</li>
+                            <li>Luvas, calçado fechado e proteção solar</li>
+                        </ul>
+                    </article>
+                    <article class="tool-group">
+                        <h3>Para plantar</h3>
+                        <ul>
+                            <li>Mudas, sementes e grama</li>
+                            <li>Terra e substrato adequados às espécies</li>
+                            <li>Composto orgânico bem curtido</li>
+                            <li>Adubo e corretivo, quando indicados por análise do solo</li>
+                            <li>Vasos com furos, manta geotêxtil e separador de grama</li>
+                        </ul>
+                    </article>
+                    <article class="tool-group">
+                        <h3>Para cuidar</h3>
+                        <ul>
+                            <li>Regador ou mangueira com esguicho suave</li>
+                            <li>Tesoura de poda limpa e afiada</li>
+                            <li>Cobertura morta, como folhas secas ou casca</li>
+                            <li>Pedras ou outros acabamentos, se previstos</li>
+                            <li>Ferramenta de corte para o gramado</li>
+                        </ul>
+                    </article>
+                </div>
+                <p class="note"><strong>Segurança também faz parte do projeto.</strong> Use ferramentas com orientação
+                    de um adulto ou instrutor. Identifique plantas tóxicas e espinhosas antes de colocá-las perto de
+                    crianças, animais ou áreas de passagem.</p>
+                <div class="materials">
+                    <article>
+                        <div class="eyebrow">O QUE FICA ENTRE AS CAMADAS</div>
+                        <h3 style="margin-top:12px">Manta de bidim</h3>
+                        <p>“Bidim” é um nome comercial frequentemente usado para a <strong>manta geotêxtil não
+                                tecida</strong>. Ela separa camadas e filtra: permite a passagem de água, mas retém
+                            partículas de solo, ajudando a evitar que entupam uma camada drenante ou um dreno.</p>
+                        <p>Em vasos, pode separar o substrato de uma camada de drenagem, quando essa montagem for
+                            adotada. <strong>Não é impermeabilizante</strong>, não substitui os furos do vaso nem torna
+                            um solo pesado automaticamente drenante. Camada de pedras no fundo não é obrigatória: furos
+                            livres e substrato adequado são essenciais.</p>
+                        <div class="diagram" role="img"
+                            aria-label="Esquema de vaso com substrato, manta geotêxtil, camada drenante opcional e saída de água">
+                            <div class="layer soil">Substrato · onde as raízes crescem</div>
+                            <div class="layer fabric">Manta geotêxtil · filtra e separa</div>
+                            <div class="layer drain">Camada drenante · quando prevista</div>
+                            <div class="exit">↓ Água escoa pelos furos do vaso</div>
+                        </div>
+                    </article>
+                    <article>
+                        <div class="eyebrow">UMA BORDA COM PROPÓSITO</div>
+                        <h3 style="margin-top:12px">Separador de grama</h3>
+                        <p>É uma barreira instalada entre o gramado e o canteiro. Ajuda a conter o avanço lateral da
+                            grama, define o desenho do jardim e evita a mistura de materiais, como terra e pedriscos.
+                        </p>
+                        <p>Pode ser de plástico próprio para jardim, metal ou outro material adequado. Instale em uma
+                            valeta seguindo o contorno planejado, firme as laterais e respeite a profundidade
+                            recomendada pelo fabricante. A borda não elimina toda a manutenção: algumas gramas podem
+                            ultrapassá-la.</p>
+                        <div class="border-demo" role="img"
+                            aria-label="Separador vertical entre o gramado e o canteiro">
+                            <div class="border-lawn">Gramado</div>
+                            <div class="border-divider"></div>
+                            <div class="border-bed">Canteiro ornamental</div>
+                        </div>
+                        <p style="font-size:10px;margin-top:10px">A linha entre os dois espaços é a barreira de
+                            contenção.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="palms" id="palmeiras">
+            <div class="wrap">
+                <div class="section-head">
+                    <div>
+                        <div class="eyebrow">SILHUETAS QUE DESENHAM A PAISAGEM</div>
+                        <h2>Dez palmeiras para conhecer.</h2>
+                    </div>
+                    <p>Todas pertencem à família Arecaceae. Escolha considerando porte adulto, clima e espaço para as
+                        raízes e a copa.</p>
+                </div>
+                <div class="palm-grid">
+                    <article class="palm"><span>PORTE IMPONENTE</span>
+                        <h3>Palmeira-imperial</h3><i>Roystonea oleracea</i><small>Para áreas amplas e
+                            alinhamentos.</small>
+                    </article>
+                    <article class="palm"><span>BRASILEIRA NATIVA</span>
+                        <h3>Jerivá</h3><i>Syagrus romanzoffiana</i><small>Frutos atraem a fauna.</small>
+                    </article>
+                    <article class="palm"><span>EM TOUCEIRAS</span>
+                        <h3>Areca-bambu</h3><i>Chrysalidocarpus lutescens</i><small>Também conhecida como <i>Dypsis
+                                lutescens</i>.</small>
+                    </article>
+                    <article class="palm"><span>PORTE MENOR</span>
+                        <h3>Tamareira-anã</h3><i>Phoenix roebelenii</i><small>Tem espinhos: cuidado nas
+                            passagens.</small>
+                    </article>
+                    <article class="palm"><span>COPA VOLUMOSA</span>
+                        <h3>Rabo-de-raposa</h3><i>Wodyetia bifurcata</i><small>Folhas com aspecto plumoso.</small>
+                    </article>
+                    <article class="palm"><span>FOLHAS EM LEQUE</span>
+                        <h3>Palmeira-leque</h3><i>Livistona chinensis</i><small>Folhas largas com pontas
+                            pendentes.</small>
+                    </article>
+                    <article class="palm"><span>TRONCO ESCULTURAL</span>
+                        <h3>Palmeira-garrafa</h3><i>Hyophorbe lagenicaulis</i><small>Base dilatada; sensível ao
+                            frio.</small>
+                    </article>
+                    <article class="palm"><span>JARDINS TROPICAIS</span>
+                        <h3>Seafórtia</h3><i>Archontophoenix cunninghamiana</i><small>Avalie potencial invasor na
+                            região.</small>
+                    </article>
+                    <article class="palm"><span>ORIGEM AMAZÔNICA</span>
+                        <h3>Açaizeiro</h3><i>Euterpe oleracea</i><small>Prefere clima quente e úmido.</small>
+                    </article>
+                    <article class="palm"><span>NATIVA DO SUL</span>
+                        <h3>Butiá-da-serra</h3><i>Butia eriospatha</i><small>Folhas arqueadas; frutos
+                            comestíveis.</small>
+                    </article>
+                </div>
+                <p class="note"><strong>Parece palmeira, mas não é:</strong> a cica (<i>Cycas revoluta</i>) pertence às
+                    cicadófitas, um grupo de gimnospermas. Além disso, é tóxica quando ingerida. Nomes populares variam;
+                    o nome científico ajuda a identificar a espécie corretamente.</p>
+            </div>
+        </section>
+        <div class="panorama"><img src="imgs/jardim.jpg"
+                alt="A integração entre gramado, canteiros e caminho de pedra em um jardim" width="1536" height="1024"
+                loading="lazy">
+            <blockquote>“Um jardim se desenha com ideias.<br>E se transforma com cuidado.”<small>CULTIVAR É APRENDER A
+                    OBSERVAR</small></blockquote>
+        </div>
+        <section class="section" id="gramado">
+            <div class="wrap">
+                <div class="section-head">
+                    <div>
+                        <div class="eyebrow">A BASE VERDE DO PROJETO</div>
+                        <h2>Como nasce um gramado.</h2>
+                    </div>
+                    <p>A técnica muda, mas um solo bem preparado é o começo de todas elas.</p>
+                </div>
+                <div class="grass-grid">
+                    <article class="grass-item"><b>Cobertura rápida</b>
+                        <h3>Placas</h3>
+                        <p>Peças de grama com raízes e uma fina camada de solo são colocadas lado a lado, com juntas
+                            desencontradas e sem sobreposição. Assente sobre solo nivelado, pressione para garantir
+                            contato e irrigue até o enraizamento.</p>
+                    </article>
+                    <article class="grass-item"><b>Áreas maiores</b>
+                        <h3>Rolos</h3>
+                        <p>Faixas de grama prontas são desenroladas sobre o terreno. Funcionam como as placas, com
+                            juntas ajustadas e bom contato com o solo. Instale logo após a entrega para evitar
+                            ressecamento ou aquecimento do material.</p>
+                    </article>
+                    <article class="grass-item"><b>Do início ao verde</b>
+                        <h3>Sementes</h3>
+                        <p>Distribua uniformemente sementes de uma espécie ou cultivar que permita esse método. Siga a
+                            dose e a cobertura indicadas pelo fornecedor e mantenha umidade durante a germinação. Nem
+                            toda grama comercial é propagada por sementes.</p>
+                    </article>
+                    <article class="grass-item"><b>Fechamento gradual</b>
+                        <h3>Mudas e estolões</h3>
+                        <p>Plante pequenas mudas enraizadas (<i>plugs</i>) ou segmentos vegetativos de espécies
+                            apropriadas, em espaçamento recomendado. Elas se espalham até fechar a área. O processo
+                            exige controle de ervas espontâneas e mais tempo.</p>
+                    </article>
+                </div>
+                <p class="note"><strong>Em qualquer técnica:</strong> retire entulho e plantas indesejadas, descompacte
+                    e nivele o terreno, confira a drenagem e corrija o solo com orientação técnica. Após o plantio,
+                    mantenha umidade sem encharcar e evite pisoteio até o enraizamento. Ajuste irrigação e corte à
+                    espécie, ao clima e à fase de crescimento.</p>
+            </div>
+        </section>
+        <section class="garden-project" id="projeto">
+            <div class="wrap">
+                <div class="project-grid">
+                    <div class="project-intro">
+                        <div class="eyebrow">DO CADERNO PARA A TERRA</div>
+                        <h2>Seu primeiro<br>pequeno jardim.</h2>
+                        <p>Agora é hora de reunir grama, separador e plantas ornamentais em um projeto de verdade. O
+                            desenho abaixo é uma sugestão para um espaço de <strong>2 × 1,5 m</strong>, não uma medida
+                            obrigatória.</p><span class="practical-label">Atividade prática da especialidade</span>
+                        <figure class="garden-plan">
+                            <figcaption class="plan-caption">VISTA DE CIMA · ESQUEMA ILUSTRATIVO, SEM ESCALA
+                            </figcaption>
+                            <div class="plan-ground" role="img"
+                                aria-label="Pequeno jardim: canteiro à esquerda com três plantas ornamentais, separado do gramado à direita">
+                                <div class="plan-bed"><span class="plan-plant" aria-hidden="true">✳</span><span
+                                        class="plan-plant" aria-hidden="true">✳</span><span class="plan-plant"
+                                        aria-hidden="true">✳</span></div><span class="plan-label">Área de grama</span>
+                            </div>
+                            <div class="plan-legend"><span>✳ Plantas ornamentais</span><span>│ Separador de grama</span>
+                            </div>
+                        </figure>
+                        <p class="note"><strong>Um exemplo para local ensolarado:</strong> grama-esmeralda (<i>Zoysia
+                                japonica</i>) e um canteiro de zínias. Respeite o espaçamento indicado para as mudas e
+                            escolha outras espécies se a luz ou o clima não forem adequados.</p>
+                    </div>
+                    <ol class="steps">
+                        <li>
+                            <div><b>Observe e desenhe</b>Confira as horas de sol, o escoamento da água e o espaço
+                                disponível. Faça um esboço com a faixa do canteiro e a área do gramado.</div>
+                        </li>
+                        <li>
+                            <div><b>Separe os materiais</b>Reúna mudas ornamentais, grama, separador, ferramentas,
+                                regador e proteção. Calcule as quantidades pelas medidas reais do desenho.</div>
+                        </li>
+                        <li>
+                            <div><b>Prepare o terreno</b>Limpe, retire ervas indesejadas, solte o solo e nivele. Use
+                                composto bem curtido ou correções somente conforme a necessidade das plantas e do solo.
+                            </div>
+                        </li>
+                        <li>
+                            <div><b>Instale a borda</b>Marque a linha com barbante, abra uma valeta, posicione o
+                                separador e firme as laterais conforme as instruções do produto.</div>
+                        </li>
+                        <li>
+                            <div><b>Plante e cubra</b>Abra covas para as ornamentais e mantenha o colo na altura correta
+                                do solo. Assente as placas de grama na área reservada, ajustando as juntas.</div>
+                        </li>
+                        <li>
+                            <div><b>Regue e acompanhe</b>Faça a rega inicial, sem encharcar. Verifique a umidade nos
+                                dias seguintes, retire ervas espontâneas e proteja o gramado novo de pisoteio.</div>
+                        </li>
+                    </ol>
+                </div>
+                <div class="fieldnote"><span class="symbol" aria-hidden="true">✎</span>
+                    <p><strong>Registre sua experiência.</strong> Guarde o desenho, a lista de espécies e fotos de
+                        antes, durante e depois. Anote o que funcionou e o que precisou mudar. Para concluir a
+                        especialidade, apresente ao instrutor este jardim e o cultivo das duas suculentas — essas
+                        tarefas precisam ser realizadas, não apenas estudadas.</p>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <div class="wrap">
+                <div class="section-head">
+                    <div>
+                        <div class="eyebrow">UM POUCO ALÉM DO CANTEIRO</div>
+                        <h2>Beleza que também faz bem.</h2>
+                    </div>
+                </div>
+                <div class="extra-grid">
+                    <article>
+                        <h3>Um convite à fauna</h3>
+                        <p>Plantas nativas adequadas à região oferecem abrigo e alimento para insetos, aves e outros
+                            animais. Diversifique as épocas de floração e evite espécies invasoras. Jardim bonito também
+                            pode ser habitat.</p>
+                    </article>
+                    <article>
+                        <h3>Água com inteligência</h3>
+                        <p>Agrupe espécies com necessidades semelhantes. Cobertura morta ajuda a conservar a umidade e
+                            proteger o solo. Regue de acordo com a necessidade real, não por um calendário rígido, e
+                            repare primeiro a drenagem se houver poças.</p>
+                    </article>
+                    <article>
+                        <h3>Aprender com o tempo</h3>
+                        <p>Uma folha amarelada pode indicar excesso de água, pouca luz ou outras causas; não é um
+                            diagnóstico por si só. Observe solo, raízes e ambiente antes de agir. Cuidar de um jardim é
+                            exercitar atenção, paciência e responsabilidade.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+    <section class="closing">
+        <div class="wrap">
+            <div>
+                <div class="eyebrow">NATUREZA, CONHECIMENTO E PRÁTICA</div>
+                <h2 style="margin-top:13px">O próximo jardim pode ser o seu.</h2>
+                <p>O conhecimento é a semente. A experiência de cultivar é o que faz a especialidade ganhar vida.</p>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>

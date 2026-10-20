@@ -1,0 +1,1414 @@
+:root {
+    --paper: oklch(.99 .003 100);
+    --ink: oklch(.29 .045 150);
+    --forest: oklch(.32 .065 151);
+    --leaf: oklch(.47 .075 149);
+    --sage: oklch(.95 .018 140);
+    --muted: oklch(.51 .018 145);
+    --line: oklch(.87 .015 140);
+    --white: oklch(1 0 0);
+    --sun: oklch(.73 .12 80);
+    --clay: oklch(.6 .085 46);
+    --shadow: 0 10px 40px oklch(.25 .03 150 / .08);
+    --cover-shade: linear-gradient(90deg, oklch(.16 .03 150 / .68), oklch(.16 .03 150 / .12));
+    --serif: 'Lora', Georgia, serif;
+    --sans: 'DM Sans', Arial, sans-serif;
+    --content: 1120px
+}
+
+* {
+    box-sizing: border-box
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 28px
+}
+
+body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 15px;
+    line-height: 1.8;
+    letter-spacing: 0
+}
+
+h1,
+h2,
+h3,
+p,
+figure {
+    margin: 0
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--serif);
+    font-weight: 400;
+    line-height: 1.2
+}
+
+h2 {
+    font-size: 42px
+}
+
+h3 {
+    font-size: 25px
+}
+
+p+p {
+    margin-top: 16px
+}
+
+a {
+    color: inherit;
+    text-underline-offset: 4px
+}
+
+a:hover {
+    color: var(--leaf)
+}
+
+img {
+    display: block;
+    width: 100%;
+    object-fit: cover
+}
+
+i {
+    font-style: italic
+}
+
+small {
+    font-size: 12px
+}
+
+strong {
+    font-weight: 650
+}
+
+.wrap {
+    max-width: var(--content);
+    margin: auto;
+    padding: 0 36px
+}
+
+.eyebrow {
+    font-size: 10px;
+    font-weight: 650;
+    text-transform: uppercase;
+    letter-spacing: 2px
+}
+
+.cover {
+    height: 100vh;
+    position: relative;
+    color: var(--white);
+    overflow: hidden
+}
+
+.cover>img {
+    position: absolute;
+    height: 100%;
+    object-position: center 58%
+}
+
+.cover:after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--cover-shade)
+}
+
+.cover-inner {
+    position: relative;
+    z-index: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column
+}
+
+.masthead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 32px;
+    font-size: 11px
+}
+
+.masthead span:first-child {
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.leaf-mark {
+    width: 17px;
+    height: 23px;
+    border: 1px solid currentColor;
+    border-radius: 100% 0 100% 0;
+    transform: rotate(15deg);
+    display: inline-block
+}
+
+.cover-copy {
+    margin-top: auto;
+    margin-bottom: 80px;
+    max-width: 590px
+}
+
+.cover-copy .eyebrow {
+    opacity: .85
+}
+
+.cover h1 {
+    font-size: 94px;
+    margin: 14px 0 12px
+}
+
+.cover h1 em {
+    display: block;
+    font-size: 43px;
+    font-weight: 400;
+    margin-top: 12px
+}
+
+.cover-copy p {
+    max-width: 420px;
+    font-size: 15px;
+    line-height: 1.7;
+    opacity: .9;
+    margin-top: 24px
+}
+
+.cover-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 30px;
+    border-bottom: 1px solid var(--white);
+    text-decoration: none;
+    margin-top: 27px;
+    padding-bottom: 7px;
+    font-size: 12px
+}
+
+.cover-link:hover {
+    color: var(--white);
+    opacity: .75
+}
+
+.cover-foot {
+    position: absolute;
+    bottom: 22px;
+    left: 36px;
+    right: 36px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 9px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    opacity: .7
+}
+
+.meta-tag:not(:last-child):after {
+    content: " · "
+}
+
+.meta-key {
+    font-weight: bold;
+}
+
+.meta-key::after {
+    content: ":"
+}
+
+.edition {
+    border-bottom: 1px solid var(--line)
+}
+
+.edition .wrap {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    padding-top: 17px;
+    padding-bottom: 17px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--muted)
+}
+
+.edition b {
+    font-weight: 600;
+    color: var(--ink)
+}
+
+.intro {
+    padding: 74px 0 60px
+}
+
+.intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px
+}
+
+.intro h2 {
+    margin-top: 15px
+}
+
+.intro-text {
+    padding-top: 8px;
+    color: var(--muted)
+}
+
+.intro-text p:first-child {
+    font-size: 16px;
+    color: var(--ink)
+}
+
+.topic-links {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 44px;
+    border-top: 1px solid var(--line);
+    padding-top: 25px
+}
+
+.topic-link {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    text-decoration: none
+}
+
+.topic-link .symbol {
+    font-size: 29px;
+    color: var(--leaf);
+    width: 34px;
+    text-align: center
+}
+
+.topic-link b {
+    font-size: 13px;
+    font-weight: 600;
+    display: block
+}
+
+.topic-link small {
+    color: var(--muted);
+    display: block;
+    font-size: 11px
+}
+
+.band {
+    background: var(--sage);
+    padding: 68px 0
+}
+
+.section-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 35px;
+    margin-bottom: 35px
+}
+
+.section-head h2 {
+    margin-top: 12px
+}
+
+.section-head>p {
+    font-size: 13px;
+    color: var(--muted);
+    max-width: 290px
+}
+
+.plant-types {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px
+}
+
+.plant-type {
+    border-top: 1px solid var(--line);
+    padding-top: 24px
+}
+
+.plant-type .type-no {
+    font-size: 10px;
+    color: var(--leaf);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 12px
+}
+
+.plant-type h3 {
+    font-size: 27px;
+    margin-bottom: 14px
+}
+
+.plant-type p {
+    font-size: 13px;
+    color: var(--muted)
+}
+
+.examples {
+    border-top: 1px solid var(--line);
+    margin-top: 22px;
+    padding-top: 15px;
+    font-size: 12px
+}
+
+.examples b {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 5px
+}
+
+.note {
+    margin-top: 30px;
+    border-left: 2px solid var(--leaf);
+    padding: 2px 0 2px 18px;
+    font-size: 12px;
+    color: var(--muted)
+}
+
+.section {
+    padding: 74px 0
+}
+
+.light-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px
+}
+
+.light-item {
+    padding: 23px 0;
+    border-top: 1px solid var(--line)
+}
+
+.light-icon {
+    color: var(--sun);
+    font-size: 34px;
+    line-height: 1;
+    margin-bottom: 18px
+}
+
+.light-item:nth-child(2) .light-icon {
+    color: var(--leaf)
+}
+
+.light-item:nth-child(3) .light-icon {
+    color: var(--muted)
+}
+
+.light-item h3 {
+    font-size: 25px
+}
+
+.light-item .hours {
+    color: var(--leaf);
+    font-size: 11px;
+    font-weight: 600;
+    margin: 9px 0 14px
+}
+
+.light-item p {
+    font-size: 13px;
+    color: var(--muted)
+}
+
+.light-item .names {
+    color: var(--ink);
+    margin-top: 18px
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 70px
+}
+
+.feature-image img {
+    aspect-ratio: 1;
+    object-fit: cover
+}
+
+.feature-image figcaption {
+    font-size: 10px;
+    color: var(--muted);
+    margin-top: 10px
+}
+
+.feature-copy h2 {
+    margin: 14px 0 24px
+}
+
+.feature-copy>p {
+    font-size: 14px;
+    color: var(--muted)
+}
+
+.species {
+    margin-top: 23px;
+    padding-top: 19px;
+    border-top: 1px solid var(--line)
+}
+
+.species h3 {
+    font-size: 20px;
+    margin-bottom: 8px
+}
+
+.species p {
+    font-size: 12px;
+    color: var(--muted)
+}
+
+.practice {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+    background: var(--sage);
+    padding: 19px 20px;
+    font-size: 12px
+}
+
+.practice .symbol {
+    font-size: 24px;
+    line-height: 1.2;
+    color: var(--leaf)
+}
+
+.practice b {
+    display: block;
+    font-size: 10px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 6px
+}
+
+.fern {
+    background: var(--forest);
+    color: var(--white);
+    padding: 0
+}
+
+.fern .feature-grid {
+    gap: 0;
+    max-width: none
+}
+
+.fern .feature-image img {
+    aspect-ratio: 1.15
+}
+
+.fern .feature-copy {
+    padding: 55px 65px;
+    max-width: 620px
+}
+
+.fern .feature-copy>p {
+    color: var(--white);
+    opacity: .8
+}
+
+.fern h2 {
+    font-size: 40px
+}
+
+.fern .eyebrow {
+    opacity: .65
+}
+
+.fern .note {
+    border-color: var(--white);
+    color: var(--white);
+    opacity: .8;
+    font-size: 12px
+}
+
+.fern .species {
+    border-color: oklch(1 0 0 / .22)
+}
+
+.fern .species p {
+    color: var(--white);
+    opacity: .8
+}
+
+.fern .species h3 {
+    font-size: 22px
+}
+
+.tool-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px
+}
+
+.tool-group {
+    border-top: 1px solid var(--line);
+    padding-top: 22px
+}
+
+.tool-group h3 {
+    font-size: 22px;
+    margin-bottom: 15px
+}
+
+.tool-group ul {
+    padding-left: 17px;
+    margin: 0;
+    font-size: 13px;
+    color: var(--muted)
+}
+
+li {
+    margin-bottom: 6px
+}
+
+.materials {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 65px;
+    padding-top: 45px;
+    margin-top: 35px;
+    border-top: 1px solid var(--line)
+}
+
+.materials h3 {
+    margin-bottom: 15px
+}
+
+.materials p {
+    font-size: 13px;
+    color: var(--muted)
+}
+
+.diagram {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px
+}
+
+.layer {
+    font-size: 11px;
+    padding: 8px 14px;
+    text-align: center
+}
+
+.soil {
+    background: var(--clay);
+    color: var(--white)
+}
+
+.fabric {
+    border-top: 2px dashed var(--leaf);
+    border-bottom: 2px dashed var(--leaf);
+    color: var(--leaf);
+    padding: 5px
+}
+
+.drain {
+    background: var(--sage)
+}
+
+.exit {
+    font-size: 11px;
+    text-align: center;
+    color: var(--muted);
+    padding-top: 6px
+}
+
+.border-demo {
+    margin-top: 28px;
+    display: grid;
+    grid-template-columns: 1fr 5px 1fr;
+    min-height: 83px;
+    align-items: stretch
+}
+
+.border-demo>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px
+}
+
+.border-lawn {
+    background: var(--sage)
+}
+
+.border-divider {
+    background: var(--leaf)
+}
+
+.border-bed {
+    background: var(--paper)
+}
+
+.palms {
+    padding: 68px 0;
+    background: var(--sage)
+}
+
+.palm-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 25px 22px
+}
+
+.palm {
+    border-top: 1px solid var(--line);
+    padding-top: 15px
+}
+
+.palm span {
+    font-size: 10px;
+    color: var(--leaf);
+    display: block;
+    margin-bottom: 9px
+}
+
+.palm h3 {
+    font-family: var(--sans);
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px
+}
+
+.palm i {
+    font-size: 11px;
+    color: var(--muted);
+    display: block
+}
+
+.palm small {
+    font-size: 11px;
+    color: var(--muted);
+    display: block;
+    margin-top: 7px
+}
+
+.panorama {
+    position: relative;
+    height: 350px;
+    overflow: hidden
+}
+
+.panorama img {
+    height: 100%;
+    object-position: 50% 80%
+}
+
+.panorama:after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: oklch(.17 .035 150 / .42)
+}
+
+.panorama blockquote {
+    position: absolute;
+    z-index: 1;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: var(--white);
+    margin: 0;
+    padding: 30px;
+    font-family: var(--serif);
+    font-size: 36px;
+    line-height: 1.4
+}
+
+.panorama blockquote small {
+    font-family: var(--sans);
+    font-size: 9px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 23px
+}
+
+.grass-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px
+}
+
+.grass-item {
+    border-top: 1px solid var(--line);
+    padding-top: 20px
+}
+
+.grass-item h3 {
+    font-size: 22px;
+    margin-bottom: 12px
+}
+
+.grass-item p {
+    font-size: 12px;
+    color: var(--muted)
+}
+
+.grass-item b {
+    font-size: 10px;
+    display: block;
+    margin-bottom: 10px;
+    color: var(--leaf);
+    text-transform: uppercase;
+    letter-spacing: 1px
+}
+
+.garden-project {
+    background: var(--sage);
+    padding: 68px 0
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px
+}
+
+.project-intro h2 {
+    margin: 12px 0 22px
+}
+
+.project-intro>p {
+    font-size: 14px;
+    color: var(--muted)
+}
+
+.garden-plan {
+    background: var(--paper);
+    border: 1px solid var(--line);
+    padding: 22px;
+    margin-top: 28px
+}
+
+.plan-caption {
+    font-size: 10px;
+    color: var(--muted);
+    margin-bottom: 13px
+}
+
+.plan-ground {
+    height: 190px;
+    border: 1px solid var(--line);
+    position: relative;
+    overflow: hidden;
+    background: var(--sage)
+}
+
+.plan-bed {
+    width: 33%;
+    height: 100%;
+    border-right: 4px solid var(--leaf);
+    background: var(--paper);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 8px
+}
+
+.plan-plant {
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    border: 1px solid var(--leaf);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--leaf);
+    font-size: 24px
+}
+
+.plan-label {
+    position: absolute;
+    left: 33%;
+    right: 0;
+    top: 42%;
+    text-align: center;
+    font-size: 12px;
+    color: var(--leaf)
+}
+
+.plan-legend {
+    font-size: 10px;
+    margin-top: 12px;
+    color: var(--muted);
+    display: flex;
+    justify-content: space-between;
+    gap: 10px
+}
+
+.steps {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    counter-reset: steps
+}
+
+.steps li {
+    display: grid;
+    grid-template-columns: 26px 1fr;
+    gap: 15px;
+    border-top: 1px solid var(--line);
+    padding: 16px 0;
+    margin: 0;
+    font-size: 12px;
+    color: var(--muted);
+    counter-increment: steps
+}
+
+.steps li:before {
+    content: counter(steps, decimal-leading-zero);
+    font-size: 11px;
+    color: var(--leaf);
+    padding-top: 2px
+}
+
+.steps b {
+    display: block;
+    font-size: 13px;
+    color: var(--ink);
+    margin-bottom: 3px
+}
+
+.fieldnote {
+    border-top: 1px solid var(--line);
+    margin-top: 35px;
+    padding-top: 23px;
+    display: flex;
+    gap: 18px;
+    font-size: 12px;
+    color: var(--muted)
+}
+
+.fieldnote .symbol {
+    font-size: 23px;
+    color: var(--leaf)
+}
+
+.extra-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px
+}
+
+.extra-grid h3 {
+    font-size: 23px;
+    margin-bottom: 14px
+}
+
+.extra-grid p {
+    font-size: 13px;
+    color: var(--muted)
+}
+
+.extra-grid>div {
+    border-top: 1px solid var(--line);
+    padding-top: 22px
+}
+
+.closing {
+    background: var(--forest);
+    color: var(--white);
+    padding: 55px 0
+}
+
+.closing .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px
+}
+
+.closing h2 {
+    font-size: 35px
+}
+
+.closing p {
+    opacity: .7;
+    font-size: 12px;
+    margin-top: 12px;
+    max-width: 560px
+}
+
+.closing a {
+    font-size: 11px;
+    white-space: nowrap
+}
+
+.closing a:hover {
+    color: var(--white)
+}
+
+.sources {
+    padding: 40px 0 26px
+}
+
+.source-grid {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    gap: 45px
+}
+
+.sources h3 {
+    font-family: var(--sans);
+    font-weight: 600;
+    font-size: 12px
+}
+
+.sources p {
+    font-size: 10px;
+    color: var(--muted);
+    margin-top: 10px
+}
+
+.source-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px 25px
+}
+
+.source-links a {
+    font-size: 11px;
+    color: var(--muted)
+}
+
+.colophon {
+    margin-top: 30px;
+    padding-top: 18px;
+    border-top: 1px solid var(--line);
+    display: flex;
+    justify-content: space-between;
+    font-size: 9px;
+    color: var(--muted);
+    gap: 20px
+}
+
+.practical-label {
+    display: inline-block;
+    font-size: 9px;
+    color: var(--leaf);
+    border: 1px solid var(--line);
+    padding: 4px 8px;
+    margin-top: 19px;
+    letter-spacing: 1px;
+    text-transform: uppercase
+}
+
+@media(min-width:1600px) {
+    .cover {
+        height: 720px
+    }
+}
+
+@media(max-width:900px) {
+    .wrap {
+        padding-left: 27px;
+        padding-right: 27px
+    }
+
+    .intro-grid {
+        gap: 35px
+    }
+
+    .feature-grid {
+        gap: 35px
+    }
+
+    .fern .feature-copy {
+        padding: 35px
+    }
+
+    .fern h2 {
+        font-size: 32px
+    }
+
+    .palm-grid {
+        grid-template-columns: repeat(3, 1fr)
+    }
+
+    .project-grid {
+        gap: 35px
+    }
+
+    .grass-grid {
+        grid-template-columns: repeat(2, 1fr)
+    }
+
+    .cover-foot {
+        left: 27px;
+        right: 27px
+    }
+
+    .source-grid {
+        grid-template-columns: 160px 1fr;
+        gap: 25px
+    }
+}
+
+@media(max-width:600px) {
+    body {
+        font-size: 14px
+    }
+
+    .wrap {
+        padding-left: 23px;
+        padding-right: 23px
+    }
+
+    .cover {
+        height: 610px
+    }
+
+    .cover>img {
+        object-position: 62% center
+    }
+
+    .masthead {
+        padding-top: 22px;
+        font-size: 9px
+    }
+
+    .masthead>span:last-child {
+        font-size: 8px
+    }
+
+    .cover-copy {
+        margin-bottom: 80px
+    }
+
+    .cover h1 {
+        font-size: 58px;
+        margin-top: 18px
+    }
+
+    .cover h1 em {
+        font-size: 31px;
+        max-width: 260px;
+        line-height: 1.3
+    }
+
+    .cover-copy p {
+        font-size: 13px;
+        max-width: 295px
+    }
+
+    .cover-copy .eyebrow {
+        font-size: 8px
+    }
+
+    .cover-foot {
+        left: 23px;
+        right: 23px;
+        font-size: 7px
+    }
+
+    .cover-foot>span:last-child {
+        display: none
+    }
+
+    .edition .wrap {
+        font-size: 8px;
+        gap: 12px;
+        line-height: 1.5;
+        flex-wrap: wrap
+    }
+
+    .intro,
+    .section {
+        padding: 48px 0
+    }
+
+    .intro-grid,
+    .feature-grid,
+    .project-grid,
+    .materials {
+        grid-template-columns: 1fr;
+        gap: 27px
+    }
+
+    h2 {
+        font-size: 34px
+    }
+
+    .intro h2 {
+        max-width: 300px
+    }
+
+    .intro-text {
+        padding-top: 0
+    }
+
+    .topic-links {
+        gap: 15px;
+        margin-top: 28px;
+        padding-top: 20px
+    }
+
+    .topic-link {
+        gap: 7px;
+        align-items: flex-start
+    }
+
+    .topic-link .symbol {
+        font-size: 21px;
+        width: 22px
+    }
+
+    .topic-link b {
+        font-size: 10px
+    }
+
+    .topic-link small {
+        font-size: 9px;
+        line-height: 1.5;
+        margin-top: 3px
+    }
+
+    .band,
+    .palms,
+    .garden-project {
+        padding: 48px 0
+    }
+
+    .section-head {
+        display: block;
+        margin-bottom: 28px
+    }
+
+    .section-head>p {
+        margin-top: 16px;
+        max-width: none
+    }
+
+    .plant-types,
+    .light-grid,
+    .tool-grid,
+    .extra-grid {
+        grid-template-columns: 1fr;
+        gap: 24px
+    }
+
+    .plant-type h3 {
+        font-size: 27px
+    }
+
+    .plant-type {
+        padding-top: 19px
+    }
+
+    .examples {
+        margin-top: 15px;
+        padding-top: 10px
+    }
+
+    .light-item {
+        padding-bottom: 5px
+    }
+
+    .light-icon {
+        float: right;
+        font-size: 30px
+    }
+
+    .light-item .names {
+        margin-top: 12px
+    }
+
+    .feature-copy h2 {
+        margin-bottom: 18px
+    }
+
+    .feature-image figcaption {
+        font-size: 9px
+    }
+
+    .fern .feature-grid {
+        gap: 0
+    }
+
+    .fern .feature-image img {
+        aspect-ratio: 1.35
+    }
+
+    .fern .feature-copy {
+        padding: 35px 23px 42px
+    }
+
+    .fern h2 {
+        font-size: 34px
+    }
+
+    .materials {
+        margin-top: 27px;
+        padding-top: 30px;
+        gap: 35px
+    }
+
+    .palm-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px
+    }
+
+    .palm h3 {
+        font-size: 13px
+    }
+
+    .palm i {
+        font-size: 10px;
+        overflow-wrap: anywhere
+    }
+
+    .panorama {
+        height: 270px
+    }
+
+    .panorama blockquote {
+        font-size: 26px;
+        padding: 25px
+    }
+
+    .panorama blockquote small {
+        font-size: 8px
+    }
+
+    .grass-grid {
+        gap: 24px 20px
+    }
+
+    .grass-item h3 {
+        font-size: 21px
+    }
+
+    .project-grid {
+        gap: 30px
+    }
+
+    .garden-plan {
+        margin-top: 22px
+    }
+
+    .closing .wrap {
+        display: block
+    }
+
+    .closing h2 {
+        font-size: 31px
+    }
+
+    .closing a {
+        display: inline-block;
+        margin-top: 23px
+    }
+
+    .source-grid {
+        grid-template-columns: 1fr;
+        gap: 20px
+    }
+
+    .source-links {
+        grid-template-columns: 1fr;
+        gap: 12px
+    }
+
+    .colophon {
+        font-size: 8px;
+        display: block
+    }
+
+    .colophon span {
+        display: block;
+        margin-top: 6px
+    }
+
+    .fieldnote {
+        gap: 12px
+    }
+
+    .note {
+        margin-top: 22px
+    }
+}
+
+@media(prefers-reduced-motion:reduce) {
+    html {
+        scroll-behavior: auto
+    }
+}
+
+@media print {
+    .cover {
+        height: 420px
+    }
+
+    .cover-link,
+    .closing a {
+        display: none
+    }
+
+    .section,
+    .intro,
+    .band,
+    .palms,
+    .garden-project {
+        padding: 30px 0
+    }
+
+    body {
+        font-size: 12px
+    }
+
+    h2 {
+        font-size: 30px
+    }
+
+    figure,
+    .species,
+    .plant-type,
+    .palm,
+    .steps li {
+        break-inside: avoid
+    }
+
+    .fern,
+    .closing {
+        color: var(--ink);
+        background: var(--sage)
+    }
+
+    .fern .feature-copy>p,
+    .fern .species p,
+    .fern .note {
+        color: var(--ink)
+    }
+
+    a {
+        overflow-wrap: anywhere
+    }
+
+    .sources {
+        break-inside: avoid
+    }
+}
