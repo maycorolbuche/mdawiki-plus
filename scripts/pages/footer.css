@@ -1,0 +1,38 @@
+/* RESET COMPLETO para o footer e seus filhos */
+.main-footer,.main-footer *{
+    all: initial !important;
+    display: block !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    box-sizing: border-box !important;
+    color: #999 !important;
+    font-family: inter, sans-serif !important;
+    font-size: 12px !important;
+    line-height: 1.5 !important;
+}
+.main-footer {
+    background: #000 !important;
+    text-align: center !important;
+    padding: 20px !important;
+    font-size: 0.9em !important;
+    color: #999 !important;
+    font-family: Arial, sans-serif !important;
+    width: 100% !important;
+    position: relative !important;
+    z-index: 9999 !important;
+}
+.main-footer div {
+    display: flex !important;
+    text-align: center !important;
+    justify-content: center !important;
+}
+.main-footer a {
+    text-decoration: underline !important;
+    background: transparent !important;
+    border: none !important;
+    cursor: pointer !important;
+}
+.main-footer a:hover {
+    text-decoration: none !important;
+    opacity: 0.8 !important;
+}
