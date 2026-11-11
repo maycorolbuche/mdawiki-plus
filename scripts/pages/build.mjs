@@ -2,14 +2,17 @@ import { copyFile, cp, mkdir, readFile, readdir, rm, stat, writeFile } from 'nod
 import { join } from 'node:path';
 
 const output = 'dist';
+const local = process.argv.includes('--local');
+const localUrl = 'http://localhost:8006';
 const maxAssetSize = 25 * 1024 * 1024;
 const maxAssetCount = 20_000;
 const origin = new URL(
-  process.env.CF_PAGES_BRANCH === 'main'
-    ? process.env.PUBLIC_SITE_URL || process.env.CF_PAGES_URL || 'http://localhost:8788'
-    : process.env.CF_PAGES_URL || process.env.PUBLIC_SITE_URL || 'http://localhost:8788',
+  local ? localUrl : process.env.CF_PAGES_BRANCH === 'main'
+    ? process.env.PUBLIC_SITE_URL || process.env.CF_PAGES_URL || localUrl
+    : process.env.CF_PAGES_URL || process.env.PUBLIC_SITE_URL || localUrl,
 ).origin;
 const footerStyle = await readFile(new URL('./footer.css', import.meta.url), 'utf8');
+const catalog = [];
 const manifest = { byCode: Object.create(null), bySlug: Object.create(null) };
 
 function escapeHtml(value = '') {
@@ -63,6 +66,29 @@ function renderPage(html, slug, meta) {
     .replace(/<[^>]*\bdata-id="meta-area"[^>]*>/i, (tag) => tag + '\n' + area);
 }
 
+function renderCatalogCard(slug, meta, position) {
+  const path = encodeURIComponent(slug);
+  const title = escapeHtml(meta.title ?? slug);
+  const badges = [meta.code, meta.area, meta.type]
+    .filter(Boolean)
+    .map((value) => '<span class="badge">' + escapeHtml(value) + '</span>')
+    .join('');
+  const reference = escapeHtml(meta['reference-link']);
+  const image = meta.image ? String(meta.image).replace(/^\/+/, '') : '';
+
+  return [
+    '<article class="card">',
+    '<div class="content">',
+    '<div class="title">' + position + '. <a href="/' + path + '/">' + title + '</a></div>',
+    meta.description && '<div class="desc">' + escapeHtml(meta.description) + '</div>',
+    badges && '<div class="meta">' + badges + '</div>',
+    reference && '<div class="reference">Referência: <a href="' + reference + '" target="_blank" rel="noopener">' + reference + '</a></div>',
+    '</div>',
+    image && '<div class="thumb"><img loading="lazy" src="/views/' + path + '/' + escapeHtml(image) + '" alt=""><span>' + escapeHtml(image) + '</span></div>',
+    '</article>',
+  ].filter(Boolean).join('\n');
+}
+
 async function readOptional(path) {
   try {
     return await readFile(path, 'utf8');
@@ -100,13 +126,19 @@ for (const dir of dirs.sort((a, b) => a.name.localeCompare(b.name))) {
   }
   if (html === null) continue;
   if (['meta', 'views', '_worker.js'].includes(slug)) throw new Error('Slug reservado: ' + slug);
+  if (local) catalog.push({ slug, meta: meta ?? {} });
   manifest.bySlug[slug] = meta ?? [];
   await mkdir(join(output, slug));
   await writeFile(join(output, slug, 'index.html'), renderPage(html, slug, meta ?? {}));
 }
 
-const notFound = await readFile('not-found.php', 'utf8');
-await writeFile(join(output, '404.html'), notFound.replace('<?= URL ?>', '/'));
+if (local) {
+  const template = await readFile(new URL('./catalog.html', import.meta.url), 'utf8');
+  const cards = catalog.map(({ slug, meta }, index) => renderCatalogCard(slug, meta, index + 1));
+  const html = template.replace('{{count}}', String(cards.length)).replace('{{cards}}', () => cards.join('\n'));
+  await writeFile(join(output, 'index.html'), html);
+}
+await copyFile(new URL('./404.html', import.meta.url), join(output, '404.html'));
 await writeFile(join(output, '_metadata.json'), JSON.stringify(manifest));
 await copyFile(new URL('./worker.js', import.meta.url), join(output, '_worker.js'));
 await copyFile(new URL('./headers', import.meta.url), join(output, '_headers'));

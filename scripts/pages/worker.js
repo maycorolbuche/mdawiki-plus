@@ -2,6 +2,7 @@ export default {
   async fetch(request, env) {
     const url = new URL(request.url);
     if (url.pathname === '/') {
+      if (env.LOCAL_CATALOG === 'true') return env.ASSETS.fetch(request);
       return Response.redirect('https://mda.wiki.br/' + url.search, 302);
     }
     if (url.pathname === '/_metadata.json') {
