@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,400&family=Outfit:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.min.css">
+</head>
+
+<body>
+
+  <!-- CAPA -->
+  <header class="hero">
+    <img src="imgs/capa.jpg" alt="Mesa com alimentos saudáveis e coloridos">
+    <div class="wrap">
+      <span class="badge">
+        🌿
+        <span data-id="meta-area"></span>
+      </span>
+      <h1>Nutri<i>ção</i></h1>
+      <p>Uma revista completa para entender o que você coloca no prato — e por que isso muda tudo: energia, saúde, humor
+        e até a mente.</p>
+      <div class="meta" data-id="meta">
+      </div>
+    </div>
+  </header>
+
+  <!-- NUTRIENTES -->
+  <section class="paper">
+    <div class="wrap split">
+      <div>
+        <span class="kicker">Para começar</span>
+        <h2>Afinal, o que são <em class="hl">nutrientes</em>?</h2>
+        <p class="lead dropcap">Nutrientes são as substâncias químicas presentes nos alimentos que o corpo absorve e
+          utiliza para viver. Eles fornecem energia, constroem e reparam tecidos (músculos, ossos, pele, sangue) e
+          regulam todas as reações do organismo.</p>
+        <p>Os nutrientes são divididos em dois grandes times, de acordo com a quantidade que o corpo precisa: os
+          <b>macronutrientes</b> (necessários em gramas — carboidratos, proteínas e lipídios) e os
+          <b>micronutrientes</b> (necessários em miligramas ou microgramas — vitaminas e minerais). A <b>água</b> e as
+          <b>fibras</b> completam o time: não fornecem energia, mas são indispensáveis.
+        </p>
+        <div class="quote">“Que seu alimento seja seu remédio, e seu remédio seja seu alimento.” <br><small
+            style="font-size:1rem">— atribuído a Hipócrates</small></div>
+      </div>
+      <figure class="photo"><img src="imgs/macronutrientes.jpg"
+          alt="Grãos, leguminosas, ovos, tofu, azeite, abacate e castanhas">
+        <figcaption>Carboidratos · Proteínas · Gorduras</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- MACRONUTRIENTES -->
+  <section>
+    <div class="wrap">
+      <span class="kicker">Os gigantes do prato</span>
+      <h2>Macronutrientes</h2>
+      <p class="lead">São os nutrientes que precisamos em grande quantidade, todos os dias. São eles que fornecem a
+        energia (calorias) do corpo e a matéria-prima para construí-lo.</p>
+      <div class="grid g3" style="margin-top:40px">
+        <article class="card macro" style="--c:var(--carrot)">
+          <div class="ico">🍞</div>
+          <h3>Carboidratos</h3>
+          <p><b>Função:</b> principal fonte de energia do corpo — especialmente do cérebro e dos músculos. Cada grama
+            fornece cerca de <b>4 kcal</b>. Os complexos (integrais) liberam energia aos poucos; os simples (açúcar) dão
+            picos rápidos.</p>
+          <ul>
+            <li>Arroz, aveia, milho, trigo</li>
+            <li>Pães e massas (prefira integrais)</li>
+            <li>Batata, mandioca, inhame, batata-doce</li>
+            <li>Frutas e mel</li>
+          </ul>
+        </article>
+        <article class="card macro" style="--c:var(--berry)">
+          <div class="ico">🫘</div>
+          <h3>Proteínas</h3>
+          <p><b>Função:</b> construir e reparar tecidos (músculos, pele, cabelo, órgãos), formar enzimas, hormônios e
+            anticorpos de defesa. Fornecem <b>4 kcal/g</b>. São formadas por aminoácidos.</p>
+          <ul>
+            <li>Feijão, lentilha, grão-de-bico, ervilha</li>
+            <li>Soja e tofu</li>
+            <li>Ovos, leite, queijos e iogurte</li>
+            <li>Castanhas e sementes</li>
+          </ul>
+        </article>
+        <article class="card macro" style="--c:var(--leaf-2)">
+          <div class="ico">🥑</div>
+          <h3>Lipídios (gorduras)</h3>
+          <p><b>Função:</b> reserva de energia (<b>9 kcal/g</b>), isolamento térmico, proteção dos órgãos, formação das
+            membranas das células e transporte das vitaminas A, D, E e K.</p>
+          <ul>
+            <li>Azeite de oliva e óleos vegetais</li>
+            <li>Abacate</li>
+            <li>Nozes, castanhas, amendoim</li>
+            <li>Linhaça e chia (ômega-3)</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- MICRONUTRIENTES -->
+  <section class="green">
+    <div class="wrap split rev">
+      <div>
+        <span class="kicker">Pequenos, mas poderosos</span>
+        <h2>Micronutrientes</h2>
+        <p class="lead">São as <b>vitaminas</b> e os <b>minerais</b>: o corpo precisa deles em quantidades bem pequenas
+          (miligramas ou microgramas), mas sem eles nada funciona direito.</p>
+        <p>Não fornecem energia, porém regulam o metabolismo, fortalecem a imunidade, formam ossos e sangue e ajudam o
+          corpo a aproveitar os macronutrientes. A falta de um deles pode causar doenças como anemia (ferro), bócio
+          (iodo), escorbuto (vitamina C) ou raquitismo (vitamina D).</p>
+        <p><b>Vitaminas</b> são compostos orgânicos — lipossolúveis (A, D, E, K) ou hidrossolúveis (complexo B e C).
+          <b>Minerais</b> são elementos inorgânicos vindos do solo e da água, como ferro, cálcio e zinco.
+        </p>
+      </div>
+      <figure class="photo"><img src="imgs/vitaminas.jpg" alt="Alimentos coloridos ricos em vitaminas e minerais">
+      </figure>
+    </div>
+  </section>
+
+  <!-- VITAMINAS -->
+  <section>
+    <div class="wrap">
+      <span class="kicker">Guia de bolso</span>
+      <h2>As vitaminas e onde encontrá-las</h2>
+      <p class="lead">Um prato colorido é o melhor “multivitamínico” que existe. Cada cor costuma indicar um grupo
+        diferente de nutrientes.</p>
+      <div class="grid g3" style="margin-top:40px">
+        <div class="card vit" style="--c:var(--carrot)"><span class="letter">A</span>
+          <h4>Vitamina A</h4>
+          <p>Essencial para a visão (principalmente no escuro), saúde da pele e mucosas, crescimento e imunidade.</p>
+          <p class="foods"><b>Fontes:</b> cenoura, abóbora, batata-doce, manga, mamão, couve, gema de ovo, leite.</p>
+        </div>
+        <div class="card vit" style="--c:var(--berry)"><span class="letter">B<small>12</small></span>
+          <h4>Vitamina B12</h4>
+          <p>Forma glóbulos vermelhos, mantém o sistema nervoso saudável e participa da produção do DNA. Sua falta causa
+            anemia e cansaço.</p>
+          <p class="foods"><b>Fontes:</b> ovos, leite, queijos, iogurte, alimentos fortificados (bebidas vegetais,
+            cereais) e levedura nutricional enriquecida. Veganos devem suplementar.</p>
+        </div>
+        <div class="card vit" style="--c:var(--sun)"><span class="letter">C</span>
+          <h4>Vitamina C</h4>
+          <p>Antioxidante, fortalece a imunidade, forma colágeno (pele, cicatrização) e aumenta a absorção do ferro
+            vegetal.</p>
+          <p class="foods"><b>Fontes:</b> acerola, laranja, goiaba, kiwi, caju, morango, limão, pimentão, brócolis.</p>
+        </div>
+        <div class="card vit" style="--c:var(--sky)"><span class="letter">D</span>
+          <h4>Vitamina D</h4>
+          <p>Ajuda a absorver cálcio e fósforo, fortalecendo ossos e dentes; também atua na imunidade e nos músculos. É
+            produzida pela pele com o sol.</p>
+          <p class="foods"><b>Fontes:</b> luz solar (15 min/dia), gema de ovo, leite e derivados fortificados, cogumelos
+            expostos ao sol.</p>
+        </div>
+        <div class="card vit" style="--c:var(--leaf-2)"><span class="letter">E</span>
+          <h4>Vitamina E</h4>
+          <p>Poderoso antioxidante que protege as células do envelhecimento, cuida da pele e auxilia a imunidade.</p>
+          <p class="foods"><b>Fontes:</b> sementes de girassol, amêndoas, avelãs, óleos vegetais, gérmen de trigo,
+            abacate, espinafre.</p>
+        </div>
+        <div class="card vit" style="--c:var(--leaf)"><span class="letter">K</span>
+          <h4>Vitamina K</h4>
+          <p>Fundamental para a coagulação do sangue (fecha os ferimentos) e para a saúde dos ossos.</p>
+          <p class="foods"><b>Fontes:</b> couve, espinafre, brócolis, alface, repolho, salsinha, óleo de soja.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MINERAIS -->
+  <section class="paper">
+    <div class="wrap">
+      <span class="kicker">Tirados da terra</span>
+      <h2>Minerais essenciais</h2>
+      <div class="tbl-wrap" style="margin-top:36px">
+        <table class="tbl">
+          <thead>
+            <tr>
+              <th>Mineral</th>
+              <th>Função no organismo</th>
+              <th>Alimentos fontes</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="text-wrap: nowrap;"><b>🩸 Ferro</b></td>
+              <td>Compõe a hemoglobina, que transporta oxigênio no sangue. A falta causa anemia, fraqueza e desânimo.
+              </td>
+              <td>Feijão, lentilha, grão-de-bico, folhas verde-escuras (couve, espinafre), beterraba, gema de ovo,
+                cereais fortificados.</td>
+            </tr>
+            <tr>
+              <td style="text-wrap: nowrap;"><b>🌊 Iodo</b></td>
+              <td>Forma os hormônios da tireoide, que controlam o metabolismo e o desenvolvimento do cérebro. A falta
+                causa bócio.</td>
+              <td>Sal iodado, algas marinhas, leite e derivados, ovos.</td>
+            </tr>
+            <tr>
+              <td style="text-wrap: nowrap;"><b>🦴 Cálcio</b></td>
+              <td>Forma e mantém ossos e dentes; atua na contração muscular, nos batimentos do coração e na coagulação.
+              </td>
+              <td>Leite, queijos, iogurte, brócolis, couve, gergelim, tofu, amêndoas.</td>
+            </tr>
+            <tr>
+              <td style="text-wrap: nowrap;"><b>🧂 Sódio</b></td>
+              <td>Equilibra os líquidos do corpo, a pressão arterial e a transmissão dos impulsos nervosos. Em excesso,
+                aumenta a pressão.</td>
+              <td>Sal de cozinha, queijos, pães, azeitonas, alimentos industrializados (com moderação!).</td>
+            </tr>
+            <tr>
+              <td style="text-wrap: nowrap;"><b>🍌 Potássio</b></td>
+              <td>Regula os batimentos cardíacos, a contração muscular e ajuda a controlar a pressão, equilibrando o
+                sódio.</td>
+              <td>Banana, abacate, batata, feijão, água de coco, laranja, tomate.</td>
+            </tr>
+            <tr>
+              <td style="text-wrap: nowrap;"><b>🛡️ Zinco</b></td>
+              <td>Fortalece a imunidade, ajuda na cicatrização, no crescimento, no paladar e no olfato.</td>
+              <td>Sementes de abóbora, castanha-de-caju, grão-de-bico, aveia, ovos, queijos, gérmen de trigo.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- PIRÂMIDE -->
+  <section>
+    <div class="wrap split">
+      <figure class="photo" style="background:#fff"><img src="imgs/piramide.jpg" alt="Pirâmide alimentar ilustrada">
+      </figure>
+      <div>
+        <span class="kicker">O mapa do prato</span>
+        <h2>A pirâmide alimentar</h2>
+        <p class="lead">A pirâmide é um guia visual: os alimentos da base devem ser consumidos em maior quantidade; os
+          do topo, com moderação. Ela mostra <b>variedade, proporção e moderação</b>.</p>
+        <p>Porções diárias recomendadas na pirâmide brasileira (adaptada por Philippi, para uma dieta de cerca de 2.000
+          kcal):</p>
+        <ul class="portions" style="margin-top:14px">
+          <li><span><b>Cereais, pães, tubérculos e raízes</b><br><small>base: energia</small></span><b class="n">6</b>
+          </li>
+          <li><span><b>Hortaliças (verduras e legumes)</b><br><small>vitaminas, minerais e fibras</small></span><b
+              class="n">3</b></li>
+          <li><span><b>Frutas</b><br><small>vitaminas, minerais e fibras</small></span><b class="n">3</b></li>
+          <li><span><b>Leite, queijos e iogurtes</b><br><small>cálcio e proteínas</small></span><b class="n">3</b></li>
+          <li><span><b>Leguminosas (feijões, soja, lentilha)</b><br><small>proteínas e ferro</small></span><b
+              class="n">1</b></li>
+          <li><span><b>Ovos (substituindo as carnes no vegetarianismo)</b><br><small>proteínas</small></span><b
+              class="n">1</b></li>
+          <li><span><b>Óleos e gorduras</b><br><small>topo: moderação</small></span><b class="n">1</b></li>
+          <li><span><b>Açúcares e doces</b><br><small>topo: moderação</small></span><b class="n">1</b></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIETA BALANCEADA + VDR -->
+  <section class="paper">
+    <div class="wrap grid g2">
+      <div class="card" style="background:var(--cream)">
+        <span class="kicker">Equilíbrio</span>
+        <h3 style="font-size:2rem">O que é uma dieta balanceada?</h3>
+        <p>É a alimentação que fornece <b>todos os nutrientes</b> de que o corpo precisa, <b>na quantidade certa</b>
+          para a idade, o sexo e o nível de atividade da pessoa. Ela é:</p>
+        <p><span class="tag">Variada</span><span class="tag">Colorida</span><span class="tag">Equilibrada</span><span
+            class="tag">Moderada</span><span class="tag">Natural</span></p>
+        <p>Na prática: cerca de 50–60% das calorias vindas de carboidratos (de preferência integrais), 10–15% de
+          proteínas e 25–30% de gorduras boas, muitas frutas e hortaliças, água à vontade, refeições em horários
+          regulares e poucos ultraprocessados, açúcar e sal.</p>
+      </div>
+      <div class="card" style="background:var(--cream)">
+        <span class="kicker">Nos rótulos</span>
+        <h3 style="font-size:2rem">Valores Diários de Referência (VDR)</h3>
+        <p>Os VDR (ou %VD no rótulo) são as quantidades de energia e nutrientes que uma pessoa saudável deve consumir
+          por dia, tomando como base uma dieta de <b>2.000 kcal</b>. No rótulo, o %VD mostra quanto uma porção daquele
+          alimento fornece desse total.</p>
+        <p><b>Por que é importante?</b> Permite comparar produtos, montar uma dieta equilibrada, evitar excessos (sódio,
+          açúcar, gordura saturada) e garantir que não faltem nutrientes. Exemplo: um alimento com 40% de VD de sódio já
+          fornece quase metade do limite diário em uma única porção!</p>
+        <p style="font-size:.9rem;color:var(--soft)">💡 Desde 2022, rótulos no Brasil trazem uma lupa frontal indicando
+          “ALTO EM açúcar adicionado, gordura saturada ou sódio”.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- VEGETARIANISMO -->
+  <section>
+    <div class="wrap">
+      <span class="kicker">Estilos de alimentação</span>
+      <h2>Três formas de ser vegetariano</h2>
+      <p class="lead">Todas as dietas vegetarianas excluem carnes (vermelha, frango, peixes e frutos do mar). A
+        diferença está nos produtos de origem animal que permanecem.</p>
+      <div class="grid g3" style="margin-top:40px">
+        <div class="card diet" style="--c:#fde9c7">
+          <div class="plate">🥚🥛</div>
+          <h3>Ovolactovegetariano</h3>
+          <p>Exclui carnes, mas consome <b>ovos, leite e derivados</b>. É a dieta mais fácil de equilibrar e a
+            recomendada pela Igreja Adventista.</p>
+          <div class="yesno"><span class="yes">✔ Ovos</span><span class="yes">✔ Leite</span><span class="no">✘
+              Carnes</span></div>
+        </div>
+        <div class="card diet" style="--c:#fff3c4">
+          <div class="plate">🥚</div>
+          <h3>Ovovegetariano</h3>
+          <p>Exclui carnes e também <b>leite e derivados</b>, mas mantém os <b>ovos</b>. Cálcio deve vir de vegetais e
+            alimentos fortificados.</p>
+          <div class="yesno"><span class="yes">✔ Ovos</span><span class="no">✘ Leite</span><span class="no">✘
+              Carnes</span></div>
+        </div>
+        <div class="card diet" style="--c:#d8efd3">
+          <div class="plate">🥦</div>
+          <h3>Vegetariano estrito</h3>
+          <p>Não consome <b>nenhum alimento de origem animal</b>: nem carnes, nem ovos, nem leite, nem mel. Precisa
+            suplementar vitamina B12. (Vegano estende isso para roupas, cosméticos etc.)</p>
+          <div class="yesno"><span class="no">✘ Ovos</span><span class="no">✘ Leite</span><span class="no">✘
+              Carnes</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPARAÇÕES -->
+  <section class="paper">
+    <div class="wrap">
+      <span class="kicker">Lendo os rótulos</span>
+      <h2>Integral <em class="hl">vs.</em> refinado</h2>
+      <p class="lead">No processo de refino, o grão perde a casca (farelo) e o gérmen — justamente onde estão as fibras,
+        vitaminas do complexo B, ferro, magnésio e zinco. Valores aproximados por 100 g (Tabela TACO/Unicamp).</p>
+      <div class="wide-img"><img src="imgs/integral.jpg"
+          alt="Arroz, pão e farinha integrais ao lado das versões refinadas"></div>
+      <div class="grid g2">
+        <div class="card cmp">
+          <h3>🥛 Leite integral <span class="vs">vs.</span> desnatado</h3>
+          <div class="row"><span>Calorias (integral 61 · desnatado 35 kcal/100 ml)</span></div>
+          <div class="bar"><i style="width:100%;--c:var(--carrot)"></i></div>
+          <div class="bar"><i style="width:57%"></i></div>
+          <div class="row"><span>Gordura (integral 3,2 g · desnatado 0,2 g)</span></div>
+          <div class="bar"><i style="width:100%;--c:var(--carrot)"></i></div>
+          <div class="bar"><i style="width:6%"></i></div>
+          <p>Proteína (≈3,2 g) e cálcio (≈120 mg) são praticamente iguais. O desnatado tem menos gordura saturada e
+            colesterol, mas perde parte das vitaminas A e D (que muitas marcas repõem).</p>
+        </div>
+        <div class="card cmp">
+          <h3>🌾 Farinha branca <span class="vs">vs.</span> integral</h3>
+          <div class="row"><span>Fibras (branca 2,3 g · integral 11,9 g)</span></div>
+          <div class="bar"><i style="width:19%;--c:var(--carrot)"></i></div>
+          <div class="bar"><i style="width:100%"></i></div>
+          <div class="row"><span>Calorias (branca 360 · integral 340 kcal)</span></div>
+          <div class="bar"><i style="width:100%;--c:var(--carrot)"></i></div>
+          <div class="bar"><i style="width:94%"></i></div>
+          <p>A integral tem cerca de 5x mais fibras, mais proteína, magnésio, zinco e vitaminas B. Saciedade maior e
+            açúcar no sangue mais estável.</p>
+        </div>
+        <div class="card cmp">
+          <h3>🍞 Pão branco <span class="vs">vs.</span> integral</h3>
+          <div class="row"><span>Fibras (branco 2,3 g · integral 6,9 g)</span></div>
+          <div class="bar"><i style="width:33%;--c:var(--carrot)"></i></div>
+          <div class="bar"><i style="width:100%"></i></div>
+          <div class="row"><span>Calorias (branco 300 · integral 253 kcal)</span></div>
+          <div class="bar"><i style="width:100%;--c:var(--carrot)"></i></div>
+          <div class="bar"><i style="width:84%"></i></div>
+          <p>O pão integral tem índice glicêmico menor, mais minerais e ajuda o intestino. Dica: verifique se “farinha
+            integral” é o primeiro ingrediente da lista.</p>
+        </div>
+        <div class="card cmp">
+          <h3>🍚 Arroz branco <span class="vs">vs.</span> integral</h3>
+          <div class="row"><span>Fibras, cozido (branco 1,6 g · integral 2,7 g)</span></div>
+          <div class="bar"><i style="width:59%;--c:var(--carrot)"></i></div>
+          <div class="bar"><i style="width:100%"></i></div>
+          <div class="row"><span>Magnésio (branco 2 mg · integral 59 mg)</span></div>
+          <div class="bar"><i style="width:4%;--c:var(--carrot)"></i></div>
+          <div class="bar"><i style="width:100%"></i></div>
+          <p>Calorias parecidas (≈124–128 kcal), mas o integral oferece mais fibras, vitaminas B1 e B6, magnésio e
+            manganês.</p>
+        </div>
+      </div>
+      <p style="margin-top:18px;font-size:.9rem;color:var(--soft)"><span style="color:var(--carrot)">■</span> refinado /
+        integral (leite) &nbsp; <span style="color:var(--leaf-2)">■</span> integral / desnatado (leite)</p>
+    </div>
+  </section>
+
+  <!-- DIET x LIGHT -->
+  <section>
+    <div class="wrap">
+      <span class="kicker">Não confunda</span>
+      <h2>Diet ou light?</h2>
+      <div class="vsbox" style="margin-top:36px">
+        <div class="card">
+          <div class="ico">🚫</div>
+          <h3>DIET</h3>
+          <p>Isento (ou quase) de <b>um nutriente específico</b>: açúcar, gordura, sódio ou proteína. Feito para pessoas
+            com restrições — como o diabético (sem açúcar) ou o hipertenso (sem sal).</p>
+          <p><b>Atenção:</b> um chocolate diet não tem açúcar, mas pode ter <i>mais gordura e calorias</i> que o comum!
+          </p>
+        </div>
+        <div class="mid">vs</div>
+        <div class="card">
+          <div class="ico">🪶</div>
+          <h3>LIGHT</h3>
+          <p>Tem <b>redução mínima de 25%</b> de algum componente (calorias, açúcar, gordura, sódio) em comparação com a
+            versão tradicional. Não é isento — apenas reduzido.</p>
+          <p><b>Atenção:</b> light não significa que pode comer à vontade, nem que serve para diabéticos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ÁGUA -->
+  <section class="green">
+    <div class="wrap split">
+      <figure class="photo"><img src="imgs/agua.jpg" alt="Copo de água com limão e hortelã"></figure>
+      <div>
+        <span class="kicker">O nutriente esquecido</span>
+        <h2>Beba água!</h2>
+        <p class="lead">Cerca de <b>60% do corpo</b> de um adulto é água. Ela participa de praticamente tudo o que
+          acontece dentro de nós.</p>
+        <p>A água regula a temperatura (suor), transporta nutrientes e oxigênio, elimina toxinas pela urina, lubrifica
+          articulações, facilita a digestão, previne prisão de ventre e cálculos renais e mantém a concentração e a
+          disposição. Uma desidratação de apenas 2% já reduz o rendimento físico e mental.</p>
+        <div class="grid g2" style="margin-top:26px">
+          <div>
+            <div class="stat">2 L</div>
+            <p>por dia em média (8 copos) para adultos, mais com calor e exercício.</p>
+          </div>
+          <div>
+            <div class="stat">35 ml</div>
+            <p>por quilo de peso corporal é uma referência prática.</p>
+          </div>
+        </div>
+        <p style="margin-top:14px">Dica: beba antes de sentir sede, e prefira água pura a refrigerantes e sucos
+          adoçados.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOENÇAS -->
+  <section>
+    <div class="wrap">
+      <span class="kicker">Prevenção no garfo</span>
+      <h2>Doenças que a dieta ajuda a controlar</h2>
+      <div class="grid g3" style="margin-top:36px">
+        <div class="card">
+          <div class="ico">🩺</div>
+          <h3>Diabetes tipo 2</h3>
+          <p>Controlada com menos açúcar e farinhas refinadas, mais fibras, integrais e controle de peso.</p>
+        </div>
+        <div class="card">
+          <div class="ico">❤️</div>
+          <h3>Hipertensão</h3>
+          <p>Reduzir o sal (máx. 5 g/dia segundo a OMS) e aumentar frutas, verduras e potássio ajuda a baixar a pressão.
+          </p>
+        </div>
+        <div class="card">
+          <div class="ico">⚖️</div>
+          <h3>Obesidade</h3>
+          <p>Prevenida com alimentação natural, porções adequadas, menos ultraprocessados e atividade física.</p>
+        </div>
+        <div class="card">
+          <div class="ico">🫀</div>
+          <h3>Doenças cardíacas</h3>
+          <p>Colesterol alto e aterosclerose melhoram com fibras, gorduras boas e menos gordura saturada.</p>
+        </div>
+        <div class="card">
+          <div class="ico">🩸</div>
+          <h3>Anemia</h3>
+          <p>Evitada com feijões e folhas verde-escuras, combinados com vitamina C para melhor absorção do ferro.</p>
+        </div>
+        <div class="card">
+          <div class="ico">🦴</div>
+          <h3>Osteoporose</h3>
+          <p>Prevenida com cálcio, vitamina D (sol) e exercícios ao longo da vida.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORTIFICAÇÃO -->
+  <section class="paper">
+    <div class="wrap">
+      <span class="kicker">Saúde pública</span>
+      <h2>Por que o governo enriquece os alimentos?</h2>
+      <p class="lead">Fortificar alimentos que <b>todos consomem</b> — sal, farinhas e água — é uma forma barata, segura
+        e eficiente de prevenir carências nutricionais em toda a população, inclusive nos mais pobres, sem que ninguém
+        precise mudar seus hábitos.</p>
+      <div class="grid g2" style="margin-top:36px">
+        <div class="card">
+          <h3>🧂 Iodo no sal</h3>
+          <p>Obrigatório no Brasil desde 1953. Praticamente eliminou o <b>bócio</b> (“papo”) e o cretinismo, além de
+            proteger o desenvolvimento cerebral das crianças.</p>
+        </div>
+        <div class="card">
+          <h3>🌾 Ferro e ácido fólico nas farinhas</h3>
+          <p>Obrigatório desde 2004 nas farinhas de trigo e milho. O ferro combate a <b>anemia</b>; o ácido fólico
+            reduziu em cerca de 30% os casos de <b>defeitos do tubo neural</b> (como espinha bífida) em bebês.</p>
+        </div>
+        <div class="card">
+          <h3>🚰 Flúor na água</h3>
+          <p>Adicionado à água tratada desde os anos 1950–70. Reduziu drasticamente as <b>cáries</b>, principalmente em
+            crianças — considerado uma das maiores conquistas de saúde pública do século XX.</p>
+        </div>
+        <div class="card">
+          <h3>📈 O impacto</h3>
+          <p>Menos doenças, menos gastos com tratamento, crianças com melhor crescimento e aprendizado e uma população
+            mais produtiva e saudável.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CARDÁPIO -->
+  <section>
+    <div class="wrap">
+      <span class="kicker">Mão na massa</span>
+      <h2>Cardápio de dois dias <em class="hl">ovolactovegetariano</em></h2>
+      <p class="lead">Montado com base na pirâmide alimentar e em alimentos comuns no Brasil. Adapte com os vegetais da
+        sua região e da estação — feira é sempre a melhor fonte!</p>
+      <div class="wide-img"><img src="imgs/cardapio.jpg" alt="Prato com arroz, feijão, ovo, couve, salada e abóbora">
+      </div>
+      <div class="grid g2">
+        <div class="menu-day">
+          <header>Dia 1</header>
+          <div class="meal"><b>Café da manhã</b><span>2 fatias de pão integral com queijo branco, 1 copo de leite com
+              café de cevada, 1 fatia de mamão</span></div>
+          <div class="meal"><b>Lanche</b><span>1 banana com aveia e canela</span></div>
+          <div class="meal"><b>Almoço</b><span>Arroz integral, feijão carioca, ovo cozido, couve refogada, salada de
+              alface e tomate, abóbora assada · suco de acerola</span></div>
+          <div class="meal"><b>Lanche</b><span>Iogurte natural com granola e um punhado de castanhas</span></div>
+          <div class="meal"><b>Jantar</b><span>Sopa de lentilha com legumes (cenoura, chuchu, batata), torrada integral
+              · 1 laranja</span></div>
+        </div>
+        <div class="menu-day d2">
+          <header>Dia 2</header>
+          <div class="meal"><b>Café da manhã</b><span>Tapioca com ovo mexido e tomate, vitamina de leite com morango, 1
+              colher de chia</span></div>
+          <div class="meal"><b>Lanche</b><span>1 maçã e 3 nozes</span></div>
+          <div class="meal"><b>Almoço</b><span>Arroz com cenoura, feijão preto, hambúrguer de grão-de-bico, brócolis no
+              vapor, salada de repolho com beterraba ralada · suco de goiaba</span></div>
+          <div class="meal"><b>Lanche</b><span>Pão integral com pasta de amendoim e 1 copo de leite</span></div>
+          <div class="meal"><b>Jantar</b><span>Omelete de espinafre, purê de mandioquinha, salada de pepino e rúcula ·
+              salada de frutas</span></div>
+        </div>
+      </div>
+      <p style="margin-top:20px;color:var(--soft)">✔ Cereais em todas as refeições · ✔ 3+ frutas e 3+ hortaliças por dia
+        · ✔ 3 porções de lácteos · ✔ leguminosa + ovo como proteínas · ✔ vitamina C junto do feijão para absorver mais
+        ferro · ✔ água entre as refeições.</p>
+    </div>
+  </section>
+
+  <!-- DANIEL -->
+  <section class="green">
+    <div class="wrap split rev">
+      <div>
+        <span class="kicker">Daniel 1</span>
+        <h2>O teste de dez dias de Daniel</h2>
+        <p class="lead">Levados cativos para a Babilônia, Daniel, Hananias, Misael e Azarias receberiam a comida e o
+          vinho da mesa do rei Nabucodonosor. Mas Daniel “resolveu firmemente não se contaminar” (Dn 1:8).</p>
+        <p>Ele propôs um teste de 10 dias comendo apenas <b>legumes (vegetais) e água</b>. As vantagens foram:</p>
+        <ul style="margin:14px 0 0 20px">
+          <li><b>Melhor aparência e saúde:</b> “pareceram mais formosos e mais robustos” que os demais jovens (Dn 1:15).
+          </li>
+          <li><b>Mente brilhante:</b> Deus lhes deu “conhecimento e inteligência em todas as letras e sabedoria” (Dn
+            1:17).</li>
+          <li><b>Dez vezes melhores:</b> o rei os achou “dez vezes mais doutos” que todos os magos e encantadores do
+            reino (Dn 1:20).</li>
+          <li><b>Posição e influência:</b> passaram a servir diante do rei e ocuparam cargos importantes.</li>
+          <li><b>Fidelidade e caráter:</b> mantiveram-se fiéis a Deus, mostrando domínio próprio e coragem.</li>
+        </ul>
+      </div>
+      <figure class="photo"><img src="imgs/daniel.jpg" alt="Daniel e seus amigos à mesa com vegetais na Babilônia">
+      </figure>
+    </div>
+  </section>
+
+  <!-- CURIOSIDADES -->
+  <section>
+    <div class="wrap">
+      <span class="kicker">Você sabia?</span>
+      <h2>Curiosidades nutritivas</h2>
+      <div class="grid g3" style="margin-top:36px">
+        <div class="curio">
+          <div class="n">01</div>
+          <p>A <b>acerola</b> tem até 80 vezes mais vitamina C que a laranja — é uma das frutas mais ricas do mundo
+            nesse nutriente.</p>
+        </div>
+        <div class="curio">
+          <div class="n">02</div>
+          <p><b>Arroz com feijão</b> forma uma proteína completa: um fornece os aminoácidos que faltam no outro. O prato
+            brasileiro é nutricionalmente genial!</p>
+        </div>
+        <div class="curio">
+          <div class="n">03</div>
+          <p>O <b>cérebro</b> representa só 2% do peso do corpo, mas consome cerca de 20% de toda a energia que comemos.
+          </p>
+        </div>
+        <div class="curio">
+          <div class="n">04</div>
+          <p>Os marinheiros antigos morriam de <b>escorbuto</b> por falta de vitamina C — até descobrirem que levar
+            limões a bordo resolvia o problema.</p>
+        </div>
+        <div class="curio">
+          <div class="n">05</div>
+          <p>Uma <b>castanha-do-pará</b> por dia já supre a necessidade diária de selênio, um mineral antioxidante.</p>
+        </div>
+        <div class="curio">
+          <div class="n">06</div>
+          <p>Os habitantes de <b>Loma Linda</b> (Califórnia), muitos deles adventistas vegetarianos, estão entre os
+            povos que mais vivem no mundo — uma das “Zonas Azuis”.</p>
+        </div>
+      </div>
+
+      <div style="margin-top:60px">
+        <span class="kicker">Regra de ouro</span>
+        <h3 style="font-size:2rem;margin-bottom:18px">Os 8 remédios naturais</h3>
+        <p style="margin-bottom:18px;color:var(--soft)">A boa nutrição faz parte de um estilo de vida completo. Toque em
+          cada um:</p>
+        <div class="grid g2">
+          <div>
+            <details open>
+              <summary>🥗 Nutrição</summary>
+              <p>Alimentos naturais, integrais e variados, em horários regulares.</p>
+            </details>
+            <details open>
+              <summary>🏃 Exercício</summary>
+              <p>Pelo menos 60 minutos de atividade por dia para crianças e adolescentes.</p>
+            </details>
+            <details open>
+              <summary>💧 Água</summary>
+              <p>Por dentro (hidratação) e por fora (higiene e hidroterapia).</p>
+            </details>
+            <details open>
+              <summary>☀️ Luz solar</summary>
+              <p>Produz vitamina D e regula o relógio biológico.</p>
+            </details>
+          </div>
+          <div>
+            <details open>
+              <summary>🚭 Temperança</summary>
+              <p>Moderação no que é bom e abstinência do que é prejudicial (álcool, fumo, drogas).</p>
+            </details>
+            <details open>
+              <summary>🌬️ Ar puro</summary>
+              <p>Respirar profundamente e ambientes ventilados oxigenam o corpo.</p>
+            </details>
+            <details open>
+              <summary>😴 Descanso</summary>
+              <p>De 8 a 10 horas de sono para adolescentes, além do descanso semanal.</p>
+            </details>
+            <details open>
+              <summary>🙏 Confiança em Deus</summary>
+              <p>Paz interior e esperança fazem bem ao corpo e à mente.</p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+  </footer>
+</body>
+
+</html>
