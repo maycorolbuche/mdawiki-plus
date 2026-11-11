@@ -22,14 +22,15 @@ No Windows, com Node.js 24 instalado, execute na pasta do projeto:
 .\server.bat
 ```
 
-Abra [http://localhost:8006/](http://localhost:8006/) para navegar pelo catálogo de páginas. O script gera o `dist` e inicia o Wrangler. Na primeira execução, o npm pode precisar baixar o Wrangler. Depois de editar arquivos em `views/`, pare o servidor com Ctrl+C e execute o script novamente.
+Abra [http://localhost:8006/](http://localhost:8006/) para navegar pelo catálogo. O servidor local lê HTML, metadados e arquivos diretamente de `views/`. Ao salvar uma alteração, as páginas abertas são recarregadas automaticamente.
 
-Em outros sistemas, os comandos equivalentes são:
+Em outros sistemas, execute:
 
 ```sh
-node scripts/pages/build.mjs --local
-npx --yes wrangler@4 pages dev dist --ip 0.0.0.0 --port 8006 --binding LOCAL_CATALOG=true
+node scripts/pages/dev.mjs
 ```
+
+Para validar o build de publicação, rode `node scripts/pages/build.mjs`.
 
 Na prévia, confira `/especialidade-de-nutricao/`, `/meta`, `/meta/CS-008`, `/especialidade-de-nutricao/meta` e uma URL inexistente. Depois de validar, adicione o domínio do Plus na aba **Custom domains** do projeto Pages e siga a orientação de DNS que o painel exibir.
 
