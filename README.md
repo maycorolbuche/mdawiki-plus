@@ -14,11 +14,21 @@ No painel da Cloudflare, crie um projeto **Pages** conectado ao repositório `ma
 
 Habilite os deployments de prévia para testar o PR. O build gera o HTML das páginas, a página de erro e o catálogo de metadados a partir de `views/`. O Worker do Pages entrega o JSON nas URLs existentes e redireciona a raiz para o MDA Wiki. Os caminhos `/views/<slug>/` continuam disponíveis para os arquivos usados nas páginas.
 
-Para conferir o build e os limites dos arquivos localmente:
+## Teste local
+
+No Windows, com Node.js 24 instalado, execute na pasta do projeto:
+
+```powershell
+.\server.bat
+```
+
+Abra [http://localhost:8006/](http://localhost:8006/) para navegar pelo catálogo de páginas. O script gera o `dist` e inicia o Wrangler. Na primeira execução, o npm pode precisar baixar o Wrangler. Depois de editar arquivos em `views/`, pare o servidor com Ctrl+C e execute o script novamente.
+
+Em outros sistemas, os comandos equivalentes são:
 
 ```sh
-node scripts/pages/build.mjs
-npx wrangler pages dev dist
+node scripts/pages/build.mjs --local
+npx --yes wrangler@4 pages dev dist --ip 0.0.0.0 --port 8006 --binding LOCAL_CATALOG=true
 ```
 
 Na prévia, confira `/especialidade-de-nutricao/`, `/meta`, `/meta/CS-008`, `/especialidade-de-nutricao/meta` e uma URL inexistente. Depois de validar, adicione o domínio do Plus na aba **Custom domains** do projeto Pages e siga a orientação de DNS que o painel exibir.
