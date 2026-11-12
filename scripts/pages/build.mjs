@@ -1,17 +1,21 @@
-import { copyFile, cp, mkdir, readdir, rm, stat, writeFile } from 'node:fs/promises';
+import { copyFile, cp, mkdir, readdir, readFile, rm, stat, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { readOptional, renderCatalog, renderPage } from './render.mjs';
 
 const output = 'dist';
 const local = process.argv.includes('--local');
+const githubPages = process.argv.includes('--github-pages');
 const localUrl = 'http://localhost:8006';
 const maxAssetSize = 25 * 1024 * 1024;
 const maxAssetCount = 20_000;
-const origin = new URL(
-  local ? localUrl : process.env.CF_PAGES_BRANCH === 'main'
+const siteUrl = new URL(
+  githubPages ? process.env.PUBLIC_SITE_URL || 'https://maycorolbuche.github.io/mdawiki-plus/' : local ? localUrl : process.env.CF_PAGES_BRANCH === 'main'
     ? process.env.PUBLIC_SITE_URL || process.env.CF_PAGES_URL || localUrl
     : process.env.CF_PAGES_URL || process.env.PUBLIC_SITE_URL || localUrl,
-).origin;
+);
+const origin = siteUrl.origin;
+const basePath = githubPages ? siteUrl.pathname.replace(/\/+$/, '') : '';
+const siteRoot = origin + basePath;
 const catalog = [];
 const manifest = { byCode: Object.create(null), bySlug: Object.create(null) };
 
@@ -42,24 +46,51 @@ for (const dir of dirs.sort((a, b) => a.name.localeCompare(b.name))) {
     manifest.byCode[meta.code] = { ...meta, view: slug };
   }
   if (html === null) continue;
-  if (['meta', 'views', '_worker.js'].includes(slug)) throw new Error('Slug reservado: ' + slug);
+  if (['meta', 'meta.json', 'views', '_worker.js', 'index.html', '404.html', 'favicon.png'].includes(slug)) throw new Error('Slug reservado: ' + slug);
   if (local) catalog.push({ slug, meta: meta ?? {} });
   manifest.bySlug[slug] = meta ?? [];
   await mkdir(join(output, slug));
-  await writeFile(join(output, slug, 'index.html'), renderPage(html, slug, meta ?? {}, origin));
+  await writeFile(join(output, slug, 'index.html'), renderPage(html, slug, meta ?? {}, origin, basePath));
 }
 
 if (local) await writeFile(join(output, 'index.html'), await renderCatalog(catalog));
-await copyFile(new URL('./404.html', import.meta.url), join(output, '404.html'));
-await writeFile(join(output, '_metadata.json'), JSON.stringify(manifest));
-await copyFile(new URL('./worker.js', import.meta.url), join(output, '_worker.js'));
-await copyFile(new URL('./headers', import.meta.url), join(output, '_headers'));
+const notFound = await readFile(new URL('./404.html', import.meta.url), 'utf8');
+await writeFile(join(output, '404.html'), notFound.replace('href="/"', () => 'href="' + basePath + '/"'));
+
+if (githubPages) {
+  const byCode = Object.fromEntries(Object.entries(manifest.byCode).map(([code, meta]) => [
+    code, { ...meta, url: siteRoot + '/' + encodeURIComponent(meta.view) + '/' },
+  ]));
+  await writeFile(join(output, 'meta.json'), JSON.stringify(byCode));
+  await mkdir(join(output, 'meta'));
+  for (const [code, meta] of Object.entries(byCode)) {
+    if (!/^[A-Za-z0-9_-]+$/.test(code)) throw new Error('Código inválido para publicação: ' + code);
+    await writeFile(join(output, 'meta', code + '.json'), JSON.stringify(meta));
+  }
+  for (const [slug, meta] of Object.entries(manifest.bySlug)) {
+    await writeFile(join(output, slug, 'meta.json'), JSON.stringify(meta));
+  }
+  await copyFile(new URL('./redirect.html', import.meta.url), join(output, 'index.html'));
+  await writeFile(join(output, '.nojekyll'), '');
+} else {
+  await writeFile(join(output, '_metadata.json'), JSON.stringify(manifest));
+  await copyFile(new URL('./worker.js', import.meta.url), join(output, '_worker.js'));
+  await copyFile(new URL('./headers', import.meta.url), join(output, '_headers'));
+}
 
 const files = await listFiles(output);
 const assets = files.filter((path) => !['_worker.js', '_headers'].includes(path.slice(output.length + 1)));
 const sizes = await Promise.all(assets.map(async (path) => ({ path, size: (await stat(path)).size })));
 sizes.sort((a, b) => b.size - a.size);
 console.log(assets.length + ' arquivos publicáveis. Maior arquivo: ' + sizes[0].path + ' (' + sizes[0].size + ' bytes).');
+if (githubPages) {
+  const total = sizes.reduce((sum, { size }) => sum + size, 0);
+  console.log('Tamanho total: ' + total + ' bytes.');
+  if (total > 1_000_000_000 || sizes[0].size > 100 * 1024 * 1024) {
+    throw new Error('O build excede os limites do GitHub Pages ou da branch dist.');
+  }
+  process.exit(0);
+}
 const oversized = sizes.filter(({ size }) => size > maxAssetSize);
 if (oversized.length) {
   throw new Error('Arquivos acima de 25 MiB. Mova-os para o R2 antes de publicar:\n' +
