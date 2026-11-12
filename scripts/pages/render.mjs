@@ -8,8 +8,8 @@ function escapeHtml(value = '') {
   })[char]);
 }
 
-export function renderPage(html, slug, meta, origin) {
-  const assetPath = '/views/' + encodeURIComponent(slug) + '/';
+export function renderPage(html, slug, meta, origin, basePath = '') {
+  const assetPath = basePath + '/views/' + encodeURIComponent(slug) + '/';
   const title = escapeHtml(meta.title);
   const description = escapeHtml(meta.description);
   const image = meta.image ? escapeHtml(new URL(assetPath + meta.image, origin).href) : '';
@@ -25,7 +25,7 @@ export function renderPage(html, slug, meta, origin) {
     title && '<meta property="og:title" content="' + title + '">',
     description && '<meta property="og:description" content="' + description + '">',
     image && '<meta property="og:image" content="' + image + '">',
-    '<meta property="og:url" content="' + escapeHtml(origin) + '/' + encodeURIComponent(slug) + '/">',
+    '<meta property="og:url" content="' + escapeHtml(origin + basePath) + '/' + encodeURIComponent(slug) + '/">',
     '<meta property="og:site_name" content="MDA Wiki">',
     '<meta property="og:locale" content="pt_BR">',
     '<meta name="og:email" content="contato@mda.wiki.br">',
@@ -33,7 +33,7 @@ export function renderPage(html, slug, meta, origin) {
     title && '<meta name="twitter:title" content="' + title + '">',
     description && '<meta name="twitter:description" content="' + description + '">',
     image && '<meta name="twitter:image" content="' + image + '">',
-    '<link rel="shortcut icon" href="/favicon.png">',
+    '<link rel="shortcut icon" href="' + basePath + '/favicon.png">',
     '<base href="' + assetPath + '">',
   ].filter(Boolean).join('\n');
   const footer = [
