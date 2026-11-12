@@ -9,7 +9,7 @@ const localUrl = 'http://localhost:8006';
 const maxAssetSize = 25 * 1024 * 1024;
 const maxAssetCount = 20_000;
 const siteUrl = new URL(
-  githubPages ? process.env.PUBLIC_SITE_URL || 'https://maycorolbuche.github.io/mdawiki-plus/' : local ? localUrl : process.env.CF_PAGES_BRANCH === 'main'
+  githubPages ? process.env.PUBLIC_SITE_URL || 'https://plus.mda.wiki.br/' : local ? localUrl : process.env.CF_PAGES_BRANCH === 'main'
     ? process.env.PUBLIC_SITE_URL || process.env.CF_PAGES_URL || localUrl
     : process.env.CF_PAGES_URL || process.env.PUBLIC_SITE_URL || localUrl,
 );
