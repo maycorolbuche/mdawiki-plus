@@ -88,7 +88,7 @@ async function fetchAsset(input) {
   if (url.pathname === '/_metadata.json') return metadataResponse();
   if (url.pathname === '/') {
     const pages = await loadPages();
-    return htmlResponse(await renderCatalog(pages.filter(({ html }) => html !== null)));
+    return htmlResponse(await renderCatalog(pages.filter(({ html }) => html !== null), '/views'));
   }
   try {
     const segments = url.pathname.split('/').filter(Boolean).map(decodeURIComponent);
@@ -104,7 +104,7 @@ async function fetchAsset(input) {
       }
     } else if (segments.length === 1 || (segments.length === 2 && segments[1] === 'index.html')) {
       const { html, meta } = await loadPage(slug);
-      if (html !== null) return htmlResponse(renderPage(html, slug, meta ?? {}, origin));
+      if (html !== null) return htmlResponse(renderPage(html, slug, meta ?? {}, origin, '', '/views'));
     }
   } catch (error) {
     if (!['ENOENT', 'ENOTDIR'].includes(error.code) && !(error instanceof URIError)) throw error;

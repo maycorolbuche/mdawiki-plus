@@ -30,40 +30,42 @@ async function listFiles(dir) {
 
 await rm(output, { recursive: true, force: true });
 await mkdir(output);
-await cp('views', join(output, 'views'), {
-  recursive: true,
-  filter: (path) => {
-    const parts = path.split(/[\\/]/);
-    if (parts.some((part) => part.startsWith('.') || /\.(?:php\d*|phtml|phar)$/i.test(part))) return false;
-    if (parts.length !== 3) return true;
-
-    const filename = parts[2];
-    if (filename === 'index.html' || filename === 'meta.json') return false;
-    if (filename === 'style.css' || filename === 'scripts.css') {
-      const minified = path.replace(/\.css$/, '.min.css');
-      return !statSync(minified, { throwIfNoEntry: false })?.isFile();
-    }
-    return true;
-  },
-});
 await copyFile('favicon.png', join(output, 'favicon.png'));
 
 const dirs = await readdir('views', { withFileTypes: true });
 for (const dir of dirs.sort((a, b) => a.name.localeCompare(b.name))) {
   if (!dir.isDirectory() || dir.name.startsWith('.')) continue;
   const slug = dir.name;
-  const html = await readOptional(join('views', slug, 'index.html'));
-  const rawMeta = await readOptional(join('views', slug, 'meta.json'));
+  const sourceDir = join('views', slug);
+  const html = await readOptional(join(sourceDir, 'index.html'));
+  const rawMeta = await readOptional(join(sourceDir, 'meta.json'));
   const meta = rawMeta === null ? null : JSON.parse(rawMeta);
   if (meta?.code != null) {
     manifest.byCode[meta.code] = { ...meta, view: slug };
   }
   if (html === null) continue;
-  if (['meta', 'meta.json', 'views', '_worker.js', 'index.html', '404.html', 'favicon.png'].includes(slug)) throw new Error('Slug reservado: ' + slug);
+  if (['meta', 'meta.json', 'views', '_worker.js', 'index.html', '404.html', 'favicon.png', '_metadata.json', '_headers'].includes(slug)) throw new Error('Slug reservado: ' + slug);
   if (local) catalog.push({ slug, meta: meta ?? {} });
   manifest.bySlug[slug] = meta ?? [];
-  await mkdir(join(output, slug));
-  await writeFile(join(output, slug, 'index.html'), renderPage(html, slug, meta ?? {}, origin, basePath));
+  const pageDir = join(output, slug);
+  await cp(sourceDir, pageDir, {
+    recursive: true,
+    filter: (path) => {
+      const parts = path.split(/[\\/]/);
+      if (parts.some((part) => part.startsWith('.') || /\.(?:php\d*|phtml|phar)$/i.test(part))) return false;
+      if (parts.length !== 3) return true;
+
+      const filename = parts[2];
+      if (filename === 'index.html' || filename === 'meta.json') return false;
+      if (filename === 'style.css' || filename === 'scripts.css') {
+        const minified = path.replace(/\.css$/, '.min.css');
+        return !statSync(minified, { throwIfNoEntry: false })?.isFile();
+      }
+      return true;
+    },
+  });
+  await writeFile(join(pageDir, 'index.html'), renderPage(html, slug, meta ?? {}, origin, basePath));
+  await writeFile(join(pageDir, 'meta.json'), JSON.stringify(manifest.bySlug[slug]));
 }
 
 if (local) await writeFile(join(output, 'index.html'), await renderCatalog(catalog));
@@ -79,9 +81,6 @@ if (githubPages) {
   for (const [code, meta] of Object.entries(byCode)) {
     if (!/^[A-Za-z0-9_-]+$/.test(code)) throw new Error('Código inválido para publicação: ' + code);
     await writeFile(join(output, 'meta', code + '.json'), JSON.stringify(meta));
-  }
-  for (const [slug, meta] of Object.entries(manifest.bySlug)) {
-    await writeFile(join(output, slug, 'meta.json'), JSON.stringify(meta));
   }
   await copyFile(new URL('./redirect.html', import.meta.url), join(output, 'index.html'));
   await writeFile(join(output, '.nojekyll'), '');
