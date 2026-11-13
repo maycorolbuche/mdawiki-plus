@@ -1,3 +1,4 @@
+import { statSync } from 'node:fs';
 import { copyFile, cp, mkdir, readdir, readFile, rm, stat, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import { readOptional, renderCatalog, renderPage } from './render.mjs';
@@ -31,7 +32,19 @@ await rm(output, { recursive: true, force: true });
 await mkdir(output);
 await cp('views', join(output, 'views'), {
   recursive: true,
-  filter: (path) => !path.split(/[\\/]/).some((part) => part.startsWith('.') || /\.(?:php\d*|phtml|phar)$/i.test(part)),
+  filter: (path) => {
+    const parts = path.split(/[\\/]/);
+    if (parts.some((part) => part.startsWith('.') || /\.(?:php\d*|phtml|phar)$/i.test(part))) return false;
+    if (parts.length !== 3) return true;
+
+    const filename = parts[2];
+    if (filename === 'index.html' || filename === 'meta.json') return false;
+    if (filename === 'style.css' || filename === 'scripts.css') {
+      const minified = path.replace(/\.css$/, '.min.css');
+      return !statSync(minified, { throwIfNoEntry: false })?.isFile();
+    }
+    return true;
+  },
 });
 await copyFile('favicon.png', join(output, 'favicon.png'));
 
