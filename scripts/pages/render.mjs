@@ -8,8 +8,8 @@ function escapeHtml(value = '') {
   })[char]);
 }
 
-export function renderPage(html, slug, meta, origin, basePath = '') {
-  const assetPath = basePath + '/views/' + encodeURIComponent(slug) + '/';
+export function renderPage(html, slug, meta, origin, basePath = '', assetPrefix = '') {
+  const assetPath = basePath + assetPrefix + '/' + encodeURIComponent(slug) + '/';
   const title = escapeHtml(meta.title);
   const description = escapeHtml(meta.description);
   const image = meta.image ? escapeHtml(new URL(assetPath + meta.image, origin).href) : '';
@@ -53,7 +53,7 @@ export function renderPage(html, slug, meta, origin, basePath = '') {
     .replace(/<[^>]*\bdata-id="meta-area"[^>]*>/i, (tag) => tag + '\n' + area);
 }
 
-function renderCatalogCard(slug, meta, position) {
+function renderCatalogCard(slug, meta, position, assetPrefix) {
   const path = encodeURIComponent(slug);
   const title = escapeHtml(meta.title ?? slug);
   const badges = [meta.code, meta.area, meta.type]
@@ -71,7 +71,7 @@ function renderCatalogCard(slug, meta, position) {
     badges && '<div class="meta">' + badges + '</div>',
     reference && '<div class="reference">Referência: <a href="' + reference + '" target="_blank" rel="noopener">' + reference + '</a></div>',
     '</div>',
-    image && '<div class="thumb"><img loading="lazy" src="/views/' + path + '/' + escapeHtml(image) + '" alt=""><span>' + escapeHtml(image) + '</span></div>',
+    image && '<div class="thumb"><img loading="lazy" src="' + assetPrefix + '/' + path + '/' + escapeHtml(image) + '" alt=""><span>' + escapeHtml(image) + '</span></div>',
     '</article>',
   ].filter(Boolean).join('\n');
 }
@@ -85,8 +85,8 @@ export async function readOptional(path) {
   }
 }
 
-export async function renderCatalog(catalog) {
+export async function renderCatalog(catalog, assetPrefix = '') {
   const template = await readFile(new URL('./catalog.html', import.meta.url), 'utf8');
-  const cards = catalog.map(({ slug, meta }, index) => renderCatalogCard(slug, meta, index + 1));
+  const cards = catalog.map(({ slug, meta }, index) => renderCatalogCard(slug, meta, index + 1, assetPrefix));
   return template.replace('{{count}}', String(cards.length)).replace('{{cards}}', () => cards.join('\n'));
 }
