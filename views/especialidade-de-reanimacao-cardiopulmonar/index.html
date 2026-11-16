@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Barlow:wght@400;600;700&family=Barlow+Condensed:wght@600;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.min.css">
+</head>
+
+<body>
+
+  <div class="alert"></div>
+
+  <header class="hero">
+    <img src="imgs/hero-rcp.jpg" alt="Socorrista realizando compressões torácicas em um manequim de treinamento">
+    <div class="wrap">
+      <span class="badge" data-id="meta-area"></span>
+      <h1>Reanimação <span>Cardio&shy;pulmonar</span></h1>
+      <p>Quando um coração para, as mãos certas podem fazê-lo bater de novo. Tudo o que você precisa saber para
+        salvar uma vida.</p>
+      <div class="meta" data-id="meta">
+      </div>
+    </div>
+  </header>
+
+  <div class="ecg" aria-hidden="true">
+    <svg viewBox="0 0 1200 60" preserveAspectRatio="none">
+      <polyline fill="none" stroke="#d7141e" stroke-width="3"
+        points="0,30 80,30 95,30 105,10 115,50 125,5 135,55 145,30 300,30 380,30 395,30 405,10 415,50 425,5 435,55 445,30 600,30 680,30 695,30 705,10 715,50 725,5 735,55 745,30 900,30 980,30 995,30 1005,10 1015,50 1025,5 1035,55 1045,30 1200,30" />
+    </svg>
+  </div>
+
+  <!-- RCP: definição e quando usar -->
+  <section>
+    <div class="wrap split">
+      <div>
+        <span class="kicker">O que é</span>
+        <h2>RCP: a ponte entre a vida e o socorro</h2>
+        <p class="lead">Reanimação Cardiopulmonar (RCP) é um conjunto de manobras de emergência — compressões no peito
+          e, quando possível, ventilações (respiração boca a boca) — que mantém o sangue oxigenado circulando até o
+          cérebro e o coração de uma pessoa em parada cardiorrespiratória.</p>
+        <p style="margin-top:18px">A RCP não "conserta" o coração: ela <strong>ganha tempo</strong> até a chegada de um
+          desfibrilador (DEA) e da equipe médica. Sem circulação, as células do cérebro começam a sofrer lesões em cerca
+          de 4 a 6 minutos, e após 10 minutos os danos costumam ser irreversíveis.</p>
+        <h3 style="margin-top:28px;font-size:1.4rem">Quando deve ser utilizada?</h3>
+        <p>Sempre que a vítima estiver <strong>inconsciente (não responde)</strong> e <strong>não respirar ou respirar
+            de forma anormal</strong> (apenas "gasping" — suspiros agônicos). Situações comuns:</p>
+        <ul class="check">
+          <li>Ataque cardíaco (infarto) e arritmias graves</li>
+          <li>Afogamento</li>
+          <li>Choque elétrico ou descarga de raio</li>
+          <li>Engasgo (obstrução das vias aéreas) que leva à inconsciência</li>
+          <li>Intoxicações, overdose ou reações alérgicas graves</li>
+          <li>Traumas graves, como acidentes</li>
+        </ul>
+      </div>
+      <figure class="media">
+        <img src="imgs/chamar-ajuda.jpg" alt="Mulher ao lado de um homem desmaiado no parque ligando para a emergência"
+          loading="lazy">
+        <figcaption>Antes de tudo: verifique se a vítima responde e ligue para o SAMU 192.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <div class="stats">
+    <div><strong>100–120</strong><span>compressões por minuto</span></div>
+    <div><strong>5–6 cm</strong><span>de profundidade (adulto)</span></div>
+    <div><strong>30:2</strong><span>compressões x ventilações</span></div>
+    <div><strong>10%</strong><span>chance perdida a cada minuto sem RCP</span></div>
+  </div>
+
+  <!-- Coração e pulmões -->
+  <section>
+    <div class="wrap split rev">
+      <figure class="media">
+        <img src="imgs/coracao-pulmoes.jpg" alt="Ilustração anatômica do tórax mostrando coração e pulmões"
+          loading="lazy">
+        <figcaption>O coração fica no centro do peito, entre os dois pulmões, protegido pelas costelas e pelo esterno.
+        </figcaption>
+      </figure>
+      <div>
+        <span class="kicker">Anatomia em foco</span>
+        <h2>Coração e pulmões: a dupla que mantém você vivo</h2>
+        <p class="lead">Os dois órgãos ficam dentro da caixa torácica e trabalham juntos: um leva o oxigênio para dentro
+          do sangue, o outro bombeia esse sangue para o corpo inteiro.</p>
+        <div class="organ">
+          <div class="card">
+            <h3>Coração</h3>
+            <p><strong>Onde fica:</strong> no centro do tórax, atrás do esterno, levemente inclinado para a esquerda,
+              entre os pulmões. Tem mais ou menos o tamanho de um punho fechado.</p>
+            <p style="margin-top:8px"><strong>Função:</strong> é uma bomba muscular com 4 cavidades (2 átrios e 2
+              ventrículos). O lado direito envia sangue pobre em oxigênio aos pulmões; o lado esquerdo bombeia o sangue
+              oxigenado para todo o corpo pela aorta.</p>
+          </div>
+          <div class="card lung">
+            <h3>Pulmões</h3>
+            <p><strong>Onde ficam:</strong> um de cada lado do tórax, ocupando a maior parte da caixa torácica, apoiados
+              sobre o diafragma. O direito tem 3 lobos; o esquerdo, 2 (para dar espaço ao coração).</p>
+            <p style="margin-top:8px"><strong>Função:</strong> realizar a troca gasosa. Nos alvéolos, o oxigênio do ar
+              passa para o sangue e o gás carbônico sai do sangue para ser expirado.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Protocolo -->
+  <section class="dark">
+    <div class="wrap">
+      <span class="kicker">Passo a passo</span>
+      <h2>Como realizar a RCP em adultos</h2>
+      <p class="lead">Sequência recomendada pelas diretrizes da American Heart Association (AHA) para leigos treinados:
+        C-A-B — Compressões, Abertura das vias aéreas, Boa ventilação.</p>
+      <div class="steps">
+        <div class="step">
+          <h3>Segurança da cena</h3>
+          <p>Verifique se o local é seguro para você e para a vítima (trânsito, fogo, eletricidade, água).</p>
+        </div>
+        <div class="step">
+          <h3>Cheque a resposta</h3>
+          <p>Toque nos ombros e chame em voz alta: "Você está bem?". Observe se há respiração normal por até 10
+            segundos.</p>
+        </div>
+        <div class="step">
+          <h3>Peça ajuda</h3>
+          <p>Ligue 192 (SAMU) ou 193 (Bombeiros), coloque no viva-voz e peça que alguém traga um DEA.</p>
+        </div>
+        <div class="step">
+          <h3>Posicione as mãos</h3>
+          <p>Vítima de costas em superfície rígida. Mãos entrelaçadas no centro do peito, na metade inferior do esterno,
+            braços esticados.</p>
+        </div>
+        <div class="step">
+          <h3>Comprima forte e rápido</h3>
+          <p>100 a 120 por minuto, afundando 5 a 6 cm. Deixe o tórax voltar totalmente após cada compressão.</p>
+        </div>
+        <div class="step">
+          <h3>Ventile (se treinado)</h3>
+          <p>Após 30 compressões, incline a cabeça, eleve o queixo, tape o nariz e faça 2 sopros de 1 segundo, vendo o
+            peito subir.</p>
+        </div>
+        <div class="step">
+          <h3>Use o DEA</h3>
+          <p>Assim que chegar, ligue o aparelho e siga as instruções de voz. Ninguém deve tocar na vítima durante o
+            choque.</p>
+        </div>
+        <div class="step">
+          <h3>Não pare</h3>
+          <p>Continue até a vítima reagir, o socorro assumir ou você ficar exausto. Revezem a cada 2 minutos.</p>
+        </div>
+      </div>
+      <div class="callout" style="color:var(--ink)"><strong>Só com as mãos:</strong> se você não for treinado ou não se
+        sentir seguro para fazer ventilações, faça apenas compressões contínuas. RCP somente com as mãos é muito melhor
+        do que nenhuma RCP!</div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <span class="kicker">Variações</span>
+      <h2>Adulto, criança ou bebê?</h2>
+      <div class="tbl">
+        <table>
+          <tr>
+            <th>Item</th>
+            <th>Adulto / adolescente</th>
+            <th>Criança (1 ano à puberdade)</th>
+            <th>Bebê (menos de 1 ano)</th>
+          </tr>
+          <tr>
+            <td>Mãos</td>
+            <td>Duas mãos entrelaçadas</td>
+            <td>Uma ou duas mãos</td>
+            <td>Dois dedos (ou dois polegares)</td>
+          </tr>
+          <tr>
+            <td>Profundidade</td>
+            <td>5 a 6 cm</td>
+            <td>Cerca de 5 cm (1/3 do tórax)</td>
+            <td>Cerca de 4 cm (1/3 do tórax)</td>
+          </tr>
+          <tr>
+            <td>Ritmo</td>
+            <td colspan="3">100 a 120 compressões por minuto</td>
+          </tr>
+          <tr>
+            <td>Relação (1 socorrista)</td>
+            <td>30:2</td>
+            <td>30:2</td>
+            <td>30:2</td>
+          </tr>
+          <tr>
+            <td>Relação (2 socorristas)</td>
+            <td>30:2</td>
+            <td>15:2</td>
+            <td>15:2</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Curso -->
+  <section style="background:var(--white)">
+    <div class="wrap split">
+      <div>
+        <span class="kicker">Mão na massa</span>
+        <h2>Faça um curso com instrutor qualificado</h2>
+        <p class="lead">Faça um curso prático de RCP, ministrado por instrutor qualificado,
+          no máximo um ano antes de receber a especialidade — e demonstrar o procedimento corretamente.</p>
+        <p style="margin-top:16px">Ler sobre RCP é o começo, mas só a prática em manequins ensina a força, o ritmo e a
+          profundidade certos. Onde encontrar cursos:</p>
+        <ul class="check">
+          <li>Corpo de Bombeiros e SAMU da sua cidade (muitos oferecem cursos gratuitos)</li>
+          <li>Cruz Vermelha Brasileira</li>
+          <li>Centros de treinamento credenciados pela AHA (cursos BLS / Heartsaver)</li>
+          <li>Hospitais, universidades e faculdades de saúde</li>
+          <li>Profissionais de saúde da sua igreja ou do seu clube</li>
+        </ul>
+        <div class="callout"><strong>Por que no máximo 1 ano?</strong> Estudos mostram que as habilidades de RCP
+          diminuem em poucos meses sem prática, e as diretrizes são atualizadas periodicamente. Reciclar é essencial!
+        </div>
+      </div>
+      <figure class="media">
+        <img src="imgs/curso-rcp.jpg" alt="Jovens praticando compressões em manequins durante curso de RCP"
+          loading="lazy">
+        <figcaption>Treinar em manequins desenvolve a memória muscular para agir com confiança.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap split rev">
+      <figure class="media">
+        <img src="imgs/dea.jpg" alt="Mãos posicionando as pás de um desfibrilador em manequim" loading="lazy">
+        <figcaption>Uma pá abaixo da clavícula direita, a outra na lateral esquerda, abaixo do mamilo.</figcaption>
+      </figure>
+      <div>
+        <span class="kicker">Equipamento que salva</span>
+        <h2>O DEA: desfibrilador para qualquer pessoa</h2>
+        <p class="lead">O Desfibrilador Externo Automático analisa o ritmo do coração e, se necessário, aplica um choque
+          para "reiniciá-lo".</p>
+        <p style="margin-top:16px">Ele fala com você, passo a passo, e só libera o choque quando realmente é preciso —
+          por isso pode ser usado por leigos. Procure-o em aeroportos, shoppings, estádios, academias e grandes
+          empresas. RCP + DEA nos primeiros 3 a 5 minutos pode elevar a sobrevivência para mais de 50%.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Coração saudável -->
+  <section class="dark">
+    <div class="wrap split">
+      <div>
+        <span class="kicker">Prevenção</span>
+        <h2>Como manter o coração saudável</h2>
+        <p class="lead">A melhor RCP é aquela que nunca precisa ser feita. Doenças cardiovasculares são a principal
+          causa de morte no Brasil e no mundo — e a maioria pode ser prevenida com bons hábitos, como ensinam os 8
+          remédios naturais.</p>
+      </div>
+      <figure class="media"><img src="imgs/coracao-saudavel.jpg" alt="Frutas, verduras, água e tênis de corrida"
+          loading="lazy"></figure>
+    </div>
+    <div class="wrap cards">
+      <div class="card"><span class="n">1</span>
+        <h3>Pratique exercícios</h3>
+        <p>Pelo menos 150 minutos por semana de atividade moderada: caminhar, pedalar, nadar, acampar e fazer trilhas.
+        </p>
+      </div>
+      <div class="card"><span class="n">2</span>
+        <h3>Alimente-se bem</h3>
+        <p>Frutas, verduras, grãos integrais, castanhas e leguminosas. Menos sal, açúcar, frituras e ultraprocessados.
+        </p>
+      </div>
+      <div class="card"><span class="n">3</span>
+        <h3>Não fume nem beba</h3>
+        <p>Cigarro, vape e álcool danificam os vasos, elevam a pressão e aumentam muito o risco de infarto.</p>
+      </div>
+      <div class="card"><span class="n">4</span>
+        <h3>Mantenha o peso ideal</h3>
+        <p>O excesso de peso sobrecarrega o coração e favorece diabetes, colesterol alto e hipertensão.</p>
+      </div>
+      <div class="card"><span class="n">5</span>
+        <h3>Durma e descanse</h3>
+        <p>7 a 9 horas de sono por noite e um dia de descanso semanal ajudam a regular pressão e batimentos.</p>
+      </div>
+      <div class="card"><span class="n">6</span>
+        <h3>Controle o estresse</h3>
+        <p>Oração, contato com a natureza, amizades e lazer reduzem os hormônios do estresse.</p>
+      </div>
+      <div class="card"><span class="n">7</span>
+        <h3>Beba água</h3>
+        <p>Hidratação adequada ajuda o sangue a circular e o coração a trabalhar com menos esforço.</p>
+      </div>
+      <div class="card"><span class="n">8</span>
+        <h3>Faça check-ups</h3>
+        <p>Medir pressão, glicose e colesterol regularmente permite tratar problemas antes que se agravem.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Insígnia -->
+  <section>
+    <div class="wrap insignia">
+      <div class="emb">
+        <img src="imgs/cs011.svg" alt="Insígnia da especialidade de Reanimação Cardiopulmonar">
+      </div>
+      <div>
+        <span class="kicker">Simbolismo</span>
+        <h2>O que a insígnia ensina</h2>
+        <p class="lead" style="margin-bottom:26px">Cada cor e forma do emblema carrega uma lição sobre o socorrista e
+          sobre a vida.</p>
+        <div class="colors">
+          <div class="color"><span class="sw" style="background:#fff"></span>
+            <div>
+              <h3>Branco — a vítima</h3>
+              <p>A pessoa que precisa de RCP pode estar pálida, o que significa que não há circulação.</p>
+            </div>
+          </div>
+          <div class="color"><span class="sw" style="background:var(--red)"></span>
+            <div>
+              <h3>Vermelho — o socorrista</h3>
+              <p>Quem faz a RCP está vermelho, o que significa que está bem ativo.</p>
+            </div>
+          </div>
+          <div class="color"><span class="sw" style="background:var(--gold)"></span>
+            <div>
+              <h3>Dourado — a borda</h3>
+              <p>Representa o valor da vida humana.</p>
+            </div>
+          </div>
+          <div class="color"><span class="sw-heart"></span>
+            <div>
+              <h3>O coração</h3>
+              <p>Formado pela cabeça, ombros e braços do socorrista: compaixão pelo próximo.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:var(--white)">
+    <div class="wrap">
+      <p class="quote">"Quem salva uma vida salva o mundo inteiro."<small>Provérbio do Talmude — e o espírito do
+          Desbravador: servir ao próximo como Jesus serviu.</small></p>
+    </div>
+  </section>
+
+  <!-- Curiosidades -->
+  <section>
+    <div class="wrap">
+      <span class="kicker">Você sabia?</span>
+      <h2>Curiosidades que aceleram o coração</h2>
+      <div class="facts">
+        <div class="fact"><b>Ritmo musical</b>A música "Stayin' Alive" (Bee Gees) tem cerca de 103 batidas por minuto —
+          o ritmo ideal das compressões. No Brasil, muitos treinam com "Evidências"!</div>
+        <div class="fact"><b>Trabalhador incansável</b>O coração bate cerca de 100 mil vezes por dia e bombeia
+          aproximadamente 7 mil litros de sangue.</div>
+        <div class="fact"><b>Perto de casa</b>Cerca de 70% das paradas cardíacas fora do hospital acontecem em casa.
+          Quem salva, geralmente, é alguém da família.</div>
+        <div class="fact"><b>História</b>A RCP moderna foi desenvolvida em 1960 por Kouwenhoven, Jude e Knickerbocker,
+          na Universidade Johns Hopkins (EUA).</div>
+        <div class="fact"><b>Resusci Anne</b>O rosto do manequim mais famoso do mundo foi inspirado em uma máscara
+          mortuária de uma jovem desconhecida encontrada no rio Sena, em Paris.</div>
+        <div class="fact"><b>Costelas</b>Ouvir estalos durante as compressões pode acontecer. Não pare: uma costela se
+          recupera, uma vida perdida não.</div>
+        <div class="fact"><b>Superfície</b>A RCP em cima de uma cama macia perde eficiência. Leve a vítima para o chão.
+        </div>
+        <div class="fact"><b>Cansaço real</b>Compressões eficazes cansam em cerca de 2 minutos. Por isso o revezamento
+          entre socorristas é tão importante.</div>
+        <div class="fact"><b>Proteção legal</b>No Brasil, deixar de prestar socorro é crime (Art. 135 do Código Penal).
+          Se não puder agir, ao menos chame ajuda.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark" style="padding:60px 0">
+    <div class="wrap">
+      <span class="kicker">Em caso de emergência</span>
+      <h2>Guarde estes números</h2>
+      <div class="emerg">
+        <div>192<small>SAMU</small></div>
+        <div>193<small>Bombeiros</small></div>
+        <div>190<small>Polícia</small></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+    </div>
+  </footer>
+</body>
+
+</html>
