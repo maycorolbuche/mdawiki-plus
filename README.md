@@ -4,7 +4,7 @@
 
 1. Em **Settings → Pages → Build and deployment**, selecione **GitHub Actions** como fonte.
 2. Para usar domínio próprio, adicione-o em **Settings → Pages → Custom domain** e configure o CNAME no DNS para `maycorolbuche.github.io`. Em **Settings → Secrets and variables → Actions → Variables**, crie `PUBLIC_SITE_URL` com a URL HTTPS do domínio. Sem essa variável, o build usa o domínio de produção `https://plus.mda.wiki.br/`. Para gerar uma versão servida em `github.io`, defina `PUBLIC_SITE_URL` explicitamente como `https://maycorolbuche.github.io/mdawiki-plus/`.
-3. Rode o workflow **GitHub Pages** a partir da `main` em **Actions**. Os próximos pushes na `main` também publicam. O workflow grava os arquivos gerados na branch `dist` e implanta o mesmo artefato no GitHub Pages.
+3. Rode o workflow **GitHub Pages** a partir da `main` em **Actions**. Os próximos pushes na `main` também publicam. O workflow gera a pasta `dist/` no runner, envia seu conteúdo como artefato e publica esse artefato diretamente no GitHub Pages, sem criar ou atualizar uma branch de arquivos gerados.
 
 O build estático publica cada página e seus arquivos (CSS, imagens e outros recursos) em `/<slug>/`. Os metadados ficam em `/meta.json`, `/meta/<código>.json` e `/<slug>/meta.json`. Atualize os consumidores dessas rotas antes da troca de DNS. A raiz redireciona o navegador para o MDA Wiki por HTML.
 
