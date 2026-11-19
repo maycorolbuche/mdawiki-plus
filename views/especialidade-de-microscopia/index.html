@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,400&family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;600&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.min.css">
+</head>
+
+<body>
+
+  <header class="hero">
+    <img src="imgs/hero-microscopio.jpg" alt="Microscópio óptico iluminado em laboratório">
+    <div class="scale">ESCALA<span></span>100 µm</div>
+    <div class="wrap">
+      <div class="kicker" data-id="meta-area"></div>
+      <h1>Micro<em>scopia</em></h1>
+      <p>Uma viagem ao mundo invisível: das lentes de vidro polido aos feixes de elétrons.</p>
+      <div class="badges" data-id="meta">
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="wrap intro">
+      <div>
+        <div class="kicker">Editorial</div>
+        <h2>O universo que cabe numa gota d'água</h2>
+        <p class="drop">Microscopia é a ciência de observar objetos pequenos demais para o olho humano, que só consegue
+          distinguir detalhes de cerca de 0,1 mm. A palavra vem do grego <i>mikrós</i> (pequeno) e <i>skopein</i>
+          (observar). Com o microscópio, descobrimos células, bactérias, fungos, protozoários e até átomos — e mudamos
+          para sempre a medicina, a alimentação e a forma como enxergamos a Criação.</p>
+        <p style="margin-top:16px" class="muted">Nesta edição você vai conhecer os principais tipos de microscópio, suas
+          partes, como calcular a ampliação, os termos usados no laboratório, como coletar e observar micro-organismos
+          da água e por que tudo isso importa para a sua vida.</p>
+      </div>
+      <figure>
+        <img src="imgs/desbravadores-lab.jpg" alt="Desbravadores usando microscópios e frascos de água de lagoa">
+        <figcaption>▲ Desbravadores observando amostras coletadas em uma lagoa.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="dark">
+    <div class="wrap">
+      <div class="sechead">
+        <div class="kicker">Tipos de microscópio</div>
+        <h2>Quatro olhos para enxergar o invisível</h2>
+        <p class="muted">Cada microscópio usa uma “sonda” diferente — luz, elétrons ou uma ponta minúscula — e isso
+          define o quanto ele consegue ampliar e o que consegue mostrar.</p>
+      </div>
+      <div class="types">
+        <article class="type">
+          <div class="tag">MO · LUZ VISÍVEL</div>
+          <h3>Microscópio óptico</h3>
+          <ul>
+            <li>Usa <b>luz visível</b> e um conjunto de <b>lentes de vidro</b> (ocular + objetiva) para ampliar a
+              imagem.</li>
+            <li>O mais comum é o <b>composto</b>, de campo claro; existem também estereoscópico (lupa), de contraste de
+              fase, de campo escuro e de fluorescência.</li>
+            <li>Permite observar <b>material vivo</b>, a cores, de forma simples e barata.</li>
+            <li>Imagem bidimensional; amostras precisam ser finas e translúcidas.</li>
+          </ul>
+          <div class="res">
+            <div><b>~1.000–2.000×</b>ampliação útil</div>
+            <div><b>0,2 µm</b>resolução máx.</div>
+          </div>
+        </article>
+        <article class="type">
+          <div class="tag">MEV · SEM · ELÉTRONS REFLETIDOS</div>
+          <h3>Eletrônico de varredura</h3>
+          <ul>
+            <li>Um feixe fino de <b>elétrons varre a superfície</b> da amostra ponto a ponto; detectores captam os
+              elétrons secundários emitidos.</li>
+            <li>Gera imagens da <b>superfície</b> com aparência <b>tridimensional</b> e grande profundidade de campo.
+            </li>
+            <li>Amostra em <b>vácuo</b>, seca e normalmente recoberta por fina camada de ouro ou carbono.</li>
+            <li>Imagens em preto e branco (as cores são adicionadas depois, “falsa cor”). Não observa seres vivos.</li>
+          </ul>
+          <div class="res">
+            <div><b>até ~500.000×</b>ampliação</div>
+            <div><b>~1–10 nm</b>resolução</div>
+          </div>
+        </article>
+        <article class="type">
+          <div class="tag">MET · TEM · ELÉTRONS TRANSMITIDOS</div>
+          <h3>Eletrônico de transmissão</h3>
+          <ul>
+            <li>O feixe de elétrons <b>atravessa</b> uma amostra ultrafina (50–100 nm, cortada no ultramicrótomo).</li>
+            <li>Lentes <b>eletromagnéticas</b> focalizam os elétrons; a imagem se forma numa tela fluorescente ou
+              câmera.</li>
+            <li>Revela o <b>interior</b> das células: organelas, membranas, vírus, até estruturas moleculares.</li>
+            <li>Imagem 2D, em tons de cinza; exige vácuo, preparo complexo e corantes de metais pesados.</li>
+          </ul>
+          <div class="res">
+            <div><b>até ~1.000.000×+</b>ampliação</div>
+            <div><b>&lt; 0,1 nm</b>resolução</div>
+          </div>
+        </article>
+        <article class="type">
+          <div class="tag">AFM · FORÇA ATÔMICA · SONDA</div>
+          <h3>Força atômica</h3>
+          <ul>
+            <li>Não usa luz nem lentes: uma <b>ponta afiadíssima</b> presa a uma haste flexível (<i>cantilever</i>)
+              “tateia” a superfície.</li>
+            <li>Um laser mede as deflexões da haste causadas pelas forças entre a ponta e os átomos, criando um <b>mapa
+                3D</b> do relevo.</li>
+            <li>Funciona no ar, no vácuo e até em <b>líquidos</b> — pode estudar DNA, proteínas e células vivas.</li>
+            <li>Inventado em 1986 (Binnig, Quate e Gerber). Varredura lenta e área pequena.</li>
+          </ul>
+          <div class="res">
+            <div><b>escala atômica</b>altura</div>
+            <div><b>~0,1 nm</b>resolução vertical</div>
+          </div>
+        </article>
+      </div>
+      <div class="wide-img">
+        <img src="imgs/mev-polen.jpg"
+          alt="Grãos de pólen e olho de inseto vistos ao microscópio eletrônico de varredura">
+        <div>
+          <div class="kicker">Comparando</div>
+          <h3 style="font-size:2rem;margin:8px 0 12px">Por que elétrons enxergam mais?</h3>
+          <p class="muted">A resolução de um microscópio depende do comprimento de onda da sonda. A luz visível tem
+            cerca de 400–700 nm, então não separa detalhes menores que ~200 nm. Elétrons acelerados têm comprimento de
+            onda milhares de vezes menor, por isso o MEV e o MET revelam vírus e moléculas. Ao lado, pólen e olho
+            composto de inseto como apareceriam num MEV.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="sechead">
+        <div class="kicker">Anatomia do microscópio óptico</div>
+        <h2>Conheça cada peça — e para que ela serve</h2>
+        <p class="muted">O microscópio óptico composto tem uma parte <b>mecânica</b> (sustenta e movimenta) e uma parte
+          <b>óptica</b> (amplia e ilumina).
+        </p>
+      </div>
+      <div class="parts">
+        <div>
+          <div class="scope">
+            <img src="imgs/microscopio-partes.jpg" alt="Microscópio óptico composto com as partes indicadas">
+            <span class="pin" style="left:18%;top:5%">1 Ocular</span>
+            <span class="pin" style="left:40%;top:25%">2 Revólver</span>
+            <span class="pin" style="left:24%;top:37%">3 Objetivas</span>
+            <span class="pin" style="left:26%;top:49%">4 Platina</span>
+            <span class="pin" style="left:30%;top:61%">5 Condensador</span>
+            <span class="pin" style="left:40%;top:72%">Fonte de luz</span>
+            <span class="pin" style="left:82%;top:55%">6 Macrométrico</span>
+            <span class="pin" style="left:64%;top:80%">7 Micrométrico</span>
+            <span class="pin" style="left:80%;top:30%">8 Braço</span>
+            <span class="pin" style="left:50%;top:90%">9 Base</span>
+          </div>
+          <div class="tip">
+            <h4>Demonstração prática</h4>
+            <ol>
+              <li>Carregue o microscópio com as duas mãos: uma no braço, outra sob a base.</li>
+              <li>Ligue a luz e gire o revólver até a objetiva de menor aumento (4× ou 10×).</li>
+              <li>Prenda a lâmina na platina com as presilhas, centralizando a amostra.</li>
+              <li>Olhando de lado, suba a platina com o macrométrico até quase encostar na lamela.</li>
+              <li>Olhando pela ocular, afaste lentamente até a imagem aparecer; ajuste com o micrométrico.</li>
+              <li>Regule o condensador/diafragma para melhorar o contraste e só então troque para a objetiva maior,
+                usando apenas o micrométrico.</li>
+            </ol>
+          </div>
+        </div>
+        <div class="partlist">
+          <div class="part"><span class="n">1</span>
+            <div>
+              <h4>Ocular</h4>
+              <p>Lente por onde olhamos, no topo do tubo. Amplia a imagem formada pela objetiva — normalmente 10× (às
+                vezes 5× ou 15×). Pode ser monocular ou binocular.</p>
+            </div>
+          </div>
+          <div class="part"><span class="n">2</span>
+            <div>
+              <h4>Revólver</h4>
+              <p>Peça giratória onde ficam as objetivas. Ao girá-lo, trocamos de aumento; ele “trava” com um clique na
+                posição certa, alinhando a objetiva ao eixo óptico.</p>
+            </div>
+          </div>
+          <div class="part"><span class="n">3</span>
+            <div>
+              <h4>Objetivas</h4>
+              <p>Lentes próximas da amostra, as mais importantes do sistema. Comuns: 4× (vermelha), 10× (amarela), 40×
+                (azul-clara) e 100× (branca, de imersão em óleo).</p>
+            </div>
+          </div>
+          <div class="part"><span class="n">4</span>
+            <div>
+              <h4>Platina (mesa)</h4>
+              <p>Plataforma onde se coloca a lâmina, presa por presilhas ou charriot. Tem um orifício central para a
+                passagem da luz.</p>
+            </div>
+          </div>
+          <div class="part"><span class="n">5</span>
+            <div>
+              <h4>Condensador</h4>
+              <p>Conjunto de lentes sob a platina que concentra a luz sobre a amostra. Com o diafragma (íris), regula a
+                intensidade e o contraste.</p>
+            </div>
+          </div>
+          <div class="part"><span class="n">6</span>
+            <div>
+              <h4>Parafuso macrométrico</h4>
+              <p>Botão grande: move a platina (ou o tubo) em passos largos, para o foco inicial. Use apenas com
+                objetivas de pequeno aumento.</p>
+            </div>
+          </div>
+          <div class="part"><span class="n">7</span>
+            <div>
+              <h4>Parafuso micrométrico</h4>
+              <p>Botão menor: movimentos finíssimos para o foco exato, especialmente nas objetivas de 40× e 100×.</p>
+            </div>
+          </div>
+          <div class="part"><span class="n">8</span>
+            <div>
+              <h4>Braço (coluna)</h4>
+              <p>Estrutura que une a base ao tubo e sustenta as partes ópticas. É por ele que seguramos o aparelho.</p>
+            </div>
+          </div>
+          <div class="part"><span class="n">9</span>
+            <div>
+              <h4>Base (pé)</h4>
+              <p>Parte inferior, pesada, que dá estabilidade. Em geral abriga a fonte de luz (lâmpada ou LED) ou o
+                espelho.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mag">
+    <div class="wrap">
+      <div class="sechead">
+        <div class="kicker">Matemática do invisível</div>
+        <h2>Como calcular a ampliação</h2>
+        <p style="color:#b5d6d0">No microscópio óptico composto a imagem é ampliada duas vezes: primeiro pela objetiva,
+          depois pela ocular. Por isso multiplicamos os dois valores, que vêm gravados em cada lente.</p>
+      </div>
+      <div class="formula">Aumento total = <span>ocular</span> × <span>objetiva</span></div>
+      <div class="mag-grid">
+        <table>
+          <thead>
+            <tr>
+              <th>Ocular</th>
+              <th>Objetiva</th>
+              <th>Aumento total</th>
+              <th>Uso típico</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>10×</td>
+              <td>4×</td>
+              <td class="big">40×</td>
+              <td>Localizar a amostra</td>
+            </tr>
+            <tr>
+              <td>10×</td>
+              <td>10×</td>
+              <td class="big">100×</td>
+              <td>Protozoários, algas</td>
+            </tr>
+            <tr>
+              <td>10×</td>
+              <td>40×</td>
+              <td class="big">400×</td>
+              <td>Células, núcleos</td>
+            </tr>
+            <tr>
+              <td>10×</td>
+              <td>100×</td>
+              <td class="big">1000×</td>
+              <td>Bactérias (com óleo)</td>
+            </tr>
+            <tr>
+              <td>15×</td>
+              <td>40×</td>
+              <td class="big">600×</td>
+              <td>Detalhes celulares</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="card-l">
+          <h3>Calcule o seu!</h3>
+          <p style="color:#b5d6d0">Olhe o número gravado na ocular (ex.: <b>WF 10×</b>) e na objetiva em uso (ex.:
+            <b>40/0,65</b> — o 40 é o aumento e 0,65 a abertura numérica). Multiplique: 10 × 40 = <b>400×</b>. Ou seja,
+            o objeto parece 400 vezes maior do que é.
+          </p>
+          <p style="color:#b5d6d0;margin-top:12px">Se houver lente intermediária no tubo (ex.: 1,25×), multiplique
+            também: 10 × 40 × 1,25 = 500×.</p>
+          <p style="margin-top:12px;color:var(--amber);font-family:var(--mono);font-size:.85rem">Atenção: aumentar
+            demais sem resolução gera “aumento vazio” — a imagem fica maior, mas borrada.</p>
+        </div>
+      </div>
+      <div class="fov">
+        <div style="width:150px;height:150px">40×</div>
+        <div style="width:120px;height:120px">100×</div>
+        <div style="width:90px;height:90px">400×</div>
+        <div style="width:60px;height:60px;font-size:.7rem">1000×</div>
+      </div>
+      <p style="text-align:center;margin-top:14px;font-family:var(--mono);font-size:.78rem;color:#9fbfba">Quanto maior o
+        aumento, menor o campo de visão e menor a luminosidade.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="sechead">
+        <div class="kicker">Glossário do laboratório</div>
+        <h2>Palavras que todo microscopista usa</h2>
+      </div>
+      <div class="gloss">
+        <div class="term feature">
+          <img src="imgs/preparando-lamina.jpg" alt="Preparação de lâmina com pipeta e lamela">
+          <div>
+            <div class="ic">▭</div>
+            <h3>Lâmina</h3>
+            <p>Placa retangular de vidro (cerca de 75 × 25 mm, 1 mm de espessura) sobre a qual se coloca o material a
+              ser observado. Pode ser lisa ou escavada (com uma cavidade para líquidos).</p>
+            <h3 style="margin-top:18px">Lamela</h3>
+            <p>Lâmina finíssima de vidro (≈ 0,17 mm), quadrada ou redonda, colocada sobre a amostra. Protege a objetiva,
+              achata e uniformiza o material e evita a evaporação. Deve ser baixada inclinada a 45° para não formar
+              bolhas.</p>
+          </div>
+        </div>
+        <div class="term">
+          <div class="ic">💧</div>
+          <h3>Exame direto a fresco</h3>
+          <p>Observação do material <b>vivo, sem fixação nem coloração</b>, logo após a coleta — geralmente uma gota
+            entre lâmina e lamela. Permite ver movimento, forma e comportamento de micro-organismos (ex.: água de lagoa,
+            fezes, secreções).</p>
+        </div>
+        <div class="term">
+          <div class="ic">🧪</div>
+          <h3>Fixador</h3>
+          <p>Substância ou processo que <b>mata e preserva</b> as células mantendo sua estrutura, impedindo decomposição
+            e preparando-as para a coloração. Exemplos: formol, álcool, metanol, glutaraldeído ou o calor (passar a
+            lâmina na chama).</p>
+        </div>
+        <div class="term">
+          <div class="ic">🎨</div>
+          <h3>Corantes</h3>
+          <p>Substâncias que <b>dão cor e contraste</b> às estruturas, que normalmente são transparentes. Exemplos: azul
+            de metileno, lugol (iodo), eosina, hematoxilina, cristal violeta e safranina (coloração de Gram).</p>
+        </div>
+        <div class="term">
+          <div class="ic">🛢️</div>
+          <h3>Óleo de imersão</h3>
+          <p>Óleo transparente (de cedro ou sintético) com índice de refração próximo ao do vidro (~1,51). Uma gota
+            entre a lamela e a objetiva de <b>100×</b> evita que a luz se desvie no ar, aumentando a nitidez e a
+            resolução.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="background:var(--paper2)">
+    <div class="wrap">
+      <div class="lab">
+        <img class="round" src="imgs/agua-lagoa.jpg" alt="Micro-organismos de água doce vistos ao microscópio">
+        <div>
+          <div class="kicker">Mão na massa</div>
+          <h2 style="font-size:clamp(2.2rem,5vw,3.6rem);margin:10px 0">Safári numa gota de lagoa</h2>
+          <p class="muted">Lagoas, riachos, poças e até água de vaso de planta estão cheios de vida microscópica. Veja
+            como coletar e observar com, no mínimo, 100× de aumento.</p>
+          <ol class="steps">
+            <li>Use frascos limpos com tampa. Colete perto da margem, junto a plantas aquáticas, folhas em decomposição
+              e no fundo lodoso.</li>
+            <li>Etiquete com local, data e hora. Não feche totalmente: deixe ar e evite sol direto e calor.</li>
+            <li>No laboratório, deixe decantar alguns minutos. Com conta-gotas, retire uma gota do fundo ou perto das
+              plantas.</li>
+            <li>Coloque a gota no centro da lâmina e baixe a lamela inclinada a 45°. Retire o excesso com papel
+              absorvente.</li>
+            <li>Observe com 40× para localizar e passe para 100× e 400×. Diminua a luz: organismos transparentes
+              aparecem melhor.</li>
+            <li>Para organismos muito rápidos, adicione uma fibra de algodão ou gota de metilcelulose para reduzir a
+              velocidade.</li>
+            <li>Lave as mãos ao final e descarte a amostra com cuidado — água parada pode conter patógenos.</li>
+          </ol>
+        </div>
+      </div>
+      <div class="orgs">
+        <div class="org"><small>PROTOZOÁRIO · CILIADO</small>
+          <h4>Paramécio</h4>
+          <p>Forma de sola de sapato, coberto de cílios. Estruturas: macronúcleo, vacúolos contráteis, sulco oral.</p>
+        </div>
+        <div class="org"><small>PROTOZOÁRIO · AMEBOIDE</small>
+          <h4>Ameba</h4>
+          <p>Muda de forma usando pseudópodes. Estruturas: núcleo, citoplasma, vacúolo digestivo.</p>
+        </div>
+        <div class="org"><small>PROTISTA · FLAGELADO</small>
+          <h4>Euglena</h4>
+          <p>Verde, com flagelo e mancha ocelar (estigma) vermelha que percebe a luz.</p>
+        </div>
+        <div class="org"><small>ALGA · COLONIAL</small>
+          <h4>Volvox</h4>
+          <p>Esfera formada por milhares de células com flagelos e colônias-filhas no interior.</p>
+        </div>
+        <div class="org"><small>ALGA · FILAMENTOSA</small>
+          <h4>Spirogyra</h4>
+          <p>Filamento verde com cloroplastos em espiral.</p>
+        </div>
+        <div class="org"><small>ALGA · DIATOMÁCEA</small>
+          <h4>Diatomácea</h4>
+          <p>Carapaça de sílica, como uma caixinha de vidro, com desenhos geométricos.</p>
+        </div>
+        <div class="org"><small>ANIMAL · MICROSCÓPICO</small>
+          <h4>Rotífero</h4>
+          <p>Coroa de cílios que gira como roda, atraindo alimento.</p>
+        </div>
+        <div class="org"><small>CRUSTÁCEO</small>
+          <h4>Dáfnia</h4>
+          <p>A “pulga-d'água”: dá para ver o coração batendo!</p>
+        </div>
+      </div>
+      <div class="sketch">
+        <div class="sheet">
+          <h4>Modelo de desenho · Paramécio</h4>
+          <div class="cell" style="border-radius:50% 50% 45% 45%/70% 70% 30% 30%;width:110px;height:200px"></div>
+          Rotule: cílios · membrana · macronúcleo · micronúcleo · vacúolo contrátil · vacúolo digestivo · sulco
+          oral<br><b>Aumento: 10× (ocular) × 10× (objetiva) = 100×</b><br>Local: Lagoa do parque · Data: __/__/__
+        </div>
+        <div class="sheet">
+          <h4>Modelo de desenho · Euglena</h4>
+          <div class="cell"
+            style="border-radius:50% 50% 50% 50%/60% 60% 40% 40%;width:90px;height:190px;background:#d9f0c2"></div>
+          Rotule: flagelo · estigma (mancha ocelar) · cloroplastos · núcleo · vacúolo contrátil ·
+          película<br><b>Aumento: 10× × 40× = 400×</b><br>Dica: desenhe a lápis, em círculo, e escreva sempre o aumento
+          usado.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark">
+    <div class="wrap">
+      <div class="sechead">
+        <div class="kicker">Por que isso importa?</div>
+        <h2>A microscopia está no seu prato, no seu remédio, na sua vida</h2>
+      </div>
+      <div class="imp">
+        <article>
+          <div class="big">01</div>
+          <h3>Alimentação humana</h3>
+          <p>Permite controlar a qualidade dos alimentos, detectando bactérias como <i>Salmonella</i> e fungos
+            contaminantes. Também revelou as leveduras que fermentam o pão, e as bactérias do iogurte, queijo e vinagre
+            — Pasteur usou o microscópio para criar a <b>pasteurização</b> do leite.</p>
+        </article>
+        <article>
+          <div class="big">02</div>
+          <h3>Saúde humana</h3>
+          <p>É a base do diagnóstico: exames de sangue (hemograma), urina, fezes (parasitas), biópsias para câncer
+            (anatomia patológica), identificação da malária, tuberculose (bacilo de Koch) e infecções. Sem microscópio
+            não haveria a teoria dos germes.</p>
+        </article>
+        <article>
+          <div class="big">03</div>
+          <h3>Medicamentos</h3>
+          <p>Alexander Fleming observou em 1928 que o fungo <i>Penicillium</i> matava bactérias — nasceu a
+            <b>penicilina</b>, o primeiro antibiótico. Microscópios eletrônicos ajudam a estudar vírus e criar vacinas
+            (como as da COVID-19) e a controlar a qualidade de comprimidos.
+          </p>
+        </article>
+        <article>
+          <div class="big">04</div>
+          <h3>Outros organismos</h3>
+          <p>Na agricultura e veterinária, identifica fungos, pragas e doenças de plantas e animais (como a ferrugem do
+            café ou vermes no gado). Na ecologia, o plâncton microscópico indica a qualidade da água e é a base das
+            cadeias alimentares dos oceanos.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="habit">
+    <div class="wrap">
+      <div class="kicker">Um hábito que salva vidas</div>
+      <h2>Lavar as <em>mãos</em>.</h2>
+      <p>Quando o microscópio revelou que existiam seres invisíveis capazes de causar doenças, a lavagem das mãos se
+        tornou um hábito essencial. Em 1847, o médico húngaro <b>Ignaz Semmelweis</b> reduziu drasticamente as mortes de
+        mães em sua maternidade exigindo que os médicos lavassem as mãos com solução clorada. Depois, Pasteur e Koch
+        comprovaram ao microscópio a <b>teoria microbiana das doenças</b>, e Joseph Lister introduziu a antissepsia nas
+        cirurgias.</p>
+      <p>Outros hábitos que vieram dessa descoberta: ferver ou filtrar a água, pasteurizar o leite, esterilizar
+        instrumentos, cobrir a boca ao tossir e cozinhar bem os alimentos.</p>
+      <div class="quote">“Lavar as mãos com água e sabão por pelo menos 20 segundos remove a maioria dos germes.” —
+        recomendação da OMS</div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap hist">
+      <div>
+        <div class="kicker">Linha do tempo</div>
+        <h2 style="font-size:clamp(2.2rem,5vw,3.4rem);margin-top:10px">Quem abriu as portas do mundo micro</h2>
+        <div class="timeline">
+          <div class="ev">
+            <div class="y">~1590</div>
+            <div><b>Hans e Zacharias Janssen</b>, fabricantes de óculos holandeses, criam um dos primeiros microscópios
+              compostos.</div>
+          </div>
+          <div class="ev">
+            <div class="y">1665</div>
+            <div><b>Robert Hooke</b> publica <i>Micrographia</i>, observa cortiça e cria a palavra <b>“célula”</b>.
+            </div>
+          </div>
+          <div class="ev">
+            <div class="y">1674</div>
+            <div><b>Antonie van Leeuwenhoek</b>, com lentes simples de até 270×, vê pela primeira vez bactérias e
+              protozoários — os “animálculos”. É chamado de pai da microbiologia.</div>
+          </div>
+          <div class="ev">
+            <div class="y">1838</div>
+            <div><b>Schleiden e Schwann</b> formulam a teoria celular: todos os seres vivos são formados por células.
+            </div>
+          </div>
+          <div class="ev">
+            <div class="y">1882</div>
+            <div><b>Robert Koch</b> identifica ao microscópio o bacilo da tuberculose.</div>
+          </div>
+          <div class="ev">
+            <div class="y">1931</div>
+            <div><b>Ernst Ruska e Max Knoll</b> constroem o microscópio eletrônico de transmissão.</div>
+          </div>
+          <div class="ev">
+            <div class="y">1965</div>
+            <div>Primeiro microscópio eletrônico de varredura comercial.</div>
+          </div>
+          <div class="ev">
+            <div class="y">1986</div>
+            <div><b>Binnig, Quate e Gerber</b> inventam o microscópio de força atômica.</div>
+          </div>
+        </div>
+      </div>
+      <figure>
+        <img src="imgs/historia.jpg" alt="Microscópios antigos de latão e desenhos de células de cortiça">
+        <figcaption>▲ Microscópio de lente simples ao estilo de Leeuwenhoek e um composto antigo, ao lado de desenhos de
+          cortiça.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section style="background:var(--paper2)">
+    <div class="wrap">
+      <div class="sechead">
+        <div class="kicker">Curiosidades</div>
+        <h2>Você sabia?</h2>
+      </div>
+      <div class="curio">
+        <div class="cu"><b>Um mundo dentro de você</b>Seu corpo abriga cerca de 38 trilhões de bactérias — praticamente
+          o mesmo número de células humanas.</div>
+        <div class="cu"><b>Fio de cabelo</b>Um fio de cabelo tem cerca de 70 µm de espessura. Uma bactéria comum mede 1
+          a 2 µm: cabem dezenas lado a lado nele.</div>
+        <div class="cu"><b>Tardígrado, o “urso-d'água”</b>Animal de 0,5 mm que sobrevive a congelamento, radiação e até
+          ao vácuo do espaço. Procure-o em musgos úmidos!</div>
+        <div class="cu"><b>Segredo guardado</b>Leeuwenhoek nunca revelou como fabricava suas lentes. Ele fez mais de 500
+          microscópios.</div>
+        <div class="cu pic"><img src="imgs/mev-polen.jpg" alt="Pólen ao microscópio eletrônico"></div>
+        <div class="cu"><b>Cores falsas</b>As fotos coloridas de microscópios eletrônicos são pintadas digitalmente:
+          elétrons não têm cor.</div>
+        <div class="cu"><b>Prêmio Nobel</b>Ruska ganhou o Nobel de Física em 1986 pelo microscópio eletrônico — 55 anos
+          depois de inventá-lo.</div>
+        <div class="cu"><b>Microscópio de papel</b>O “Foldscope”, feito de papel dobrado, custa menos de 1 dólar e
+          amplia até 140×.</div>
+        <div class="cu"><b>Oxigênio invisível</b>Algas e cianobactérias microscópicas produzem mais da metade do
+          oxigênio que respiramos.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="dark">
+    <div class="wrap">
+      <div class="sechead">
+        <div class="kicker">Bônus · Cuidados com o microscópio</div>
+        <h2>Regras de ouro do laboratório</h2>
+      </div>
+      <div class="care">
+        <div>Carregue sempre com as duas mãos, pelo braço e pela base.</div>
+        <div>Limpe as lentes apenas com papel próprio para lentes; nunca com os dedos ou papel comum.</div>
+        <div>Nunca abaixe a objetiva usando o macrométrico enquanto olha pela ocular.</div>
+        <div>Depois de usar óleo de imersão, limpe a objetiva de 100× imediatamente.</div>
+        <div>Ao terminar: menor objetiva no lugar, luz desligada, platina baixa e capa protetora.</div>
+        <div>Guarde em local seco e sem poeira; o fungo nas lentes é o maior inimigo do microscópio.</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faith">
+    <div class="wrap">
+      <div class="kicker" style="color:var(--cyan)">Reflexão</div>
+      <blockquote>“Ó Senhor, quão variadas são as tuas obras! Todas as coisas fizeste com sabedoria; cheia está a terra
+        das tuas riquezas.”</blockquote>
+      <p style="font-family:var(--mono);color:#9fbfba">Salmos 104:24</p>
+      <p style="max-width:680px;margin:24px auto 0;color:#cfe9e4">Até a menor célula revela ordem, beleza e propósito.
+        Cada gota de água observada ao microscópio é um convite para admirar o Criador nos detalhes que os olhos não
+        veem.</p>
+    </div>
+  </section>
+
+  <footer>
+  </footer>
+</body>
+
+</html>
