@@ -1,0 +1,507 @@
+:root {
+    --ink: #1d1418;
+    --paper: #fbf4ec;
+    --coral: #e8563f;
+    --blush: #f6d5c8;
+    --teal: #0f5b63;
+    --teal2: #13848e;
+    --gold: #e9a23b;
+    --muted: #6f5a5f;
+    --dark: #0b1416
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    font-family: "DM Sans", system-ui, sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    line-height: 1.65;
+    font-size: 1.05rem
+}
+
+img {
+    max-width: 100%;
+    display: block
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Fraunces", Georgia, serif;
+    line-height: 1.05
+}
+
+.wrap {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 1.5rem
+}
+
+.kicker {
+    font-size: .78rem;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--coral)
+}
+
+/* HERO */
+.hero {
+    position: relative;
+    min-height: 100vh;
+    color: #fff;
+    background: var(--dark) url(imgs/capa-sistema-digestivo.jpg) center/cover no-repeat;
+    display: flex;
+    align-items: flex-end
+}
+
+.hero:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(11, 20, 22, .95) 0%, rgba(11, 20, 22, .55) 45%, rgba(11, 20, 22, .1) 100%), linear-gradient(0deg, rgba(11, 20, 22, .9), transparent 50%)
+}
+
+.hero .wrap {
+    position: relative;
+    padding-bottom: 5rem;
+    padding-top: 3rem;
+    width: 100%
+}
+
+.mast {
+    position: absolute;
+    top: 2rem;
+    left: 1.5rem;
+    right: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: .8rem;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    opacity: .8
+}
+
+.hero h1 {
+    font-size: clamp(3.2rem, 10vw, 8.5rem);
+    font-weight: 900;
+    max-width: 9ch;
+    letter-spacing: -.03em
+}
+
+.hero h1 em {
+    color: var(--coral);
+    font-style: italic;
+    font-weight: 400
+}
+
+.hero p.lead {
+    max-width: 34rem;
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    opacity: .9
+}
+
+.badge {
+    display: inline-flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    flex-wrap: wrap
+}
+
+.badge>span {
+    border: 1px solid rgba(255, 255, 255, .35);
+    padding: .4rem .9rem;
+    border-radius: 99px;
+    font-size: .85rem
+}
+
+.meta-key::after {
+    content: ": ";
+}
+
+/* SECTIONS */
+section {
+    padding: 6rem 0
+}
+
+.title {
+    font-size: clamp(2.2rem, 5vw, 4rem);
+    font-weight: 900;
+    margin: .6rem 0 1.5rem;
+    letter-spacing: -.02em
+}
+
+.title em {
+    font-style: italic;
+    font-weight: 400;
+    color: var(--coral)
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 1.1fr .9fr;
+    gap: 4rem;
+    align-items: center
+}
+
+.cols {
+    column-count: 2;
+    column-gap: 3rem
+}
+
+.cols p {
+    margin-bottom: 1rem
+}
+
+.dropcap:first-letter {
+    font-family: Fraunces, serif;
+    float: left;
+    font-size: 5rem;
+    line-height: .8;
+    padding: .3rem .6rem 0 0;
+    color: var(--coral);
+    font-weight: 900
+}
+
+p+p {
+    margin-top: 1rem
+}
+
+.pull {
+    font-family: Fraunces, serif;
+    font-style: italic;
+    font-size: clamp(1.5rem, 3vw, 2.2rem);
+    line-height: 1.3;
+    border-left: 4px solid var(--coral);
+    padding-left: 1.5rem;
+    margin: 2.5rem 0;
+    color: var(--teal)
+}
+
+.photo {
+    border-radius: 28px;
+    overflow: hidden;
+    box-shadow: 0 30px 60px -25px rgba(29, 20, 24, .45)
+}
+
+.photo.round {
+    border-radius: 50%;
+    aspect-ratio: 1
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+figcaption {
+    font-size: .82rem;
+    color: var(--muted);
+    margin-top: .7rem;
+    font-style: italic
+}
+
+.dark {
+    background: var(--dark);
+    color: #e9eef0
+}
+
+.dark .title {
+    color: #fff
+}
+
+.teal {
+    background: var(--teal);
+    color: #eaf6f6
+}
+
+.teal .title,
+.teal h3 {
+    color: #fff
+}
+
+.blush {
+    background: var(--blush)
+}
+
+/* trajeto */
+.path {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+    margin-top: 3rem;
+    counter-reset: o
+}
+
+.organ {
+    background: rgba(255, 255, 255, .05);
+    border: 1px solid rgba(255, 255, 255, .12);
+    border-radius: 22px;
+    padding: 1.6rem;
+    position: relative;
+    counter-increment: o
+}
+
+.organ:before {
+    content: counter(o, decimal-leading-zero);
+    font-family: Fraunces, serif;
+    font-size: 2.6rem;
+    font-weight: 900;
+    color: var(--coral);
+    display: block;
+    line-height: 1;
+    margin-bottom: .6rem
+}
+
+.organ h3 {
+    font-size: 1.45rem;
+    color: #fff;
+    margin-bottom: .5rem
+}
+
+.organ p {
+    font-size: .95rem;
+    opacity: .85
+}
+
+.organ .tag {
+    display: inline-block;
+    margin-top: .8rem;
+    font-size: .72rem;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--gold)
+}
+
+/* cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem
+}
+
+.card {
+    background: #fff;
+    border-radius: 22px;
+    padding: 1.8rem;
+    box-shadow: 0 15px 40px -25px rgba(29, 20, 24, .4)
+}
+
+.card h3 {
+    font-size: 1.4rem;
+    margin-bottom: .5rem;
+    color: var(--teal)
+}
+
+.card .ico {
+    font-size: 2.2rem;
+    margin-bottom: .6rem
+}
+
+.vs {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 2rem;
+    align-items: stretch;
+    margin-top: 2rem
+}
+
+.vs .mid {
+    font-family: Fraunces, serif;
+    font-size: 3rem;
+    font-style: italic;
+    color: var(--coral);
+    align-self: center
+}
+
+.vs .card {
+    background: var(--paper)
+}
+
+/* table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px -25px rgba(29, 20, 24, .4)
+}
+
+th,
+td {
+    text-align: left;
+    padding: 1rem 1.2rem;
+    border-bottom: 1px solid #eee;
+    vertical-align: top;
+    font-size: .96rem
+}
+
+th {
+    background: var(--coral);
+    color: #fff;
+    font-family: Fraunces, serif;
+    font-size: 1.05rem
+}
+
+td:first-child {
+    font-weight: 700;
+    color: var(--teal)
+}
+
+/* steps */
+ol.steps {
+    list-style: none;
+    counter-reset: s;
+    margin-top: 1.5rem
+}
+
+ol.steps li {
+    counter-increment: s;
+    position: relative;
+    padding: 0 0 1.2rem 3.4rem
+}
+
+ol.steps li:before {
+    content: counter(s);
+    position: absolute;
+    left: 0;
+    top: -.1rem;
+    width: 2.3rem;
+    height: 2.3rem;
+    border-radius: 50%;
+    background: var(--gold);
+    color: var(--ink);
+    font-weight: 700;
+    display: grid;
+    place-items: center
+}
+
+.box {
+    background: rgba(255, 255, 255, .1);
+    border-radius: 20px;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    border: 1px dashed rgba(255, 255, 255, .35)
+}
+
+/* curiosidades */
+.facts {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.25rem;
+    margin-top: 2.5rem
+}
+
+.fact {
+    background: #fff;
+    border-radius: 22px;
+    padding: 1.6rem;
+    border-top: 6px solid var(--coral)
+}
+
+.fact:nth-child(3n+2) {
+    border-color: var(--teal2)
+}
+
+.fact:nth-child(3n) {
+    border-color: var(--gold)
+}
+
+.fact b {
+    display: block;
+    font-family: Fraunces, serif;
+    font-size: 2.4rem;
+    color: var(--ink);
+    line-height: 1;
+    margin-bottom: .4rem
+}
+
+.fact p {
+    font-size: .92rem;
+    color: var(--muted)
+}
+
+.ext {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem
+}
+
+.ext figure .photo {
+    aspect-ratio: 4/3
+}
+
+footer {
+    background: var(--ink);
+    color: #cbb;
+    padding: 3rem 0;
+    font-size: .88rem
+}
+
+footer a {
+    color: var(--gold)
+}
+
+@media(max-width:900px) {
+
+    .grid2,
+    .vs {
+        grid-template-columns: 1fr;
+        gap: 2rem
+    }
+
+    .vs .mid {
+        text-align: center
+    }
+
+    .path,
+    .facts {
+        grid-template-columns: 1fr 1fr
+    }
+
+    .cards,
+    .ext {
+        grid-template-columns: 1fr
+    }
+
+    .cols {
+        column-count: 1
+    }
+
+    section {
+        padding: 4rem 0
+    }
+}
+
+@media(max-width:560px) {
+
+    .path,
+    .facts {
+        grid-template-columns: 1fr
+    }
+
+    th,
+    td {
+        padding: .7rem;
+        font-size: .85rem
+    }
+
+    .mast span:last-child {
+        display: none
+    }
+}
