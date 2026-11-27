@@ -1,0 +1,603 @@
+:root {
+    --ink: #16302f;
+    --paper: #f6f0e4;
+    --paper2: #ede4d2;
+    --teal: #0f4c4a;
+    --deep: #0a2423;
+    --blood: #b3302f;
+    --vein: #2f5d8a;
+    --bone: #e9dcc0;
+    --gold: #c8963e;
+    --muted: #5d6b68;
+    --serif: 'Fraunces', Georgia, serif;
+    --sans: 'Manrope', system-ui, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0
+}
+
+html {
+    scroll-behavior: smooth
+}
+
+body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--sans);
+    line-height: 1.7;
+    font-size: 17px
+}
+
+img {
+    max-width: 100%;
+    display: block
+}
+
+.wrap {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 24px
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--serif);
+    line-height: 1.1
+}
+
+h2 {
+    font-size: clamp(2.2rem, 5vw, 3.8rem);
+    font-weight: 900;
+    letter-spacing: -.02em
+}
+
+h3 {
+    font-size: 1.6rem;
+    margin-bottom: .4rem
+}
+
+p+p {
+    margin-top: 1em
+}
+
+.kicker {
+    font-family: var(--sans);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .25em;
+    font-size: .75rem;
+    color: var(--blood);
+    display: block;
+    margin-bottom: .8rem
+}
+
+section {
+    padding: 96px 0;
+    position: relative
+}
+
+.dropcap::first-letter {
+    font-family: var(--serif);
+    font-weight: 900;
+    float: left;
+    font-size: 5.2rem;
+    line-height: .8;
+    padding: 8px 12px 0 0;
+    color: var(--blood)
+}
+
+/* HERO */
+.hero {
+    min-height: 100vh;
+    background: linear-gradient(180deg, rgba(10, 36, 35, .15), rgba(10, 36, 35, .95)), url(imgs/capa-corpo.jpg) center/cover;
+    color: var(--paper);
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 70px
+}
+
+.hero .issue {
+    position: absolute;
+    top: 28px;
+    left: 0;
+    right: 0
+}
+
+.hero .issue .wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .8rem;
+    letter-spacing: .2em;
+    text-transform: uppercase;
+    opacity: .85
+}
+
+.hero .issue img {
+    width: 64px
+}
+
+.hero h1 {
+    font-size: clamp(3rem, 10vw, 8.5rem);
+    font-weight: 900;
+    letter-spacing: -.04em;
+    line-height: .9
+}
+
+.hero h1 em {
+    font-weight: 400;
+    color: var(--bone)
+}
+
+.hero p.lead {
+    max-width: 640px;
+    font-size: 1.2rem;
+    margin-top: 24px;
+    opacity: .9
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 28px
+}
+
+.tags>span {
+    border: 1px solid rgba(246, 240, 228, .4);
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: .8rem;
+    letter-spacing: .08em
+}
+
+.meta-key::after {
+    content: ":";
+}
+
+/* layouts */
+.split {
+    display: grid;
+    grid-template-columns: 1.1fr .9fr;
+    gap: 56px;
+    align-items: center
+}
+
+.split.rev {
+    grid-template-columns: .9fr 1.1fr
+}
+
+.cols2 {
+    columns: 2;
+    column-gap: 48px
+}
+
+.figure {
+    position: relative
+}
+
+.figure img {
+    border-radius: 6px;
+    box-shadow: 0 30px 60px -25px rgba(10, 36, 35, .5)
+}
+
+.figure figcaption {
+    font-size: .8rem;
+    color: var(--muted);
+    margin-top: 10px;
+    font-style: italic
+}
+
+.dark {
+    background: var(--deep);
+    color: var(--paper)
+}
+
+.dark .kicker {
+    color: var(--gold)
+}
+
+.dark figcaption {
+    color: #a9bcb8
+}
+
+.paper2 {
+    background: var(--paper2)
+}
+
+.pull {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: clamp(1.5rem, 3vw, 2.3rem);
+    line-height: 1.3;
+    border-left: 4px solid var(--blood);
+    padding-left: 24px;
+    margin: 40px 0
+}
+
+/* curiosity box */
+.curio {
+    background: var(--teal);
+    color: var(--paper);
+    border-radius: 14px;
+    padding: 26px 28px;
+    margin-top: 28px;
+    position: relative
+}
+
+.curio b.lbl {
+    display: block;
+    font-size: .7rem;
+    letter-spacing: .25em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 6px
+}
+
+.dark .curio {
+    background: #123a38
+}
+
+/* timeline */
+.timeline {
+    margin-top: 48px;
+    border-left: 2px solid var(--gold);
+    padding-left: 28px
+}
+
+.timeline div {
+    position: relative;
+    margin-bottom: 26px
+}
+
+.timeline div::before {
+    content: "";
+    position: absolute;
+    left: -36px;
+    top: 8px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--gold);
+    box-shadow: 0 0 0 4px var(--deep)
+}
+
+.timeline strong {
+    font-family: var(--serif);
+    font-size: 1.25rem;
+    color: var(--bone);
+    display: block
+}
+
+.techs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+    margin-top: 40px
+}
+
+.tech {
+    background: rgba(255, 255, 255, .05);
+    border: 1px solid rgba(255, 255, 255, .1);
+    border-radius: 12px;
+    padding: 20px
+}
+
+.tech h4 {
+    font-size: 1.15rem;
+    color: var(--bone);
+    margin-bottom: 6px
+}
+
+.tech p {
+    font-size: .92rem;
+    opacity: .85
+}
+
+/* systems */
+.system {
+    display: grid;
+    grid-template-columns: 420px 1fr;
+    gap: 48px;
+    align-items: start;
+    padding: 56px 0;
+    border-top: 1px solid rgba(22, 48, 47, .15)
+}
+
+.system:nth-child(even) {
+    grid-template-columns: 1fr 420px
+}
+
+.system:nth-child(even) .figure {
+    order: 2
+}
+
+.system .num {
+    font-family: var(--serif);
+    font-size: 5rem;
+    font-weight: 900;
+    color: var(--blood);
+    opacity: .18;
+    line-height: 1
+}
+
+.parts {
+    list-style: none;
+    margin-top: 18px;
+    display: grid;
+    gap: 10px
+}
+
+.parts li {
+    background: #fff8ec;
+    border-left: 4px solid var(--blood);
+    padding: 10px 16px;
+    border-radius: 0 8px 8px 0;
+    font-size: .95rem
+}
+
+.parts li b {
+    color: var(--teal)
+}
+
+.system.resp .parts li {
+    border-color: var(--vein)
+}
+
+.system.dig .parts li {
+    border-color: var(--gold)
+}
+
+.system.esq .parts li {
+    border-color: var(--muted)
+}
+
+.stat {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-top: 20px
+}
+
+.stat div {
+    font-size: .8rem;
+    color: var(--muted)
+}
+
+.stat div b {
+    display: block;
+    font-family: var(--serif);
+    font-size: 2rem;
+    color: var(--ink)
+}
+
+/* position */
+.pos-svg {
+    background: #fff8ec;
+    border-radius: 14px;
+    padding: 24px
+}
+
+.checklist {
+    list-style: none;
+    margin-top: 20px
+}
+
+.checklist li {
+    padding: 8px 0 8px 34px;
+    position: relative;
+    border-bottom: 1px dashed rgba(22, 48, 47, .2)
+}
+
+.checklist li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 7px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--blood);
+    color: #fff;
+    font-size: .8rem;
+    display: grid;
+    place-items: center
+}
+
+/* glossary */
+.gloss {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 20px;
+    margin-top: 48px
+}
+
+.term {
+    background: #fff8ec;
+    border-radius: 14px;
+    padding: 24px;
+    border-top: 6px solid var(--teal);
+    transition: transform .25s
+}
+
+.term:hover {
+    transform: translateY(-4px)
+}
+
+.term h4 {
+    font-size: 1.35rem;
+    margin-bottom: 8px;
+    color: var(--teal)
+}
+
+.term p {
+    font-size: .93rem
+}
+
+.term .ex {
+    display: block;
+    margin-top: 10px;
+    font-size: .82rem;
+    color: var(--blood);
+    font-style: italic
+}
+
+.term.mov {
+    border-top-color: var(--blood)
+}
+
+.term.mov h4 {
+    color: var(--blood)
+}
+
+/* variations */
+.var-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 18px;
+    margin-top: 36px
+}
+
+.var-grid div {
+    border: 1px solid rgba(246, 240, 228, .2);
+    border-radius: 12px;
+    padding: 20px
+}
+
+.var-grid h4 {
+    color: var(--gold);
+    font-size: 1.15rem;
+    margin-bottom: 6px
+}
+
+/* curiosities strip */
+.facts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2px;
+    background: var(--ink);
+    margin-top: 40px;
+    border-radius: 14px;
+    overflow: hidden
+}
+
+.facts div {
+    background: var(--paper);
+    padding: 28px 22px
+}
+
+.facts b {
+    font-family: var(--serif);
+    font-size: 2.6rem;
+    color: var(--blood);
+    display: block;
+    line-height: 1
+}
+
+details {
+    background: #fff8ec;
+    border-radius: 10px;
+    padding: 16px 20px;
+    margin-top: 12px;
+    cursor: pointer
+}
+
+details summary {
+    font-weight: 800;
+    color: var(--teal)
+}
+
+details p {
+    margin-top: 10px
+}
+
+/* bible */
+.bible {
+    background: linear-gradient(180deg, rgba(10, 36, 35, .55), rgba(10, 36, 35, .92)), url(imgs/cuidado-corpo.jpg) center/cover;
+    color: var(--paper);
+    text-align: center
+}
+
+.verse {
+    font-family: var(--serif);
+    font-size: clamp(1.5rem, 3.4vw, 2.6rem);
+    font-style: italic;
+    max-width: 900px;
+    margin: 28px auto;
+    line-height: 1.35
+}
+
+.verse cite {
+    display: block;
+    font-style: normal;
+    font-family: var(--sans);
+    font-size: .9rem;
+    letter-spacing: .2em;
+    margin-top: 16px;
+    color: var(--gold)
+}
+
+.habits {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 14px;
+    margin-top: 40px;
+    text-align: left
+}
+
+.habits div {
+    background: rgba(246, 240, 228, .1);
+    backdrop-filter: blur(6px);
+    border-radius: 12px;
+    padding: 18px
+}
+
+.habits b {
+    display: block;
+    color: var(--gold);
+    font-family: var(--serif);
+    font-size: 1.2rem
+}
+
+footer {
+    background: var(--deep);
+    color: #a9bcb8;
+    padding: 40px 0;
+    font-size: .85rem;
+    text-align: center
+}
+
+footer a {
+    color: var(--gold)
+}
+
+@media (max-width:900px) {
+    section {
+        padding: 64px 0
+    }
+
+    .split,
+    .split.rev,
+    .system,
+    .system:nth-child(even) {
+        grid-template-columns: 1fr;
+        gap: 28px
+    }
+
+    .system:nth-child(even) .figure {
+        order: 0
+    }
+
+    .cols2 {
+        columns: 1
+    }
+
+    body {
+        font-size: 16px
+    }
+}

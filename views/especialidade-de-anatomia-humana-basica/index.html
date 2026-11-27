@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,700;0,9..144,900;1,9..144,400&family=Manrope:wght@400;600;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.min.css">
+</head>
+
+<body>
+
+  <header class="hero">
+    <div class="issue">
+    </div>
+    <div class="wrap">
+      <span class="kicker" style="color:var(--gold)" data-id="meta-area"></span>
+      <h1>Anatomia<br><em>Humana</em> Básica</h1>
+      <p class="lead">Uma viagem pelo corpo que Deus criou: da história dos primeiros anatomistas às imagens 3D de hoje,
+        dos ossos ao coração, das palavras dos médicos ao cuidado com o templo do Espírito Santo.</p>
+      <div class="tags" data-id="meta">
+      </div>
+    </div>
+  </header>
+
+  <!-- O QUE É -->
+  <section>
+    <div class="wrap split">
+      <div>
+        <span class="kicker">Para começar</span>
+        <h2>O que é anatomia humana?</h2>
+        <p class="dropcap" style="margin-top:28px">A palavra <b>anatomia</b> vem do grego <i>ana</i> (“em partes”) e
+          <i>tomé</i> (“corte”) — literalmente, “cortar em partes”. <b>Anatomia humana</b> é o ramo da Biologia e das
+          Ciências da Saúde que estuda a <b>forma, a estrutura, a localização e a organização</b> das partes do corpo
+          humano e as relações entre elas.
+        </p>
+        <p>Ela pode ser estudada de várias maneiras: a <b>anatomia macroscópica</b> observa o que se vê a olho nu
+          (ossos, músculos, órgãos); a <b>microscópica</b> (histologia) analisa tecidos e células; a <b>sistêmica</b>
+          estuda o corpo sistema por sistema; a <b>topográfica</b> (ou regional) estuda região por região; e a
+          <b>anatomia de superfície</b> identifica estruturas internas pelo que se vê e se palpa na pele.
+        </p>
+        <p>Enquanto a anatomia responde “<i>como é e onde está</i>”, sua irmã, a <b>fisiologia</b>, responde “<i>como
+            funciona</i>”.</p>
+      </div>
+      <figure class="figure">
+        <img src="imgs/da-vinci-vitruve-luc-viatour.jpg" alt="Homem Vitruviano de Leonardo da Vinci" loading="lazy">
+        <figcaption>O Homem Vitruviano (c. 1490), de Leonardo da Vinci, estudo das proporções do corpo humano.
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- HISTÓRIA -->
+  <section class="dark">
+    <div class="wrap">
+      <span class="kicker">Linha do tempo</span>
+      <h2>Como tudo começou</h2>
+      <div class="split" style="margin-top:40px;align-items:start">
+        <div>
+          <p>O interesse pelo corpo é tão antigo quanto a humanidade. Os <b>egípcios</b>, ao embalsamar seus mortos, já
+            conheciam vários órgãos — o Papiro de Edwin Smith (c. 1600 a.C.) descreve o cérebro e o coração. Mas a
+            anatomia como ciência nasce na Grécia e se transforma por completo no Renascimento.</p>
+          <div class="timeline">
+            <div><strong>c. 400 a.C. — Hipócrates</strong>O “pai da Medicina” separa a doença da superstição e descreve
+              ossos e articulações.</div>
+            <div><strong>c. 300 a.C. — Herófilo e Erasístrato</strong>Em Alexandria, realizam as primeiras dissecações
+              sistemáticas de cadáveres humanos. Herófilo é chamado “pai da anatomia”.</div>
+            <div><strong>c. 160 d.C. — Galeno</strong>Médico de gladiadores em Roma, dissecava macacos e porcos. Seus
+              livros dominaram a medicina por mais de 1.300 anos — com muitos erros.</div>
+            <div><strong>1490–1510 — Leonardo da Vinci</strong>Faz centenas de desenhos anatômicos de precisão
+              impressionante.</div>
+            <div><strong>1543 — Andreas Vesalius</strong>Publica <i>De Humani Corporis Fabrica</i>, corrige Galeno e
+              funda a anatomia moderna, baseada na observação direta.</div>
+            <div><strong>1628 — William Harvey</strong>Demonstra que o sangue circula em circuito fechado bombeado pelo
+              coração.</div>
+            <div><strong>1895 — Wilhelm Röntgen</strong>Descobre os raios X: pela primeira vez se vê dentro do corpo
+              vivo sem cortá-lo.</div>
+          </div>
+        </div>
+        <figure class="figure">
+          <img src="imgs/rembrandt-the-anatomy-lesson-of-dr-nicolaes-tulp.jpg"
+            alt="A Lição de Anatomia do Dr. Tulp, de Rembrandt" loading="lazy">
+          <figcaption>“A Lição de Anatomia do Dr. Tulp” (1632), Rembrandt. As aulas públicas de anatomia eram
+            verdadeiros eventos.</figcaption>
+          <div class="curio"><b class="lbl">Curiosidade</b>Os “teatros anatômicos”, como o de Pádua (1594), tinham
+            arquibancadas em funil para centenas de estudantes assistirem às dissecações — à luz de velas e no inverno,
+            para o corpo se conservar.</div>
+        </figure>
+      </div>
+
+      <h3 style="margin-top:80px;color:var(--bone);font-size:2rem">E hoje, como se estuda anatomia?</h3>
+      <figure class="figure" style="margin-top:24px"><img src="imgs/tecnicas-modernas.jpg"
+          alt="Profissional analisando exames de imagem e modelo 3D do corpo" loading="lazy">
+        <figcaption>Exames de imagem e modelos 3D: a anatomia do corpo vivo. (Imagem gerada por IA)</figcaption>
+      </figure>
+      <div class="techs">
+        <div class="tech">
+          <h4>Dissecação</h4>
+          <p>Ainda é a base: estudo em cadáveres doados, preservados com formol ou glicerina.</p>
+        </div>
+        <div class="tech">
+          <h4>Plastinação</h4>
+          <p>Técnica de Gunther von Hagens (1977) que substitui água e gordura por silicone, gerando peças secas,
+            duráveis e sem odor.</p>
+        </div>
+        <div class="tech">
+          <h4>Raios X e Tomografia (TC)</h4>
+          <p>Mostram ossos e, na tomografia, “fatias” do corpo em três dimensões.</p>
+        </div>
+        <div class="tech">
+          <h4>Ressonância Magnética</h4>
+          <p>Usa campos magnéticos para imagens detalhadas de tecidos moles: cérebro, músculos, ligamentos.</p>
+        </div>
+        <div class="tech">
+          <h4>Ultrassonografia</h4>
+          <p>Ondas sonoras mostram órgãos e bebês em tempo real, sem radiação.</p>
+        </div>
+        <div class="tech">
+          <h4>Endoscopia</h4>
+          <p>Câmeras minúsculas entram pelo corpo e mostram o interior de órgãos ocos.</p>
+        </div>
+        <div class="tech">
+          <h4>Microscopia</h4>
+          <p>Óptica e eletrônica revelam tecidos e células (histologia).</p>
+        </div>
+        <div class="tech">
+          <h4>Modelos, 3D e realidade virtual</h4>
+          <p>Peças sintéticas, mesas anatômicas digitais, aplicativos, impressão 3D e realidade aumentada.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POSIÇÃO ANATÔMICA -->
+  <section>
+    <div class="wrap split rev">
+      <figure class="figure">
+        <img src="imgs/posicao-anatomica.png">
+        <figcaption>Posição anatômica com os planos mediano (sagital) e transversal.</figcaption>
+      </figure>
+      <div>
+        <span class="kicker">O ponto de partida</span>
+        <h2>A posição anatômica</h2>
+        <p style="margin-top:24px"><b>O que é:</b> uma posição-padrão, convencionada internacionalmente, a partir da
+          qual todas as estruturas do corpo são descritas — não importa se a pessoa está deitada, de cabeça para baixo
+          ou correndo.</p>
+        <p><b>Como é:</b></p>
+        <ul class="checklist">
+          <li>Corpo <b>em pé</b>, ereto (posição ortostática)</li>
+          <li><b>Cabeça erguida</b> e <b>olhar no horizonte</b>, voltado para a frente</li>
+          <li><b>Braços estendidos</b> ao lado do tronco</li>
+          <li><b>Palmas das mãos voltadas para a frente</b>, polegares para fora</li>
+          <li><b>Membros inferiores juntos</b>, pés apoiados no chão e dedos apontando para a frente</li>
+        </ul>
+        <p style="margin-top:20px"><b>Importância:</b> evita confusões. Médicos, enfermeiros e socorristas do mundo
+          inteiro usam a mesma referência: “direita” é sempre a direita <i>do paciente</i>, e uma lesão “lateral ao
+          joelho” significa o mesmo em qualquer hospital. Isso garante comunicação precisa em diagnósticos, cirurgias,
+          laudos e primeiros socorros.</p>
+        <div class="curio"><b class="lbl">Você sabia?</b>A partir dela se definem três planos: <b>sagital</b> (divide em
+          direita e esquerda), <b>frontal ou coronal</b> (anterior e posterior) e <b>transversal ou horizontal</b>
+          (superior e inferior).</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SISTEMAS -->
+  <section class="paper2">
+    <div class="wrap">
+      <span class="kicker">Por dentro da máquina</span>
+      <h2>Quatro sistemas que mantêm você vivo</h2>
+      <p style="max-width:720px;margin-top:20px">O corpo é organizado em níveis: células formam tecidos, tecidos formam
+        órgãos, e órgãos trabalhando juntos formam <b>sistemas</b>. Conheça os componentes e as funções de quatro deles.
+      </p>
+
+      <div>
+        <article class="system">
+          <figure class="figure"><img src="imgs/diagrama-coracao.png"
+              alt="Diagrama do coração humano com cavidades e vasos" loading="lazy"
+              style="background:#fff;padding:16px">
+            <figcaption>Diagrama do coração: em azul, sangue pobre em oxigênio; em vermelho, sangue oxigenado.
+            </figcaption>
+          </figure>
+          <div>
+            <div class="num">01</div>
+            <h3>Sistema Circulatório</h3>
+            <p>Também chamado <b>cardiovascular</b>, é a rede de transporte do corpo. <b>Funções:</b> levar oxigênio e
+              nutrientes a todas as células, recolher gás carbônico e resíduos, transportar hormônios, defender o
+              organismo (glóbulos brancos), coagular o sangue em ferimentos e ajudar a regular a temperatura.</p>
+            <ul class="parts">
+              <li><b>Coração:</b> bomba muscular com 4 cavidades (2 átrios e 2 ventrículos) e valvas que impedem o
+                refluxo.</li>
+              <li><b>Artérias:</b> levam o sangue do coração para o corpo; paredes grossas e elásticas. A maior é a
+                aorta.</li>
+              <li><b>Veias:</b> trazem o sangue de volta ao coração; possuem válvulas.</li>
+              <li><b>Capilares:</b> vasos finíssimos onde ocorrem as trocas com as células.</li>
+              <li><b>Sangue:</b> plasma, hemácias (oxigênio), leucócitos (defesa) e plaquetas (coagulação).</li>
+            </ul>
+            <p style="margin-top:14px">Há duas circulações: a <b>pequena</b> (coração → pulmões → coração), que oxigena
+              o sangue, e a <b>grande</b> (coração → corpo → coração).</p>
+            <div class="stat">
+              <div><b>100 mil</b>batimentos por dia</div>
+              <div><b>~5 L</b>de sangue no adulto</div>
+              <div><b>100 mil km</b>de vasos</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="system resp">
+          <figure class="figure"><img src="imgs/respiratorio.jpg"
+              alt="Ilustração dos pulmões, traqueia, brônquios e diafragma" loading="lazy">
+            <figcaption>Traqueia, brônquios ramificando-se nos pulmões e o diafragma abaixo. (Imagem gerada por IA)
+            </figcaption>
+          </figure>
+          <div>
+            <div class="num">02</div>
+            <h3>Sistema Respiratório</h3>
+            <p><b>Função principal:</b> realizar as trocas gasosas — captar o <b>oxigênio</b> do ar e eliminar o <b>gás
+                carbônico</b>. Também aquece, umedece e filtra o ar, participa da fala (voz) e do olfato, e ajuda a
+              manter o equilíbrio ácido-básico do sangue.</p>
+            <ul class="parts">
+              <li><b>Fossas nasais:</b> filtram (pelos e muco), aquecem e umedecem o ar.</li>
+              <li><b>Faringe:</b> canal comum ao ar e ao alimento.</li>
+              <li><b>Laringe:</b> contém as pregas vocais; a epiglote fecha a passagem ao engolir.</li>
+              <li><b>Traqueia:</b> tubo reforçado por anéis de cartilagem.</li>
+              <li><b>Brônquios e bronquíolos:</b> ramificações que distribuem o ar nos pulmões.</li>
+              <li><b>Pulmões e alvéolos:</b> milhões de saquinhos onde o oxigênio passa para o sangue.</li>
+              <li><b>Diafragma:</b> músculo que, ao contrair, faz o ar entrar (inspiração).</li>
+            </ul>
+            <div class="stat">
+              <div><b>~480 mi</b>de alvéolos</div>
+              <div><b>~70 m²</b>de área de troca</div>
+              <div><b>20 mil</b>respirações/dia</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="system dig">
+          <figure class="figure"><img src="imgs/digestorio.jpg" alt="Ilustração do sistema digestório" loading="lazy">
+            <figcaption>Esôfago, estômago, fígado, vesícula, pâncreas e intestinos. (Imagem gerada por IA)</figcaption>
+          </figure>
+          <div>
+            <div class="num">03</div>
+            <h3>Sistema Digestório</h3>
+            <p><b>Funções:</b> ingerir os alimentos, quebrá-los mecânica e quimicamente (<b>digestão</b>) em moléculas
+              pequenas, <b>absorver</b> os nutrientes e a água e <b>eliminar</b> o que não foi aproveitado (fezes).</p>
+            <ul class="parts">
+              <li><b>Boca:</b> dentes trituram, língua mistura, saliva inicia a digestão do amido.</li>
+              <li><b>Faringe e esôfago:</b> conduzem o bolo alimentar por movimentos peristálticos.</li>
+              <li><b>Estômago:</b> suco gástrico (ácido clorídrico e pepsina) digere proteínas.</li>
+              <li><b>Intestino delgado</b> (duodeno, jejuno, íleo): termina a digestão e absorve nutrientes pelas
+                vilosidades.</li>
+              <li><b>Intestino grosso:</b> absorve água e forma as fezes; abriga bactérias benéficas.</li>
+              <li><b>Glândulas anexas:</b> glândulas salivares, <b>fígado</b> (produz a bile, que emulsiona gorduras),
+                <b>vesícula biliar</b> (armazena a bile) e <b>pâncreas</b> (suco pancreático e insulina).
+              </li>
+            </ul>
+            <div class="stat">
+              <div><b>~7 m</b>de intestino delgado</div>
+              <div><b>1,5 L</b>de saliva por dia</div>
+              <div><b>24–72 h</b>tempo total da digestão</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="system esq">
+          <figure class="figure"><img src="imgs/esqueletico.jpg" alt="Ilustração do esqueleto humano de frente"
+              loading="lazy">
+            <figcaption>Esqueleto humano em vista anterior. (Imagem gerada por IA)</figcaption>
+          </figure>
+          <div>
+            <div class="num">04</div>
+            <h3>Sistema Esquelético</h3>
+            <p><b>Funções:</b> <b>sustentação</b> e forma do corpo; <b>proteção</b> de órgãos (crânio protege o
+              encéfalo; costelas, coração e pulmões); <b>movimento</b>, servindo de alavanca para os músculos;
+              <b>produção de células do sangue</b> na medula óssea vermelha; e <b>reserva de minerais</b> como cálcio e
+              fósforo.
+            </p>
+            <ul class="parts">
+              <li><b>Ossos:</b> 206 no adulto. Classificados em longos (fêmur), curtos (carpo), planos (escápula,
+                crânio) e irregulares (vértebras).</li>
+              <li><b>Esqueleto axial:</b> crânio, coluna vertebral, costelas e esterno.</li>
+              <li><b>Esqueleto apendicular:</b> membros superiores e inferiores e as cinturas escapular e pélvica.</li>
+              <li><b>Cartilagens:</b> tecido flexível que reveste articulações e forma orelha e nariz.</li>
+              <li><b>Articulações e ligamentos:</b> unem os ossos e permitem (ou limitam) o movimento.</li>
+              <li><b>Medula óssea:</b> vermelha (produz sangue) e amarela (gordura).</li>
+            </ul>
+            <div class="stat">
+              <div><b>206</b>ossos no adulto</div>
+              <div><b>~300</b>ossos no recém-nascido</div>
+              <div><b>3 mm</b>estribo, o menor osso</div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- VARIAÇÕES -->
+  <section class="dark">
+    <div class="wrap">
+      <span class="kicker">Ninguém é igual</span>
+      <h2>Variações anatômicas</h2>
+      <div class="split" style="margin-top:32px;align-items:start">
+        <div>
+          <p><b>Variações anatômicas</b> são diferenças na forma, no tamanho, na posição, no número ou no trajeto de uma
+            estrutura do corpo em relação ao padrão descrito nos livros, <b>sem causar prejuízo à função</b>. São
+            normais e muito comuns — cada corpo é único.</p>
+          <p>Elas se distinguem das <b>anomalias</b> (alterações que comprometem a função ou a estética, como uma fenda
+            palatina) e das <b>monstruosidades</b> (alterações graves e incompatíveis ou quase incompatíveis com a
+            vida). Os fatores que influenciam as variações incluem <b>idade, sexo, etnia, biotipo</b> (longilíneo,
+            mediolíneo, brevilíneo) e <b>evolução</b> (fatores genéticos e ambientais).</p>
+        </div>
+        <p class="pull" style="color:var(--bone);margin-top:0">Conhecer as variações é essencial para cirurgiões: um
+          vaso “fora do lugar” pode mudar todo um procedimento.</p>
+      </div>
+      <div class="var-grid">
+        <div>
+          <h4>Músculo palmar longo</h4>Ausente em cerca de 14% das pessoas. Feche a mão e flexione o punho: o tendão
+          aparece?
+        </div>
+        <div>
+          <h4>Costela cervical</h4>Uma costela extra na 7ª vértebra do pescoço, presente em menos de 1% da população.
+        </div>
+        <div>
+          <h4>Situs inversus</h4>Órgãos espelhados: coração à direita, fígado à esquerda. Muitas pessoas vivem
+          normalmente.
+        </div>
+        <div>
+          <h4>Trajeto das artérias</h4>A artéria renal pode ser dupla; ramos da aorta podem nascer em pontos diferentes.
+        </div>
+        <div>
+          <h4>Ossos sesamoides extras</h4>Pequenos ossos “a mais” em mãos e pés, comuns e sem prejuízo.
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GLOSSÁRIO -->
+  <section>
+    <div class="wrap">
+      <span class="kicker">Fale como um anatomista</span>
+      <h2>Glossário anatômico</h2>
+      <p style="max-width:720px;margin-top:20px">Termos de posição e de movimento — sempre considerando o corpo na
+        posição anatômica.</p>
+      <div class="gloss">
+        <div class="term">
+          <h4>Superficial × Profundo</h4>
+          <p><b>Superficial:</b> mais próximo da superfície do corpo. <b>Profundo:</b> mais distante da superfície, mais
+            para dentro.</p><span class="ex">A pele é superficial aos músculos; o osso é profundo aos músculos.</span>
+        </div>
+        <div class="term">
+          <h4>Medial × Lateral</h4>
+          <p><b>Medial:</b> mais próximo do plano mediano (linha imaginária que divide o corpo em metades direita e
+            esquerda). <b>Lateral:</b> mais afastado dele.</p><span class="ex">O nariz é medial aos olhos; o polegar é
+            lateral ao dedo mínimo.</span>
+        </div>
+        <div class="term">
+          <h4>Anterior × Posterior</h4>
+          <p><b>Anterior (ventral):</b> voltado para a frente do corpo. <b>Posterior (dorsal):</b> voltado para trás.
+          </p><span class="ex">O esterno é anterior ao coração; a coluna é posterior a ele.</span>
+        </div>
+        <div class="term">
+          <h4>Cranial × Caudal</h4>
+          <p><b>Cranial (superior):</b> mais próximo da cabeça. <b>Caudal (inferior):</b> mais próximo da “cauda”, ou
+            seja, dos pés/região do cóccix.</p><span class="ex">O tórax é cranial ao abdome.</span>
+        </div>
+        <div class="term">
+          <h4>Proximal × Distal</h4>
+          <p>Usados nos membros. <b>Proximal:</b> mais perto da raiz do membro (ombro ou quadril). <b>Distal:</b> mais
+            longe dela.</p><span class="ex">O cotovelo é proximal ao punho; os dedos são distais.</span>
+        </div>
+        <div class="term">
+          <h4>Médio</h4>
+          <p>Estrutura situada <b>entre</b> duas outras — uma medial e uma lateral, ou uma superior e uma inferior.</p>
+          <span class="ex">O dedo médio; a orelha média fica entre a externa e a interna.</span>
+        </div>
+        <div class="term">
+          <h4>Dorso</h4>
+          <p>A <b>face posterior</b> ou superior de uma parte do corpo; as “costas”. No tronco, é a região posterior;
+            também usado para o dorso da mão e o dorso do pé (peito do pé).</p><span class="ex">As unhas ficam no dorso
+            dos dedos.</span>
+        </div>
+        <div class="term">
+          <h4>Abdome</h4>
+          <p>Região do tronco entre o <b>tórax</b> (separado pelo diafragma) e a <b>pelve</b>. Abriga estômago, fígado,
+            intestinos, rins, entre outros. É dividido em 9 regiões (ou 4 quadrantes).</p><span class="ex">O umbigo fica
+            na região umbilical do abdome.</span>
+        </div>
+        <div class="term mov">
+          <h4>Flexão × Extensão</h4>
+          <p><b>Flexão:</b> dobrar uma articulação, diminuindo o ângulo entre os ossos. <b>Extensão:</b> esticar,
+            aumentando o ângulo e retornando à posição anatômica.</p><span class="ex">Dobrar o cotovelo = flexão;
+            esticá-lo = extensão.</span>
+        </div>
+        <div class="term mov">
+          <h4>Abdução × Adução</h4>
+          <p><b>Abdução:</b> afastar um membro do plano mediano. <b>Adução:</b> aproximá-lo (lembre: “<i>ad</i>” =
+            adicionar ao corpo).</p><span class="ex">Abrir os braços em polichinelo = abdução.</span>
+        </div>
+        <div class="term mov">
+          <h4>Oposição</h4>
+          <p>Movimento exclusivo do <b>polegar</b>, que toca a ponta dos outros dedos. É o que permite segurar objetos
+            com precisão — característica marcante da mão humana.</p><span class="ex">Pegar um lápis ou dar um nó de
+            escoteiro.</span>
+        </div>
+        <div class="term mov">
+          <h4>Rotação</h4>
+          <p>Movimento de uma parte do corpo <b>girando em torno do seu próprio eixo</b> longitudinal. Pode ser medial
+            (interna) ou lateral (externa).</p><span class="ex">Girar a cabeça para dizer “não”.</span>
+        </div>
+        <div class="term mov">
+          <h4>Circundução</h4>
+          <p>Movimento <b>circular</b> que combina flexão, extensão, abdução e adução; a extremidade do membro desenha
+            um círculo e o segmento forma um cone.</p><span class="ex">Girar o braço como hélice ou fazer círculos com o
+            pé.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CURIOSIDADES -->
+  <section class="paper2">
+    <div class="wrap">
+      <span class="kicker">Bônus</span>
+      <h2>Curiosidades do corpo</h2>
+      <div class="facts">
+        <div><b>60%</b>do corpo adulto é água.</div>
+        <div><b>~37 tri</b>de células formam um ser humano.</div>
+        <div><b>~600</b>músculos esqueléticos; o maior é o glúteo máximo.</div>
+        <div><b>2 m²</b>é a área da pele, o maior órgão do corpo.</div>
+        <div><b>27</b>ossos em cada mão.</div>
+        <div><b>~86 bi</b>de neurônios no cérebro.</div>
+      </div>
+      <details open>
+        <summary>Por que temos mais ossos ao nascer?</summary>
+        <p>O bebê tem cerca de 300 ossos e cartilagens; com o crescimento, vários se fundem — como os ossos do crânio
+          (as “moleiras” fecham) e o sacro — chegando aos 206 do adulto.</p>
+      </details>
+      <details open>
+        <summary>O fêmur é mais forte que concreto?</summary>
+        <p>Proporcionalmente ao peso, sim! O fêmur, maior e mais resistente osso do corpo, suporta várias vezes o peso
+          corporal a cada passo.</p>
+      </details>
+      <details open>
+        <summary>Ficamos mais altos de manhã?</summary>
+        <p>Sim, cerca de 1 cm. Durante o dia, os discos entre as vértebras são comprimidos; à noite, deitados, eles se
+          reidratam.</p>
+      </details>
+      <details open>
+        <summary>O estômago se digere?</summary>
+        <p>Não, porque uma camada de muco protege sua parede do ácido, e as células do revestimento são renovadas a cada
+          poucos dias.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- BÍBLIA -->
+  <section class="bible">
+    <div class="wrap">
+      <span class="kicker" style="color:var(--gold)">Fé e saúde</span>
+      <h2>O corpo é templo</h2>
+      <blockquote class="verse">“Acaso não sabem que o corpo de vocês é santuário do Espírito Santo que habita em vocês,
+        que lhes foi dado por Deus, e que vocês não são de vocês mesmos? Vocês foram comprados por alto preço. Portanto,
+        glorifiquem a Deus com o corpo de vocês.”<cite>1 CORÍNTIOS 6:19-20 (NVI)</cite></blockquote>
+      <p style="max-width:780px;margin:0 auto">Paulo ensina que o corpo não é apenas “nosso”: ele pertence a Deus, que
+        nos criou e nos resgatou pelo sacrifício de Jesus. Cuidar do corpo é, portanto, um ato de <b>adoração e
+          gratidão</b>. Davi já exclamava: “Eu te louvo porque me fizeste de modo especial e admirável” (Salmo 139:14).
+        E Paulo acrescenta: “quer comais, quer bebais, ou façais outra qualquer coisa, fazei tudo para a glória de Deus”
+        (1 Coríntios 10:31). Também “Amado, desejo que te vá bem em todas as coisas, e que tenhas saúde” (3 João 2).</p>
+      <p style="max-width:780px;margin:16px auto 0">Os princípios de saúde que os adventistas resumem nos <b>oito
+          remédios naturais</b>:</p>
+      <div class="habits">
+        <div><b>Nutrição</b>Alimentação natural, rica em frutas, verduras, grãos e água.</div>
+        <div><b>Exercício</b>Movimento diário fortalece ossos, coração e pulmões.</div>
+        <div><b>Água</b>Beber bastante e manter a higiene.</div>
+        <div><b>Luz solar</b>Vitamina D e bem-estar, com moderação.</div>
+        <div><b>Temperança</b>Equilíbrio e abstenção do que faz mal: álcool, fumo e drogas.</div>
+        <div><b>Ar puro</b>Respirar fundo, de preferência em contato com a natureza.</div>
+        <div><b>Descanso</b>Sono adequado e o descanso do sábado.</div>
+        <div><b>Confiança em Deus</b>Paz interior que faz bem ao corpo e à mente.</div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+  </footer>
+</body>
+
+</html>
